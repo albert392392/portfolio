@@ -315,3 +315,70 @@ footer a{color:var(--tx2)}
   background:var(--panel);border:1px solid var(--line);color:var(--tx);font-size:13px;font-weight:700;transition:.2s}
 .fs-btn:hover{border-color:var(--cy);color:var(--cy);transform:translateY(-2px)}
 
+/* ================= ADVANCED SYSTEM & MULTIMODAL CLUSTERS ================= */
+.sys-cluster{
+  background:linear-gradient(165deg,rgba(14,23,39,.7),rgba(8,13,24,.9));
+  border:1px solid var(--line);border-radius:var(--rad);padding:20px;margin-top:20px;
+}
+.sys-cluster-hdr{
+  display:flex;align-items:center;gap:12px;margin-bottom:14px;padding-bottom:10px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.sys-cluster-hdr h4{font-size:16px;font-weight:800;color:#fff}
+.sys-cluster-hdr span{font-size:12px;color:var(--tx3);margin-inline-start:auto}
+.sys-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(270px,100%),1fr));gap:12px}
+.sys-card{
+  background:rgba(6,10,18,.8);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;font-size:13px;color:var(--tx2);transition:.22s;display:flex;flex-direction:column;gap:6px;
+}
+.sys-card:hover{border-color:var(--cy);transform:translateY(-2px);box-shadow:0 8px 24px -10px rgba(34,211,238,.2)}
+.sys-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
+.sys-card-name{font-weight:800;color:#fff;font-size:14px;direction:ltr;text-align:start}
+.sys-card-port{
+  font-family:monospace;font-size:11px;padding:2px 8px;border-radius:6px;
+  background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);color:var(--cy);direction:ltr;
+}
+.sys-card-role{font-size:12px;color:var(--tx3);font-weight:600}
+.sys-card-desc{line-height:1.7;color:var(--tx2);font-size:12.8px}
+
+/* Multimodal Pipelines */
+.pipe-card{
+  background:linear-gradient(165deg,rgba(14,23,39,.85),rgba(10,16,28,.98));
+  border:1px solid var(--line);border-radius:var(--rad);padding:clamp(18px,2.6vw,26px);
+  margin-top:22px;transition:.3s;
+}
+.pipe-card:hover{border-color:rgba(34,211,238,.4)}
+.pipe-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.pipe-title{font-size:clamp(17px,2.2vw,22px);font-weight:900;color:#fff}
+.pipe-role{font-size:13px;font-weight:600;color:var(--cy);margin-top:3px}
+.pipe-badges{display:flex;flex-wrap:wrap;gap:6px}
+.pipe-badge{
+  font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;
+  background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);color:#8ee6f5;
+}
+.pipe-badge.gpu{background:rgba(192,38,211,.14);border-color:var(--mg);color:#e879f9}
+.pipe-badge.perf{background:rgba(52,211,153,.14);border-color:var(--gr);color:#34d399}
+.pipe-flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:10px;margin:16px 0}
+.pipe-step{
+  background:rgba(6,10,18,.75);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;display:flex;flex-direction:column;gap:4px;
+}
+.pipe-step-num{
+  font-size:11px;font-weight:800;color:var(--cy);display:flex;align-items:center;gap:6px;margin-bottom:2px;
+}
+.pipe-step-num::before{
+  content:'';width:6px;height:6px;border-radius:50%;background:var(--cy);
+}
+.pipe-step-title{font-size:13.5px;font-weight:700;color:#fff}
+.pipe-step-desc{font-size:12.2px;color:var(--tx2);line-height:1.65}
+
+/* Benchmark Comparison Table */
+.table-wrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:var(--rad);background:var(--panel)}
+.tech-table{width:100%;border-collapse:collapse;font-size:13px;text-align:start}
+.tech-table th{background:rgba(18,29,49,.9);color:#fff;padding:12px 14px;font-weight:800;border-bottom:1px solid var(--line2);white-space:nowrap}
+.tech-table td{padding:12px 14px;color:var(--tx2);border-bottom:1px solid var(--line);vertical-align:middle;line-height:1.6}
+.tech-table tr:last-child td{border-bottom:none}
+.tech-table tr:hover td{background:rgba(34,211,238,.03)}
+.tech-table b{color:#fff}
+
+

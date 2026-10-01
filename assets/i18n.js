@@ -236,49 +236,194 @@ proj:{
 },
 sys:{
   title:'کارخانه نرم‌افزار هوش مصنوعی', sub:'UniversalSystem — سامانه جامع اتوماسیون سازمانی',
-  intro:'UniversalSystem سامانه‌ای است که مراحل تکراری ساخت نرم‌افزار و مدیریت ایجنت‌ها را خودکار می‌کند: تولید کد، سنتز رسانه‌های چندوجهی، تست خودکار، حافظه بلندمدت و مستندسازی. این پلتفرم از ۱۷ مایکروسرویس کانتینری تشکیل شده و خروجی بررسی زنده سلامت آن در تصویر زیر ثبت شده است.',
-  kpis:[['۸۴٬۲۹۰','خط کد در ۴۳۲ فایل'],['۱۷ / ۱۷','سرویس کانتینری زنده و سالم'],['۳۸۵+','تست خودکار جامع'],['۱۰۰٪','معماری تدافعی']],
+  intro:'UniversalSystem یک اکوسیستم توزیع‌شده با عملکرد فوق‌العاده بالاست که مراحل تکراری تولید نرم‌افزار، ارکستراسیون ایجنت‌های خودمختار، پایپ‌لاین‌های چندوجهی صوت و تصویر، تست‌های خودکار و مستندسازی سازمانی را مهندسی و خودکار می‌کند. این پلتفرم از ۱۷ مایکروسرویس کانتینری و یک دیمن محلی ویندوز (Host Bridge) تشکیل شده و خروجی آزمون زنده سلامت آن در تصویر زیر ثبت گردیده است.',
+  kpis:[
+    ['+۸۴٬۰۰۰','خط کد پروداکشن در ۴۳۲ فایل'],
+    ['۱۷ / ۱۷','مایکروسرویس کانتینری زنده و تاییدشده'],
+    ['۳۸۵+','سوئیت آزمون‌های خودکار و سناریوهای تدافعی'],
+    ['۶۷۱ RPS','توان پردازش بار اندازه‌گیری‌شده در پروداکشن'],
+    ['۰','نشت داده‌های حساس با ماسک خودکار PII'],
+    ['۱۰۰٪','پایبندی به دفترکل تغییرناپذیر رمزنگاری‌شده HMAC']
+  ],
   dashCap:'خروجی واقعی اسکریپت تست و بررسی زنده سیستم: هر ۱۷ سرویس بالا و سالم با آزمون‌های تاییدشده',
-  svcTitle:'اجزای معماری سیستم', svcSub:'وظیفه هر میکروسرویس در اکوسیستم',
-  svc:{
-    'api-gateway':'دروازه مرکزی YARP: احراز هویت، توزیع بار، ریت‌لیمیت سازمانی و مسیریابی ترافیک.',
-    'python-ai':'هسته هوش مصنوعی: ارکستراسیون مدل‌ها، ارزیابی RAG، تولید اسناد و هماهنگی ایجنت‌ها.',
-    'dotnet-api':'معماری تمیز C# .NET 10: هسته قواعد کسب‌وکار، تراکنش‌های بانکی، و مدیریت کاربران.',
-    'node-microservices':'سرویس‌های رویدادمحور: ارتباطات بلادرنگ با کلاینت‌ها و پروتکل‌های MQTT.',
-    'celery-worker':'پردازشگر پس‌زمینه ایجنت‌ها با صف‌های اولویت‌بندی پیام: High (0)، Default (3) و Bulk (9).',
-    'qdrant':'پایگاه داده وکتوری: ذخیره‌سازی امبدینگ‌ها و بازیابی معنایی با آستانه تطابق دقیق.',
-    'sqlserver':'پایگاه داده رابطه‌ای اصلی: تراکنش‌های مالی، لاگ‌های سیستمی و مدل داده ساختاریافته.',
-    'redis':'حافظه پرسرعت با ماندگاری AOF: کش وضعیت ایجنت‌ها، سشن‌ها و ریت‌لیمیترها.',
-    'rabbitmq':'صف پیام سازمانی با الگوی Outbox: ارسال تضمین‌شده پیام‌ها بدون از دست رفتن داده.',
-    'host-bridge':'پل محلی ویندوز: هدایت ترافیک به CLIهای لاگین‌شده کلاد و کدکس در زمان پر شدن سهمیه API.',
-    'prometheus':'پایش بلادرنگ سنجه‌ها: جمع‌آوری هزاران متریک عملکردی از کلیه کانتینرها.',
-    'grafana':'داشبورد بصری رصد سلامت سیستم: رهگیری نرخ پردازش، تأخیر توکن و خطاهای شبکه.',
-    'jaeger':'ردیابی توزیع‌شده (Tracing): تحلیل جزئیات هر درخواست از ورودی تا عمیق‌ترین لایه کانتینر.',
-    'vision-watcher':'چشم هوش مصنوعی: تحلیل خروجی‌های بصری و کشف خودکار ایرادات رندرینگ.',
-    'web-frontend':'پنل مدیریت نسل جدید Next.js 15: رابط کاربری تعاملی برای هدایت ایجنت‌ها و بازبینی کارها.'
-  },
-  capTitle:'توانایی‌های کلیدی معماری سیستم',
-  caps:[
-    {t:'دفترکل زنجیره‌ای تغییرناپذیر (HMAC Ledger)',d:'هر اقدام ایجنت‌ها و هر تاییدیه انسانی با هش رمزنگاری‌شده زنجیره‌ای ثبت می‌شود و غیرقابل دستکاری است.'},
-    {t:'پل آبشاری مدل‌ها (Host Bridge)',d:'در صورت بروز خطای سهمیه (429/503)، سیستم بدون وقفه به کلاینت‌های لوکال توسعه‌دهنده متصل می‌شود.'},
-    {t:'پالایش داده‌های حساس PII و دیواره SSRF',d:'ماسک خودکار کارت‌های اعتباری و کدهای ملی، و محافظت کامل از وب‌هوک‌های خروجی در برابر آدرس‌های محلی.'},
-    {t:'پایپ‌لاین اسناد خودکار (Doc Factory)',d:'تولید خودکار اسناد با راستی‌آزمایی نقل‌قول‌ها در برابر خطای توهم و رندرینگ RTL فارسی به PDF/DOCX/PPTX.'}
+  svcTitle:'کلاسترهای معماری مایکروسرویس‌ها', svcSub:'تفکیک ۱۷ سرویس کانتینری بر اساس حوزه‌های عملیاتی',
+  clusters:[
+    {
+      title:'کلاستر ۱: درگاه ورودی، معکوس‌پروکسی و رابط کاربری اپراتور',
+      sub:'Ingress, Reverse Proxy & Operator Interfaces',
+      services:[
+        {name:'api-gateway', port:':5050', role:'YARP Reverse Proxy (C#)', desc:'دروازه مرکزی مدیریت ترافیک؛ احراز هویت توکن‌های سازمانی (usk_)، ریت‌لیمیتینگ با الگوریتم Token Bucket و ارسال هدرهای 429 Retry-After، لودبالانسینگ پویا و مسدودسازی دسترسی‌های غیرمجاز.'},
+        {name:'web-frontend', port:':3000', role:'Next.js 15 App Router', desc:'کنسول مدرن اپراتور و توسعه‌دهنده؛ اجرای تعاملی ورک‌فلوهای ایجنتی، بررسی تاییدیه‌های انسانی (Human-in-the-loop)، و داشبورد زنده سنجه‌های سلامت.'},
+        {name:'n8n', port:':5678', role:'Workflow Automation Connectors', desc:'موتور مصورسازی ورک‌فلوها؛ اتصال وب‌هوک‌ها و رویدادهای شخص ثالث به سرویس‌های هوش مصنوعی از طریق هدر X-API-Key.'}
+      ]
+    },
+    {
+      title:'کلاستر ۲: هسته هوش مصنوعی، قوانین دامین و پردازش توزیع‌شده',
+      sub:'AI Core, Domain Logic & Distributed Compute',
+      services:[
+        {name:'python-ai', port:':8000', role:'FastAPI AI Factory Core (Python 3.12)', desc:'هسته مرکزی هوش مصنوعی؛ ارکستراسیون مدل‌های بنیادی (Gemini 2.5 Flash, OpenRouter, Claude, Codex)، بازیابی معنایی وکتوری RAG، ساخت اسناد و ورک‌فلوهای چند ایجنتی با توان ۶۷۱ درخواست بر ثانیه.'},
+        {name:'dotnet-api', port:':5000', role:'C# .NET 10 Clean Architecture', desc:'هسته تراکنشی دامین؛ تراکنش‌های مالی بر پایه SQL Server، الگوی MassTransit Transactional Outbox جهت تضمین قطعی تحویل پیام‌ها، و سیستم سطوح دسترسی سازمانی (RBAC).'},
+        {name:'node-microservices', port:':4000', role:'Event-Driven / MQTT Services', desc:'مایکروسرویس‌های بلادرنگ با بروکر Mosquitto؛ جمع‌آوری بلادرنگ تله‌متری حسگرها و دیوایس‌ها، اعتبارسنجی دستورات از راه دور با کلیدهای اختصاصی.'},
+        {name:'celery-worker', port:'Queue: workflows', role:'Distributed Task Swarm', desc:'کارگران موازی پس‌زمینه با صف اولویت‌بندی پیام: High (۰ برای تسک‌های زیرثانیه)، Default (۳ برای کارهای استاندارد) و Bulk (۹ برای پردازش‌های سنگین) با قفل اختصاصی و واچ‌داگ ضربان قلب ۵ دقیقه‌ای.'}
+      ]
+    },
+    {
+      title:'کلاستر ۳: پایگاه‌های داده، حافظه برداری و صف پیام سازمانی',
+      sub:'Persistence, Vector Memory & Enterprise Messaging',
+      services:[
+        {name:'qdrant', port:':6333', role:'High-Performance Vector DB', desc:'پایگاه داده برداری برای ذخیره‌سازی امبدینگ‌های چندوجهی؛ بازیابی معنایی با آستانه کسینوسی دقیق و آستانه فال‌بک ۰.۳ برای ممانعت قطعی از توهم در حافظه بلندمدت ایجنت‌ها.'},
+        {name:'sqlserver', port:':1433', role:'Microsoft SQL Server Enterprise', desc:'انبار رابطه‌ای تراکنش‌های مالی، لاگ‌های حسابرسی و جداول پایدار MassTransit Outbox با خاصیت کامل ACID روی والیوم‌های اختصاصی دیسک.'},
+        {name:'rabbitmq', port:':5672 / :15672', role:'Enterprise Message Broker', desc:'صف پیام سازمانی توزیع‌شده با تضمین عدم ریزش پیام‌ها، صف‌های Dead-Letter، اکسچنج‌های موضوعی و کلاسترینگ مقاوم در برابر قطعی.'},
+        {name:'redis', port:':6379', role:'In-Memory Cache & Lock (AOF)', desc:'حافظه موقت رم با ماندگاری دائمی روی دیسک (AOF)؛ کش وضعیت ایجنت‌ها، قفل‌های توزیع‌شده Redlock و شمارنده‌های ریت‌لیمیتینگ لحظه‌ای.'},
+        {name:'minio', port:':9000', role:'S3-Compatible Object Store', desc:'کلاستر ذخیره‌سازی اشیاء سازمانی؛ نگهداری مدل‌های سه‌بعدی تولیدشده، فایل‌های صوتی و تصویری، و آرشیو اسناد رسمی PDF، DOCX و PPTX.'}
+      ]
+    },
+    {
+      title:'کلاستر ۴: پایش بلادرنگ، امنیت رمزنگاری و پل محلی هاست',
+      sub:'Observability, Security & Windows Host Bridge',
+      services:[
+        {name:'host-bridge', port:':8765', role:'Windows Native Daemon', desc:'پل محلی پرسرعت هاست ویندوز؛ هدایت خودکار ترافیک در زمان خطاهای سهمیه ابری (429/503) به کلاینت‌های معتبر CLI محلی توسعه‌دهنده (Claude Code، Codex، Antigravity) به‌همراه تبدیل هدلس اسناد آفیس توسط Word و PowerPoint واقعی.'},
+        {name:'prometheus', port:':9090', role:'Time-Series Metrics Scraper', desc:'پایش مداوم کانتینرها؛ جمع‌آوری هزاران سنجه عملکردی از پردازنده، مصرف حافظه رم، نرخ توکن‌ها و وضعیت صف‌ها.'},
+        {name:'grafana', port:':3001', role:'Enterprise Telemetry Portal', desc:'داشبوردهای مصور رصد زنده پلتفرم؛ تحلیل نرخ خطای شبکه، توان پردازشی سرورها و پایش تاخیر استنتاج هوش مصنوعی.'},
+        {name:'jaeger', port:':16686', role:'Distributed Tracing Engine', desc:'ردگیری کامل مسیر هر درخواست (Tracing) از لایه درگاه ورودی تا عمیق‌ترین لایه پایگاه داده با نمودارهای فلیم‌گراف.'},
+        {name:'vision-watcher', port:'Internal', role:'Automated UI Vision Sentinel', desc:'دیده‌بان بصری؛ تحلیل خودکار اسکرین‌شات‌ها و خروجی‌های رندرینگ اسناد و یو‌آی وب جهت کشف عیوب گرافیکی و خطاهای لایه‌بندی.'}
+      ]
+    }
+  ],
+  capTitle:'ستون‌های معماری و مهندسی سازمانی (Architectural Pillars)',
+  pillars:[
+    {t:'دفترکل زنجیره‌ای تغییرناپذیر (HMAC-SHA256 Audit Ledger)',d:'کلیه اقدامات اتخاذشده توسط ایجنت‌ها، تغییرات وضعیت و تاییدیه‌های مدیران با هش کلیددار زنجیره‌ای HMAC-SHA256 در لاگ تغییرناپذیر ثبت می‌شود. با فراخوانی GET /api/v1/enterprise/audit/verify اصالت کامل تاریخچه راستی‌آزمایی شده و هرگونه دستکاری احتمالی غیرممکن می‌گردد.'},
+    {t:'پل آبشاری مدل‌ها و سوییچ به Host Bridge محلی',d:'حذف کامل نقطه شکست (Single Point of Failure): در صورت پر شدن سهمیه کلود یا بروز خطاهای ۴۲۹/۵۰۳، سیستم ترافیک را به صورت خودکار و بدون وقفه به پل هاست ویندوز و کلاینت‌های لاگین‌شده محلی (Claude Code، Codex، Antigravity) هدایت می‌کند.'},
+    {t:'پالایش داده‌های حساس (PII Masking) و دیواره ضد نفوذ SSRF',d:'کلیه ورودی‌ها قبل از ارسال به مدل‌ها یا ذخیره در وکتور دیتابیس، توسط الگوریتم‌های اعتبارسنجی لوهن برای کارت‌های اعتباری، کدهای ملی، شماره‌های تماس و شبا پالایش و ماسک می‌شوند. وب‌هوک‌های خروجی نیز توسط فایروال در برابر آدرس‌های لوکال و شبکه خصوصی محافظت می‌گردند.'},
+    {t:'صف‌های اولویت‌بندی پیام در Celery و مدیریت کارگران فوت‌شده',d:'تفکیک تسک‌ها در صف واحد با اولویت‌های High (۰)، Default (۳) و Bulk (۹). استفاده از قفل اختصاصی اجرا و پایش مداوم ضربان قلب؛ اگر کارگری دچار کرش شود، وضعیت تسک پس از ۵ دقیقه به interrupted منتقل شده و هرگز به صورت خودکار و بدون نظارت تکرار نمی‌شود.'},
+    {t:'کارخانه اسناد خودمختار با راستی‌آزمایی نقل‌قول‌ها (Doc Factory)',d:'خط لوله ۵ مرحله‌ای ایجنت‌های خودمختار با اعتبارسنجی زنده عبارات در برابر متون وب با الگوریتم‌های بدون توهم قبل از اجازه صدور سند؛ با موتور اختصاصی رندرینگ راست‌به‌چپ (RTL) فارسی در فرمت‌های رسمی PDF، DOCX و PPTX.'},
+    {t:'پل ارتباطی پویا ادیتور یونیتی با پروتکل MCP',d:'اتصال مستقیم ایجنت‌های هوش مصنوعی به موتور بازی‌سازی یونیتی با پروتکل استاندارد Model Context Protocol (MCP) و اسکریپت تزریق داینامیک پورت؛ امکان بازرسی سلسله‌مراتب صحنه، اجرای تست‌های Play Mode، سنجش بدون GC، و رفع خطاهای کامپایل بدون نیاز به دخالت دست.'}
   ],
   why:'<b>چرا این معماری ساخته شد؟</b> در سیستم‌های پیچیده چند ایجنتی، بزرگ‌ترین چالش ادعای دروغین موفقیت و خطاهای زمان اجراست. این سیستم با آزمون‌های تدافعی تضمین می‌کند که هر خروجی، دارای شواهد تجربی زنده و بدون توهم باشد.'
 },
 multimodal:{
   title:'سیستم‌های بلادرنگ چندوجهی صوت و تصویر', sub:'پایپ‌لاین‌های با تأخیر زیر ثانیه و شتاب‌دهنده‌های سخت‌افزاری',
-  intro:'ترکیب پردازش تصویر زنده، ضبط صدای خام با پروتکل‌های سیستمی و استنتاج عصبی روی کارت گرافیک نیازمند معماری چند تردی بدون انسداد است. سیستم‌های چندوجهی زیر برای تعامل بدون تأخیر طراحی و پیاده‌سازی شده‌اند.',
-  cards:[
-    {id:'rapscribe',title:'RapScribe-AI (OmniScribe HUD)',
-     desc:'رونویسی گفتار و ترجمه بلادرنگ با GPU: استخراج صدای سیستم از طریق WASAPI Loopback ➔ فیلتر دیجیتال Butterworth HPF ➔ استنتاج موازی روی GPU با faster-whisper large-v3-turbo ➔ آبشار ترجمه Gemini 3.8 Flash در ۴ ترد موازی غیرمسدودکننده.'},
-    {id:'copilot',title:'GeminiLiveCoPilot',
-     desc:'دستیار شناور بدون فریم دسکتاپ بر پایه وب‌سوکت دوطرفه Gemini Live: رصد تصویر با تفکیک فریم‌های تکراری توسط MSE/SSIM برای کنترل هزینه توکن، و استریم دوطرفه صوت ۱۶kHz و ۲۴kHz.'},
-    {id:'lango',title:'NitroLearnAI (NitroLango)',
-     desc:'پلتفرم یادگیری زبان با متد Menschen (۷۲ درس و ۷۷ رول گرامری)، الگوریتم ریاضی SM-2 با سقف جریمه تاخیر و واچ‌داگ‌های صوتی مرورگر.'},
-    {id:'german',title:'German-Neural-Immersion',
-     desc:'استودیوی تولید دوره‌های چندرسانه‌ای با تمرین‌های تعاملی جمله‌سازی آلمانی (Satzbau) و سنتز عصبی صدا با ElevenLabs.'}
-  ]
+  intro:'ترکیب پردازش زنده تصویر، ضبط دیجیتال صدای خام با پروتکل‌های سیستمی و استنتاج عصبی با شتاب‌دهنده سخت‌افزاری GPU نیازمند معماری هم‌روندی چند تردی بدون انسداد است. ۴ سیستم زیر برای تعامل بلادرنگ و با تاخیر زیر ثانیه انسان و هوش مصنوعی مهندسی و پیاده‌سازی شده‌اند.',
+  kpis:[
+    ['< ۲۵۰ms','تأخیر استنتاج بلادرنگ گفتار به گفتار'],
+    ['۴ ترد','تردهای مستقل و غیرمسدودکننده سیستم‌عامل'],
+    ['CUDA FP16','استنتاج شتاب‌یافته روی کارت گرافیک'],
+    ['+۷۵٪','صرفه‌جویی در مصرف توکن با الگوریتم SSIM/MSE']
+  ],
+  pipelines:[
+    {
+      id:'rapscribe',
+      title:'RapScribe-AI (OmniScribe HUD) — رونویسی و ترجمه بلادرنگ با GPU',
+      role:'طراح و توسعه‌دهنده سیستم‌های بلادرنگ و پردازش صوت دیجیتال',
+      desc:'هاد شناور دسکتاپ برای رونویسی و ترجمه بلادرنگ گفتار با تأخیر زیر ثانیه: استخراج صدای سیستم از طریق WASAPI Loopback، فیلتر دیجیتال Butterworth HPF، استنتاج سریع روی GPU با شتاب‌دهنده CUDA، و آبشار ترجمه دوزبانه در ۴ ترد موازی مستقل.',
+      badges:[
+        {text:'⚡ تاخیر زیر ۲۵۰ میلی‌ثانیه', type:'perf'},
+        {text:'GPU CUDA FP16', type:'gpu'},
+        {text:'WASAPI Loopback', type:''},
+        {text:'۴ ترد موازی مستقل', type:''}
+      ],
+      steps:[
+        {title:'ضبط مستقیم WASAPI Loopback', desc:'استخراج دیجیتال و مستقیم صدای خروجی سیستم بدون نویزهای محیطی و میکروفون با نرخ نمونه‌برداری بالا.'},
+        {title:'فیلتر Butterworth HPF و گیت RMS', desc:'فیلتر دیجیتال مرتبه ۴ با فرکانس کات‌آف ۸۰ هرتز برای حذف نویزهای فرکانس بم به همراه گیت صوتی RMS جهت عبور صدای خالص گفتار.'},
+        {title:'استنتاج عصبی faster-whisper روی GPU', desc:'مدل large-v3-turbo با شتاب‌دهنده سخت‌افزاری CUDA و دقت محاسباتی FP16 با تایم‌استمپ دقیق تک‌تک کلمات.'},
+        {title:'بافر متنی Bar Assembler', desc:'پایپ‌لاین لغزان بازسازی جملات و ابیات ریتمیک بر پایه ساختار آوایی و مکث‌های گوینده با دقت زمانی بالا.'},
+        {title:'آبشار ترجمه استریمینگ Gemini 3.8 Flash', desc:'ترجمه همزمان دوزبانه (آلمانی به فارسی/انگلیسی) با سوئیچ آنی به مدل‌های جایگزین در زمان بروز خطاهای ۴۲۹ یا ۵۰۳.'},
+        {title:'هاد شناور با CustomTkinter', desc:'نمایش کارت‌های متنی همگام و دوزبانه به صورت شفاف روی صفحه دسکتاپ بدون مسدودسازی کارایی سیستم.'}
+      ],
+      arch:[
+        'معماری ۴ ترد مستقل سیستم‌عامل: Audio Capture Worker، STT Inference Worker، Translation Worker، و Watchdog Monitor',
+        'واچ‌داگ مقاوم پایش بافر: تخلیه خودکار فریم‌های عقب‌افتاده در صورت نوسان پردازش GPU جهت جلوگیری از انباشت تاخیر',
+        'بهینه‌سازی مصرف حافظه گرافیکی (VRAM) با مدل‌های کوانتیزه‌شده FP16 و نرخ فریم پایدار بدون افت کیفیت'
+      ],
+      tags:['Python 3.13','Windows WASAPI','faster-whisper large-v3-turbo','CUDA FP16','Gemini 3.8 Flash','CustomTkinter','4-Thread Concurrency'],
+      vsec:null
+    },
+    {
+      id:'copilot',
+      title:'GeminiLiveCoPilot — دستیار شناور چندوجهی دسکتاپ',
+      role:'معمار سیستم‌های بینایی ماشین و پروتکل‌های وب‌سوکت بلادرنگ',
+      desc:'دستیار شناور بدون فریم دسکتاپ مبتنی بر وب‌سوکت دوطرفه Gemini Multimodal Live API: رصد پیوسته صفحه نمایش با تفکیک هوشمند فریم‌های تکراری با الگوریتم‌های بینایی ماشین برای صرفه‌جویی شدید در مصرف توکن، و استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz.',
+      badges:[
+        {text:'وب‌سوکت دوطرفه Full-Duplex', type:'perf'},
+        {text:'تفکیک فریم با SSIM/MSE', type:'gpu'},
+        {text:'قابلیت Native Barge-In (VAD)', type:'perf'},
+        {text:'صوت ورودی ۱۶k / خروجی ۲۴k', type:''}
+      ],
+      steps:[
+        {title:'نمونه‌برداری صفحه نمایش (1 FPS)', desc:'کپچر سبک فریم‌های صفحه نمایش دسکتاپ در لایه‌های پس‌زمینه بدون افت فریم برنامه‌های در حال اجرا.'},
+        {title:'تفکیک فریم‌های تکراری با OpenCV', desc:'محاسبه خطای میانگین مربعات (MSE) و شاخص تشابه ساختاری (SSIM)؛ فریم‌های بدون تغییر ارسال نمی‌شوند (صرفه‌جویی ۷۵٪ توکن).'},
+        {title:'استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz', desc:'دریافت همزمان صدای میکروفون و لوپ‌بک با کدک خام PCM و پخش خروجی صوتی با فرکانس بالای ۲۴ کیلوهرتز.'},
+        {title:'قابلیت توقف آنی با مکالمه کاربر (Barge-In)', desc:'آشکارساز فعالیت صوتی (VAD)؛ قطع بلافاصله پخش صدای هوش مصنوعی به محض شروع صحبت کاربر برای مکالمه کاملاً طبیعی.'},
+        {title:'رابط کاربری فریم‌لس PyQt6', desc:'پنجره شناور شفاف همیشه در بالا (Always-on-top) با استایل مدرن و بدون فریم حاشیه‌ای.'}
+      ],
+      arch:[
+        'جداسازی کامل ۴ ترد: Ingestion تصویری، Ingestion صوتی، هسته WebSocket دوطرفه، و ترد اصلی رابط کاربری PyQt6',
+        'مدیریت پایدار نشست‌های وب‌سوکت با مکانیزم Reconnect خودکار و حفظ تاریخچه شناور نشست',
+        'کنترل مصرف رم و جلوگیری از Memory Leak در ضبط ممتد فریم‌های تصویری'
+      ],
+      tags:['Python','PyQt6','Gemini Multimodal Live API','OpenCV SSIM/MSE','WASAPI Audio Ingest','AsyncIO WebSocket'],
+      vsec:null
+    },
+    {
+      id:'lango',
+      title:'NitroLearnAI (NitroLango) — پلتفرم تعاملی آموزش زبان',
+      role:'مهندس فول‌استک و طراح سیستم یادگیری تطبیقی',
+      desc:'پلتفرم پیشرفته آموزش زبان بر پایه ۷۲ درس استاندارد Menschen (از A1.1 تا B1.2)، ۷۷ قانون گرامری تعاملی آلمانی، الگوریتم ریاضی SuperMemo SM-2 با سقف جریمه تاخیر، و واچ‌داگ‌های صوتی مرورگر.',
+      badges:[
+        {text:'🚀 پلتفرم زنده پروداکشن', type:'perf'},
+        {text:'۷۲ درس Menschen', type:''},
+        {text:'الگوریتم ریاضی SM-2', type:''},
+        {text:'واچ‌داگ صوتی ۱۵ ثانیه‌ای', type:'perf'}
+      ],
+      steps:[
+        {title:'پایگاه واژگان موثق Menschen', desc:'استخراج قطعی و اعتبارسنجی‌شده ۷۲ درس کتاب بدون اتکا به متن‌های ساختگی یا هوش مصنوعی موهوم.'},
+        {title:'موتور ۷۷ قانون گرامری آلمانی', desc:'تمرین‌های تعاملی ساختار جمله (Vorfeld، Mittelfeld، Nachfeld) با تحلیل آنی خطاهای کاربر.'},
+        {title:'الگوریتم تکرار فاصله‌دار SuperMemo SM-2', desc:'محاسبات ریاضی فاکتور سهولت و بازه‌های زمانی با اعمال سقف جریمه تاخیر ۷۲ ساعته و ایزولاسیون مقادیر NaN.'},
+        {title:'واچ‌داگ محافظتی صوتی مرورگر', desc:'تایم‌اوت سخت‌گیرانه ۱۵ ثانیه‌ای روی Web Speech API جهت جلوگیری قطعی از انجماد صفحه هنگام تاخیر سرویس تشخیص گفتار.'},
+        {title:'مرزهای ایمن خطایابی (Silent Error Boundaries)', desc:'ایزولاسیون کامل ویجت‌های صوتی پس‌زمینه تا خطای شبکه هرگز شل اصلی برنامه را متوقف نکند.'}
+      ],
+      arch:[
+        'پایبندی ۱۰۰٪ به گیت ۵ مرحله‌ای راستی‌آزمایی: تایید کامل با TypeScript Strict Mode، ESLint 0 Errors، و تست‌های Playwright',
+        'پیاده‌سازی PWA مدرن با کش آفلاین و همگام‌سازی ابری وضعیت یادگیری کاربر',
+        'معماری بهینه‌سازی‌شده رندر کامپوننت‌های تعاملی با حداقل بازچینش DOM'
+      ],
+      tags:['TypeScript','Next.js / Vite','Tailwind CSS','SuperMemo SM-2','Web Speech API','PWA','Vitest / Playwright'],
+      link:'lango',
+      vsec:null
+    },
+    {
+      id:'german',
+      title:'German-Neural-Immersion — استودیوی چندرسانه‌ای سنتز عصبی دوره‌ها',
+      role:'توسعه‌دهنده هوش مصنوعی چندرسانه‌ای',
+      desc:'استودیوی خودکار استخراج کتاب‌های درسی و آرشیوهای صوتی به درس‌های همگام‌سازی‌شده دوزبانه، تمرین‌های تعاملی جمله‌سازی آلمانی (Satzbau) و سنتز عصبی صدا با ElevenLabs.',
+      badges:[
+        {text:'ElevenLabs Neural Voices', type:'gpu'},
+        {text:'تطبیق خودکار صوت و متن', type:'perf'},
+        {text:'تولیدکننده تمرین Satzbau', type:''}
+      ],
+      steps:[
+        {title:'استخراج ساختارمند فایل‌های PDF و MP3', desc:'تفکیک هوشمند درس‌ها، تطبیق قطعات صوتی با متن کتاب و تولید خودکار دیکشنری‌های لغات.'},
+        {title:'سازنده تعاملی جملات آلمانی (Satzbau)', desc:'تولید خودکار تمرین‌های تعاملی با قوانین دقیق نحو آلمانی جهت تقویت ساختار ذهنی زبان‌آموز.'},
+        {title:'سنتز عصبی صوت دوزبانه با ElevenLabs', desc:'تولید تلفظ‌های صوتی فوق‌العاده باکیفیت و طبیعی برای تمامی جملات و تمرین‌های آموزشی.'}
+      ],
+      arch:[
+        'پایپ‌لاین پردازش دسته‌ای صوت با کتابخانه‌های PyPDF و Pydub با حفظ کیفیت استودیو',
+        'ساختار ذخیره‌سازی استاندارد JSON جهت یکپارچه‌سازی با پلتفرم‌های یادگیری وب و موبایل'
+      ],
+      tags:['Python','FastAPI','ElevenLabs API','PyPDF','Pydub','Satzbau Builder'],
+      vsec:null
+    }
+  ],
+  table:{
+    title:'ماتریس مقایسه مشخصات فنی سیستم‌های چندوجهی (Benchmark & Architecture Matrix)',
+    headers:['سیستم','تأخیر هدف (Latency)','روش ورود صوت/تصویر','شتاب‌دهنده و مدل استنتاج','مدل هم‌روندی (Concurrency)','مکانیزم بازیابی و تاب‌آوری'],
+    rows:[
+      ['RapScribe-AI (OmniScribe HUD)','زیر ۲۵۰ میلی‌ثانیه','WASAPI Loopback (استریو دیجیتال)','CUDA GPU FP16 (faster-whisper large-v3-turbo)','۴ ترد موازی مستقل سیستم‌عامل','واچ‌داگ تخلیه بافر عقب‌افتاده + آبشار سوییچ ترجمه بر خطای 429'],
+      ['GeminiLiveCoPilot','زیر ۵۰۰ میلی‌ثانیه','نمونه‌برداری تصویر (1fps) + میکروفون ۱۶kHz','تفکیک فریم OpenCV (MSE/SSIM) + وب‌سوکت دوطرفه','۴ لایه موازی Ingest / WebSocket / UI','قطع فوری خروجی صدا با VAD (Barge-In) + سوییچ فریم‌های تغییریافته'],
+      ['NitroLearnAI (NitroLango)','بلادرنگ کلاینت','Web Speech API مرورگر','موتور ریاضی SM-2 + واژگان Menschen','Async Event Loop در مرورگر','واچ‌داگ سخت‌گیرانه ۱۵ ثانیه‌ای + Silent Error Boundaries'],
+      ['German-Neural-Immersion','پردازش دسته‌ای (Batch)','فایل‌های منبع MP3 و PDF','ElevenLabs Neural Audio + PyPDF parser','AsyncIO Task Workers','تلاش مجدد خودکار در استنتاج صدا + اعتبارسنجی ساختار JSON']
+    ]
+  }
 },
 gate:{
   title:'گیت ۵ مرحله‌ای راستی‌آزمایی تجربی', sub:'منشور معماری تدافعی و اصل Zero-Hallucination',
@@ -593,49 +738,194 @@ proj:{
 },
 sys:{
   title:'Autonomous AI Software Factory', sub:'UniversalSystem — Enterprise Multi-Agent Automation',
-  intro:'UniversalSystem automates repetitive software engineering and agent orchestration workflows: code generation, multimodal media synthesis, automated test suites, long-term memory, and documentation. Built with 17 containerized microservices whose live verified health check is documented below.',
-  kpis:[['84,290','lines of code across 432 files'],['17 / 17','containerized services live & healthy'],['385+','automated test suites passing'],['100%','defensive architecture']],
+  intro:'UniversalSystem is a high-throughput, distributed AI software factory engineered to automate repetitive software engineering workflows, autonomous agent swarms, multimodal audio/vision pipelines, automated test suites, and documentation. Powered by 17 containerized microservices and a native Windows Host Bridge, with live empirical health checks documented below.',
+  kpis:[
+    ['84,000+','Production Lines of Code in AI Core'],
+    ['17 / 17','Live Verified Containerized Microservices'],
+    ['385+','Automated Test Suites & Defensive Checks'],
+    ['671 RPS','Peak Measured Production Throughput'],
+    ['0','Sensitive Data / PII Leaks with Auto-Masking'],
+    ['100%','Tamper-Proof HMAC Cryptographic Ledger Compliance']
+  ],
   dashCap:'Empirical verification output: all 17 containerized services verified healthy with passing probes',
-  svcTitle:'Architectural Components', svcSub:'Role of each microservice in the ecosystem',
-  svc:{
-    'api-gateway':'YARP reverse proxy: centralized auth, rate limiting, and intelligent load balancing.',
-    'python-ai':'AI processing core: multi-agent orchestration, RAG retrieval, and document pipelines.',
-    'dotnet-api':'C# .NET 10 Clean Architecture: core domain models, MassTransit outbox, and banking rules.',
-    'node-microservices':'Event-driven services: real-time device communication and MQTT protocol bridge.',
-    'celery-worker':'Distributed background workers with message priority tiers: High (0), Default (3), and Bulk (9).',
-    'qdrant':'Vector database: dense embeddings and cosine similarity search with exact match thresholds.',
-    'sqlserver':'Relational transactional store: structured schemas, financial audits, and enterprise state.',
-    'redis':'In-memory cache with AOF persistence: agent state caching, session management, rate limits.',
-    'rabbitmq':'Enterprise message broker: reliable outbox delivery ensuring zero message drops.',
-    'host-bridge':'Local Windows bridge: routes overflow requests to authenticated Claude/Codex/Antigravity CLIs.',
-    'prometheus':'Metrics collector: gathers performance metrics across all microservices continuously.',
-    'grafana':'Observability dashboards: real-time tracing of throughput, token latency, and error rates.',
-    'jaeger':'Distributed tracing: end-to-end request lifecycle analysis from gateway to database layers.',
-    'vision-watcher':'AI vision sentinel: inspects graphical and UI outputs to flag rendering regressions.',
-    'web-frontend':'Next.js 15 enterprise console: interactive UI for steering autonomous agents.'
-  },
-  capTitle:'Key Architectural Capabilities',
-  caps:[
-    {t:'Immutable HMAC Ledger',d:'Every agent action and admin approval is cryptographically chained into an HMAC hash log preventing tampering.'},
-    {t:'Multi-Model Host Bridge',d:'In the event of API rate limits (429/503), requests automatically failover to authenticated local developer CLI sessions.'},
-    {t:'PII Redaction & SSRF Firewall',d:'Automated scrubbing of national IDs and credit card numbers, paired with strict outbound webhook egress filters.'},
-    {t:'Universal Doc Factory',d:'Automated document synthesis with citation quote validation against live web sources, exporting to PDF/DOCX/PPTX.'}
+  svcTitle:'Microservice Architectural Clusters', svcSub:'The 17 containerized services organized by operational domain',
+  clusters:[
+    {
+      title:'Cluster 1: Ingress, Reverse Proxy & Operator Interfaces',
+      sub:'Ingress, Reverse Proxy & Operator Interfaces',
+      services:[
+        {name:'api-gateway', port:':5050', role:'YARP Reverse Proxy (C#)', desc:'Central ingress proxy; authenticates organization API keys (usk_), enforces token-bucket rate limits (429 + Retry-After), dynamic load balancing across replicas, baked into Docker at build-time.'},
+        {name:'web-frontend', port:':3000', role:'Next.js 15 App Router', desc:'Modern operator & developer console; interactive multi-agent workflow triggers, human-in-the-loop approval inspection, and live telemetry dashboards.'},
+        {name:'n8n', port:':5678', role:'Workflow Automation Connectors', desc:'Visual workflow engine connecting external third-party webhooks directly into the Python AI workflow engine via X-API-Key verification.'}
+      ]
+    },
+    {
+      title:'Cluster 2: AI Core, Domain Logic & Distributed Compute',
+      sub:'AI Core, Domain Logic & Distributed Compute',
+      services:[
+        {name:'python-ai', port:':8000', role:'FastAPI AI Factory Core (Python 3.12)', desc:'Central intelligence engine; foundation model cascade routing (Gemini 2.5 Flash, OpenRouter, Claude, Codex), dense Qdrant vector retrieval, document pipelines, load-tested at 671 RPS.'},
+        {name:'dotnet-api', port:':5000', role:'C# .NET 10 Clean Architecture', desc:'Transactional domain logic; financial state machines on SQL Server, MassTransit Transactional Outbox pattern guaranteeing zero message loss, and enterprise RBAC roles.'},
+        {name:'node-microservices', port:':4000', role:'Event-Driven / MQTT Services', desc:'Real-time event-driven engine interfacing with Mosquitto MQTT broker for sub-second telemetry ingestion and bi-directional device command dispatch.'},
+        {name:'celery-worker', port:'Queue: workflows', role:'Distributed Task Swarm', desc:'Distributed background task workers on a single priority queue with High (0, sub-second SLAs), Default (3), and Bulk (9) priorities, protected by claim locks and a 5-minute heartbeat watchdog.'}
+      ]
+    },
+    {
+      title:'Cluster 3: Persistence, Vector Memory & Enterprise Messaging',
+      sub:'Persistence, Vector Memory & Enterprise Messaging',
+      services:[
+        {name:'qdrant', port:':6333', role:'High-Performance Vector DB', desc:'Vector similarity search engine storing multimodal embeddings with strict cosine distance thresholds (0.3 fallback) for factual, hallucination-free memory retrieval.'},
+        {name:'sqlserver', port:':1433', role:'Microsoft SQL Server Enterprise', desc:'Relational ACID transactional store, financial general ledgers, and MassTransit outbox state machines on persistent named volumes.'},
+        {name:'rabbitmq', port:':5672 / :15672', role:'Enterprise Message Broker', desc:'AMQP broker with guaranteed delivery exchanges, persistent dead-letter queues, topic routing, and cluster resilience.'},
+        {name:'redis', port:':6379', role:'In-Memory Cache & Lock (AOF)', desc:'In-memory cache with continuous Append-Only File (AOF) durability; agent state caching, Redlock distributed locking, and live rate-limiting token buckets.'},
+        {name:'minio', port:':9000', role:'S3-Compatible Object Store', desc:'High-capacity S3-compatible storage cluster for media assets, generated 3D meshes, synthesized audio, and DOCX/PDF/PPTX document archives.'}
+      ]
+    },
+    {
+      title:'Cluster 4: Observability, Security & Local Windows Host Bridge',
+      sub:'Observability, Security & Windows Host Bridge',
+      services:[
+        {name:'host-bridge', port:':8765', role:'Windows Native Daemon', desc:'High-availability failover bridge running natively on the Windows host. Transparently routes requests to authenticated local developer CLI sessions (Claude Code, Codex, Antigravity) when cloud API quotas are exhausted (429/503), plus headless Microsoft Word/PowerPoint conversion.'},
+        {name:'prometheus', port:':9090', role:'Time-Series Metrics Scraper', desc:'Continuous container monitoring gathering thousands of operational metrics on CPU, RAM, token consumption, and worker queue depths.'},
+        {name:'grafana', port:':3001', role:'Enterprise Telemetry Portal', desc:'Live observability dashboards for network error rates, server throughput, and AI token inference latency tracking.'},
+        {name:'jaeger', port:':16686', role:'Distributed Tracing Engine', desc:'Full request lifecycle tracing from YARP gateway ingress down to database queries with detailed flamegraph visualization.'},
+        {name:'vision-watcher', port:'Internal', role:'Automated UI Vision Sentinel', desc:'Computer vision sentinel inspecting rendered web outputs and document snapshots to detect graphical artifacts and layout regressions.'}
+      ]
+    }
+  ],
+  capTitle:'Key Architectural Pillars & Enterprise Governance',
+  pillars:[
+    {t:'Cryptographically Chained HMAC Audit Ledger',d:'Every single workflow run, state mutation, and human decision is hashed into an append-only chain using HMAC-SHA256. Cryptographic integrity is verifiable via GET /api/v1/enterprise/audit/verify to guarantee zero tampering.'},
+    {t:'Multi-Model Fallback Cascade & Host Bridge',d:'Eliminates single points of failure. In the event of cloud provider rate limits (429/503), requests automatically failover to secondary cloud models, then seamlessly route to the Windows Host Bridge connected to authenticated local developer CLIs (Claude, Codex, Antigravity).'},
+    {t:'PII Redaction Engine & SSRF Egress Defense',d:'Inbound prompts are automatically sanitized using Luhn-validated algorithms for credit cards, national IDs, phone numbers, emails, and IBANs. Outbound webhooks are guarded by strict SSRF egress filters blocking private IP subnets.'},
+    {t:'Celery Message Priority Tiers & Dead Worker Reaping',d:'Single-queue Celery architecture configured with message priority levels: High (Priority 0, sub-second SLAs), Default (Priority 3, standard workflows), and Bulk (Priority 9, background indexing). Workers implement persistent claim locks and 5-minute heartbeats.'},
+    {t:'Universal Doc Factory (5-Stage Verifiable Synthesis)',d:'Autonomous document authoring pipeline: BriefAgent ➔ ResearchAgent ➔ ArchitectureAgent ➔ WriterAgent + ReviewerAgent. Quotes are cross-verified verbatim against live web scraping data (DuckDuckGo DDGS + JSONSchema), exporting to styled DOCX, PPTX, and PDF with native Persian RTL typography.'},
+    {t:'Dynamic Unity MCP Bridge (Autonomous Engine Automation)',d:'Custom C# dynamic port bridge (GodModeDeepInjector.cs) implementing the Model Context Protocol (MCP). Enables autonomous AI agents to headlessly inspect GameObject scene hierarchies, execute play-mode physics tests, profile memory leaks, and compile C# scripts.'}
   ],
   why:'<b>Why this architecture?</b> In complex multi-agent systems, false success reports and silent failures are catastrophic. This architecture enforces defensive verification so that every output is backed by empirical evidence.'
 },
 multimodal:{
   title:'Real-Time Multimodal & Speech Engines', sub:'Sub-second latency pipelines & hardware-accelerated inference',
-  intro:'Bridging live video capture, loopback audio ingestion, and neural inference requires non-blocking concurrency. The following multimodal systems were architected for zero-lag human-AI interaction.',
-  cards:[
-    {id:'rapscribe',title:'RapScribe-AI (OmniScribe HUD)',
-     desc:'Real-time speech transcription & translation on GPU: Windows WASAPI loopback ➔ Butterworth HPF digital filter ➔ faster-whisper on CUDA GPU ➔ Gemini 3.8 Flash cascade across 4 concurrent worker threads.'},
-    {id:'copilot',title:'GeminiLiveCoPilot',
-     desc:'Frameless always-on-top desktop HUD over Gemini Live bidirectional WebSocket API: captures screen with MSE/SSIM frame diffing to minimize token consumption, with 16kHz audio input and 24kHz synthesized voice response.'},
-    {id:'lango',title:'NitroLearnAI (NitroLango)',
-     desc:'Adaptive language learning platform with 72 Menschen lessons, 77 interactive German grammar rules, SM-2 decay formula, and browser speech watchdogs.'},
-    {id:'german',title:'German-Neural-Immersion',
-     desc:'Multimodal course synthesizer extracting textbook PDFs and audio archives into interactive sentence builders (Satzbau) and ElevenLabs neural voices.'}
-  ]
+  intro:'Bridging live video capture, direct digital loopback audio ingestion, and neural inference requires non-blocking multi-threaded concurrency. The following four systems were architected for zero-lag human-AI interaction.',
+  kpis:[
+    ['< 250ms','End-to-End Live Speech-to-Speech Latency'],
+    ['4 Threads','Non-Blocking Concurrent OS Worker Threads'],
+    ['CUDA FP16','Hardware-Accelerated GPU Tensor Inference'],
+    ['+75%','Token Bandwidth Savings via SSIM/MSE Frame Diffing']
+  ],
+  pipelines:[
+    {
+      id:'rapscribe',
+      title:'RapScribe-AI (OmniScribe HUD) — Real-Time GPU Transcription & Translation',
+      role:'Real-Time Audio Systems & DSP Architect',
+      desc:'Frameless floating desktop HUD for real-time lyrical and speech transcription with sub-second latency: Windows WASAPI loopback audio capture ➔ Butterworth HPF digital filter ➔ GPU-accelerated faster-whisper inference on CUDA ➔ bilingual translation cascade across 4 concurrent OS worker threads.',
+      badges:[
+        {text:'⚡ < 250ms Latency', type:'perf'},
+        {text:'GPU CUDA FP16', type:'gpu'},
+        {text:'WASAPI Loopback', type:''},
+        {text:'4 Concurrent OS Threads', type:''}
+      ],
+      steps:[
+        {title:'WASAPI Loopback Audio Capture', desc:'Direct digital audio capture from Windows stereo mix without ambient acoustic distortion or microphone room noise.'},
+        {title:'Butterworth HPF & RMS Noise Gate', desc:'4th-order Butterworth High-Pass Filter (<80Hz cutoff) stripping sub-bass rumble, coupled with RMS vocal thresholding to discard silent background frames.'},
+        {title:'faster-whisper large-v3-turbo on CUDA', desc:'Local FP16 GPU inference queue performing speech-to-text with word-level timestamps in <250ms.'},
+        {title:'Bar Assembler Streaming Buffer', desc:'Dynamic linguistic windowing aggregating rhythmic verse fragments and rap lyrics into coherent sentence units with precise timing.'},
+        {title:'Cascade Translation Engine (Gemini 3.8 Flash)', desc:'Streaming bilingual translation (German ➔ Persian/English) with instant multi-tier fallback cascade upon encountering 429/503 rate limits.'},
+        {title:'CustomTkinter HUD Floating Overlay', desc:'Non-blocking transparent desktop overlay rendering synchronized source and translation cards in real time.'}
+      ],
+      arch:[
+        'Decoupled 4-thread OS concurrency model: Audio Capture Worker, STT Inference Worker, Translation Worker, and Watchdog Monitor',
+        'Resilient queue watchdog: Automatically flushes stale frames during GPU load spikes to eliminate latency accumulation',
+        'VRAM optimization: FP16 quantized tensors maintaining locked 60 FPS HUD animation without memory leaks'
+      ],
+      tags:['Python 3.13','Windows WASAPI','faster-whisper large-v3-turbo','CUDA FP16','Gemini 3.8 Flash','CustomTkinter','4-Thread Concurrency'],
+      vsec:null
+    },
+    {
+      id:'copilot',
+      title:'GeminiLiveCoPilot — Desktop Multimodal Live Assistant',
+      role:'Computer Vision & Real-Time WebSocket Architect',
+      desc:'Frameless always-on-top desktop HUD over Gemini Multimodal Live bidirectional WebSocket API: captures screen with MSE/SSIM frame diffing to minimize token consumption, with 16kHz audio input, 24kHz synthesized voice response, and native barge-in.',
+      badges:[
+        {text:'Full-Duplex Live WebSocket', type:'perf'},
+        {text:'SSIM/MSE Frame Delta Diffing', type:'gpu'},
+        {text:'Native Barge-In (VAD)', type:'perf'},
+        {text:'16k In / 24k Out Audio', type:''}
+      ],
+      steps:[
+        {title:'Screen Acquisition (1 FPS)', desc:'Continuous low-overhead desktop screen capture running in background threads without degrading host performance.'},
+        {title:'OpenCV SSIM & MSE Frame Diffing', desc:'Mean Squared Error & Structural Similarity Indexing comparing adjacent frames; static frames are discarded, saving >75% token bandwidth.'},
+        {title:'Full-Duplex Audio Streaming (16kHz & 24kHz)', desc:'Simultaneous capture of microphone & loopback audio in raw 16kHz PCM, paired with 24kHz high-fidelity speech synthesis.'},
+        {title:'Native Conversational Barge-In (VAD)', desc:'Voice Activity Detection immediately cuts off assistant audio playback the millisecond user speech is detected.'},
+        {title:'PyQt6 Frameless Desktop HUD', desc:'Always-on-top frameless floating overlay with alpha transparency and non-intrusive desktop placement.'}
+      ],
+      arch:[
+        'Decoupled 4-thread architecture: Vision Ingestion, Audio Ingestion, WebSocket Engine, and PyQt6 UI Main Thread',
+        'Resilient connection watchdog: Automatic session reconnection with preserved conversational context',
+        'Strict zero-leak memory management for continuous visual frame streams'
+      ],
+      tags:['Python','PyQt6','Gemini Multimodal Live API','OpenCV SSIM/MSE','WASAPI Audio Ingest','AsyncIO WebSocket'],
+      vsec:null
+    },
+    {
+      id:'lango',
+      title:'NitroLearnAI (NitroLango) — Adaptive Language Learning Engine',
+      role:'Full-Stack AI Systems Engineer & Pedagogical Architect',
+      desc:'Adaptive multimodal language learning platform based on 72 verified CEFR Menschen textbook lessons (A1.1 to B1.2), 77 interactive German grammar engines, SuperMemo SM-2 spaced repetition, and browser audio watchdogs.',
+      badges:[
+        {text:'🚀 Live Production Platform', type:'perf'},
+        {text:'72 Menschen Lessons', type:''},
+        {text:'SuperMemo SM-2 Engine', type:''},
+        {text:'15s Audio Watchdog', type:'perf'}
+      ],
+      steps:[
+        {title:'Authentic Menschen Pedagogical Corpus', desc:'72 verified static lessons extracted from standard textbooks without hallucinated placeholder vocabulary.'},
+        {title:'77 German Grammar Rule Engines', desc:'Interactive syntax drills for sentence topology (Vorfeld, Mittelfeld, Nachfeld) with real-time error feedback.'},
+        {title:'SuperMemo SM-2 Spaced Repetition', desc:'Pure mathematical SM-2 implementation with 72-hour overdue decay penalty formulas and NaN/undefined bounds checking.'},
+        {title:'Browser Speech Recognition Watchdogs', desc:'15,000ms watchdog timer (LISTEN_TIMEOUT_MS = 15_000) ensuring browser speech recognition services never freeze the UI.'},
+        {title:'Silent Error Boundary Protection', desc:'Background AI widgets wrapped in isolated error boundaries to guarantee 100% app shell resilience.'}
+      ],
+      arch:[
+        'Governed by the 5-point verification gate: TypeScript strict mode, ESLint 0 errors, Vitest & Playwright e2e test passing',
+        'Modern PWA architecture with offline-first caching and cloud synchronization',
+        'Optimized UI data-binding preventing redundant component re-renders'
+      ],
+      tags:['TypeScript','Next.js / Vite','Tailwind CSS','SuperMemo SM-2','Web Speech API','PWA','Vitest / Playwright'],
+      link:'lango',
+      vsec:null
+    },
+    {
+      id:'german',
+      title:'German-Neural-Immersion — Multimodal Course Synthesis Studio',
+      role:'Multimodal AI & Speech Synthesis Developer',
+      desc:'Automated course extraction and synthesis studio parsing textbook PDFs and audio archives into interactive German sentence builders (Satzbau) and ElevenLabs neural speech.',
+      badges:[
+        {text:'ElevenLabs Neural Voices', type:'gpu'},
+        {text:'Automated Text/Audio Alignment', type:'perf'},
+        {text:'Satzbau Syntax Generator', type:''}
+      ],
+      steps:[
+        {title:'Structured PDF & MP3 Extraction', desc:'Intelligent OCR & acoustic alignment mapping textbook exercises to raw audio timestamps with structured exercise segmentation.'},
+        {title:'Interactive Satzbau Sentence Builder', desc:'Procedural generation of German sentence-ordering drills with structural grammar validation.'},
+        {title:'ElevenLabs Neural Voice Synthesis', desc:'High-definition bilingual audio generation with native German and Persian pronunciation.'}
+      ],
+      arch:[
+        'Batch audio processing pipeline utilizing PyPDF and Pydub maintaining studio-grade acoustic clarity',
+        'Standardized JSON schema output for seamless integration into web and mobile learning clients'
+      ],
+      tags:['Python','FastAPI','ElevenLabs API','PyPDF','Pydub','Satzbau Builder'],
+      vsec:null
+    }
+  ],
+  table:{
+    title:'Multimodal Systems Benchmark & Architecture Matrix',
+    headers:['System','Target Latency','Audio / Vision Ingest','Inference Engine & Hardware','Concurrency Architecture','Resilience & Watchdogs'],
+    rows:[
+      ['RapScribe-AI (OmniScribe HUD)','< 250ms','WASAPI Loopback (stereo mix)','CUDA GPU FP16 (faster-whisper large-v3-turbo)','4 non-blocking concurrent OS worker threads','Buffer flush watchdog on load spikes + 429 translation cascade'],
+      ['GeminiLiveCoPilot','< 500ms','Screen capture (1fps) + 16kHz mic','OpenCV SSIM/MSE diffing + Gemini Live WebSocket','4 decoupled ingestion / network / UI layers','Native Barge-In VAD cancellation + delta-only frame dispatch'],
+      ['NitroLearnAI (NitroLango)','Real-time client','Browser Web Speech API','Pure SM-2 math engine + Menschen corpus','Browser event loop & Web Workers','15-second speech watchdog timer + Silent Error Boundaries'],
+      ['German-Neural-Immersion','Batch processing','MP3 archives & textbook PDFs','ElevenLabs Neural Audio + PyPDF parser','AsyncIO background workers','Auto-retry on audio synthesis rate limits + JSON validation']
+    ]
+  }
 },
 gate:{
   title:'The 5-Point Empirical Verification Gate', sub:'Zero-Hallucination & Defensive Architecture Manifesto',

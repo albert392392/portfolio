@@ -182,20 +182,59 @@
     var s = t.sys, p = el('div');
     p.appendChild(el('h2','sec',s.title+' <em>'+s.sub+'</em>'));
     p.appendChild(el('p','lead',s.intro));
+
+    /* 6 KPIs */
     var k = el('div','kpis');
-    s.kpis.forEach(function(x){ k.appendChild(el('div','kpi','<b>'+x[0]+'</b><span>'+x[1]+'</span>')); });
+    s.kpis.forEach(function(x){ k.appendChild(el('div','kpi','<b>'+num(x[0])+'</b><span>'+x[1]+'</span>')); });
     p.appendChild(k);
+
+    /* Real verification console screenshot */
     var f = el('figure','shot free');
     var im = el('img'); im.src='assets/img/dashboard.jpg'; im.alt=s.dashCap; im.loading='lazy';
     f.appendChild(im); f.appendChild(el('figcaption',null,s.dashCap));
     f.addEventListener('click',function(){openLB(['dashboard'],'dashboard',{dashboard:s.dashCap});});
     p.appendChild(f);
-    p.appendChild(el('h3','sub',s.svcTitle+' &mdash; <span style="font-size:13px;font-weight:400;color:var(--tx3)">'+s.svcSub+'</span>'));
-    var g = el('div','svc');
-    SVCKEYS.forEach(function(key){ if(s.svc[key]) g.appendChild(el('div',null,'<b>'+key+'</b>'+s.svc[key])); });
-    p.appendChild(g);
-    p.appendChild(el('h3','sub',s.capTitle));
-    p.appendChild(mechList(s.caps));
+
+    /* 4 Microservice Clusters */
+    if(s.clusters && s.clusters.length){
+      p.appendChild(el('h3','sub',s.svcTitle+' &mdash; <span style="font-size:13px;font-weight:400;color:var(--tx3)">'+s.svcSub+'</span>'));
+      s.clusters.forEach(function(cl){
+        var cdiv = el('div','sys-cluster');
+        var chdr = el('div','sys-cluster-hdr');
+        chdr.appendChild(el('h4',null,cl.title));
+        if(cl.sub) chdr.appendChild(el('span',null,cl.sub));
+        cdiv.appendChild(chdr);
+
+        var sgrid = el('div','sys-grid');
+        cl.services.forEach(function(srv){
+          var scard = el('div','sys-card');
+          var stop = el('div','sys-card-top');
+          stop.appendChild(el('span','sys-card-name',srv.name));
+          if(srv.port) stop.appendChild(el('span','sys-card-port',srv.port));
+          scard.appendChild(stop);
+          if(srv.role) scard.appendChild(el('div','sys-card-role',srv.role));
+          scard.appendChild(el('div','sys-card-desc',srv.desc));
+          sgrid.appendChild(scard);
+        });
+        cdiv.appendChild(sgrid);
+        p.appendChild(cdiv);
+      });
+    } else if(s.svc) {
+      p.appendChild(el('h3','sub',s.svcTitle+' &mdash; <span style="font-size:13px;font-weight:400;color:var(--tx3)">'+s.svcSub+'</span>'));
+      var g = el('div','svc');
+      SVCKEYS.forEach(function(key){ if(s.svc[key]) g.appendChild(el('div',null,'<b>'+key+'</b>'+s.svc[key])); });
+      p.appendChild(g);
+    }
+
+    /* Key Architectural Capabilities / Pillars */
+    if(s.pillars && s.pillars.length){
+      p.appendChild(el('h3','sub',s.capTitle));
+      p.appendChild(mechList(s.pillars));
+    } else if(s.caps && s.caps.length){
+      p.appendChild(el('h3','sub',s.capTitle));
+      p.appendChild(mechList(s.caps));
+    }
+
     p.appendChild(el('div','note',s.why));
     return p;
   }
@@ -206,14 +245,109 @@
     p.appendChild(el('h2','sec',m.title+' <em>'+m.sub+'</em>'));
     p.appendChild(el('p','lead',m.intro));
 
-    var grid = el('div','grid2'); grid.style.marginTop='20px';
-    m.cards.forEach(function(c){
-      var card = el('div','card');
-      card.appendChild(el('h3',null,c.title)).style.cssText='font-size:17px;font-weight:800;color:var(--cy);margin-bottom:8px';
-      card.appendChild(el('p','lead',c.desc));
-      grid.appendChild(card);
-    });
-    p.appendChild(grid);
+    /* KPIs */
+    if(m.kpis && m.kpis.length){
+      var mk = el('div','kpis');
+      m.kpis.forEach(function(x){ mk.appendChild(el('div','kpi','<b>'+num(x[0])+'</b><span>'+x[1]+'</span>')); });
+      p.appendChild(mk);
+    }
+
+    /* Multimodal Pipelines */
+    if(m.pipelines && m.pipelines.length){
+      m.pipelines.forEach(function(pipe){
+        var c = el('div','pipe-card');
+        var hdr = el('div','pipe-hdr');
+        var tbox = el('div');
+        tbox.appendChild(el('div','pipe-title',pipe.title));
+        if(pipe.role) tbox.appendChild(el('div','pipe-role',pipe.role));
+        hdr.appendChild(tbox);
+
+        if(pipe.badges && pipe.badges.length){
+          var bwrap = el('div','pipe-badges');
+          pipe.badges.forEach(function(b){
+            var bcls = 'pipe-badge' + (b.type ? ' '+b.type : '');
+            bwrap.appendChild(el('span', bcls, b.text));
+          });
+          hdr.appendChild(bwrap);
+        }
+        c.appendChild(hdr);
+
+        c.appendChild(el('p','lead',pipe.desc));
+
+        /* Step-by-step Flow */
+        if(pipe.steps && pipe.steps.length){
+          var flow = el('div','pipe-flow');
+          pipe.steps.forEach(function(st, idx){
+            var sc = el('div','pipe-step');
+            sc.appendChild(el('div','pipe-step-num', (lang==='fa'?'گام '+(idx+1):'Step '+(idx+1))));
+            sc.appendChild(el('div','pipe-step-title', st.title));
+            sc.appendChild(el('div','pipe-step-desc', st.desc));
+            flow.appendChild(sc);
+          });
+          c.appendChild(flow);
+        }
+
+        /* Architecture highlights */
+        if(pipe.arch && pipe.arch.length){
+          var abox = el('div','pcard-arch');
+          abox.appendChild(el('b',null,lang==='fa'?'نکات کلیدی معماری و زیرساخت:':'Architectural Highlights & Runtime Guarantees:'));
+          var ul = el('ul');
+          pipe.arch.forEach(function(a){ ul.appendChild(el('li',null,a)); });
+          abox.appendChild(ul);
+          c.appendChild(abox);
+        }
+
+        if(pipe.tags && pipe.tags.length) c.appendChild(chips(pipe.tags));
+
+        /* Actions / Links */
+        var act = el('div','pcard-actions');
+        if(pipe.link && LINKS[pipe.link]){
+          var la = el('a','btn primary', (lang==='fa'?'مشاهده پلتفرم زنده':'Open Live Platform')+' &#8599;');
+          la.href = LINKS[pipe.link]; la.target='_blank'; la.rel='noopener';
+          act.appendChild(la);
+        }
+        if(pipe.vsec){
+          act.appendChild(videoLink(t, pipe.vsec));
+        }
+        if(act.children.length) c.appendChild(act);
+
+        p.appendChild(c);
+      });
+    } else if(m.cards && m.cards.length){
+      var grid = el('div','grid2'); grid.style.marginTop='20px';
+      m.cards.forEach(function(c){
+        var card = el('div','card');
+        card.appendChild(el('h3',null,c.title)).style.cssText='font-size:17px;font-weight:800;color:var(--cy);margin-bottom:8px';
+        card.appendChild(el('p','lead',c.desc));
+        grid.appendChild(card);
+      });
+      p.appendChild(grid);
+    }
+
+    /* Comparison Table */
+    if(m.table){
+      p.appendChild(el('h3','sub',m.table.title));
+      var tw = el('div','table-wrap');
+      var tb = el('table','tech-table');
+      var thead = el('thead');
+      var trh = el('tr');
+      m.table.headers.forEach(function(h){ trh.appendChild(el('th',null,h)); });
+      thead.appendChild(trh);
+      tb.appendChild(thead);
+
+      var tbody = el('tbody');
+      m.table.rows.forEach(function(row){
+        var tr = el('tr');
+        row.forEach(function(cell, ci){
+          tr.appendChild(el('td',null, ci===0 ? '<b>'+cell+'</b>' : cell));
+        });
+        tbody.appendChild(tr);
+      });
+      tb.appendChild(tbody);
+      tw.appendChild(tb);
+      p.appendChild(tw);
+    }
+
     return p;
   }
 
