@@ -258,3 +258,60 @@ footer a{color:var(--tx2)}
 .viewer{border:1px solid var(--line);border-radius:var(--rad);overflow:hidden;background:var(--panel);margin-top:14px}
 .viewer iframe{width:100%;height:min(84vh,1100px);border:0;display:block;background:#0b1220}
 @media(max-width:860px){.viewer iframe{height:66vh}}
+
+/* ================= 16-PROJECT SHOWCASE & FILTERS ================= */
+.pfilters{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 24px}
+.pfilter-btn{font-family:inherit;font-size:13px;font-weight:700;padding:8px 16px;border-radius:999px;
+  background:var(--panel);border:1px solid var(--line);color:var(--tx2);cursor:pointer;transition:.2s}
+.pfilter-btn:hover{color:#fff;border-color:var(--cy)}
+.pfilter-btn.on{background:linear-gradient(92deg,var(--cy2),#7c3aed);color:#fff;border-color:transparent;
+  box-shadow:0 6px 20px -8px var(--cy)}
+
+.pcard{background:linear-gradient(165deg,rgba(14,23,39,.8),rgba(10,17,32,.95));border:1px solid var(--line);
+  border-radius:var(--rad);padding:clamp(18px,2.8vw,28px);margin-bottom:24px;transition:.3s;position:relative}
+.pcard:hover{border-color:var(--cy);box-shadow:0 12px 35px -15px rgba(34,211,238,.2)}
+.pcard-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.pcard-title{font-size:clamp(18px,2.4vw,24px);font-weight:900;color:#fff}
+.pcard-title a{color:#fff;transition:.2s}
+.pcard-title a:hover{color:var(--cy)}
+.pcard-role{font-size:13px;font-weight:600;color:var(--cy);margin-top:4px}
+.pbadge{font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:5px}
+.pbadge.oss{background:rgba(52,211,153,.15);border:1px solid #34d399;color:#34d399}
+.pbadge.priv{background:rgba(148,163,184,.12);border:1px solid #64748b;color:#cbd5e1}
+.pbadge.live{background:rgba(34,211,238,.15);border:1px solid var(--cy);color:#8ee6f5}
+.pbadge.vid{background:rgba(192,38,211,.15);border:1px solid var(--mg);color:#e879f9}
+
+.pcard-arch{background:rgba(6,10,18,.7);border:1px solid rgba(255,255,255,.07);border-radius:12px;
+  padding:14px 16px;margin:16px 0;font-size:13.5px;color:var(--tx2)}
+.pcard-arch b{color:#fff;font-weight:700}
+.pcard-arch ul{margin-top:6px;list-style:none}
+.pcard-arch li{position:relative;padding-inline-start:18px;margin-bottom:6px;line-height:1.7}
+.pcard-arch li::before{content:'▹';position:absolute;inset-inline-start:0;color:var(--cy);font-size:14px}
+
+.pcard-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+
+/* ================= 5-POINT VERIFICATION GATE ================= */
+.gate-wrap{margin-top:20px}
+.gate-card{background:linear-gradient(160deg,rgba(14,23,39,.9),rgba(7,11,20,.95));
+  border:1px solid rgba(34,211,238,.25);border-radius:var(--rad);padding:22px;margin-bottom:16px;
+  position:relative;overflow:hidden}
+.gate-card::before{content:'';position:absolute;top:0;inset-inline-start:0;width:4px;height:100%;
+  background:linear-gradient(180deg,var(--cy),var(--mg))}
+.gate-card h4{font-size:17px;font-weight:800;color:#fff;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.gate-card p{font-size:14px;color:var(--tx2);line-height:1.8}
+.gate-num{width:28px;height:28px;border-radius:50%;background:rgba(34,211,238,.15);border:1px solid var(--cy);
+  color:var(--cy);font-weight:900;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex:none}
+
+/* ================= MULTIMODAL HUB ================= */
+.pipe-step{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:12px 16px;margin-bottom:10px}
+.pipe-icon{width:36px;height:36px;border-radius:10px;background:rgba(34,211,238,.12);border:1px solid var(--cy);
+  color:var(--cy);display:flex;align-items:center;justify-content:center;font-size:16px;flex:none}
+.pipe-text b{display:block;color:#fff;font-size:14px;margin-bottom:2px}
+.pipe-text span{font-size:12.5px;color:var(--tx2)}
+
+.footer-socials{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:14px 0}
+.fs-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border-radius:999px;
+  background:var(--panel);border:1px solid var(--line);color:var(--tx);font-size:13px;font-weight:700;transition:.2s}
+.fs-btn:hover{border-color:var(--cy);color:var(--cy);transform:translateY(-2px)}
+

@@ -5,7 +5,7 @@
   var $ = function(s,r){return (r||document).querySelector(s);};
   var el = function(t,c,h){var e=document.createElement(t); if(c)e.className=c; if(h!=null)e.innerHTML=h; return e;};
   var fmt = function(str){var a=arguments; return String(str).replace(/%(\d)/g,function(_,i){return a[+i];});};
-  /* Persian digits, so numbers match the surrounding text */
+  /* Persian digits for Persian view */
   var num = function(v){ return lang==='fa'
     ? String(v).replace(/[0-9]/g,function(d){return '۰۱۲۳۴۵۶۷۸۹'[+d];})
     : String(v); };
@@ -47,7 +47,7 @@
   function pageHome(t){
     var p = el('div');
     var hero = el('section','hero');
-    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="Iman Mansouri">');
+    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="Albert (Iman Mansour)">');
     var box = el('div');
     box.appendChild(el('h1',null,t.hero.name));
     box.appendChild(el('div','role',t.hero.role));
@@ -56,8 +56,8 @@
     box.appendChild(meta);
     var cta = el('div','cta');
     cta.innerHTML = '<a class="btn primary" href="#resume">'+t.hero.cta1+'</a>'+
-      '<a class="btn" href="#videos">'+t.nav.videos+'</a>'+
-      '<a class="btn" href="'+LINKS.mail+'">'+t.hero.cta3+'</a>';
+      '<a class="btn" href="#proj">'+t.hero.cta2+'</a>'+
+      '<a class="btn" href="'+LINKS.telegram+'" target="_blank" rel="noopener">Telegram: @imanmansouri1 &#8599;</a>';
     box.appendChild(cta);
     hero.appendChild(ph); hero.appendChild(box); p.appendChild(hero);
 
@@ -77,6 +77,160 @@
     return p;
   }
 
+  /* ---------- 16-PROJECT SHOWCASE WITH CATEGORY FILTERS ---------- */
+  var currentCat = 'all';
+  function pageProj(t){
+    var pr = t.proj, p = el('div');
+    p.appendChild(el('h2','sec',pr.title+' <em>'+pr.sub+'</em>'));
+
+    /* category filter bar */
+    var frow = el('div','pfilters');
+    var cats = [
+      {k:'all',l:pr.filterAll},
+      {k:'ai',l:pr.filterAI},
+      {k:'multimodal',l:pr.filterMulti},
+      {k:'enterprise',l:pr.filterEnt},
+      {k:'systems',l:pr.filterSys},
+      {k:'games',l:pr.filterGames}
+    ];
+
+    var listHost = el('div','plist');
+
+    function renderList(){
+      listHost.innerHTML = '';
+      var filtered = pr.items.filter(function(it){
+        return currentCat === 'all' || it.cat === currentCat;
+      });
+
+      filtered.forEach(function(it){
+        var c = el('article','pcard');
+
+        /* header */
+        var hdr = el('div','pcard-hdr');
+        var tbox = el('div');
+        tbox.appendChild(el('div','pcard-title',it.name));
+        tbox.appendChild(el('div','pcard-role',it.role));
+        hdr.appendChild(tbox);
+
+        if(it.badgeText){
+          var bclass = it.badge || 'priv';
+          hdr.appendChild(el('span','pbadge '+bclass, it.badgeText));
+        }
+        c.appendChild(hdr);
+
+        /* desc */
+        c.appendChild(el('p','lead',it.desc));
+
+        /* architecture highlights */
+        if(it.arch && it.arch.length){
+          var abox = el('div','pcard-arch');
+          abox.appendChild(el('b',null,lang==='fa'?'نکات کلیدی معماری و پیاده‌سازی:':'Key Architectural Highlights:'));
+          var ul = el('ul');
+          it.arch.forEach(function(a){ ul.appendChild(el('li',null,a)); });
+          abox.appendChild(ul);
+          c.appendChild(abox);
+        }
+
+        /* tech chips */
+        if(it.tags && it.tags.length) c.appendChild(chips(it.tags));
+
+        /* actions */
+        var act = el('div','pcard-actions');
+        if(it.link && LINKS[it.link]){
+          var la = el('a','btn primary', (it.link==='antigravity'?pr.btnCode:pr.btnLive)+' &#8599;');
+          la.href = LINKS[it.link]; la.target='_blank'; la.rel='noopener';
+          act.appendChild(la);
+        }
+        if(it.vsec){
+          var va = videoLink(t, it.vsec);
+          act.appendChild(va);
+        }
+        if(act.children.length) c.appendChild(act);
+
+        /* gallery if present */
+        if(it.images && it.images.length){
+          c.appendChild(gallery(it.images, t.honors.caps, it.images.length>2?'g3':'g2'));
+        }
+
+        listHost.appendChild(c);
+      });
+      reveal();
+    }
+
+    cats.forEach(function(cat){
+      var btn = el('button','pfilter-btn'+(cat.k===currentCat?' on':''), cat.l);
+      btn.addEventListener('click',function(){
+        currentCat = cat.k;
+        frow.querySelectorAll('.pfilter-btn').forEach(function(b){ b.classList.remove('on'); });
+        btn.classList.add('on');
+        renderList();
+      });
+      frow.appendChild(btn);
+    });
+
+    p.appendChild(frow);
+    p.appendChild(listHost);
+    renderList();
+    return p;
+  }
+
+  /* ---------- UNIVERSALSYSTEM AI FACTORY ---------- */
+  function pageSys(t){
+    var s = t.sys, p = el('div');
+    p.appendChild(el('h2','sec',s.title+' <em>'+s.sub+'</em>'));
+    p.appendChild(el('p','lead',s.intro));
+    var k = el('div','kpis');
+    s.kpis.forEach(function(x){ k.appendChild(el('div','kpi','<b>'+x[0]+'</b><span>'+x[1]+'</span>')); });
+    p.appendChild(k);
+    var f = el('figure','shot free');
+    var im = el('img'); im.src='assets/img/dashboard.jpg'; im.alt=s.dashCap; im.loading='lazy';
+    f.appendChild(im); f.appendChild(el('figcaption',null,s.dashCap));
+    f.addEventListener('click',function(){openLB(['dashboard'],'dashboard',{dashboard:s.dashCap});});
+    p.appendChild(f);
+    p.appendChild(el('h3','sub',s.svcTitle+' &mdash; <span style="font-size:13px;font-weight:400;color:var(--tx3)">'+s.svcSub+'</span>'));
+    var g = el('div','svc');
+    SVCKEYS.forEach(function(key){ if(s.svc[key]) g.appendChild(el('div',null,'<b>'+key+'</b>'+s.svc[key])); });
+    p.appendChild(g);
+    p.appendChild(el('h3','sub',s.capTitle));
+    p.appendChild(mechList(s.caps));
+    p.appendChild(el('div','note',s.why));
+    return p;
+  }
+
+  /* ---------- MULTIMODAL HUB ---------- */
+  function pageMultimodal(t){
+    var m = t.multimodal, p = el('div');
+    p.appendChild(el('h2','sec',m.title+' <em>'+m.sub+'</em>'));
+    p.appendChild(el('p','lead',m.intro));
+
+    var grid = el('div','grid2'); grid.style.marginTop='20px';
+    m.cards.forEach(function(c){
+      var card = el('div','card');
+      card.appendChild(el('h3',null,c.title)).style.cssText='font-size:17px;font-weight:800;color:var(--cy);margin-bottom:8px';
+      card.appendChild(el('p','lead',c.desc));
+      grid.appendChild(card);
+    });
+    p.appendChild(grid);
+    return p;
+  }
+
+  /* ---------- 5-POINT EMPIRICAL VERIFICATION GATE ---------- */
+  function pageGate(t){
+    var g = t.gate, p = el('div');
+    p.appendChild(el('h2','sec',g.title+' <em>'+g.sub+'</em>'));
+    p.appendChild(el('p','lead',g.intro));
+
+    var gw = el('div','gate-wrap');
+    g.points.forEach(function(pt){
+      var card = el('div','gate-card');
+      card.innerHTML = '<h4><span class="gate-num">'+num(pt.num)+'</span> '+pt.t+'</h4><p>'+pt.d+'</p>';
+      gw.appendChild(card);
+    });
+    p.appendChild(gw);
+    return p;
+  }
+
+  /* ---------- NEON RUN ---------- */
   function pageNeon(t){
     var n = t.neon, p = el('div');
     p.appendChild(el('span','badge',n.badge));
@@ -96,7 +250,7 @@
     return p;
   }
 
-  /* a single, reusable pointer into the video archive — no content is repeated */
+  /* video link pointer */
   function videoLink(t, secId){
     var sec = null;
     VD.forEach(function(s){ if(s.id===secId) sec=s; });
@@ -109,54 +263,7 @@
     return d;
   }
 
-  function pageProj(t){
-    var pr = t.proj, p = el('div');
-    p.appendChild(el('h2','sec',pr.title+' <em>'+pr.sub+'</em>'));
-    var VMAP = {lango:'nitrolango', archer:'commercial', bus:'commercial'};
-    pr.items.forEach(function(it){
-      var s = el('section','card'); s.style.marginBottom='22px';
-      s.appendChild(el('h3',null,it.name));
-      s.querySelector('h3').style.cssText='font-size:clamp(17px,2.4vw,22px);font-weight:800;margin-bottom:4px';
-      s.appendChild(el('div',null,it.role)).style.cssText='color:var(--cy);font-size:12.8px;margin-bottom:10px';
-      s.appendChild(el('p','lead',it.desc));
-      if(it.tags) s.appendChild(chips(it.tags));
-      if(it.link) {
-        var a = el('a','btn primary',pr.linkLabel+' &#8599;'); a.href=LINKS[it.link]; a.target='_blank'; a.rel='noopener';
-        a.style.marginTop='12px'; s.appendChild(a);
-      }
-      var ids = IMG[it.id];
-      if(ids && ids.length) s.appendChild(gallery(ids, it.caps, (ids.length>2||it.id==='bus')?'g3':'g2'));
-      if(VMAP[it.id]) s.appendChild(videoLink(t, VMAP[it.id]));
-      s.appendChild(el('h4',null,'&#9881; '+ (t.neon.mechTitle))).style.cssText='font-size:15.5px;font-weight:700;margin:16px 0 8px';
-      s.appendChild(mechList(it.mech));
-      p.appendChild(s);
-    });
-    p.appendChild(el('div','note',pr.future));
-    return p;
-  }
-
-  function pageSys(t){
-    var s = t.sys, p = el('div');
-    p.appendChild(el('h2','sec',s.title+' <em>'+s.sub+'</em>'));
-    p.appendChild(el('p','lead',s.intro));
-    var k = el('div','kpis');
-    s.kpis.forEach(function(x){ k.appendChild(el('div','kpi','<b>'+x[0]+'</b><span>'+x[1]+'</span>')); });
-    p.appendChild(k);
-    var f = el('figure','shot free');
-    var im = el('img'); im.src='assets/img/dashboard.jpg'; im.alt=s.dashCap; im.loading='lazy';
-    f.appendChild(im); f.appendChild(el('figcaption',null,s.dashCap));
-    f.addEventListener('click',function(){openLB(['dashboard'],'dashboard',{dashboard:s.dashCap});});
-    p.appendChild(f);
-    p.appendChild(el('h3','sub',s.svcTitle+' &mdash; <span style="font-size:13px;font-weight:400;color:var(--tx3)">'+s.svcSub+'</span>'));
-    var g = el('div','svc');
-    SVCKEYS.forEach(function(key){ g.appendChild(el('div',null,'<b>'+key+'</b>'+s.svc[key])); });
-    p.appendChild(g);
-    p.appendChild(el('h3','sub',s.capTitle));
-    p.appendChild(mechList(s.caps));
-    p.appendChild(el('div','note',s.why));
-    return p;
-  }
-
+  /* ---------- HONORS ---------- */
   function pageHonors(t){
     var h = t.honors, p = el('div');
     p.appendChild(el('h2','sec',h.title+' <em>'+h.sub+'</em>'));
@@ -195,7 +302,7 @@
     return p;
   }
 
-  /* ---------- résumé: one place only ---------- */
+  /* ---------- RÉSUMÉ WITH 8 HIGH-RES PAGES ---------- */
   var rdoc='fa';
   function pageResume(t){
     var r = t.resume, p = el('div');
@@ -219,16 +326,20 @@
     var viewer = el('div','viewer');
     viewer.innerHTML = '<iframe title="resume" src="'+file+'#view=FitH"></iframe>';
     p.appendChild(viewer);
-    p.appendChild(el('p','lead',r.hint)).style.cssText='font-size:13px;margin-top:10px';
+    p.appendChild(el('p','lead',r.hint)).style.cssText='font-size:13.5px;margin-top:16px;font-weight:600';
 
     var name = (rdoc==='fa'?r.fa:r.en);
     var ids=[], caps={};
-    for(var i=1;i<=8;i++){ var src='assets/resume/'+rdoc+'-'+i+'.jpg'; ids.push(src); caps[src]=name+' — '+i+'/8'; }
+    for(var i=1;i<=8;i++){
+      var src='assets/resume/'+rdoc+'-'+i+'.jpg';
+      ids.push(src);
+      caps[src]=name+' — '+num(i)+'/'+num(8);
+    }
     p.appendChild(gallery(ids, caps, 'g3'));
     return p;
   }
 
-  /* ---------- video archive ---------- */
+  /* ---------- VIDEO ARCHIVE & DUAL PLAYER ---------- */
   function fmtTime(sec){
     sec = Math.max(0, Math.floor(sec||0));
     var m = Math.floor(sec/60), s = sec%60;
@@ -292,7 +403,6 @@
       update();
     }
 
-    /* controls */
     var bar = el('div','vbar');
     var btn = el('button','vplay','&#9654;');
     var track = el('div','vtrack','<i></i>');
@@ -311,7 +421,7 @@
       var d = dur()||1;
       fill.style.width = Math.min(100,(pos()/d)*100)+'%';
       tlabel.textContent = num(fmtTime(pos())+' / '+fmtTime(d));
-      if(!single) plabel.textContent = num(fmt(t.videos.partOf, cur+1, parts.length));
+      if(!single) plabel.textContent = num((cur+1)+'/'+parts.length);
       btn.innerHTML = active.paused ? '&#9654;' : '&#10074;&#10074;';
     }
     [a,b].forEach(function(x){
@@ -350,15 +460,11 @@
     else { a.addEventListener('loadedmetadata',function(){},{once:true}); }
     update();
 
-    /* meta row */
     var meta = el('div','vmeta');
-    var q = single ? t.videos.origQ : num(fmt(t.videos.splitQ, parts.length));
     meta.innerHTML =
-      '<span><b>'+t.videos.total+':</b> '+num(v.dur)+'</span>'+
-      (v.bytes?'<span><b>'+t.videos.size+':</b> '+num(fmtMB(v.bytes))+'</span>':'')+
-      '<span><b>'+t.videos.quality+':</b> '+q+'</span>';
+      '<span><b>'+t.videos.title+':</b> '+num(v.dur)+'</span>'+
+      (v.bytes?'<span><b>حجم:</b> '+num(fmtMB(v.bytes))+'</span>':'');
     wrap.appendChild(meta);
-    if(!single) wrap.appendChild(el('div','vnote', t.videos.partsNote));
     return wrap;
   }
 
@@ -366,11 +472,10 @@
     var p = el('div');
     p.appendChild(el('h2','sec',t.videos.title+' <em>'+t.videos.sub+'</em>'));
     p.appendChild(el('p','lead',t.videos.intro));
-    p.appendChild(el('div','note',t.videos.origNote));
 
     var jump = el('div','vjump');
     VD.forEach(function(s){
-      var a = el('a',null,s.nav[lang]);
+      var a = el('a',null,s.nav[lang] || s.title[lang]);
       a.href='#videos';
       a.addEventListener('click',function(ev){ ev.preventDefault();
         document.getElementById('vsec-'+s.id).scrollIntoView({behavior:'smooth',block:'start'}); });
@@ -396,20 +501,6 @@
     return p;
   }
 
-  function pageContact(t){
-    var c = t.contact, p = el('div');
-    p.appendChild(el('h2','sec',c.title+' <em>'+c.sub+'</em>'));
-    p.appendChild(el('p','lead',c.text));
-    var g = el('div','grid2'); g.style.marginTop='16px';
-    g.innerHTML =
-      '<a class="card" style="text-decoration:none;display:block" href="'+LINKS.mail+'"><div style="color:var(--tx3);font-size:12px">'+c.email+'</div><div class="en" style="font-size:clamp(15px,2.4vw,20px);font-weight:700;color:var(--tx)">iman392392@gmail.com</div></a>'+
-      '<a class="card" style="text-decoration:none;display:block" href="'+LINKS.tel+'"><div style="color:var(--tx3);font-size:12px">'+c.phone+'</div><div class="en" style="font-size:clamp(15px,2.4vw,20px);font-weight:700;color:var(--tx)">+98 933 165 5416</div></a>'+
-      '<div class="card"><div style="color:var(--tx3);font-size:12px">'+c.loc+'</div><div style="font-size:clamp(15px,2.4vw,20px);font-weight:700">'+c.locv+'</div></div>'+
-      '<a class="card" style="text-decoration:none;display:block" href="'+LINKS.lango+'" target="_blank" rel="noopener"><div style="color:var(--tx3);font-size:12px">'+c.prod+'</div><div class="en" style="font-size:clamp(14px,2.2vw,18px);font-weight:700;color:var(--cy)">nitrolango-client.vercel.app &#8599;</div></a>';
-    p.appendChild(g);
-    return p;
-  }
-
   /* ---------- lightbox ---------- */
   var lbIds=[], lbIdx=0, lbCaps={};
   function openLB(ids,id,caps){
@@ -427,9 +518,29 @@
   function closeLB(){ $('#lb').classList.remove('on'); document.body.style.overflow=''; }
   function stepLB(d){ lbIdx=(lbIdx+d+lbIds.length)%lbIds.length; renderLB(); }
 
-  /* ---------- tabs ---------- */
-  var PAGES = {home:pageHome,neon:pageNeon,proj:pageProj,videos:pageVideos,sys:pageSys,honors:pageHonors,resume:pageResume,contact:pageContact};
-  var ICONS = {home:'◆',neon:'▶',proj:'▤',videos:'▷',sys:'⚙',honors:'★',resume:'▣',contact:'✉'};
+  /* ---------- tabs & router ---------- */
+  var PAGES = {
+    home: pageHome,
+    proj: pageProj,
+    sys: pageSys,
+    multimodal: pageMultimodal,
+    gate: pageGate,
+    neon: pageNeon,
+    honors: pageHonors,
+    resume: pageResume,
+    videos: pageVideos
+  };
+  var ICONS = {
+    home: '◆',
+    proj: '▤',
+    sys: '⚙',
+    multimodal: '⚡',
+    gate: '🛡',
+    neon: '▶',
+    honors: '★',
+    resume: '▣',
+    videos: '▷'
+  };
   var current='home';
 
   function stopAllVideos(){
@@ -442,7 +553,8 @@
     var t=T[lang];
     document.documentElement.lang=lang;
     document.documentElement.dir=t.dir;
-    document.title = (lang==='fa'?'ایمان منصوری — سازنده بازی و نرم‌افزار':'Iman Mansouri — Game & Software Developer');
+    document.title = 'Albert (Iman Mansour) — AI Systems Engineer & Autonomous Agent Architect';
+
     var row=$('#tabrow'); row.innerHTML='';
     Object.keys(PAGES).forEach(function(k){
       var b=el('button',(k===current?'on':''),'<i>'+ICONS[k]+'</i>'+t.nav[k]);
@@ -450,17 +562,29 @@
       b.addEventListener('click',function(){ go(k); });
       row.appendChild(b);
     });
+
     var host=$('#pages');
     stopAllVideos();
     host.innerHTML='';
     var pg=el('div','page on'); pg.appendChild(PAGES[current](t)); host.appendChild(pg);
-    $('#footer').innerHTML = '&copy; '+new Date().getFullYear()+' Iman Mansouri &middot; <a href="'+LINKS.mail+'">iman392392@gmail.com</a> &middot; <span class="en">+98 933 165 5416</span><br>'+t.footer+
-      ' &middot; <a href="https://github.com/albert392392/portfolio" target="_blank" rel="noopener">source</a>';
+
+    /* world-class footer with active social & platform links */
+    $('#footer').innerHTML =
+      '<div class="footer-socials">' +
+        '<a class="fs-btn" href="'+LINKS.mail+'">✉ Email</a>' +
+        '<a class="fs-btn" href="'+LINKS.telegram+'" target="_blank" rel="noopener">✈ Telegram (@imanmansouri1)</a>' +
+        '<a class="fs-btn" href="'+LINKS.instagram+'" target="_blank" rel="noopener">📷 Instagram (@albert.net01)</a>' +
+        '<a class="fs-btn" href="'+LINKS.github+'" target="_blank" rel="noopener">🐙 GitHub (albert392392)</a>' +
+        '<a class="fs-btn" href="'+LINKS.antigravity+'" target="_blank" rel="noopener">⭐ antigravity-scroll-unpin</a>' +
+      '</div>' +
+      '<div>&copy; '+new Date().getFullYear()+' Albert (Iman Mansour) &middot; '+t.footer+'</div>';
+
     Array.prototype.forEach.call(document.querySelectorAll('.langs button'),function(b){
       b.classList.toggle('on', b.getAttribute('data-l')===lang);
     });
     reveal();
   }
+
   function go(k){
     if(!PAGES[k]) k='home';
     var changed = (current!==k);
@@ -472,7 +596,7 @@
   function setLang(l){ if(!T[l])return; lang=l; localStorage.setItem(LS,l); render(); }
 
   function reveal(){
-    var els=document.querySelectorAll('.card,.shot,.stat,.kpi,.quote,.note,.svc div,.vcard');
+    var els=document.querySelectorAll('.card,.pcard,.shot,.stat,.kpi,.quote,.note,.svc div,.vcard,.gate-card');
     if(!('IntersectionObserver'in window)){return;}
     var io=new IntersectionObserver(function(en){
       en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
