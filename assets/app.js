@@ -137,7 +137,10 @@
         /* actions */
         var act = el('div','pcard-actions');
         if(it.link && LINKS[it.link]){
-          var la = el('a','btn primary', (it.link==='antigravity'?pr.btnCode:pr.btnLive)+' &#8599;');
+          var btnTxt = pr.btnLive;
+          if(it.link === 'antigravity') btnTxt = pr.btnCode;
+          else if(it.link === 'parsa') btnTxt = (lang==='fa' ? 'دانلود از کافه‌بازار (Cafe Bazaar)' : 'Download on Cafe Bazaar');
+          var la = el('a','btn primary', btnTxt+' &#8599;');
           la.href = LINKS[it.link]; la.target='_blank'; la.rel='noopener';
           act.appendChild(la);
         }

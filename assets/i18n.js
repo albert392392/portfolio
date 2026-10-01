@@ -40,7 +40,7 @@ T.fa = {
 dir:'rtl', label:'فارسی',
 nav:{
   home:'خانه',
-  proj:'پروژه‌ها (۱۶)',
+  proj:'پروژه‌ها (۱۸)',
   sys:'کارخانه هوش مصنوعی',
   multimodal:'هوش چندوجهی',
   gate:'منشور مهندسی',
@@ -54,10 +54,10 @@ hero:{
   role:'مهندس ارشد سیستم‌های هوش مصنوعی و معماری ایجنت‌های خودمختار',
   tag:'معماری سواِرم‌های خودمختار هوش مصنوعی، پایپ‌لاین‌های چندوجهی بلادرنگ، سیستم‌های توزیع‌شده سازمانی و فیزیک بازی‌ها.',
   chips:['مشهد، ایران','کارت پایان خدمت','آماده همکاری و استخدام بین‌المللی','تخصص در ایجنت‌های خودمختار'],
-  cta1:'دانلود و مشاهده رزومه', cta2:'مشاهده پروژه‌ها (۱۶)', cta3:'تماس و گفت‌وگو'
+  cta1:'دانلود و مشاهده رزومه', cta2:'مشاهده پروژه‌ها (۱۸)', cta3:'تماس و گفت‌وگو'
 },
 stats:[
-  ['+۱۶','سیستم و پروژه پروداکشن پیاده‌سازی‌شده'],
+  ['+۱۸','سیستم و پروژه پروداکشن پیاده‌سازی‌شده'],
   ['۱۷','مایکروسرویس زنده در UniversalSystem'],
   ['+۸۴٬۰۰۰','خط کد در هسته هوش مصنوعی اکوسیستم'],
   ['۴','ترد موازی بلادرنگ (WASAPI + GPU)'],
@@ -67,7 +67,7 @@ stats:[
 about:{
   title:'من در یک نگاه', sub:'مهندسی سیستم، ایجنت‌های خودمختار و هوش چندوجهی',
   p1:'من مهندس سیستم‌های هوش مصنوعی و معمار نرم‌افزار هستم. تمرکز تخصصی من بر <b>طراحی سواِرم‌های خودمختار ایجنت‌ها</b>، <b>خط لوله‌های چندوجهی صوت و تصویر با تأخیر زیر ثانیه</b>، و <b>سیستم‌های توزیع‌شده سازمانی</b> است. تمرکز من پر کردن فاصله میان مدل‌های بنیادی زبانی (LLMs) و اجرای پایدار در محیط واقعی است: طراحی ماشین‌های حالت قطعی، صف‌های اولویت پیام، راستی‌آزمایی بازیابی برداری (RAG) بدون توهم، لاگ‌های تغییرناپذیر HMAC، و بهینه‌سازی بدون Garbage Collection.',
-  p2:'طی سال‌های اخیر بیش از ۱۶ سیستم جامع نرم‌افزاری را به سرانجام رسانده‌ام: از کارخانه اتوماسیون سازمانی هوش مصنوعی و هاد رونویسی گفتار با شتاب‌دهنده GPU، تا پلتفرم‌های تعاملی آموزش زبان، سیستم‌های مالی چندارزی، ابزارهای مهندسی معکوس و اوپن‌سورس دسکتاپ، و بازی‌های سه‌بعدی و دوبعدی تجاری.',
+  p2:'طی سال‌های اخیر بیش از ۱۸ سیستم جامع نرم‌افزاری را به سرانجام رسانده‌ام: از کارخانه اتوماسیون سازمانی هوش مصنوعی و هاد رونویسی گفتار با شتاب‌دهنده GPU، تا پلتفرم‌های تعاملی آموزش زبان، سیستم‌های مالی چندارزی، ابزارهای مهندسی معکوس و اوپن‌سورس دسکتاپ، و بازی‌های سه‌بعدی و دوبعدی تجاری.',
   cards:[
     {t:'۱. سواِرم ایجنت‌های خودمختار و RAG',d:'ارکستراسیون ایجنت‌ها با صف‌های اولویت Celery (0/3/9)، سیستم تایید انسانی (Human-in-the-loop)، لاگ‌های ضد دستکاری HMAC، و فکت‌چکینگ خودکار نقل‌قول‌ها در اسناد.'},
     {t:'۲. پردازش بلادرنگ چندوجهی صوت و تصویر',d:'استخراج صدای سیستم با WASAPI Loopback، فیلترهای صوتی دیجیتال، رونویسی بلادرنگ روی GPU با Whisper، وب‌سوکت دوطرفه Gemini Live، و تفکیک فریم با OpenCV.'},
@@ -76,13 +76,13 @@ about:{
   ]
 },
 proj:{
-  title:'پروژه‌ها و سیستم‌های مهندسی', sub:'۱۶ پروژه کامل در ۵ دسته‌بندی معماری',
-  filterAll:'همه (۱۶)',
+  title:'پروژه‌ها و سیستم‌های مهندسی', sub:'۱۸ پروژه کامل در ۵ دسته‌بندی معماری',
+  filterAll:'همه (۱۸)',
   filterAI:'سیستم‌های خودمختار و ایجنت‌ها (۳)',
   filterMulti:'هوش چندوجهی و گفتار (۴)',
   filterEnt:'سازمانی، فین‌تک و شبکه (۳)',
   filterSys:'مهندسی سیستم و اوپن‌سورس (۲)',
-  filterGames:'موتورهای بازی و فیزیک (۴)',
+  filterGames:'موتورهای بازی، فیزیک و عناوین تجاری (۶)',
   btnCode:'مشاهده در گیت‌هاب',
   btnLive:'باز کردن اپلیکیشن',
   btnVideo:'تماشای ویدیوی دمو',
@@ -204,13 +204,33 @@ proj:{
      arch:['سیستم مدیریت گراف تولید آیتم‌ها و بررسی شرط‌های مرج اقلام',
            'ذخیره‌سازی باینری فشرده وضعیت تخته بازی برای جلوگیری از دست رفتن اطلاعات بازیکن']},
     {id:'bus',cat:'games',badge:'vid',badgeText:'🎥 ویدیوی تست در آرشیو',
-     name:'Bus Jam Case & Commercial Shipped Titles (Parsa, Design Villa)',
-     role:'توسعه‌دهنده الگوریتم، منطق و فیزیک',
-     desc:'پازل‌های منطقی سه‌بعدی و دوبعدی با الگوریتم مسیریابی چند ایجنتی A* برای تخلیه هوشمند صف خودروها بدون برخورد، در کنار بازی‌های تجاری پارسا و ویلای مینا منتشرشده در کافه‌بازار و مایکت.',
-     tags:['Unity 3D/2D','C#','A* Pathfinding','Grid Logic','Published Mobile'],
+     name:'Bus Jam Case (Bus Escape) — پازل سه‌بعدی ترافیک و مسیر‌یابی',
+     role:'طراح الگوریتم و سازنده منطق بازی · پروژه شخصی',
+     desc:'پازل منطقی سه‌بعدی و دوبعدی با الگوریتم مسیریابی چند ایجنتی A* برای تخلیه هوشمند صف خودروها بدون برخورد و گره، مدیریت صف مسافران با تطبیق رنگ، و مراحل چندلایه با بهینه‌سازی پردازش.',
+     tags:['Unity 3D','C#','A* Pathfinding','Grid Logic','Obstacle Avoidance','Mobile'],
      images:IMG.bus, vsec:'commercial',
      arch:['الگوریتم مسیریابی گرید A* با در نظر گرفتن خودروهای پارک‌شده به‌عنوان موانع پویا',
-           'انتشار موفق دو عنوان تجاری در مارکت‌های داخلی کافه‌بازار و مایکت']}
+           'تشخیص برخورد سبک بدون محاسبات سنگین فیزیک جهت حداقل‌سازی بار CPU روی موبایل',
+           'سیستم مدیریت صف مسافران، قوانین تطبیق رنگ و طراحی مراحل چندلایه با سختی پله‌ای']},
+    {id:'villa',cat:'games',badge:'priv',badgeText:'🔒 پروژه استودیویی',
+     name:'Blood Castle / Design Villa (ویلای مینا) — بازی پازل و چیدمان فضا',
+     role:'برنامه‌نویس سیستم‌ها و منطق · شرکت بازی‌سازی بمب (Bomb Game Studio)',
+     desc:'بازی ترکیبی از پازل شبکه‌ای و بازسازی/دکوراسیون تعاملی فضا (هم‌سبک ویلای مینا) با موتور پازل زمان‌دار، ماشین حالت وضعیت دکوراسیون، اقتصاد سکه و پیشرفت داستان، و مدیریت حافظه در بارگذاری تکسچرهای سنگین.',
+     tags:['Unity 2D','C#','State Machine','Modular Decoration','Casual Puzzle','Memory Profiling'],
+     images:IMG.villa,
+     arch:['سیستم دکوراسیون مدولار: امکان افزودن آیتم و اتاق جدید توسط طراح بدون دست‌زدن به کد هسته',
+           'ماشین حالت اشیاء (State Machine): مدیریت انتقال وضعیت دارایی‌ها بین خراب، در حال ساخت و کامل',
+           'بهینه‌سازی مصرف حافظه: استریم و بارگذاری تدریجی تکسچرهای پرحجم محیط برای گوشی‌های ضعیف']},
+    {id:'parsa',cat:'games',badge:'live',badgeText:'🚀 منتشرشده رسمی در کافه‌بازار و مایکت',
+     name:'پارسا (Parsa) — بازی تجاری منتشرشده در کافه‌بازار و مایکت',
+     role:'برنامه‌نویس فنی و توسعه‌دهنده سیستم‌ها · شرکت بازی‌سازی بمب (Bomb Game Studio)',
+     desc:'عنوان تجاری اکشن موبایلی منتشرشده در کافه‌بازار و مایکت با هزاران کاربر فعال. در این پروژه پیاده‌سازی کامل بخش‌های فنی، منطق گیم‌پلی و رابط‌های کاربری، ذخیره‌سازی داده‌های بازیکن، رفع خطاهای نسخه‌های مختلف اندروید، بیلد ریلیز نهایی، اتصال به سرویس بازار و انتشار موفق بر عهده من بوده است.',
+     tags:['Unity','C#','UI Systems','Android Architecture','Cafe Bazaar API','Myket Store','Published Commercial Game'],
+     link:'parsa',
+     arch:['کدنویسی کامل سیستم‌های گیم‌پلی، انیمیشن‌ها و اتصال منطق به رابط کاربری (UI)',
+           'ذخیره‌سازی و ماندگاری امن اطلاعات بازیکن، امتیازات و پیشرفت بازی (Player Persistence)',
+           'پایدارسازی و تست‌های گسترده روی انواع گوشی‌های اندرویدی با حفظ ۶۰ فریم بر ثانیه پایدار',
+           'بیلد نهایی، امضای برنامه و انتشار رسمی روی کافه‌بازار با ارزیابی‌های فنی موفق']}
   ]
 },
 sys:{
@@ -375,7 +395,7 @@ T.en = {
 dir:'ltr', label:'English',
 nav:{
   home:'Home',
-  proj:'Projects (16)',
+  proj:'Projects (18)',
   sys:'AI Factory',
   multimodal:'Multimodal AI',
   gate:'Verification Gate',
@@ -389,10 +409,10 @@ hero:{
   role:'AI Systems Engineer &amp; Autonomous Agent Architect',
   tag:'Architecting autonomous agent swarms, sub-second multimodal pipelines, enterprise distributed systems, and physics game engines.',
   chips:['Mashhad, Iran','Military Service Completed','Open to Global & Remote Roles','Autonomous Swarm Specialist'],
-  cta1:'View & Download Résumé', cta2:'Explore All 16 Projects', cta3:'Contact & Discuss'
+  cta1:'View & Download Résumé', cta2:'Explore All 18 Projects', cta3:'Contact & Discuss'
 },
 stats:[
-  ['16+','Production Systems Architected & Shipped'],
+  ['18+','Production Systems Architected & Shipped'],
   ['17','Live Containerized Microservices in UniversalSystem'],
   ['84,000+','Verified Lines of Code in AI Ecosystem'],
   ['4','Concurrent Multimodal Threads (WASAPI + GPU)'],
@@ -402,7 +422,7 @@ stats:[
 about:{
   title:'Executive Summary', sub:'applied AI systems engineering & distributed architecture',
   p1:'I am an <b>AI Systems Engineer & Distributed Architect</b> specializing in autonomous multi-agent swarms, sub-second multimodal audio/vision pipelines, and enterprise microservices. My engineering focus bridges the gap between foundation models (LLMs) and resilient production execution: deterministic state machines, Celery priority queues (High/Default/Bulk), citation-validated vector retrieval (RAG), tamper-proof HMAC audit ledgers, and zero-allocation hot execution loops.',
-  p2:'Over the past years, I have architected and shipped <b>16+ comprehensive software systems</b> from architectural concept to full production deployment: autonomous agent factories, real-time GPU-accelerated speech-to-speech translation HUDs, adaptive multimodal learning engines, multi-currency accounting ledgers, and physics-driven 3D/2D games.',
+  p2:'Over the past years, I have architected and shipped <b>18+ comprehensive software systems</b> from architectural concept to full production deployment: autonomous agent factories, real-time GPU-accelerated speech-to-speech translation HUDs, adaptive multimodal learning engines, multi-currency accounting ledgers, and physics-driven 3D/2D games.',
   cards:[
     {t:'1. Autonomous Multi-Agent Swarms',d:'Multi-agent swarms orchestrated via Celery priority queues (0/3/9), human-in-the-loop approvals, tamper-proof HMAC audit ledgers, and automated fact-checking.'},
     {t:'2. Sub-Second Real-Time Multimodal',d:'Zero-lag audio capture via WASAPI Loopback, Butterworth digital filters, GPU-accelerated Whisper transcribing, Gemini Live WebSockets, and OpenCV diffing.'},
@@ -411,13 +431,13 @@ about:{
   ]
 },
 proj:{
-  title:'Engineering Portfolio', sub:'16 complete systems across 5 architectural categories',
-  filterAll:'All (16)',
+  title:'Engineering Portfolio', sub:'18 complete systems across 5 architectural categories',
+  filterAll:'All (18)',
   filterAI:'Autonomous AI & Swarms (3)',
   filterMulti:'Multimodal & Speech (4)',
   filterEnt:'Enterprise SaaS & Fintech (3)',
   filterSys:'Systems & Open Source (2)',
-  filterGames:'Physics Game Engines (4)',
+  filterGames:'Physics Game Engines & Commercial Titles (6)',
   btnCode:'View on GitHub',
   btnLive:'Open Live Application',
   btnVideo:'Watch Video Demo',
@@ -539,13 +559,33 @@ proj:{
      arch:['Branching Item Generator Graph: Manages merge validation, item spawning probability, and grid logic',
            'Binary State Persistence: Efficiently packs grid and player progression into compact binary data']},
     {id:'bus',cat:'games',badge:'vid',badgeText:'🎥 Video Demo in Archive',
-     name:'Bus Jam Case & Commercial Shipped Titles (Parsa, Design Villa)',
-     role:'Algorithm, Logic & Physics Developer',
-     desc:'3D and 2D logic puzzles utilizing A* multi-agent pathfinding for crowd queue routing without deadlock, alongside commercial titles Parsa and Design Villa published on Cafe Bazaar and Myket.',
-     tags:['Unity 3D/2D','C#','A* Pathfinding','Grid Logic','Published Mobile'],
+     name:'Bus Jam Case (Bus Escape) — 3D Traffic & Crowd Routing Puzzle',
+     role:'Algorithm Designer & Gameplay Logic Developer · Personal Project',
+     desc:'3D and 2D logic puzzles utilizing A* multi-agent pathfinding for crowd queue routing without deadlock, dynamic vehicle evacuation, color-matching passenger boarding rules, and mobile CPU profiling.',
+     tags:['Unity 3D','C#','A* Pathfinding','Grid Logic','Obstacle Avoidance','Mobile'],
      images:IMG.bus, vsec:'commercial',
-     arch:['A* Grid Pathfinding: Real-time obstacle avoidance calculating vehicle evacuation routes',
-           'Commercial Release: Shipped two commercial titles on Iranian app stores with high player retention']}
+     arch:['A* Grid Pathfinding treating parked vehicles as dynamic obstacles with real-time route re-evaluation',
+           'Lightweight collision detection avoiding heavy physics engine overhead to maintain 60 FPS on budget mobile devices',
+           'Passenger queue manager with multi-tier color-matching rules and progressive level difficulty curve']},
+    {id:'villa',cat:'games',badge:'priv',badgeText:'🔒 Studio Project',
+     name:'Blood Castle / Design Villa (Mina’s Villa) — Room Decoration & Spatial Puzzle Game',
+     role:'Systems & Logic Programmer · Bomb Game Studio',
+     desc:'Hybrid casual game combining grid-based puzzles with interactive room renovation and interior decoration (in the vein of Mina’s Villa). Built timed puzzle mechanics, decoration state machines, soft-currency economy, and streaming asset loading.',
+     tags:['Unity 2D','C#','State Machine','Modular Decoration','Casual Puzzle','Memory Profiling'],
+     images:IMG.villa,
+     arch:['Modular Decoration Engine allowing level designers to add new rooms and furniture presets without modifying core code',
+           'Finite State Machine (FSM) governing asset states seamlessly between ruined, in-progress, and restored stages',
+           'Memory Profiling & Texture Streaming: Staged asynchronous loading of high-resolution room artwork for low-RAM mobile hardware']},
+    {id:'parsa',cat:'games',badge:'live',badgeText:'🚀 Official Commercial Release on Cafe Bazaar & Myket',
+     name:'Parsa (پارسا) — Published Commercial Action Title (Cafe Bazaar & Myket)',
+     role:'Lead Technical & Systems Programmer · Bomb Game Studio',
+     desc:'Commercial action mobile game officially published on Cafe Bazaar and Myket with thousands of active downloads. Responsible for end-to-end technical implementation: gameplay architecture, UI data-binding, resilient player state persistence, Android multi-version compatibility fixes, final release builds, and store integration.',
+     tags:['Unity','C#','UI Systems','Android Architecture','Cafe Bazaar API','Myket Store','Published Commercial Game'],
+     link:'parsa',
+     arch:['Engineered core gameplay loops, character animation state controllers, and reactive UI data bindings',
+           'Designed resilient local player persistence safeguarding progression data, scores, and inventory state',
+           'Hardened Android performance and resolved device-specific crashes, maintaining rock-solid 60 FPS across budget chipsets',
+           'Managed production release lifecycle: keystore signing, Cafe Bazaar developer console integration, and live updates']}
   ]
 },
 sys:{
@@ -710,7 +750,7 @@ T.de = JSON.parse(JSON.stringify(T.en));
 T.de.label = 'Deutsch';
 T.de.nav = {
   home:'Startseite',
-  proj:'Projekte (16)',
+  proj:'Projekte (18)',
   sys:'KI-Fabrik',
   multimodal:'Multimodale KI',
   gate:'Verifizierungs-Gate',
