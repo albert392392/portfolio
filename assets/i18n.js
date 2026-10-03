@@ -18,6 +18,7 @@ const IMG = {
 const LINKS = {
   lango:      'https://nitrolango-client.vercel.app/',
   parsa:      'https://cafebazaar.ir/app/com.BombCompany.ParsaGame',
+  zoho:       'https://zoho-books-clone-neon.vercel.app/',
   dojo:       'https://gamedojo.ir/gamedev-weekend/',
   maryam:     'https://www.instagram.com/iholymary/',
   minoo:      'https://www.instagram.com/minoo.gameland/',
@@ -42,8 +43,8 @@ dir:'rtl', label:'فارسی',
 nav:{
   home:'خانه',
   proj:'پروژه‌ها (۱۸)',
-  sys:'کارخانه هوش مصنوعی',
-  multimodal:'هوش چندوجهی',
+  sys:'سیستم‌سازی و کارخانه AI',
+  multimodal:'هوش چندحالته',
   gate:'منشور مهندسی',
   neon:'Neon Run',
   honors:'افتخارات و اسناد',
@@ -51,29 +52,29 @@ nav:{
   videos:'ویدیوها'
 },
 hero:{
-  name:'آلبرت <b>(ایمان منصوری)</b>',
-  role:'مهندس ارشد سیستم‌های هوش مصنوعی و معماری ایجنت‌های خودمختار',
-  tag:'معماری سواِرم‌های خودمختار هوش مصنوعی، پایپ‌لاین‌های چندوجهی بلادرنگ، سیستم‌های توزیع‌شده سازمانی و فیزیک بازی‌ها.',
-  chips:['مشهد، ایران','کارت پایان خدمت','آماده همکاری و استخدام بین‌المللی','تخصص در ایجنت‌های خودمختار'],
+  name:'ایمان منصوری <b>(Iman Mansouri)</b>',
+  role:'معمار سیستم و مهندس هوش مصنوعی چندحالته (Architect & Multimodal AI Engineer)',
+  tag:'معماری سواِرم‌های خودمختار هوش مصنوعی، سیستم‌سازی و اتوماسیون جامع نرم‌افزار، خطوط لوله چندحالته بلادرنگ و سیستم‌های توزیع‌شده سازمانی.',
+  chips:['مشهد، ایران','کارت پایان خدمت (معافیت دائم پزشکی)','۱۰۰٪ آزاد برای استخدام و همکاری بین‌المللی','معمار سیستم‌های اتوماسیون جامع'],
   cta1:'دانلود و مشاهده رزومه', cta2:'مشاهده پروژه‌ها (۱۸)', cta3:'تماس و گفت‌وگو'
 },
 stats:[
-  ['+۱۸','سیستم و پروژه پروداکشن پیاده‌سازی‌شده'],
+  ['۱۴ مخزن','ممیزی‌شده با ۷۵۸K فایل و ۶۱GB کد و دارایی'],
   ['۱۷','مایکروسرویس زنده در UniversalSystem'],
-  ['+۸۴٬۰۰۰','خط کد در هسته هوش مصنوعی اکوسیستم'],
-  ['۴','ترد موازی بلادرنگ (WASAPI + GPU)'],
-  ['۳۱۵K','دنبال‌کننده استریمر رویداد Negative Five'],
-  ['۱۰۰٪','پایبندی به معماری تدافعی Zero-Hallucination']
+  ['+۳۰۷٬۰۰۰','خط کد در کل اکوسیستم (۲۳۸K C# + ۶۹K Python)'],
+  ['۶۷۱ RPS','توان پردازش بار اندازه‌گیری‌شده در پروداکشن'],
+  ['۳۱۵K','مخاطب استریمر در رویداد شتاب‌دهنده Negative Five'],
+  ['۱۰۰٪','پایبندی به معماری دفاعی Zero-Hallucination']
 ],
 about:{
-  title:'من در یک نگاه', sub:'مهندسی سیستم، ایجنت‌های خودمختار و هوش چندوجهی',
-  p1:'من مهندس سیستم‌های هوش مصنوعی و معمار نرم‌افزار هستم. تمرکز تخصصی من بر <b>طراحی سواِرم‌های خودمختار ایجنت‌ها</b>، <b>خط لوله‌های چندوجهی صوت و تصویر با تأخیر زیر ثانیه</b>، و <b>سیستم‌های توزیع‌شده سازمانی</b> است. تمرکز من پر کردن فاصله میان مدل‌های بنیادی زبانی (LLMs) و اجرای پایدار در محیط واقعی است: طراحی ماشین‌های حالت قطعی، صف‌های اولویت پیام، راستی‌آزمایی بازیابی برداری (RAG) بدون توهم، لاگ‌های تغییرناپذیر HMAC، و بهینه‌سازی بدون Garbage Collection.',
-  p2:'طی سال‌های اخیر بیش از ۱۸ سیستم جامع نرم‌افزاری را به سرانجام رسانده‌ام: از کارخانه اتوماسیون سازمانی هوش مصنوعی و هاد رونویسی گفتار با شتاب‌دهنده GPU، تا پلتفرم‌های تعاملی آموزش زبان، سیستم‌های مالی چندارزی، ابزارهای مهندسی معکوس و اوپن‌سورس دسکتاپ، و بازی‌های سه‌بعدی و دوبعدی تجاری.',
+  title:'من در یک نگاه', sub:'مهندسی هوش مصنوعی چندحالته، سیستم‌سازی و اتوماسیون جامع، و سیستم‌های بلادرنگ',
+  p1:'من <b>معمار سیستم و مهندس هوش مصنوعی چندحالته</b> هستم. تمرکز تخصصی من بر <b>طراحی سیستم‌های اتوماسیون جامع و سواِرم‌های خودمختار ایجنت‌ها</b>، <b>خط لوله‌های چندحالته صوت و تصویر با تأخیر زیر ثانیه</b>، و <b>سیستم‌های توزیع‌شده سازمانی و میکروسرویس</b> است. هدف من پر کردن فاصله میان مدل‌های بنیادی زبانی (LLMs) و اجرای پایدار در محیط واقعی است: طراحی ماشین‌های حالت قطعی، صف‌های اولویت پیام Celery (0/3/9)، راستی‌آزمایی بازیابی برداری (RAG) بدون توهم، لاگ‌های تغییرناپذیر HMAC، و بهینه‌سازی Zero-Allocation در C# و یونیتی.',
+  p2:'طی سال‌های اخیر بیش از ۱۸ سیستم جامع نرم‌افزاری و محصول صنعتی را به سرانجام رسانده‌ام: از کارخانه اتوماسیون نرم‌افزار هوش مصنوعی (UniversalSystem) و سامانه حسابداری مالی سازمانی (Zoho Books Clone با ۱۱۸ صفحه استاتیک)، تا کارخانه اسناد هوشمند (universal-doc-factory با ۶۹ هزار خط کد پایتون)، هاد رونویسی گفتار با GPU، پلتفرم‌های تعاملی آموزش زبان، ابزارهای مهندسی معکوس و عناوین تجاری منتشرشده در کافه‌بازار و مایکت.',
   cards:[
-    {t:'۱. سواِرم ایجنت‌های خودمختار و RAG',d:'ارکستراسیون ایجنت‌ها با صف‌های اولویت Celery (0/3/9)، سیستم تایید انسانی (Human-in-the-loop)، لاگ‌های ضد دستکاری HMAC، و فکت‌چکینگ خودکار نقل‌قول‌ها در اسناد.'},
-    {t:'۲. پردازش بلادرنگ چندوجهی صوت و تصویر',d:'استخراج صدای سیستم با WASAPI Loopback، فیلترهای صوتی دیجیتال، رونویسی بلادرنگ روی GPU با Whisper، وب‌سوکت دوطرفه Gemini Live، و تفکیک فریم با OpenCV.'},
-    {t:'۳. معماری سازمانی و مایکروسرویس‌ها',d:'معماری تمیز C# .NET 10 و FastAPI، سیستم‌های حسابداری با دفترکل دوطرفه، پایگاه‌های داده وکتوری Qdrant، و رندرهای سازمانی تایپوگرافی RTL.'},
-    {t:'۴. مهندسی معکوس و موتورهای فیزیک',d:'مهندسی معکوس ساختارهای Electron ASAR، محاسبه هش‌های SHA-256 Base64، بهینه‌سازی Zero-GC در حلقه‌های فریم یونیتی، و فیزیک مفاصل رگ‌دال.'}
+    {t:'۱. سیستم‌سازی، سواِرم ایجنت‌های خودمختار و RAG',d:'ارکستراسیون ایجنت‌های نرم‌افزاری با صف‌های اولویت Celery (0/3/9)، سیستم تایید انسانی (Human-in-the-loop)، لاگ‌های تغییرناپذیر HMAC-SHA256، کلیدهای سازمانی ایزوله (usk_) و فکت‌چکینگ خودکار نقل‌قول‌ها در اسناد بدون توهم.'},
+    {t:'۲. پردازش بلادرنگ چندحالته صوت و تصویر',d:'استخراج صدای سیستم با WASAPI Loopback، رونویسی بلادرنگ روی GPU با faster-whisper و شتاب‌دهنده CUDA، استریم دوطرفه Full-Duplex با وب‌سوکت Gemini Live، و تفکیک فریم‌های تکراری با OpenCV جهت صرفه‌جویی ۷۵٪ در مصرف توکن.'},
+    {t:'۳. معماری سازمانی، ERP و میکروسرویس‌ها',d:'سامانه جامع حسابداری Zoho Books Clone با ۱۱۸ صفحه استاتیک Next.js 15 و پشتیبانی ۲۰ زبانه بدون نشت، هسته کلین C# .NET 10 با الگوی Transactional Outbox در MassTransit، پایگاه‌های داده وکتوری Qdrant با ایندکس HNSW، و رندرهای سازمانی تایپوگرافی RTL.'},
+    {t:'۴. مهندسی انجین بازی، Zero-GC و بهینه‌سازی بلادرنگ',d:'معماری سیستم‌های Zero-GC با Span<T> و Memory<T> در C#، بهینه‌سازی‌های Burst Compiler و IL2CPP ARM64، کش کردن کامل شناسه شیدرها، ۲۲۲ گارد دفاعی اعتبارسنجی float.IsNaN/IsInfinity و فیزیک مفاصل رگ‌دال.'}
   ]
 },
 proj:{
@@ -89,22 +90,23 @@ proj:{
   btnVideo:'تماشای ویدیوی دمو',
   items:[
     {id:'universalsystem',cat:'ai',badge:'priv',badgeText:'🔒 مخزن سازمانی خصوصی',
-     name:'UniversalSystem — کارخانه خودمختار نرم‌افزار هوش مصنوعی',
-     role:'معمار سیستم و طراح پلتفرم ارکستراسیون ایجنت‌ها',
-     desc:'پلتفرم جامع توزیع‌شده با ۱۷ مایکروسرویس کانتینری برای خودکارسازی فرآیندهای توسعه نرم‌افزار، تولید چندوجهی، حافظه بلندمدت پروژه و تست‌های خودکار. دارای صف‌های اولویت‌بندی پیام، لاگ تغییرناپذیر HMAC، و پل آبشاری هوش مصنوعی با سوییچ خودکار به کلاینت‌های محلی.',
-     tags:['FastAPI','C# .NET 10','Celery Priority (0/3/9)','Qdrant RAG','HMAC Audit Ledger','RabbitMQ','Docker Compose','YARP'],
-     arch:['صف‌های اولویت Celery: تفکیک وظایف به سه سطح High (0)، Default (3) و Bulk (9)',
-           'دفترکل امنیتی HMAC: ثبت زنجیره‌ای و تغییرناپذیر کلیه تصمیمات ایجنت‌ها',
-           'پل آبشاری Host Bridge: سوئیچ خودکار ترافیک در صورت بروز خطای سهمیه به ابزارهای محلی کلاد، کدکس و آنتی‌گرویتی',
-           'پالایش داده‌های حساس PII: ماسک خودکار کارت‌ها، شماره ملی و شبا به‌همراه دیواره ضد نفوذ SSRF']},
+     name:'UniversalSystem — سیستم‌سازی و کارخانه خودمختار نرم‌افزار هوش مصنوعی',
+     role:'معمار سیستم و طراح پلتفرم اتوماسیون جامع',
+     desc:'پلتفرم جامع توزیع‌شده با ۱۷ مایکروسرویس کانتینری برای سیستم‌سازی کامل فرآیندهای توسعه نرم‌افزار، تولید خودکار پروژه‌ها، ارکستراسیون ایجنت‌ها، حافظه بلندمدت برداری و تست‌های خودکار. دارای صف‌های اولویت پیام Celery، لاگ تغییرناپذیر HMAC، لایه انترپرایز با کلیدهای usk_، پل آبشاری هوش مصنوعی با سوییچ خودکار به کلاینت‌های محلی، و عملکرد اثبات‌شده با ۶۷۱ RPS.',
+     tags:['FastAPI','C# .NET 10','Celery Priority (0/3/9)','Qdrant RAG','HMAC Audit Ledger','RabbitMQ','Docker Compose','YARP Ingress'],
+     arch:['سیستم‌سازی خودکار: اسکریپت‌های New-UniversalProject جهت ایجاد، تست، بیلد و استقرار بلادرنگ میکروسرویس‌ها و برنامه‌ها',
+           'صف‌های اولویت Celery: تفکیک وظایف به سه سطح High (0)، Default (3) و Bulk (9) با قفل ادعا و ضربان قلب ۵ دقیقه‌ای',
+           'دفترکل امنیتی HMAC: ثبت زنجیره‌ای و غیرقابل دستکاری کلیه تصمیمات ایجنت‌ها با امکان راستی‌آزمایی در روت /enterprise/audit/verify',
+           'پل آبشاری Host Bridge: سوئیچ خودکار ترافیک در صورت بروز خطای سهمیه به ابزارهای محلی کلاد، کدکس و آنتی‌گرویتی روی پورت ۸۷۶۵',
+           'پالایش داده‌های حساس PII: ماسک خودکار کارت‌های اعتباری، شماره ملی و شبا به‌همراه دیواره ضد نفوذ SSRF']},
     {id:'docfactory',cat:'ai',badge:'priv',badgeText:'🔒 مخزن سازمانی خصوصی',
-     name:'Universal Doc Factory — کارخانه اسناد و پژوهش خودمختار',
-     role:'طراح معماری ایجنت‌های پژوهشگر و رندرینگ اسناد',
-     desc:'خط لوله ۵ مرحله‌ای ایجنت‌های خودمختار برای پژوهش زنده در وب، راستی‌آزمایی دقیق نقل‌قول‌ها در برابر خطای توهم، و رندرینگ اسناد سازمانی (PDF/DOCX/PPTX) با پشتیبانی نیتیو از تایپوگرافی راست‌به‌چپ (RTL) فارسی.',
-     tags:['Python','FastAPI','Multi-Agent Swarm','Zero-Hallucination','DuckDuckGo DDGS','JSONSchema','RTL Typography'],
-     arch:['پایپ‌لاین ۵ مرحله‌ای: BriefAgent ➔ ResearchAgent ➔ ArchitectureAgent ➔ WriterAgent + ReviewerAgent با ۳ دور اصلاح خودکار',
-           'موتور اعتبارسنجی نقل‌قول‌ها: راستی‌آزمایی عبارت به عبارت ادعاها در برابر متون وب قبل از اجازه صدور سند',
-           'تایپوگرافی سازمانی RTL: حل ریشه‌ای شکل‌دهی گلیف‌های فارسی، فونت‌های رسمی و جدول‌ها در فایل‌های آفیس و PDF']},
+     name:'Universal Doc Factory — کارخانه تولید اسناد هوشمند و پژوهش خودمختار',
+     role:'معمار سیستم و طراح خط لوله تولید اسناد چندقالبه',
+     desc:'خط لوله تولید خودکار اسناد در ۶۹,۰۴۴ خط کد پایتون بدون وابستگی به اینتروپ آفیس. دارای موتور پژوهش زنده در وب، راستی‌آزمایی قطعی نقل‌قول‌ها در برابر خطای توهم، و رندرینگ اسناد سازمانی (PDF/DOCX/PPTX) در ۹ بسته دامنه‌ای با پشتیبانی نیتیو از تایپوگرافی راست‌به‌چپ (RTL) فارسی.',
+     tags:['Python 3.12','69K LOC','Multi-Agent Swarm','Zero-Hallucination','DuckDuckGo DDGS','RTL Engine','Word/PPTX/PDF'],
+     arch:['پایپ‌لاین ۵ مرحله‌ای: BriefAgent ➔ ResearchAgent ➔ ArchitectureAgent ➔ WriterAgent + ReviewerAgent با ۳ دور بازبینی خودکار',
+           'موتور اعتبارسنجی نقل‌قول‌ها: راستی‌آزمایی عبارت به عبارت ادعاها در برابر متون وب قبل از صدور سند بر پایه schema رسمی',
+           'رندرر اختصاصی RTL: حل ریشه‌ای شکل‌دهی گلیف‌های فارسی، فونت وزیرمتن و استایل‌های سازمانی بدون نیاز به نصب آفیس']},
     {id:'msai',cat:'ai',badge:'priv',badgeText:'🔒 مخزن اختصاصی رفرنس مهندسی',
      name:'Microsoft AI Architect Academy & Code Bank',
      role:'معمار هوش مصنوعی و مدرس سیستم‌ها',
@@ -149,13 +151,16 @@ proj:{
      tags:['Next.js 15','TypeScript','FastAPI','PostgreSQL','Tailwind CSS','Double-Entry Ledger','RTL Engine'],
      arch:['معماری دفترکل دوطرفه: تضمین توازن بدهکار و بستانکار در کلیه تراکنش‌های ثبت‌شده',
            'موتور صدور صورت‌های مالی استاندارد (ترازنامه، سود و زیان، جریان وجوه نقد) با تایپوگرافی سازمانی RTL']},
-    {id:'zoho',cat:'enterprise',badge:'priv',badgeText:'🔒 مخزن خصوصی',
-     name:'Zoho Books Clone — سیستم جامع ERP و مدیریت مالی ابری',
-     role:'توسعه‌دهنده فول‌استک و طراح مایکروسرویس‌ها',
-     desc:'کلون پیشرفته نرم‌افزار بین‌المللی Zoho Books برای مدیریت صدور فاکتور مشتریان، صورت‌حساب‌های تأمین‌کنندگان، تطبیق تراکنش‌های بانکی، و گزارش‌گیری‌های مالی خودکار.',
-     tags:['TypeScript','Next.js','React','RESTful Microservices','Tailwind CSS'],
-     arch:['ماژول مدیریت چرخه فاکتور، اسناد خرید، انبارداری و صورتحساب‌های چندارزی',
-           'معماری مایکروسرویسی با جداسازی دقیق منطق تسویه‌حساب و لاگ‌های حسابرسی']},
+    {id:'zoho',cat:'enterprise',badge:'live',badgeText:'🚀 پلتفرم زنده پروداکشن (Vercel)',
+     name:'Zoho Books Clone — سامانه جامع مالی و حسابداری دوبل ابری',
+     role:'معمار سیستم و توسعه‌دهنده فول‌استک',
+     desc:'پیاده‌سازی جامع و ۱۰۰٪ منطبق بر استاندارد بین‌المللی Zoho Books با ۱۱۸ صفحه استاتیک رندرشده در Next.js 15، پشتیبانی بدون نشت از ۲۰ زبان دنیا با ۴۳۶ کلید بومی، دفترکل دوبل، تطبیق بانکی، ماژول ۶۹ صفحه‌ای تنظیمات، سوئیچر بلادرنگ نقش‌ها و ایزولاسیون کامل چندمستأجری.',
+     tags:['Next.js 15','React 19','TypeScript','Material-UI','Double-Entry Engine','20 Languages i18n','Multi-Tenancy','Tailwind CSS'],
+     link:'zoho',
+     arch:['معماری ۱۱۸ صفحه استاتیک کامپایل‌شده بدون خطای تایپ در Next.js 15 App Router با عملکرد فوق سریع',
+           'موتور بین‌المللی‌سازی ۲۰ زبانه (i18n) با ۴۳۶ کلید بومی و عدم نشت لغوی با رندرینگ کامل RTL/LTR',
+           'موتور حسابداری دوبل: دفاتر روزنامه، کل، تفصیلی، ترازنامه، صورت سود و زیان (P&L) و خلاصه ارزش افزوده فصلی',
+           'سوئیچ بلادرنگ نقش‌ها (Owner، Admin، Accountant، Staff، Viewer) و سوییچ چندمستأجری در هدر']},
     {id:'auro',cat:'enterprise',badge:'priv',badgeText:'🔒 مخزن خصوصی',
      name:'AuroSocialEngine — موتور شبکه اجتماعی غیرمتمرکز و مستقل',
      role:'طراح معماری داده و سیستم‌های توزیع‌شده',
@@ -235,10 +240,10 @@ proj:{
   ]
 },
 sys:{
-  title:'کارخانه نرم‌افزار هوش مصنوعی', sub:'UniversalSystem — سامانه جامع اتوماسیون سازمانی',
-  intro:'UniversalSystem یک اکوسیستم توزیع‌شده با عملکرد فوق‌العاده بالاست که مراحل تکراری تولید نرم‌افزار، ارکستراسیون ایجنت‌های خودمختار، پایپ‌لاین‌های چندوجهی صوت و تصویر، تست‌های خودکار و مستندسازی سازمانی را مهندسی و خودکار می‌کند. این پلتفرم از ۱۷ مایکروسرویس کانتینری و یک دیمن محلی ویندوز (Host Bridge) تشکیل شده و خروجی آزمون زنده سلامت آن در تصویر زیر ثبت گردیده است.',
+  title:'سیستم‌سازی و کارخانه نرم‌افزار هوش مصنوعی', sub:'UniversalSystem — سامانه جامع اتوماسیون سازمانی',
+  intro:'UniversalSystem یک اکوسیستم توزیع‌شده با عملکرد فوق‌العاده بالاست که مراحل تکراری سیستم‌سازی، تولید خودکار پروژه‌ها، ارکستراسیون ایجنت‌های خودمختار، پایپ‌لاین‌های چندحالته صوت و تصویر، تست‌های خودکار و مستندسازی سازمانی را مهندسی و خودکار می‌کند. این پلتفرم از ۱۷ مایکروسرویس کانتینری و یک دیمن محلی ویندوز (Host Bridge روی پورت ۸۷۶۵) تشکیل شده و خروجی آزمون زنده سلامت آن با توان ۶۷۱ درخواست بر ثانیه اندازه‌گیری و ثبت شده است.',
   kpis:[
-    ['+۸۴٬۰۰۰','خط کد پروداکشن در ۴۳۲ فایل'],
+    ['+۸۴٬۰۰۰','خط کد پروداکشن در هسته هوش مصنوعی'],
     ['۱۷ / ۱۷','مایکروسرویس کانتینری زنده و تاییدشده'],
     ['۳۸۵+','سوئیت آزمون‌های خودکار و سناریوهای تدافعی'],
     ['۶۷۱ RPS','توان پردازش بار اندازه‌گیری‌شده در پروداکشن'],
@@ -292,6 +297,7 @@ sys:{
   ],
   capTitle:'ستون‌های معماری و مهندسی سازمانی (Architectural Pillars)',
   pillars:[
+    {t:'سیستم‌سازی و تولید خودکار پروژه‌ها (Project Scaffolding Automation)',d:'تولید خودکار صفر تا صد پروژه‌های جدید نرم‌افزاری شامل MicroService، AIPlatform، EnterpriseApp، FullSaaS و 3DGame با اسکریپت New-UniversalProject.ps1؛ اجرای خودکار تولید ساختار تمیز، پیکربندی وابستگی‌ها، تست‌های یکپارچگی، کامپایل، استقرار و بازسازی اینگرس YARP با خروجی قطعی Exit Code 0.'},
     {t:'دفترکل زنجیره‌ای تغییرناپذیر (HMAC-SHA256 Audit Ledger)',d:'کلیه اقدامات اتخاذشده توسط ایجنت‌ها، تغییرات وضعیت و تاییدیه‌های مدیران با هش کلیددار زنجیره‌ای HMAC-SHA256 در لاگ تغییرناپذیر ثبت می‌شود. با فراخوانی GET /api/v1/enterprise/audit/verify اصالت کامل تاریخچه راستی‌آزمایی شده و هرگونه دستکاری احتمالی غیرممکن می‌گردد.'},
     {t:'پل آبشاری مدل‌ها و سوییچ به Host Bridge محلی',d:'حذف کامل نقطه شکست (Single Point of Failure): در صورت پر شدن سهمیه کلود یا بروز خطاهای ۴۲۹/۵۰۳، سیستم ترافیک را به صورت خودکار و بدون وقفه به پل هاست ویندوز و کلاینت‌های لاگین‌شده محلی (Claude Code، Codex، Antigravity) هدایت می‌کند.'},
     {t:'پالایش داده‌های حساس (PII Masking) و دیواره ضد نفوذ SSRF',d:'کلیه ورودی‌ها قبل از ارسال به مدل‌ها یا ذخیره در وکتور دیتابیس، توسط الگوریتم‌های اعتبارسنجی لوهن برای کارت‌های اعتباری، کدهای ملی، شماره‌های تماس و شبا پالایش و ماسک می‌شوند. وب‌هوک‌های خروجی نیز توسط فایروال در برابر آدرس‌های لوکال و شبکه خصوصی محافظت می‌گردند.'},
@@ -535,7 +541,7 @@ videos:{
   jump:'پرش سریع به ویدیوهای بخش:',
   loading:'در حال بارگذاری ویدیو…'
 },
-footer:'Albert (Iman Mansour) — مهندس سیستم‌های هوش مصنوعی و معماری ایجنت‌های خودمختار'
+footer:'ایمان منصوری (Iman Mansouri) — معمار سیستم و مهندس هوش مصنوعی چندحالته'
 };
 
 /* ============ EN (ENGLISH) ============ */
@@ -544,7 +550,7 @@ dir:'ltr', label:'English',
 nav:{
   home:'Home',
   proj:'Projects (18)',
-  sys:'AI Factory',
+  sys:'AI Software Factory & Systems',
   multimodal:'Multimodal AI',
   gate:'Verification Gate',
   neon:'Neon Run',
@@ -553,29 +559,29 @@ nav:{
   videos:'Videos'
 },
 hero:{
-  name:'Albert <b>(Iman Mansour)</b>',
-  role:'AI Systems Engineer &amp; Autonomous Agent Architect',
-  tag:'Architecting autonomous agent swarms, sub-second multimodal pipelines, enterprise distributed systems, and physics game engines.',
-  chips:['Mashhad, Iran','Military Service Completed','Open to Global & Remote Roles','Autonomous Swarm Specialist'],
+  name:'Iman Mansouri <b>(ایمان منصوری)</b>',
+  role:'Architect & Multimodal AI Engineer',
+  tag:'Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.',
+  chips:['Mashhad, Iran','Military Exemption Card','Open to Global & Remote Roles','Software Automation Systems Architect'],
   cta1:'View & Download Résumé', cta2:'Explore All 18 Projects', cta3:'Contact & Discuss'
 },
 stats:[
-  ['18+','Production Systems Architected & Shipped'],
-  ['17','Live Containerized Microservices in UniversalSystem'],
-  ['84,000+','Verified Lines of Code in AI Ecosystem'],
-  ['4','Concurrent Multimodal Threads (WASAPI + GPU)'],
+  ['14 Repos','Audited Codebases (758K files, ~61GB assets/code)'],
+  ['17 / 17','Live Containerized Microservices in UniversalSystem'],
+  ['307K+','Production Lines of Code (238K C# + 69K Python)'],
+  ['671 RPS','Peak Measured Production Throughput'],
   ['315K','Streamer Audience Reach at Negative Five Event'],
   ['100%','Zero-Hallucination Defensive Architecture Contract']
 ],
 about:{
   title:'Executive Summary', sub:'applied AI systems engineering & distributed architecture',
-  p1:'I am an <b>AI Systems Engineer & Distributed Architect</b> specializing in autonomous multi-agent swarms, sub-second multimodal audio/vision pipelines, and enterprise microservices. My engineering focus bridges the gap between foundation models (LLMs) and resilient production execution: deterministic state machines, Celery priority queues (High/Default/Bulk), citation-validated vector retrieval (RAG), tamper-proof HMAC audit ledgers, and zero-allocation hot execution loops.',
-  p2:'Over the past years, I have architected and shipped <b>18+ comprehensive software systems</b> from architectural concept to full production deployment: autonomous agent factories, real-time GPU-accelerated speech-to-speech translation HUDs, adaptive multimodal learning engines, multi-currency accounting ledgers, and physics-driven 3D/2D games.',
+  p1:'I am an <b>Architect & Multimodal AI Engineer</b> specializing in autonomous multi-agent swarms, comprehensive software automation pipelines, sub-second multimodal audio/vision pipelines, and enterprise microservices. My engineering focus bridges the gap between foundation models (LLMs) and resilient production execution: deterministic state machines, Celery priority queues (High/Default/Bulk), citation-validated vector retrieval (RAG), tamper-proof HMAC audit ledgers, and zero-allocation hot execution loops.',
+  p2:'Over the past years, I have architected and shipped <b>18+ comprehensive software systems</b> from architectural concept to full production deployment: autonomous software factories (UniversalSystem), enterprise double-entry cloud accounting platforms (Zoho Books Clone with 118 static pages), automated document factories (universal-doc-factory with 69K LOC), real-time GPU-accelerated speech translation HUDs, adaptive learning engines, and physics-driven 3D/2D games.',
   cards:[
-    {t:'1. Autonomous Multi-Agent Swarms',d:'Multi-agent swarms orchestrated via Celery priority queues (0/3/9), human-in-the-loop approvals, tamper-proof HMAC audit ledgers, and automated fact-checking.'},
-    {t:'2. Sub-Second Real-Time Multimodal',d:'Zero-lag audio capture via WASAPI Loopback, Butterworth digital filters, GPU-accelerated Whisper transcribing, Gemini Live WebSockets, and OpenCV diffing.'},
-    {t:'3. Enterprise Microservices & Fintech',d:'C# .NET 10 Clean Architecture, FastAPI microservices, double-entry general ledgers, Qdrant vector retrieval, and enterprise RTL typesetting engines.'},
-    {t:'4. Systems Programming & Physics',d:'Electron ASAR reverse engineering, cryptographic SHA-256 base64 re-signing algorithms, Zero-GC hot loops in game engines, and parabolic trajectory physics.'}
+    {t:'1. Software Automation, Multi-Agent Swarms & RAG',d:'Multi-agent swarms orchestrated via Celery priority queues (0/3/9), automated project scaffolding (New-UniversalProject), human-in-the-loop approvals, tamper-proof HMAC audit ledgers, and automated fact-checking.'},
+    {t:'2. Sub-Second Real-Time Multimodal',d:'Zero-lag audio capture via WASAPI Loopback, Butterworth digital filters, GPU-accelerated faster-whisper on CUDA, Gemini Live WebSockets, and OpenCV SSIM/MSE diffing for 75% token reduction.'},
+    {t:'3. Enterprise Microservices, ERP & Fintech',d:'Zoho Books Clone with 118 static pages and zero-leakage 20-language support, C# .NET 10 Clean Architecture with MassTransit Transactional Outbox pattern, Qdrant HNSW vector retrieval, and enterprise RTL typesetting.'},
+    {t:'4. Systems Programming, Game Engines & Physics',d:'Zero-GC hot loops with Span<T> and Memory<T> in C#, IL2CPP ARM64 compilation, Burst compiler SIMD vectorization, 222 defensive float.IsNaN guards, and ragdoll joint physics.'}
   ]
 },
 proj:{
@@ -591,19 +597,20 @@ proj:{
   btnVideo:'Watch Video Demo',
   items:[
     {id:'universalsystem',cat:'ai',badge:'priv',badgeText:'🔒 Private Enterprise Repository',
-     name:'UniversalSystem — Autonomous AI Software Factory',
-     role:'Systems Architect & Agentic Platform Designer',
-     desc:'Distributed enterprise multi-agent orchestration platform automating software generation, multimodal synthesis, automated test suites, and long-term project memory. Architected with isolated containerized microservices, priority Celery message queues, cryptographically tamper-proof HMAC ledgers, and automated failover bridges between cloud and local developer sessions.',
-     tags:['FastAPI','C# .NET 10','Celery Priority (0/3/9)','Qdrant RAG','HMAC Audit Ledger','RabbitMQ','Docker Compose','YARP'],
-     arch:['Celery Priority Queues: Distributes background workloads into High (0), Default (3), and Bulk (9)',
-           'HMAC Audit Ledger: Cryptographically chained immutable hash record of all agent execution steps',
-           'Host Bridge Failover: Gracefully redirects 429/503 cloud API rate limits to local developer CLI sessions',
+     name:'UniversalSystem — Autonomous AI Software Factory & Systems Automation',
+     role:'Systems Architect & Full-Stack Automation Engineer',
+     desc:'Distributed enterprise multi-agent orchestration platform automating end-to-end software development, automated project scaffolding, multimodal pipelines, automated test suites, and persistent vector memory. Features priority Celery queues, immutable HMAC ledgers, enterprise usk_ tenant keys, automated failover to local developer CLIs (Host Bridge :8765), and benchmarked at 671 RPS.',
+     tags:['FastAPI','C# .NET 10','Celery Priority (0/3/9)','Qdrant RAG','HMAC Audit Ledger','RabbitMQ','Docker Compose','YARP Ingress'],
+     arch:['Automated Project Scaffolding: New-UniversalProject scripts generating, testing, building, and deploying microservices with exit 0',
+           'Celery Priority Queues: Distributes background workloads into High (0, sub-second SLAs), Default (3), and Bulk (9)',
+           'HMAC Audit Ledger: Cryptographically chained immutable hash record of all agent execution steps verified via /enterprise/audit/verify',
+           'Host Bridge Failover: Gracefully redirects 429/503 cloud API rate limits to local developer CLI sessions (Claude Code, Codex, Antigravity)',
            'PII Redaction & SSRF Guardrails: Automated regex-based scrubbing of sensitive card/ID numbers with outbound webhook firewalls']},
     {id:'docfactory',cat:'ai',badge:'priv',badgeText:'🔒 Private Enterprise Repository',
-     name:'Universal Doc Factory — Autonomous Research & Publishing Engine',
-     role:'Lead Agent Architect & Typography Systems Engineer',
-     desc:'5-stage sequential autonomous agent pipeline for real-time web research, zero-hallucination citation validation, and enterprise document rendering (PDF/DOCX/PPTX) with native bidirectional Persian/RTL typesetting.',
-     tags:['Python','FastAPI','Multi-Agent Swarm','Zero-Hallucination','DuckDuckGo DDGS','JSONSchema','RTL Typography'],
+     name:'Universal Doc Factory — Autonomous Research & Multi-Format Publishing Engine',
+     role:'System Architect & Lead Typography Systems Engineer',
+     desc:'Production-grade 69,044 LOC Python automated document generation pipeline with zero Office interop dependencies. Features live web research, character-by-character citation fact-checking against web sources, and enterprise document rendering (PDF/DOCX/PPTX) across 9 domain packs with native RTL Persian typography.',
+     tags:['Python 3.12','69K LOC','Multi-Agent Swarm','Zero-Hallucination','DuckDuckGo DDGS','RTL Engine','Word/PPTX/PDF'],
      arch:['5-Stage Sequential Pipeline: BriefAgent ➔ ResearchAgent ➔ ArchitectureAgent ➔ WriterAgent + ReviewerAgent with 3-round automated review loops',
            'Zero-Hallucination Citation Engine: Character-by-character quote validation against source web documents prior to allowing export',
            'Enterprise RTL Typography: Full glyph shaping, font embedding, and layout export to publication-ready deliverables']},
@@ -651,13 +658,16 @@ proj:{
      tags:['Next.js 15','TypeScript','FastAPI','PostgreSQL','Tailwind CSS','Double-Entry Ledger','RTL Engine'],
      arch:['Double-Entry General Ledger: Mathematical balancing across debit and credit entries with transaction audit trails',
            'Standard Financial Statement Engine: Automated Balance Sheet, Profit & Loss, and Cash Flow generation with RTL typography']},
-    {id:'zoho',cat:'enterprise',badge:'priv',badgeText:'🔒 Private Repository',
-     name:'Zoho Books Clone — Cloud ERP & Financial Operations',
-     role:'Full-Stack Developer & Microservices Designer',
-     desc:'Enterprise accounting clone supporting customer invoicing, vendor bills, banking reconciliation, and automated reporting microservices.',
-     tags:['TypeScript','Next.js','React','RESTful Microservices','Tailwind CSS'],
-     arch:['Comprehensive Invoicing & Bills Workflow with multi-currency reconciliation',
-           'Microservice separation between transaction settlement, accounting ledgers, and reporting']},
+    {id:'zoho',cat:'enterprise',badge:'live',badgeText:'🚀 Live Production Platform (Vercel)',
+     name:'Zoho Books Clone — Enterprise Double-Entry Cloud Accounting Suite',
+     role:'System Architect & Full-Stack Engineer',
+     desc:'Full-featured enterprise accounting platform mirroring international Zoho Books standards: 118 static pages rendered via Next.js 15, zero-leakage 20-language localization across 436 keys, double-entry general ledger, bank feeds & reconciliation, 69-page settings suite, and real-time RBAC role switching.',
+     tags:['Next.js 15','React 19','TypeScript','Material-UI','Double-Entry Engine','20 Languages i18n','Multi-Tenancy','Tailwind CSS'],
+     link:'zoho',
+     arch:['118 static pages compiled with zero errors under Next.js 15 App Router with instant page transitions',
+           'Zero-leakage 20-language internationalization (i18n) with 436 native keys and bidirectional RTL/LTR layout',
+           'Full Double-Entry Accounting: Manual journals, chart of accounts, balance sheet, P&L, and tax summary',
+           'Real-time multi-tenant switcher and instant RBAC role selector (Owner, Admin, Accountant, Staff, Viewer)']},
     {id:'auro',cat:'enterprise',badge:'priv',badgeText:'🔒 Private Repository',
      name:'AuroSocialEngine — Sovereign Decentralized Social Engine',
      role:'Data Architect & Distributed Systems Engineer',
@@ -737,7 +747,7 @@ proj:{
   ]
 },
 sys:{
-  title:'Autonomous AI Software Factory', sub:'UniversalSystem — Enterprise Multi-Agent Automation',
+  title:'Autonomous AI Software Factory & Systems Engineering', sub:'UniversalSystem — Enterprise Multi-Agent Automation',
   intro:'UniversalSystem is a high-throughput, distributed AI software factory engineered to automate repetitive software engineering workflows, autonomous agent swarms, multimodal audio/vision pipelines, automated test suites, and documentation. Powered by 17 containerized microservices and a native Windows Host Bridge, with live empirical health checks documented below.',
   kpis:[
     ['84,000+','Production Lines of Code in AI Core'],
@@ -794,6 +804,7 @@ sys:{
   ],
   capTitle:'Key Architectural Pillars & Enterprise Governance',
   pillars:[
+    {t:'Project Scaffolding & End-to-End Automation',d:'Automated generation of new software architectures (MicroService, AIPlatform, EnterpriseApp, FullSaaS, 3DGame) via New-UniversalProject.ps1; compiles, containerizes, tests, and rebuilds YARP ingress gateway with guaranteed exit code 0.'},
     {t:'Cryptographically Chained HMAC Audit Ledger',d:'Every single workflow run, state mutation, and human decision is hashed into an append-only chain using HMAC-SHA256. Cryptographic integrity is verifiable via GET /api/v1/enterprise/audit/verify to guarantee zero tampering.'},
     {t:'Multi-Model Fallback Cascade & Host Bridge',d:'Eliminates single points of failure. In the event of cloud provider rate limits (429/503), requests automatically failover to secondary cloud models, then seamlessly route to the Windows Host Bridge connected to authenticated local developer CLIs (Claude, Codex, Antigravity).'},
     {t:'PII Redaction Engine & SSRF Egress Defense',d:'Inbound prompts are automatically sanitized using Luhn-validated algorithms for credit cards, national IDs, phone numbers, emails, and IBANs. Outbound webhooks are guarded by strict SSRF egress filters blocking private IP subnets.'},
@@ -1037,7 +1048,7 @@ videos:{
   jump:'Quick Jump to Section:',
   loading:'Loading video stream…'
 },
-footer:'Albert (Iman Mansour) — AI Systems Engineer &amp; Autonomous Agent Architect'
+footer:'Iman Mansouri — Architect & Multimodal AI Engineer'
 };
 
 /* ============ DE (GERMAN) ============ */
@@ -1046,7 +1057,7 @@ T.de.label = 'Deutsch';
 T.de.nav = {
   home:'Startseite',
   proj:'Projekte (18)',
-  sys:'KI-Fabrik',
+  sys:'Systemautomatisierung & KI-Fabrik',
   multimodal:'Multimodale KI',
   gate:'Verifizierungs-Gate',
   neon:'Neon Run',
@@ -1054,3 +1065,5 @@ T.de.nav = {
   resume:'Lebenslauf (PDF)',
   videos:'Videos'
 };
+T.de.hero.role = 'Systemarchitekt & Ingenieur für multimodale KI (Architect & Multimodal AI Engineer)';
+T.de.footer = 'Iman Mansouri — Architect & Multimodal AI Engineer';

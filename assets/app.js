@@ -47,7 +47,7 @@
   function pageHome(t){
     var p = el('div');
     var hero = el('section','hero');
-    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="Albert (Iman Mansour)">');
+    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="ایمان منصوری (Iman Mansouri)">');
     var box = el('div');
     box.appendChild(el('h1',null,t.hero.name));
     box.appendChild(el('div','role',t.hero.role));
@@ -690,7 +690,7 @@
     var t=T[lang];
     document.documentElement.lang=lang;
     document.documentElement.dir=t.dir;
-    document.title = 'Albert (Iman Mansour) — AI Systems Engineer & Autonomous Agent Architect';
+    document.title = (lang === 'fa' ? 'ایمان منصوری — معمار سیستم و مهندس هوش مصنوعی چندحالته' : 'Iman Mansouri — Architect & Multimodal AI Engineer');
 
     var row=$('#tabrow'); row.innerHTML='';
     Object.keys(PAGES).forEach(function(k){
@@ -714,7 +714,7 @@
         '<a class="fs-btn" href="'+LINKS.github+'" target="_blank" rel="noopener">🐙 GitHub (albert392392)</a>' +
         '<a class="fs-btn" href="'+LINKS.antigravity+'" target="_blank" rel="noopener">⭐ antigravity-scroll-unpin</a>' +
       '</div>' +
-      '<div>&copy; '+new Date().getFullYear()+' Albert (Iman Mansour) &middot; '+t.footer+'</div>';
+      '<div>&copy; '+new Date().getFullYear()+' ایمان منصوری (Iman Mansouri) &middot; '+t.footer+'</div>';
 
     Array.prototype.forEach.call(document.querySelectorAll('.langs button'),function(b){
       b.classList.toggle('on', b.getAttribute('data-l')===lang);
