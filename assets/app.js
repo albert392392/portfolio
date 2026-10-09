@@ -47,7 +47,7 @@
   function pageHome(t){
     var p = el('div');
     var hero = el('section','hero');
-    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="ایمان منصوری (Iman Mansouri)">');
+    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="'+(lang==='fa'?'ایمان منصوری (Iman Mansouri)':'Iman Mansouri')+'">');
     var box = el('div');
     box.appendChild(el('h1',null,t.hero.name));
     box.appendChild(el('div','role',t.hero.role));
@@ -668,7 +668,7 @@
     var meta = el('div','vmeta');
     meta.innerHTML =
       '<span><b>'+t.videos.title+':</b> '+num(v.dur)+'</span>'+
-      (v.bytes?'<span><b>حجم:</b> '+num(fmtMB(v.bytes))+'</span>':'');
+      (v.bytes?'<span><b>'+(lang==='fa'?'حجم':(lang==='de'?'Größe':'Size'))+':</b> '+num(fmtMB(v.bytes))+'</span>':'');
     wrap.appendChild(meta);
     return wrap;
   }
@@ -758,7 +758,16 @@
     var t=T[lang];
     document.documentElement.lang=lang;
     document.documentElement.dir=t.dir;
-    document.title = (lang === 'fa' ? 'ایمان منصوری — معمار سیستم و مهندس هوش مصنوعی چندحالته' : 'Iman Mansouri — Architect & Multimodal AI Engineer');
+    document.title = (lang === 'fa' ? 'ایمان منصوری — معمار سیستم و مهندس هوش مصنوعی چندحالته' : (lang === 'de' ? 'Iman Mansouri — Systemarchitekt & Ingenieur für multimodale KI' : 'Iman Mansouri — Architect & Multimodal AI Engineer'));
+
+    var brandSpan = document.querySelector('.brand span');
+    if (brandSpan) {
+      brandSpan.textContent = (lang === 'fa' ? 'ایمان منصوری (Iman Mansouri)' : 'Iman Mansouri');
+    }
+    var brandImg = document.querySelector('.brand img');
+    if (brandImg) {
+      brandImg.alt = (lang === 'fa' ? 'ایمان منصوری (Iman Mansouri)' : 'Iman Mansouri');
+    }
 
     var row=$('#tabrow'); row.innerHTML='';
     Object.keys(PAGES).forEach(function(k){
@@ -782,7 +791,7 @@
         '<a class="fs-btn" href="'+LINKS.github+'" target="_blank" rel="noopener">🐙 GitHub (albert392392)</a>' +
         '<a class="fs-btn" href="'+LINKS.antigravity+'" target="_blank" rel="noopener">⭐ antigravity-scroll-unpin</a>' +
       '</div>' +
-      '<div>&copy; '+new Date().getFullYear()+' ایمان منصوری (Iman Mansouri) &middot; '+t.footer+'</div>';
+      '<div>&copy; '+new Date().getFullYear()+' '+(lang==='fa'?'ایمان منصوری (Iman Mansouri)':'Iman Mansouri')+' &middot; '+t.footer+'</div>';
 
     Array.prototype.forEach.call(document.querySelectorAll('.langs button'),function(b){
       b.classList.toggle('on', b.getAttribute('data-l')===lang);

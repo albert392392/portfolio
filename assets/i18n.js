@@ -632,7 +632,7 @@ nav:{
   videos:'Videos'
 },
 hero:{
-  name:'Iman Mansouri <b>(ایمان منصوری)</b>',
+  name:'Iman Mansouri',
   role:'Architect & Multimodal AI Engineer',
   tag:'Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.',
   chips:['Mashhad, Iran','🏆 National Award Winner & Top Rank','Global Talent & Elite Distinction Eligible','Military Exemption Card','Open to Global & Remote Roles'],
@@ -808,7 +808,7 @@ proj:{
            'Finite State Machine (FSM) governing asset states seamlessly between ruined, in-progress, and restored stages',
            'Memory Profiling & Texture Streaming: Staged asynchronous loading of high-resolution room artwork for low-RAM mobile hardware']},
     {id:'parsa',cat:'games',badge:'live',badgeText:'🚀 Official Commercial Release on Cafe Bazaar & Myket',
-     name:'Parsa (پارسا) — Published Commercial Action Title (Cafe Bazaar & Myket)',
+     name:'Parsa — Published Commercial Action Title (Cafe Bazaar & Myket)',
      role:'Lead Technical & Systems Programmer · Bomb Game Studio',
      desc:'Commercial action mobile game officially published on Cafe Bazaar and Myket with thousands of active downloads. Responsible for end-to-end technical implementation: gameplay architecture, UI data-binding, resilient player state persistence, Android multi-version compatibility fixes, final release builds, and store integration.',
      tags:['Unity','C#','UI Systems','Android Architecture','Cafe Bazaar API','Myket Store','Published Commercial Game'],
