@@ -406,9 +406,33 @@
     p.appendChild(el('h2','sec',h.title+' <em>'+h.sub+'</em>'));
 
     var c1 = el('div','card');
-    c1.appendChild(el('span','badge o','Negative Five'));
-    c1.appendChild(el('h3',null,h.n5t)).style.cssText='font-size:18px;font-weight:800;margin:4px 0 6px';
+    var badgeRow = el('div');
+    badgeRow.style.cssText = 'display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px';
+    badgeRow.appendChild(el('span','badge o','Negative Five'));
+    if (h.n5badge) {
+      var nb = el('span','badge',h.n5badge);
+      nb.style.cssText = 'background:linear-gradient(92deg,#d97706,#dc2626);color:#fff;font-weight:700;margin-bottom:8px';
+      badgeRow.appendChild(nb);
+    }
+    c1.appendChild(badgeRow);
+
+    c1.appendChild(el('h3',null,h.n5t)).style.cssText='font-size:18px;font-weight:800;margin:4px 0 8px;line-height:1.5';
     c1.appendChild(el('p','lead',h.n5));
+
+    if (h.talentBoxTitle) {
+      var tb = el('div');
+      tb.style.cssText = 'margin-top:16px;background:rgba(34,211,238,0.06);border:1px solid rgba(34,211,238,0.3);border-radius:12px;padding:16px 18px';
+      var tbHdr = el('div');
+      tbHdr.style.cssText = 'display:flex;align-items:center;gap:8px;color:var(--cy);font-weight:800;font-size:15.5px;margin-bottom:8px';
+      tbHdr.innerHTML = '<span style="font-size:20px">🎖️</span><span>' + h.talentBoxTitle + '</span>';
+      tb.appendChild(tbHdr);
+      var tbDesc = el('p');
+      tbDesc.style.cssText = 'color:var(--tx2);font-size:13.8px;line-height:1.8;margin:0';
+      tbDesc.innerHTML = h.talentBoxDesc;
+      tb.appendChild(tbDesc);
+      c1.appendChild(tb);
+    }
+
     p.appendChild(c1);
     p.appendChild(gallery(IMG.event, h.caps, 'g3'));
     p.appendChild(videoLink(t,'event'));
@@ -432,6 +456,50 @@
     c2.appendChild(a2);
     p.appendChild(c2);
     p.appendChild(gallery(IMG.dojo, h.caps, 'g3'));
+
+    /* --- Education & Formal Certifications (Image 2 + Faravin 2021 C++) --- */
+    if (h.edu && h.edu.length) {
+      p.appendChild(el('h3','sub',h.eduT));
+      if (h.eduIntro) p.appendChild(el('p','lead',h.eduIntro));
+      var eg = el('div','grid2'); eg.style.marginTop='14px';
+      h.edu.forEach(function(item){
+        var ec = el('div','card');
+        var top = el('div');
+        top.style.cssText = 'display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;margin-bottom:8px';
+        var title = el('h4',null,item.title);
+        title.style.cssText = 'font-size:16px;font-weight:800;color:var(--tx1);margin:0;flex:1;min-width:200px';
+        top.appendChild(title);
+        if (item.badge) {
+          var b = el('span','badge '+(item.badgeColor||'b'), item.badge);
+          b.style.marginBottom='0';
+          top.appendChild(b);
+        }
+        ec.appendChild(top);
+
+        if (item.org) {
+          var org = el('div',null,item.org);
+          org.style.cssText = 'color:var(--cy);font-size:13.5px;font-weight:600;margin-bottom:8px';
+          ec.appendChild(org);
+        }
+
+        var desc = el('p',null,item.desc);
+        desc.style.cssText = 'color:var(--tx2);font-size:13.5px;line-height:1.75;margin:0 0 12px';
+        ec.appendChild(desc);
+
+        if (item.skills && item.skills.length) {
+          var skRow = el('div');
+          skRow.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px';
+          item.skills.forEach(function(sk){
+            var skSpan = el('span',null,sk);
+            skSpan.style.cssText = 'background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:6px;font-size:11.5px;padding:3px 8px;color:var(--tx2)';
+            skRow.appendChild(skSpan);
+          });
+          ec.appendChild(skRow);
+        }
+        eg.appendChild(ec);
+      });
+      p.appendChild(eg);
+    }
 
     p.appendChild(el('h3','sub',h.kidT));
     p.appendChild(el('p','lead',h.kid));

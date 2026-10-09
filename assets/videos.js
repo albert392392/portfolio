@@ -336,18 +336,18 @@ const VD = [
  {
   "id": "event",
   "title": {
-   "fa": "رویداد Negative Five — بازخورد واقعی بازار",
-   "en": "Negative Five Event — Real Market Feedback",
+   "fa": "رویداد کشوری Negative Five — کسب مقام برتر و بازخورد واقعی بازار",
+   "en": "Negative Five National Accelerator Event — National Award Winner & Real Market Feedback",
    "de": "Negative Five — Aufnahmen vom Event"
   },
   "kicker": {
-   "fa": "غرفه اختصاصی · دوره سوم · ۲۰۲۶",
-   "en": "Dedicated booth · third cohort · 2026",
+   "fa": "کسب مقام برتر کشوری · غرفه اختصاصی · دوره سوم · ۲۰۲۶",
+   "en": "National Award Winner · Dedicated booth · third cohort · 2026",
    "de": "Eigener Stand · dritter Zyklus · 2026"
   },
   "intro": {
-   "fa": "نسخه قابل بازی Neon Run در رویداد شتاب‌دهنده Negative Five روی غرفه اختصاصی ارائه شد. ده‌ها بازدیدکننده بازی کردند، دو تولیدکننده محتوای گیم آن را معرفی کردند، و مدیر یکی از قدیمی‌ترین مجموعه‌های بازی‌سازی ایران پشت دستگاه نشست. این بخش، تصویرِ خامِ همان روز است.",
-   "en": "The playable build of Neon Run was presented on a dedicated booth at the Negative Five accelerator event. Dozens of visitors played it, two gaming content creators covered it, and the head of one of Iran's oldest game studios sat down behind the controller. This section is the raw footage from that day.",
+   "fa": "نسخه قابل بازی Neon Run در رقابت کشوری ورود به دوره سوم شتاب‌دهنده بین‌المللی Negative Five روی غرفه اختصاصی ارائه شد و موفق به کسب رتبه و مقام برتر کشوری گردید. ده‌ها بازدیدکننده، داور تخصصی و استریمرهای سرشناس بازی را با کنترلر تست کردند و گواهینامه معتبر رسمی روی استیج اهدا شد.",
+   "en": "The playable build of Neon Run was presented on a dedicated booth at the third-cycle national entry competition of Negative Five Accelerator, winning top national ranking and honors. Dozens of visitors, expert judges, and prominent creators playtested the build, and the official national award was presented on stage.",
    "de": "Die spielbare Fassung von Neon Run wurde beim Event des Negative-Five-Accelerators an einem eigenen Stand gezeigt. Dutzende Besucher spielten sie, zwei Gaming-Content-Creator berichteten darüber, und der Leiter eines der ältesten Spielestudios Irans setzte sich an den Controller. Dieser Abschnitt ist das unbearbeitete Filmmaterial dieses Tages."
   },
   "nav": {
@@ -523,13 +523,13 @@ const VD = [
     "poster": "media/v17.jpg",
     "ar": "16/9",
     "title": {
-     "fa": "مراسم اهدای گواهی روی صحنه",
-     "en": "Certificate Ceremony on Stage",
+     "fa": "مراسم رسمی اهدای لوح و گواهی مقام برتر کشوری روی استیج",
+     "en": "Official Stage Award Ceremony — National Ranking Winner",
      "de": "Urkundenverleihung auf der Bühne"
     },
     "desc": {
-     "fa": "مراسم اهدای گواهی‌نامه‌های رویداد در سالن اصلی. گواهی رسمی Negative Five / Xelerate VR با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR، به نام سید ایمان منصوری صادر شده است.",
-     "en": "The event's certificate ceremony in the main auditorium. The official Negative Five / Xelerate VR certificate, signed by the accelerator's CEO and the Xelerate VR representative, was issued in the name of Seyed Iman Mansouri.",
+     "fa": "مراسم اهدای گواهی‌نامه و تندیس مقام برتر کشوری رویداد در سالن اصلی. گواهی رسمی Negative Five / Xelerate VR با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR به نام سید ایمان منصوری صادر شده و دارای ارزش و اعتبار حقوقی نخبگی در استعدادیابی بنیاد ملی نخبگان و ویزای Global Talent است.",
+     "en": "Official stage award ceremony for the national competition winner in the main auditorium. The official Negative Five / Xelerate VR certificate, signed by the accelerator CEO and the Xelerate VR representative, was awarded to Seyed Iman Mansouri as verified proof of national excellence with high evidentiary standing for Global Talent visa endorsement and elite distinction.",
      "de": "Die Urkundenverleihung des Events im Hauptsaal. Die offizielle Urkunde von Negative Five / Xelerate VR, unterschrieben vom Geschäftsführer des Accelerators und vom Vertreter von Xelerate VR, wurde auf den Namen Seyed Iman Mansouri ausgestellt."
     },
     "tags": {

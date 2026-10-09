@@ -55,7 +55,7 @@ hero:{
   name:'ایمان منصوری <b>(Iman Mansouri)</b>',
   role:'معمار سیستم و مهندس هوش مصنوعی چندحالته (Architect & Multimodal AI Engineer)',
   tag:'معماری سواِرم‌های خودمختار هوش مصنوعی، سیستم‌سازی و اتوماسیون جامع نرم‌افزار، خطوط لوله چندحالته بلادرنگ و سیستم‌های توزیع‌شده سازمانی.',
-  chips:['مشهد، ایران','کارت پایان خدمت (معافیت دائم پزشکی)','۱۰۰٪ آزاد برای استخدام و همکاری بین‌المللی','معمار سیستم‌های اتوماسیون جامع'],
+  chips:['مشهد، ایران','🏆 دارنده رتبه و مقام برتر کشوری','واجد صلاحیت ویزای Global Talent و بنیاد نخبگان','کارت پایان خدمت (معافیت دائم پزشکی)','۱۰۰٪ آزاد برای استخدام بین‌المللی'],
   cta1:'دانلود و مشاهده رزومه', cta2:'مشاهده پروژه‌ها (۱۸)', cta3:'تماس و گفت‌وگو'
 },
 stats:[
@@ -63,7 +63,7 @@ stats:[
   ['۱۷','مایکروسرویس زنده در UniversalSystem'],
   ['+۳۰۷٬۰۰۰','خط کد در کل اکوسیستم (۲۳۸K C# + ۶۹K Python)'],
   ['۶۷۱ RPS','توان پردازش بار اندازه‌گیری‌شده در پروداکشن'],
-  ['۳۱۵K','مخاطب استریمر در رویداد شتاب‌دهنده Negative Five'],
+  ['مقام برتر کشوری','رتبه برتر رقابت ملی شتاب‌دهنده بین‌المللی Negative Five'],
   ['۱۰۰٪','پایبندی به معماری دفاعی Zero-Hallucination']
 ],
 about:{
@@ -469,9 +469,12 @@ neon:{
   caps:{'neon-menu':'منوی اصلی بازی — نسخه ساخته‌شده و قابل اجرا','neon-tps':'گیم‌پلی سوم‌شخص با قابلیت ویژه فعال','neon-fps':'نمای اول‌شخص — همان هسته، تجربه‌ای متفاوت','neon-modes':'صفحه انتخاب حالت — شش حالت بازی','neon-duo':'حالت دونفره: صفحه تقسیم‌شده و اعلام برنده','neon-duo2':'رقابت هم‌زمان دو بازیکن روی یک دستگاه'}
 },
 honors:{
-  title:'افتخارات، اسناد و حضور در رویدادها', sub:'هر ادعا، سندِ تجربی و مستندِ خودش را دارد',
-  n5t:'شتاب‌دهنده Negative Five — مسابقه ورودی دوره سوم · ۲۰۲۶',
-  n5:'بازی Neon Run: Echo’s Escape در مسابقه ورودی دوره سوم شتاب‌دهنده Negative Five شرکت کرد. در طول رویداد یک غرفه اختصاصی داشتیم، نسخه قابل بازی روی سیستم در اختیار بازدیدکنندگان بود، و گواهی رسمی روی صحنه اهدا شد. عکس‌های زیر همه از همان روز است و ویدیوهای مستند آن در بخش «ویدیوها» قابل تماشاست.',
+  title:'افتخارات ملی، اسناد نخبگی و مدارک رسمی', sub:'هر ادعا، سندِ تجربی، مدرک رسمی و مستندِ حقوقی خودش را دارد',
+  n5badge:'کسب مقام برتر کشوری · National Award Winner',
+  n5t:'شتاب‌دهنده بین‌المللی Negative Five — مسابقه کشوری دوره سوم و کسب مقام برتر · ۲۰۲۶',
+  n5:'<b>کسب رتبه و مقام برتر کشوری</b> در مسابقه ورودی دوره سوم شتاب‌دهنده بین‌المللی Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این افتخار با اهدای لوح، تندیس و گواهینامه رسمی روی استیج با امضای مستقیم مدیرعامل شتاب‌دهنده و نماینده ارشد Xelerate VR ثبت گردید. در تمام ساعات این رویداد کشوری، یک غرفه اختصاصی آزمون زنده را میزبانی کردیم که توسط ده‌ها مهندس ارشد، داور تخصصی، مدیران استودیوهای برتر و استریمرهای مطرح با کنترلر مورد تست و ستایش قرار گرفت.',
+  talentBoxTitle:'ارزش نخبگی، صلاحیت سنجی بنیاد ملی نخبگان و ویزای Global Talent',
+  talentBoxDesc:'این مقام کشوری و گواهینامه معتبر رسمی، به عنوان سند قطعی «دستاورد برجسته ملی و صنعتی» (Evidence of Recognized National Achievement) شناخته می‌شود. این مدرک دارای بالاترین ضریب وزنی در فرآیندهای <b>استعدادیابی و تسهیلات نخبگان برتر (بنیاد ملی نخبگان)</b> بوده و یکی از معتبرترین اسناد پشتیبان رسمی (Peer-Reviewed Industry Distinction) جهت اخذ <b>ویزای استعداد درخشان جهانی (Global Talent Visa / UK Tech Nation / US O-1A & EB-1A / Exceptional Talent Criteria)</b> و جاب‌آفرهای بین‌المللی به شمار می‌رود.',
   socialT:'چه کسانی بازی را تجربه کردند',
   quote:'«… تجربه‌اش برام خیلی لذت‌بخش بود … <b>خیلی اعتیادآور بود!</b>»',
   quoteWho:'— یادداشت دست‌نویس و امضاشده مریم خواجوی (iholymary)، تولیدکننده محتوای بازی، پس از بازی کردن Neon Run روی غرفه',
@@ -482,6 +485,76 @@ honors:{
   ],
   dojoT:'همایش تخصصی GameDev Weekend / Game Dojo',
   dojo:'رویداد آموزشی و تخصصی توسعه‌دهندگان بازی و سیستم، آبان ۱۴۰۴ در محل کارخانه نوآوری مشهد با سخنرانی‌ها و پنل‌های فنی.',
+
+  /* EDUCATION & FORMAL CERTIFICATIONS */
+  eduT:'تحصیلات، مدارک رسمی و بوت‌کمپ‌های تخصصی مهندسی',
+  eduIntro:'مسیر پیوسته یادگیری سیستماتیک، مهندسی عمیق نرم‌افزار، الگوریتم‌ها و مدارک دارای اصالت از هنرستان تا پروداکشن',
+  edu:[
+    {
+      title:'دیپلم رسمی فنی و حرفه‌ای — شبکه و نرم‌افزار رایانه',
+      org:'هنرستان فنی و حرفه‌ای نمونه شاهد ایثار، مشهد',
+      badge:'خرداد ۱۴۰۳',
+      badgeColor:'b',
+      desc:'تحصیل تخصصی ۳ ساله در رشته شبکه و نرم‌افزار رایانه؛ تسلط عمیق بر مبانی مهندسی کامپیوتر، سیستم‌های عامل، معماری پردازنده‌ها، مهندسی زیرساخت‌های شبکه، پایگاه‌های داده رابطه‌ای و پیاده‌سازی اصول مهندسی نرم‌افزار.',
+      skills:['شبکه و نرم‌افزار','سیستم‌های عامل','معماری کامپیوتر','مهندسی شبکه','پایگاه داده']
+    },
+    {
+      title:'بوت‌کمپ پیشرفته مهندسی C++، ساختمان داده و الگوریتم (فراوین — Faravin)',
+      org:'آکادمی مهندسی فراوین — دوره کارورزی تخصصی هنرستان (پایه یازدهم)',
+      badge:'سال ۲۰۲۱ (۱۴۰۰)',
+      badgeColor:'o',
+      desc:'گذراندن بوت‌کمپ فشرده و پیشرفته مهندسی C++ در دوران کارورزی پایه یازدهم هنرستان شاهد ایثار. تمرکز تخصصی بر تفکر الگوریتمی و حل مسائل پیچیده، تحلیل مرتبه زمانی و حافظه (Big-O)، تسلط بر سیستم‌های عددی و مبناها (باینری، هگزادسیمال، عملیات بیتی)، معماری حافظه و مدیریت اشاره‌گرها (Pointers, References, Dynamic Allocation)، و پیاده‌سازی ساختارهای داده بنیادین (درخت‌ها، گراف‌ها، صف و پشته) از صفر.',
+      skills:['Modern C++','الگوریتم‌های پیشرفته','ساختمان داده‌ها','سیستم‌های مبنا و بیت‌واِیز','مدیریت حافظه سطح پایین','تحلیل پیچیدگی']
+    },
+    {
+      title:'تولیدکننده و توسعه‌دهنده پایگاه‌های اینترنتی — گواهینامه رسمی',
+      org:'سازمان آموزش فنی و حرفه‌ای کشور',
+      badge:'۴۵۰ ساعت رسمی',
+      badgeColor:'g',
+      desc:'اخذ گواهینامه مهارت رسمی با کد استاندارد بین‌المللی (ISCO) پس از ۴۵۰ ساعت آموزش و آزمون تئوری و عملی جامع؛ طراحی معماری صفحات وب، استانداردهای UI/UX، ارتباطات کلاینت/سرور، مدیریت درخواست‌ها و ذخیره‌سازی داده‌ها.',
+      skills:['توسعه وب','استاندارد ISCO','پروتکل‌های وب','مدیریت داده‌ها']
+    },
+    {
+      title:'بوت‌کمپ جامع بازی‌سازی و سیستم‌های تعاملی Game Dojo',
+      org:'آکادمی تخصصی Game Dojo',
+      badge:'دوره جامع',
+      badgeColor:'b',
+      desc:'توسعه پیشرفته سیستم‌ها با موتور یونیتی و زبان C#. پیاده‌سازی معماری‌های ماژولار مبتنی بر رویداد و ScriptableObject، خط لوله‌های بلادرنگ، بهینه‌سازی محاسباتی بدون سربار حافظه (Zero-Allocation / Zero-GC)، و پروفایلینگ فریم در بازی‌های پرفورمنس‌بالا.',
+      skills:['Unity Engine','C#','معماری مدولار','Zero-GC','بهینه‌سازی بلادرنگ','ScriptableObjects']
+    },
+    {
+      title:'برنامه‌نویسی پیشرفته بک‌اند با C# .NET و ASP.NET Core',
+      org:'دوره پیشرفته سیستم‌های توزیع‌شده سازمانی',
+      badge:'۴۰۰ ساعت تخصصی',
+      badgeColor:'b',
+      desc:'طراحی معماری تمیز (Clean Architecture)، توسعه میکروسرویس‌های پایدار سازمانی، ارتباطات توزیع‌شده با MassTransit و RabbitMQ، پیاده‌سازی الگوی Transactional Outbox جهت جلوگیری از نشت پیام، و پیاده‌سازی گیت‌وی‌ها و کشینگ توزیع‌شده.',
+      skills:['C# .NET 10','ASP.NET Core','Clean Architecture','MassTransit','مایکروسرویس','RabbitMQ']
+    },
+    {
+      title:'طراحی، معماری و مدیریت پایگاه داده SQL Server',
+      org:'دوره پیشرفته مهندسی داده',
+      badge:'۳۶۰ ساعت تخصصی',
+      badgeColor:'g',
+      desc:'مدل‌سازی و طراحی پایگاه‌های داده رابطه‌ای سازمانی؛ پیاده‌سازی استراتژی‌های ایندکس‌گذاری خوشه‌ای و غیرخوشه‌ای (Clustered / Non-Clustered Indexes)، بهینه‌سازی و تفکیک پلان‌های اجرایی کوئری (Execution Plans)، مدیریت قفل‌ها و همروندی، و تضمین یکپارچگی تراکنش‌های ACID.',
+      skills:['SQL Server','Indexing & Optimization','Query Execution Plans','ACID Transactions','مدیریت همروندی']
+    },
+    {
+      title:'مهندسی زیرساخت و مبانی شبکه‌های کامپیوتری — +Network',
+      org:'دوره جامع مهندسی شبکه و ارتباطات داده',
+      badge:'۴۵۰ ساعت تخصصی',
+      badgeColor:'b',
+      desc:'تحلیل جامع معماری لایه‌های مدل OSI و پشته پروتکل TCP/IP، مسیریابی و سوییچینگ، برنامه‌نویسی سطح پایین سوکت‌های شبکه (TCP/UDP)، طراحی زیرساخت‌های توزیع‌شده کلاینت/سرور، مکانیزم‌های رمزنگاری TLS/SSL و دیوارهای آتش.',
+      skills:['Network+','پروتکل‌های TCP/IP','برنامه‌نویسی سوکت','زیرساخت توزیع‌شده','امنیت ارتباطات']
+    },
+    {
+      title:'دوره‌های پیوسته زبان انگلیسی تخصصی و بین‌المللی',
+      org:'آموزشگاه زبان شکوه (از دوران کودکی تا پیشرفته)',
+      badge:'چندین ترم متوالی',
+      badgeColor:'g',
+      desc:'گذراندن چندین ترم متوالی آموزش فشرده زبان انگلیسی همراه با کارنامه‌های رسمی ممتاز با نمرات ۹۱ تا ۱۰۰؛ تسلط کامل بر مطالعه مقالات و مستندات فنی عمیق، استانداردنویسی و کامنت‌گذاری سورس‌کدها، تعامل با تیم‌های خارجی و مستندسازی بین‌المللی.',
+      skills:['انگلیسی تخصصی','کارنامه‌های نمره ۹۱-۱۰۰','مستندسازی بین‌المللی','مکاتبات مهندسی']
+    }
+  ],
   kidT:'ریشه‌ها — مدارک دوران تحصیل',
   kid:'مدارک معتبر و دوره‌های تخصصی از سال ۱۳۸۹ تاکنون، کارنامه‌های ممتاز زبان انگلیسی، و تقدیرنامه‌ها.',
   caps:{
@@ -562,7 +635,7 @@ hero:{
   name:'Iman Mansouri <b>(ایمان منصوری)</b>',
   role:'Architect & Multimodal AI Engineer',
   tag:'Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.',
-  chips:['Mashhad, Iran','Military Exemption Card','Open to Global & Remote Roles','Software Automation Systems Architect'],
+  chips:['Mashhad, Iran','🏆 National Award Winner & Top Rank','Global Talent & Elite Distinction Eligible','Military Exemption Card','Open to Global & Remote Roles'],
   cta1:'View & Download Résumé', cta2:'Explore All 18 Projects', cta3:'Contact & Discuss'
 },
 stats:[
@@ -570,7 +643,7 @@ stats:[
   ['17 / 17','Live Containerized Microservices in UniversalSystem'],
   ['307K+','Production Lines of Code (238K C# + 69K Python)'],
   ['671 RPS','Peak Measured Production Throughput'],
-  ['315K','Streamer Audience Reach at Negative Five Event'],
+  ['National Winner','Top Rank at Negative Five National Accelerator Competition'],
   ['100%','Zero-Hallucination Defensive Architecture Contract']
 ],
 about:{
@@ -976,9 +1049,12 @@ neon:{
   caps:{'neon-menu':'Main menu — fully built and playable build','neon-tps':'Third-person gameplay with active shield ability','neon-fps':'First-person perspective — identical core, unique immersion','neon-modes':'Mode selection screen — six distinct game modes','neon-duo':'Two-player split-screen mode with dynamic winner announcement','neon-duo2':'Real-time competitive multiplayer on a single device'}
 },
 honors:{
-  title:'Honors, Documents & Public Recognition', sub:'Every claim backed by empirical evidence and documentation',
-  n5t:'Negative Five Accelerator — Third Cycle Entry Competition · 2026',
-  n5:'Showcased Neon Run: Echo’s Escape in the third-cycle entry competition. Awarded an official certificate signed by the accelerator CEO and the Xelerate VR representative. We hosted a dedicated booth throughout the event with playable builds on controller, and the certificate was awarded on stage. Raw footage is available in the Videos archive.',
+  title:'National Honors, Elite Credentials & Formal Certifications', sub:'Every claim backed by empirical evidence, official records, and legal proof',
+  n5badge:'🏆 National Award Winner · Top Ranking',
+  n5t:'Negative Five International Accelerator — Third Cycle National Competition & Award Winner · 2026',
+  n5:'<b>Won top national ranking and official award</b> at the third-cycle national entry competition of the Negative Five International Accelerator, showcasing flagship title Neon Run: Echo’s Escape. Formally awarded on stage with an official certificate and honor signed directly by the Accelerator CEO and the senior Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.',
+  talentBoxTitle:'Elite Talent Recognition, National Elites Foundation & Global Talent Visa Eligibility',
+  talentBoxDesc:'This official national award and verified credential serve as decisive, legally recognized evidence of <b>Recognized National Achievement & Industry Distinction</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.',
   socialT:'Notable Playtesters & Streamers',
   quote:'“… I really enjoyed the experience … <b>it was seriously addictive!</b>”',
   quoteWho:'— Handwritten and signed note from Maryam Khajavi (iholymary), gaming content creator with 315K+ followers, after playtesting at the booth',
@@ -989,6 +1065,76 @@ honors:{
   ],
   dojoT:'GameDev Weekend / Game Dojo Summit',
   dojo:'Intensive two-day game developer and systems conference at Mashhad Innovation Factory featuring technical panels and presentations.',
+
+  /* EDUCATION & FORMAL CERTIFICATIONS */
+  eduT:'Education, Formal Certifications & Engineering Bootcamps',
+  eduIntro:'A dedicated, continuous journey of deep systems engineering, data structures, and verified credentials from vocational origins to production software',
+  edu:[
+    {
+      title:'Technical & Vocational High School Diploma — Computer Network & Software',
+      org:'Shahed Isar Vocational High School, Mashhad',
+      badge:'June 2024',
+      badgeColor:'b',
+      desc:'Rigorous 3-year vocational program in computer networking and software systems; deep mastery of computer architecture, operating system internals, network infrastructure engineering, relational databases, and disciplined software development.',
+      skills:['Software & Networks','OS Internals','Computer Architecture','Relational DBs','Applied Systems']
+    },
+    {
+      title:'Advanced C++ Systems Engineering, Algorithms & Data Structures Bootcamp (Faravin)',
+      org:'Faravin Engineering Academy — High School Internship (11th Grade)',
+      badge:'2021',
+      badgeColor:'o',
+      desc:'Completed an intensive, advanced C++ engineering bootcamp during the 11th-grade vocational internship. Focused on algorithmic reasoning and complex problem solving, time/space complexity analysis (Big-O), mastery of number systems (binary, hexadecimal, bitwise mechanics), low-level memory allocation & pointer architecture (pointers, references, heap vs stack), and implementing core data structures (trees, graphs, queues, stacks, hash tables) from scratch.',
+      skills:['Modern C++','Advanced Algorithms','Data Structures','Number Systems & Bitwise','Low-Level Memory','Complexity Analysis']
+    },
+    {
+      title:'Web Development & Database Systems Engineering — Official State Certificate',
+      org:'National Technical & Vocational Training Organization',
+      badge:'450 Hours',
+      badgeColor:'g',
+      desc:'Awarded the official state vocational skill certification under international ISCO standards following 450 hours of intensive training and rigorous theoretical/practical examinations; web application architecture, UI/UX standards, client/server protocols, and database integration.',
+      skills:['Web Systems','ISCO Standard','Client/Server APIs','Data Pipelines']
+    },
+    {
+      title:'Game Dojo Specialized Interactive Systems & Game Engineering Bootcamp',
+      org:'Game Dojo Engineering Academy',
+      badge:'Comprehensive',
+      badgeColor:'b',
+      desc:'Engineered real-time interactive game architectures using Unity Engine and C#. Designed event-driven modular systems leveraging ScriptableObjects, zero-allocation runtime pipelines (Zero-GC), and rigorous frame-budget profiling for high-performance physics-driven games.',
+      skills:['Unity Engine','C#','Modular Systems','Zero-GC','Real-Time Profiling','ScriptableObjects']
+    },
+    {
+      title:'Advanced Backend Architecture with C# .NET & ASP.NET Core',
+      org:'Advanced Enterprise Distributed Systems Program',
+      badge:'400 Hours',
+      badgeColor:'b',
+      desc:'Architected production-grade enterprise microservices using Clean Architecture, event-driven distributed messaging pipelines with MassTransit and RabbitMQ, Transactional Outbox pattern to eliminate message loss, and distributed API gateway integration.',
+      skills:['C# .NET 10','ASP.NET Core','Clean Architecture','MassTransit','Microservices','RabbitMQ']
+    },
+    {
+      title:'Relational Database Architecture & Administration with SQL Server',
+      org:'Advanced Enterprise Data Engineering Course',
+      badge:'360 Hours',
+      badgeColor:'g',
+      desc:'Enterprise relational database modeling and schema design; advanced clustered and non-clustered indexing strategies, SQL query execution plan decomposition and optimization, concurrency control, locks/latches, and strict ACID transaction semantics.',
+      skills:['SQL Server','Index Optimization','Query Execution Plans','ACID Semantics','Concurrency Control']
+    },
+    {
+      title:'Computer Networking & Infrastructure Engineering — Network+',
+      org:'Comprehensive Network Architecture & Systems Program',
+      badge:'450 Hours',
+      badgeColor:'b',
+      desc:'Exhaustive analysis of the 7-layer OSI model and TCP/IP protocol stack, switching and dynamic routing, low-level socket network programming (TCP/UDP), distributed client/server infrastructure, TLS/SSL cryptographic primitives, and enterprise firewall routing.',
+      skills:['Network+','TCP/IP Stack','Low-Level Sockets','Distributed Infrastructure','Network Security']
+    },
+    {
+      title:'Comprehensive Professional English Language Programs (Childhood to Present)',
+      org:'Shokouh Language Institute (Continuous Multi-Term Enrollment)',
+      badge:'Multi-Term Honors',
+      badgeColor:'g',
+      desc:'Continuous multi-term enrollment with official academic honors certificates scoring 91 to 100; full professional proficiency in technical literature, international architectural RFCs, source code documentation, and global technical collaboration.',
+      skills:['Professional English','Honors Scores 91–100','Technical RFCs','International Communication']
+    }
+  ],
   kidT:'Roots — Educational History & Certifications',
   kid:'Earliest computer science certificate dating to 2010, alongside advanced English language honors and academic achievement diplomas.',
   caps:{
