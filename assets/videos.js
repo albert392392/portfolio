@@ -57,7 +57,7 @@ const VD = [
       "Fähigkeiten"
      ]
     },
-    "bytes": 29446034,
+    "bytes": 21006904,
     "src": "media/v11.mp4"
    },
    {
@@ -171,7 +171,7 @@ const VD = [
       "Kompletter Durchlauf"
      ]
     },
-    "bytes": 34253075,
+    "bytes": 26897522,
     "src": "media/v01.mp4"
    },
    {
