@@ -544,7 +544,7 @@
     return p;
   }
 
-  /* ---------- VIDEO ARCHIVE & DUAL PLAYER ---------- */
+  /* ---------- VIDEO ARCHIVE & ULTRA-FAST WEB STREAMING PLAYER ---------- */
   function fmtTime(sec){
     sec = Math.max(0, Math.floor(sec||0));
     var m = Math.floor(sec/60), s = sec%60;
@@ -552,118 +552,100 @@
   }
   function fmtMB(b){ return (b/1048576).toFixed(0)+' MB'; }
 
+  var currentPlayingVideo = null;
+
   function buildPlayer(t, v){
     var wrap = el('div','vplayer');
     var stage = el('div','vstage');
-    var a = document.createElement('video'), b = document.createElement('video');
-    [a,b].forEach(function(x){
-      x.playsInline=true; x.setAttribute('playsinline',''); x.preload='metadata';
-      x.controls=false; x.className='vel';
-    });
-    a.poster = v.poster;
-    stage.appendChild(a); stage.appendChild(b);
+    var a = document.createElement('video');
+    a.playsInline = true;
+    a.setAttribute('playsinline','');
+    a.preload = 'none'; /* Instant page load: zero bandwidth consumed until user plays */
+    a.controls = false;
+    a.className = 'vel on';
+    if(v.poster) a.poster = v.poster;
+    stage.appendChild(a);
+
     var spin = el('div','vspin', t.videos.loading);
     stage.appendChild(spin);
     wrap.appendChild(stage);
 
-    var single = !v.parts;
-    var parts = single ? [{u:v.src, d:0}] : v.parts;
-    var total = single ? 0 : v.total;
-    var offs = [0];
-    parts.forEach(function(p,i){ offs.push(offs[i]+p.d); });
-
-    var cur = 0, active = a, spare = b, busy = false;
-
-    function show(x){ a.classList.toggle('on', x===a); b.classList.toggle('on', x===b); }
     function setSpin(on){ spin.style.display = on ? 'flex' : 'none'; }
+    setSpin(false);
 
-    function loadPart(i, time, autoplay){
-      if(i<0||i>=parts.length) return;
-      busy = true; setSpin(true);
-      cur = i;
-      active.src = parts[i].u;
-      active.load();
-      var go = function(){
-        active.removeEventListener('loadedmetadata',go);
-        if(time) try{ active.currentTime = time; }catch(e){}
-        setSpin(false); busy=false;
-        if(autoplay) active.play().catch(function(){});
-        prefetchNext();
-      };
-      active.addEventListener('loadedmetadata',go);
-    }
-    function prefetchNext(){
-      if(single || cur+1>=parts.length) return;
-      if(spare.src !== parts[cur+1].u){ spare.preload='auto'; spare.src = parts[cur+1].u; spare.load(); }
-    }
-    function swapToNext(){
-      if(cur+1>=parts.length){ setSpin(false); return; }
-      var tmp = active; active = spare; spare = tmp;
-      cur++;
-      show(active);
-      active.currentTime = 0;
-      active.play().catch(function(){});
-      spare.removeAttribute('src'); spare.load();
-      prefetchNext();
-      update();
-    }
+    var videoSrc = v.src || (v.parts && v.parts[0] ? v.parts[0].u : '');
 
     var bar = el('div','vbar');
     var btn = el('button','vplay','&#9654;');
     var track = el('div','vtrack','<i></i>');
     var fill = track.querySelector('i');
-    var tlabel = el('span','vtime','0:00');
-    var plabel = el('span','vpart','');
+    var tlabel = el('span','vtime','0:00 / ' + num(v.dur || '0:00'));
     var full = el('button','vfull','&#9974;');
     bar.appendChild(btn); bar.appendChild(track); bar.appendChild(tlabel);
-    if(!single) bar.appendChild(plabel);
     bar.appendChild(full);
     wrap.appendChild(bar);
 
-    function dur(){ return single ? (active.duration||0) : total; }
-    function pos(){ return (single?0:offs[cur]) + (active.currentTime||0); }
     function update(){
-      var d = dur()||1;
-      fill.style.width = Math.min(100,(pos()/d)*100)+'%';
-      tlabel.textContent = num(fmtTime(pos())+' / '+fmtTime(d));
-      if(!single) plabel.textContent = num((cur+1)+'/'+parts.length);
-      btn.innerHTML = active.paused ? '&#9654;' : '&#10074;&#10074;';
+      var curTime = a.currentTime || 0;
+      var totalDur = a.duration || 0;
+      if (!totalDur && v.seconds) totalDur = v.seconds;
+      var pct = totalDur > 0 ? (curTime / totalDur) * 100 : 0;
+      fill.style.width = Math.min(100, Math.max(0, pct)) + '%';
+      var dText = totalDur > 0 ? fmtTime(totalDur) : (v.dur || '0:00');
+      tlabel.textContent = num(fmtTime(curTime) + ' / ' + dText);
+      btn.innerHTML = (a.paused || a.ended) ? '&#9654;' : '&#10074;&#10074;';
     }
-    [a,b].forEach(function(x){
-      x.addEventListener('timeupdate',update);
-      x.addEventListener('play',update);
-      x.addEventListener('pause',update);
-      x.addEventListener('waiting',function(){ if(x===active) setSpin(true); });
-      x.addEventListener('playing',function(){ if(x===active) setSpin(false); });
-      x.addEventListener('ended',function(){ if(x===active && !single) swapToNext(); else if(x===active) update(); });
-    });
-    btn.addEventListener('click',function(){
-      if(!active.src){ loadPart(0,0,true); return; }
-      if(active.paused) active.play().catch(function(){}); else active.pause();
-    });
-    full.addEventListener('click',function(){
-      var e = stage;
-      if(document.fullscreenElement) document.exitFullscreen();
-      else if(e.requestFullscreen) e.requestFullscreen();
-      else if(active.webkitEnterFullscreen) active.webkitEnterFullscreen();
-    });
-    track.addEventListener('click',function(ev){
-      var r = track.getBoundingClientRect();
-      var x = (ev.clientX - r.left)/r.width;
-      if(document.documentElement.dir==='rtl') x = 1-x;
-      x = Math.max(0,Math.min(1,x));
-      var target = x*(dur()||0);
-      if(single){ if(active.src) active.currentTime=target; else loadPart(0,target,true); return; }
-      var i=0; while(i<parts.length-1 && target>=offs[i+1]) i++;
-      if(i===cur && active.src){ active.currentTime = target-offs[i]; }
-      else { spare.removeAttribute('src'); loadPart(i, target-offs[i], true); show(active); }
-    });
-    stage.addEventListener('click',function(ev){ if(ev.target===spin) return; btn.click(); });
 
-    show(a); setSpin(false);
-    if(single){ a.src = v.src; a.preload='metadata'; }
-    else { a.addEventListener('loadedmetadata',function(){},{once:true}); }
-    update();
+    function togglePlay(){
+      if (!a.src) {
+        setSpin(true);
+        a.src = videoSrc;
+        a.load();
+      }
+      if (currentPlayingVideo && currentPlayingVideo !== a) {
+        currentPlayingVideo.pause();
+      }
+      if (a.paused || a.ended) {
+        currentPlayingVideo = a;
+        a.play().catch(function(){});
+      } else {
+        a.pause();
+      }
+    }
+
+    a.addEventListener('timeupdate', update);
+    a.addEventListener('play', function(){ update(); setSpin(false); });
+    a.addEventListener('pause', update);
+    a.addEventListener('waiting', function(){ setSpin(true); });
+    a.addEventListener('playing', function(){ setSpin(false); });
+    a.addEventListener('canplay', function(){ setSpin(false); });
+    a.addEventListener('ended', function(){ update(); setSpin(false); });
+
+    btn.addEventListener('click', function(ev){ ev.stopPropagation(); togglePlay(); });
+    stage.addEventListener('click', function(ev){ if(ev.target===spin) return; togglePlay(); });
+
+    full.addEventListener('click', function(ev){
+      ev.stopPropagation();
+      if(document.fullscreenElement) document.exitFullscreen();
+      else if(stage.requestFullscreen) stage.requestFullscreen();
+      else if(a.webkitEnterFullscreen) a.webkitEnterFullscreen();
+    });
+
+    track.addEventListener('click', function(ev){
+      ev.stopPropagation();
+      var r = track.getBoundingClientRect();
+      var x = (ev.clientX - r.left) / r.width;
+      if (document.documentElement.dir === 'rtl') x = 1 - x;
+      x = Math.max(0, Math.min(1, x));
+      var totalDur = a.duration || v.seconds || 0;
+      if (!a.src) {
+        a.src = videoSrc;
+        a.load();
+      }
+      if (totalDur > 0) {
+        a.currentTime = x * totalDur;
+      }
+    });
 
     var meta = el('div','vmeta');
     meta.innerHTML =

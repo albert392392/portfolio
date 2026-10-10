@@ -57,26 +57,12 @@ const VD = [
       "Fähigkeiten"
      ]
     },
-    "parts": [
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v11_p00.mp4",
-      "d": 92.16
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v11_p01.mp4",
-      "d": 92.16
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v11_p02.mp4",
-      "d": 85.84
-     }
-    ],
-    "total": 270.159,
-    "bytes": 241628812
+    "bytes": 47354848,
+    "src": "media/v11.mp4"
    },
    {
     "id": "v12",
-    "dur": "3:39",
+    "dur": "3:38",
     "poster": "media/v12.jpg",
     "ar": "16/9",
     "title": {
@@ -109,26 +95,12 @@ const VD = [
       "Endbildschirm"
      ]
     },
-    "parts": [
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v12_p00.mp4",
-      "d": 76.812
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v12_p01.mp4",
-      "d": 71.691
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v12_p02.mp4",
-      "d": 70.4
-     }
-    ],
-    "total": 218.88,
-    "bytes": 217597055
+    "bytes": 38311269,
+    "src": "media/v12.mp4"
    },
    {
     "id": "v13",
-    "dur": "4:20",
+    "dur": "4:19",
     "poster": "media/v13.jpg",
     "ar": "16/9",
     "title": {
@@ -161,22 +133,8 @@ const VD = [
       "Getrennte HUDs"
      ]
     },
-    "parts": [
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v13_p00.mp4",
-      "d": 87.052
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v13_p01.mp4",
-      "d": 87.063
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media2/v13_p02.mp4",
-      "d": 85.64
-     }
-    ],
-    "total": 259.72,
-    "bytes": 227668642
+    "bytes": 45256139,
+    "src": "media/v13.mp4"
    },
    {
     "id": "v01",
@@ -213,26 +171,8 @@ const VD = [
       "Kompletter Durchlauf"
      ]
     },
-    "parts": [
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v01_p00.mp4",
-      "d": 107.532
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v01_p01.mp4",
-      "d": 107.52
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v01_p02.mp4",
-      "d": 102.4
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v01_p03.mp4",
-      "d": 103.04
-     }
-    ],
-    "total": 420.48,
-    "bytes": 306055795
+    "bytes": 72843556,
+    "src": "media/v01.mp4"
    },
    {
     "id": "v02",
@@ -269,22 +209,8 @@ const VD = [
       "Beleuchtung"
      ]
     },
-    "parts": [
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v02_p00.mp4",
-      "d": 71.68
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v02_p01.mp4",
-      "d": 71.68
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v02_p02.mp4",
-      "d": 70.88
-     }
-    ],
-    "total": 214.239,
-    "bytes": 190023996
+    "bytes": 37595968,
+    "src": "media/v02.mp4"
    },
    {
     "id": "v03",
@@ -318,18 +244,8 @@ const VD = [
       "Upgrade-Shop"
      ]
     },
-    "parts": [
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v03_p00.mp4",
-      "d": 107.532
-     },
-     {
-      "u": "https://albert392392.github.io/portfolio-media/v03_p01.mp4",
-      "d": 99.8
-     }
-    ],
-    "total": 207.32,
-    "bytes": 186001476
+    "bytes": 36312198,
+    "src": "media/v03.mp4"
    }
   ]
  },
@@ -388,7 +304,8 @@ const VD = [
       "Unterschriebene Notiz"
      ]
     },
-    "src": "media/v19.mp4"
+    "src": "media/v19.mp4",
+    "bytes": 10946966
    },
    {
     "id": "v06",
@@ -419,11 +336,12 @@ const VD = [
       "bazisazbash"
      ]
     },
-    "src": "media/v06.mp4"
+    "src": "media/v06.mp4",
+    "bytes": 1353887
    },
    {
     "id": "v18",
-    "dur": "0:06",
+    "dur": "0:05",
     "poster": "media/v18.jpg",
     "ar": "16/9",
     "title": {
@@ -450,7 +368,8 @@ const VD = [
       "Studiobesuch"
      ]
     },
-    "src": "media/v18.mp4"
+    "src": "media/v18.mp4",
+    "bytes": 828516
    },
    {
     "id": "v04",
@@ -484,7 +403,8 @@ const VD = [
       "Besucher"
      ]
     },
-    "src": "media/v04.mp4"
+    "src": "media/v04.mp4",
+    "bytes": 3212124
    },
    {
     "id": "v05",
@@ -515,7 +435,8 @@ const VD = [
       "Ausstellungsfläche"
      ]
     },
-    "src": "media/v05.mp4"
+    "src": "media/v05.mp4",
+    "bytes": 3230460
    },
    {
     "id": "v17",
@@ -549,7 +470,8 @@ const VD = [
       "Xelerate VR"
      ]
     },
-    "src": "media/v17.mp4"
+    "src": "media/v17.mp4",
+    "bytes": 1971453
    },
    {
     "id": "v07",
@@ -583,11 +505,12 @@ const VD = [
       "Größe des Events"
      ]
     },
-    "src": "media/v07.mp4"
+    "src": "media/v07.mp4",
+    "bytes": 25579060
    },
    {
     "id": "v08",
-    "dur": "0:24",
+    "dur": "0:23",
     "poster": "media/v08.jpg",
     "ar": "9/16",
     "title": {
@@ -614,11 +537,12 @@ const VD = [
       "Medienbegleitung"
      ]
     },
-    "src": "media/v08.mp4"
+    "src": "media/v08.mp4",
+    "bytes": 2834430
    },
    {
     "id": "v09",
-    "dur": "0:28",
+    "dur": "0:27",
     "poster": "media/v09.jpg",
     "ar": "9/16",
     "title": {
@@ -648,7 +572,8 @@ const VD = [
       "Andere Studios"
      ]
     },
-    "src": "media/v09.mp4"
+    "src": "media/v09.mp4",
+    "bytes": 3505811
    }
   ]
  },
@@ -677,7 +602,7 @@ const VD = [
   "videos": [
    {
     "id": "v14",
-    "dur": "3:25",
+    "dur": "3:24",
     "poster": "media/v14.jpg",
     "ar": "16/9",
     "title": {
@@ -710,7 +635,8 @@ const VD = [
       "Mobile Optimierung"
      ]
     },
-    "src": "media/v14.mp4"
+    "src": "media/v14.mp4",
+    "bytes": 7219602
    },
    {
     "id": "v15",
@@ -744,7 +670,8 @@ const VD = [
       "Mobile Performance"
      ]
     },
-    "src": "media/v15.mp4"
+    "src": "media/v15.mp4",
+    "bytes": 5523804
    }
   ]
  },
@@ -806,7 +733,8 @@ const VD = [
       "Fortschritts-Dashboard"
      ]
     },
-    "src": "media/v16.mp4"
+    "src": "media/v16.mp4",
+    "bytes": 15055776
    },
    {
     "id": "v10",
@@ -840,7 +768,8 @@ const VD = [
       "Gedächtnis-Dashboard"
      ]
     },
-    "src": "media/v10.mp4"
+    "src": "media/v10.mp4",
+    "bytes": 18603143
    }
   ]
  }
