@@ -57,7 +57,7 @@ const VD = [
       "Fähigkeiten"
      ]
     },
-    "bytes": 47354848,
+    "bytes": 29446034,
     "src": "media/v11.mp4"
    },
    {
@@ -133,7 +133,7 @@ const VD = [
       "Getrennte HUDs"
      ]
     },
-    "bytes": 45256139,
+    "bytes": 28150340,
     "src": "media/v13.mp4"
    },
    {
@@ -171,7 +171,7 @@ const VD = [
       "Kompletter Durchlauf"
      ]
     },
-    "bytes": 72843556,
+    "bytes": 34253075,
     "src": "media/v01.mp4"
    },
    {
