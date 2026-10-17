@@ -122,7 +122,7 @@ proj:{
            'فیلتر دیجیتال Butterworth: حذف نویزهای فرکانس پایین و گیت صوتی RMS جهت عبور صدای خالص',
            'آبشار ترجمه استریمینگ: سوئیچ بلادرنگ روی مدل‌های پشتیبان در زمان بروز خطای 429 یا 503']},
     {id:'copilot',cat:'multimodal',badge:'priv',badgeText:'🔒 مخزن خصوصی',
-     name:'GeminiLiveCoPilot — دستیار شناور چندوجهی دسکتاپ',
+     name:'Iman Mansouri Jet AI Human Assistant 🚀 — دستیار شناور چندوجهی دسکتاپ',
      role:'معمار سیستم‌های بینایی ماشین و وب‌سوکت',
      desc:'دستیار شناور بدون فریم دسکتاپ با وب‌سوکت دوطرفه Gemini Multimodal Live API: رصد همزمان صفحه نمایش با الگوریتم‌های تفکیک فریم OpenCV برای صرفه‌جویی در مصرف توکن، و استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz.',
      tags:['Python','PyQt6','Gemini Live WebSocket','OpenCV SSIM/MSE','WASAPI Audio','AsyncIO'],
@@ -344,7 +344,7 @@ multimodal:{
     },
     {
       id:'copilot',
-      title:'GeminiLiveCoPilot — دستیار شناور چندوجهی دسکتاپ',
+      title:'Iman Mansouri Jet AI Human Assistant 🚀 — دستیار شناور چندوجهی دسکتاپ',
       role:'معمار سیستم‌های بینایی ماشین و پروتکل‌های وب‌سوکت بلادرنگ',
       desc:'دستیار شناور بدون فریم دسکتاپ مبتنی بر وب‌سوکت دوطرفه Gemini Multimodal Live API: رصد پیوسته صفحه نمایش با تفکیک هوشمند فریم‌های تکراری با الگوریتم‌های بینایی ماشین برای صرفه‌جویی شدید در مصرف توکن، و استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz.',
       badges:[
@@ -423,7 +423,7 @@ multimodal:{
     headers:['سیستم','تأخیر هدف (Latency)','روش ورود صوت/تصویر','شتاب‌دهنده و مدل استنتاج','مدل هم‌روندی (Concurrency)','مکانیزم بازیابی و تاب‌آوری'],
     rows:[
       ['RapScribe-AI (OmniScribe HUD)','زیر ۲۵۰ میلی‌ثانیه','WASAPI Loopback (استریو دیجیتال)','CUDA GPU FP16 (faster-whisper large-v3-turbo)','۴ ترد موازی مستقل سیستم‌عامل','واچ‌داگ تخلیه بافر عقب‌افتاده + آبشار سوییچ ترجمه بر خطای 429'],
-      ['GeminiLiveCoPilot','زیر ۵۰۰ میلی‌ثانیه','نمونه‌برداری تصویر (1fps) + میکروفون ۱۶kHz','تفکیک فریم OpenCV (MSE/SSIM) + وب‌سوکت دوطرفه','۴ لایه موازی Ingest / WebSocket / UI','قطع فوری خروجی صدا با VAD (Barge-In) + سوییچ فریم‌های تغییریافته'],
+      ['Iman Mansouri Jet AI Human Assistant 🚀','زیر ۵۰۰ میلی‌ثانیه','نمونه‌برداری تصویر (1fps) + میکروفون ۱۶kHz','تفکیک فریم OpenCV (MSE/SSIM) + وب‌سوکت دوطرفه','۴ لایه موازی Ingest / WebSocket / UI','قطع فوری خروجی صدا با VAD (Barge-In) + سوییچ فریم‌های تغییریافته'],
       ['NitroLearnAI (NitroLango)','بلادرنگ کلاینت','Web Speech API مرورگر','موتور ریاضی SM-2 + واژگان Menschen','Async Event Loop در مرورگر','واچ‌داگ سخت‌گیرانه ۱۵ ثانیه‌ای + Silent Error Boundaries'],
       ['German-Neural-Immersion','پردازش دسته‌ای (Batch)','فایل‌های منبع MP3 و PDF','ElevenLabs Neural Audio + PyPDF parser','AsyncIO Task Workers','تلاش مجدد خودکار در استنتاج صدا + اعتبارسنجی ساختار JSON']
     ]
@@ -701,7 +701,7 @@ proj:{
            'Butterworth HPF Digital Filter: Eliminates low-frequency rumble with RMS gating for silence detection',
            'Streaming Translation Cascade: Instantaneous failover across multiple model tiers on network latency']},
     {id:'copilot',cat:'multimodal',badge:'priv',badgeText:'🔒 Private Repository',
-     name:'GeminiLiveCoPilot — Multimodal Floating Desktop HUD',
+     name:'Iman Mansouri Jet AI Human Assistant 🚀 — Multimodal Floating Desktop HUD',
      role:'Computer Vision & WebSocket Architect',
      desc:'Frameless always-on-top desktop HUD over Gemini Live bidirectional WebSocket API: captures screen with MSE/SSIM frame-diff deduplication to save tokens, with 16kHz PCM audio streaming and 24kHz synthesized voice response.',
      tags:['Python','PyQt6','Gemini Live WebSocket','OpenCV SSIM/MSE','WASAPI Audio','AsyncIO'],
@@ -923,7 +923,7 @@ multimodal:{
     },
     {
       id:'copilot',
-      title:'GeminiLiveCoPilot — Desktop Multimodal Live Assistant',
+      title:'Iman Mansouri Jet AI Human Assistant 🚀 — Desktop Multimodal Live Assistant',
       role:'Computer Vision & Real-Time WebSocket Architect',
       desc:'Frameless always-on-top desktop HUD over Gemini Multimodal Live bidirectional WebSocket API: captures screen with MSE/SSIM frame diffing to minimize token consumption, with 16kHz audio input, 24kHz synthesized voice response, and native barge-in.',
       badges:[
@@ -1002,7 +1002,7 @@ multimodal:{
     headers:['System','Target Latency','Audio / Vision Ingest','Inference Engine & Hardware','Concurrency Architecture','Resilience & Watchdogs'],
     rows:[
       ['RapScribe-AI (OmniScribe HUD)','< 250ms','WASAPI Loopback (stereo mix)','CUDA GPU FP16 (faster-whisper large-v3-turbo)','4 non-blocking concurrent OS worker threads','Buffer flush watchdog on load spikes + 429 translation cascade'],
-      ['GeminiLiveCoPilot','< 500ms','Screen capture (1fps) + 16kHz mic','OpenCV SSIM/MSE diffing + Gemini Live WebSocket','4 decoupled ingestion / network / UI layers','Native Barge-In VAD cancellation + delta-only frame dispatch'],
+      ['Iman Mansouri Jet AI Human Assistant 🚀','< 500ms','Screen capture (1fps) + 16kHz mic','OpenCV SSIM/MSE diffing + Gemini Live WebSocket','4 decoupled ingestion / network / UI layers','Native Barge-In VAD cancellation + delta-only frame dispatch'],
       ['NitroLearnAI (NitroLango)','Real-time client','Browser Web Speech API','Pure SM-2 math engine + Menschen corpus','Browser event loop & Web Workers','15-second speech watchdog timer + Silent Error Boundaries'],
       ['German-Neural-Immersion','Batch processing','MP3 archives & textbook PDFs','ElevenLabs Neural Audio + PyPDF parser','AsyncIO background workers','Auto-retry on audio synthesis rate limits + JSON validation']
     ]
