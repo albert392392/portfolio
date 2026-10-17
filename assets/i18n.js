@@ -28,7 +28,8 @@ const LINKS = {
   instagram:  'https://instagram.com/albert.net01',
   github:     'https://github.com/albert392392',
   antigravity:'https://github.com/albert392392/antigravity-scroll-unpin',
-  portfolio:  'https://github.com/albert392392/portfolio'
+  portfolio:  'https://github.com/albert392392/portfolio',
+  copilot:    'https://github.com/albert392392/GeminiLiveCoPilot'
 };
 
 const SVCKEYS = ['api-gateway','python-ai','dotnet-api','node-microservices','maf-orchestrator','matchmaker',
@@ -121,13 +122,15 @@ proj:{
      arch:['معماری ۴ ترد موازی غیرمسدودکننده: Audio Capture، STT Worker، Translation Worker، و Watchdog',
            'فیلتر دیجیتال Butterworth: حذف نویزهای فرکانس پایین و گیت صوتی RMS جهت عبور صدای خالص',
            'آبشار ترجمه استریمینگ: سوئیچ بلادرنگ روی مدل‌های پشتیبان در زمان بروز خطای 429 یا 503']},
-    {id:'copilot',cat:'multimodal',badge:'priv',badgeText:'🔒 مخزن خصوصی',
-     name:'Iman Mansouri Jet AI Human Assistant 🚀 — دستیار شناور چندوجهی دسکتاپ',
-     role:'معمار سیستم‌های بینایی ماشین و وب‌سوکت',
-     desc:'دستیار شناور بدون فریم دسکتاپ با وب‌سوکت دوطرفه Gemini Multimodal Live API: رصد همزمان صفحه نمایش با الگوریتم‌های تفکیک فریم OpenCV برای صرفه‌جویی در مصرف توکن، و استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz.',
-     tags:['Python','PyQt6','Gemini Live WebSocket','OpenCV SSIM/MSE','WASAPI Audio','AsyncIO'],
-     arch:['تفکیک هوشمند فریم‌ها با SSIM/MSE: نمونه‌برداری ۱fps و ارسال فریم تنها در صورت تغییر محتوا برای کنترل هزینه توکن',
-           'استریم صوتی دوطرفه: پشتیبانی نیتیو از قطع کردن صحبت دستیار توسط کاربر (Barge-in)']},
+    {id:'copilot',cat:'multimodal',badge:'oss',badgeText:'⭐ سورس کد در گیت‌هاب',
+     name:'Iman Mansouri Jet AI Human Assistant 🚀 — دستیار خودمختار Level-5 و خلبان هوشمند دسکتاپ',
+     role:'معمار اتوماسیون خودمختار و سیستم‌های بینایی ماشین و وب‌سوکت بلادرنگ',
+     desc:'دستیار خودمختار سطح ۵ و خلبان کمکی دسکتاپ ویندوز با قابلیت Fly-by-Wire: مجهز به سیستم بینایی با کیفیت کریستالی 1440p، هدایت لیزری ماوس با منحنی‌های بِزیه و سنپ خودکار به عناصر، تایپ اتمیک بدون گیر بر پایه Win32 Clipboard، اجرای پیوسته تسک‌های چندمرحله‌ای (Auto-Flight)، وب‌سوکت دوطرفه Full-Duplex با تفکیک فریم OpenCV، و سپر هوشمند لغو اکوی صوتی (AEC) و مکالمه طبیعی (Barge-in).',
+     tags:['Python 3.13','PyQt6 Glassmorphism','Level-5 Autonomous Fly-by-Wire','1440p Vision Grounding','Win32 Atomic Injection','Gemini Multimodal Live API','Continuous Auto-Flight','Acoustic Echo Suppression'],
+     link:'copilot',
+     arch:['اتوماسیون خودمختار پرواز با سیم (Fly-by-Wire): هدایت لیزری ماوس با منحنی‌های بِزیه، سنپ خودکار به مرکز المان‌های Win32/UIA و فوکوس هوشمند پنجره‌ها',
+           'تایپ اتمیک بدون گیر: تزریق مستقیم از طریق Win32 Clipboard در کدهای طولانی و زبان فارسی با تضمین ۱۰۰٪ پایداری بدون افت کاراکتر',
+           'بینایی کریستالی 1440p با تفکیک هوشمند فریم‌ها: نمونه‌برداری با کیفیت 1440x810، فیلتر SSIM/MSE برای صرفه‌جویی بیش از ۷۵٪ در مصرف توکن، و لغو اکوی صوتی (AEC)']},
     {id:'lango',cat:'multimodal',badge:'live',badgeText:'🚀 پلتفرم زنده پروداکشن',
      name:'NitroLearnAI (NitroLango) — پلتفرم تعاملی آموزش زبان',
      role:'مهندس فول‌استک و طراح سیستم یادگیری تطبیقی',
@@ -344,28 +347,29 @@ multimodal:{
     },
     {
       id:'copilot',
-      title:'Iman Mansouri Jet AI Human Assistant 🚀 — دستیار شناور چندوجهی دسکتاپ',
-      role:'معمار سیستم‌های بینایی ماشین و پروتکل‌های وب‌سوکت بلادرنگ',
-      desc:'دستیار شناور بدون فریم دسکتاپ مبتنی بر وب‌سوکت دوطرفه Gemini Multimodal Live API: رصد پیوسته صفحه نمایش با تفکیک هوشمند فریم‌های تکراری با الگوریتم‌های بینایی ماشین برای صرفه‌جویی شدید در مصرف توکن، و استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz.',
+      title:'Iman Mansouri Jet AI Human Assistant 🚀 — دستیار خودمختار Level-5 و خلبان هوشمند دسکتاپ',
+      role:'معمار اتوماسیون خودمختار، بینایی ماشین و پروتکل‌های وب‌سوکت بلادرنگ',
+      desc:'دستیار خودمختار سطح ۵ و خلبان کمکی دسکتاپ ویندوز با قابلیت Fly-by-Wire: مجهز به بینایی کریستالی 1440p، ناوبری لیزری ماوس با سنپ به مرکز المان‌ها، تایپ اتمیک بدون گیر Win32، فلایت خودکار پیوسته برای وظایف چندمرحله‌ای، وب‌سوکت دوطرفه Full-Duplex با تفکیک فریم، و سپر لغو اکوی صوتی با پشتیبانی از مکالمه طبیعی (Barge-In).',
       badges:[
-        {text:'وب‌سوکت دوطرفه Full-Duplex', type:'perf'},
-        {text:'تفکیک فریم با SSIM/MSE', type:'gpu'},
-        {text:'قابلیت Native Barge-In (VAD)', type:'perf'},
-        {text:'صوت ورودی ۱۶k / خروجی ۲۴k', type:''}
+        {text:'اتوماسیون خودمختار Level-5 Fly-by-Wire', type:'perf'},
+        {text:'بینایی کریستالی 1440p و تله‌متری پنجره‌ها', type:'gpu'},
+        {text:'تایپ اتمیک و هدایت لیزری ماوس', type:'perf'},
+        {text:'سپر لغو اکوی صوتی (AEC Shield)', type:''}
       ],
       steps:[
-        {title:'نمونه‌برداری صفحه نمایش (1 FPS)', desc:'کپچر سبک فریم‌های صفحه نمایش دسکتاپ در لایه‌های پس‌زمینه بدون افت فریم برنامه‌های در حال اجرا.'},
-        {title:'تفکیک فریم‌های تکراری با OpenCV', desc:'محاسبه خطای میانگین مربعات (MSE) و شاخص تشابه ساختاری (SSIM)؛ فریم‌های بدون تغییر ارسال نمی‌شوند (صرفه‌جویی ۷۵٪ توکن).'},
-        {title:'استریم صوتی دوطرفه ۱۶kHz و ۲۴kHz', desc:'دریافت همزمان صدای میکروفون و لوپ‌بک با کدک خام PCM و پخش خروجی صوتی با فرکانس بالای ۲۴ کیلوهرتز.'},
-        {title:'قابلیت توقف آنی با مکالمه کاربر (Barge-In)', desc:'آشکارساز فعالیت صوتی (VAD)؛ قطع بلافاصله پخش صدای هوش مصنوعی به محض شروع صحبت کاربر برای مکالمه کاملاً طبیعی.'},
-        {title:'رابط کاربری فریم‌لس PyQt6', desc:'پنجره شناور شفاف همیشه در بالا (Always-on-top) با استایل مدرن و بدون فریم حاشیه‌ای.'}
+        {title:'بینایی کریستالی 1440p و تله‌متری پنجره‌ها', desc:'کپچر پیوسته با رزولوشن 1440x810 و کیفیت 78 JPEG به همراه استخراج ساختار پنجره‌ها و دیالوگ‌های فعال سیستم‌عامل.'},
+        {title:'تفکیک فریم‌های تکراری با OpenCV (SSIM/MSE)', desc:'محاسبه خطای میانگین مربعات و شباهت ساختاری؛ فریم‌های بدون تغییر فیلتر می‌شوند (بیش از ۷۵٪ صرفه‌جویی در مصرف توکن).'},
+        {title:'هدایت لیزری ماوس و سنپ خودکار به المان‌ها', desc:'حرکت نرم ماوس با منحنی‌های درجه ۳ بِزیه و قفل ریاضیاتی روی مرکز هندسی دکمه‌ها و فیلدهای متنی ویندوز.'},
+        {title:'تایپ اتمیک و تزریق بدون گیر متون (Win32 Clipboard)', desc:'تزریق آنی متن‌ها و کدهای طولانی از طریق کلیپ‌بورد بومی ویندوز جهت جلوگیری کامل از افتادن کاراکترها و حفظ پایداری.'},
+        {title:'فلایت خودکار پیوسته در تسک‌های چندمرحله‌ای', desc:'اجرای زنجیره‌ای اقدامات سیستم‌عامل بدون توقف در گام اول تا تحقق ۱۰۰٪ اهداف تعریف‌شده کاربر.'},
+        {title:'استریم صوتی دوطرفه و لغو هوشمند اکو (Barge-In)', desc:'تطبیق خودکار بهره پیش‌تقویت (Gain Switching) برای سرکوب صدای بلندگو و امکان قطع کلام دستیار در لحظه صحبت کاربر.'}
       ],
       arch:[
-        'جداسازی کامل ۴ ترد: Ingestion تصویری، Ingestion صوتی، هسته WebSocket دوطرفه، و ترد اصلی رابط کاربری PyQt6',
-        'مدیریت پایدار نشست‌های وب‌سوکت با مکانیزم Reconnect خودکار و حفظ تاریخچه شناور نشست',
-        'کنترل مصرف رم و جلوگیری از Memory Leak در ضبط ممتد فریم‌های تصویری'
+        'تفکیک کامل ۴ لایه مستقل: Ingestion تصویری 1440p، Ingestion صوتی با فیلتر اکو، هسته WebSocket دوطرفه، و ترد اصلی رابط کاربری PyQt6 Glassmorphism',
+        'مدیریت پایدار نشست وب‌سوکت در یک حلقه پایدار بدون قطعی پس از اتمام نوبت‌ها و مجهز به قفل ارسال غیرهمگام (_send_lock)',
+        'قفس ایمنی هوشمند (Safety Cage) با کلید لغو فوری Esc (<5ms) و سنسور پایش تکان ناگهانی ماوس (Jerk Abort)'
       ],
-      tags:['Python','PyQt6','Gemini Multimodal Live API','OpenCV SSIM/MSE','WASAPI Audio Ingest','AsyncIO WebSocket'],
+      tags:['Python 3.13','PyQt6 Glassmorphism','Level-5 Autonomous Fly-by-Wire','1440p Vision Grounding','Win32 Atomic Injection','Gemini Multimodal Live API','Continuous Auto-Flight','Acoustic Echo Suppression'],
       vsec:null
     },
     {
@@ -423,7 +427,7 @@ multimodal:{
     headers:['سیستم','تأخیر هدف (Latency)','روش ورود صوت/تصویر','شتاب‌دهنده و مدل استنتاج','مدل هم‌روندی (Concurrency)','مکانیزم بازیابی و تاب‌آوری'],
     rows:[
       ['RapScribe-AI (OmniScribe HUD)','زیر ۲۵۰ میلی‌ثانیه','WASAPI Loopback (استریو دیجیتال)','CUDA GPU FP16 (faster-whisper large-v3-turbo)','۴ ترد موازی مستقل سیستم‌عامل','واچ‌داگ تخلیه بافر عقب‌افتاده + آبشار سوییچ ترجمه بر خطای 429'],
-      ['Iman Mansouri Jet AI Human Assistant 🚀','زیر ۵۰۰ میلی‌ثانیه','نمونه‌برداری تصویر (1fps) + میکروفون ۱۶kHz','تفکیک فریم OpenCV (MSE/SSIM) + وب‌سوکت دوطرفه','۴ لایه موازی Ingest / WebSocket / UI','قطع فوری خروجی صدا با VAD (Barge-In) + سوییچ فریم‌های تغییریافته'],
+      ['Iman Mansouri Jet AI Human Assistant 🚀 (Level-5 Fly-by-Wire)','زیر ۵۰۰ میلی‌ثانیه','بینایی کریستالی 1440p + میکروفون با سرکوب اکو','هدایت لیزری ویندوز + وب‌سوکت دوطرفه Gemini Live','۴ لایه موازی Ingest / Auto-Flight / WebSocket / UI','فلایت خودکار پیوسته + تزریق اتمیک Win32 + قطع کلام با Barge-in'],
       ['NitroLearnAI (NitroLango)','بلادرنگ کلاینت','Web Speech API مرورگر','موتور ریاضی SM-2 + واژگان Menschen','Async Event Loop در مرورگر','واچ‌داگ سخت‌گیرانه ۱۵ ثانیه‌ای + Silent Error Boundaries'],
       ['German-Neural-Immersion','پردازش دسته‌ای (Batch)','فایل‌های منبع MP3 و PDF','ElevenLabs Neural Audio + PyPDF parser','AsyncIO Task Workers','تلاش مجدد خودکار در استنتاج صدا + اعتبارسنجی ساختار JSON']
     ]
@@ -700,13 +704,15 @@ proj:{
      arch:['4 Concurrent Worker Threads: Independent non-blocking threads for Audio Capture, STT Worker, Translation Worker, and Watchdog',
            'Butterworth HPF Digital Filter: Eliminates low-frequency rumble with RMS gating for silence detection',
            'Streaming Translation Cascade: Instantaneous failover across multiple model tiers on network latency']},
-    {id:'copilot',cat:'multimodal',badge:'priv',badgeText:'🔒 Private Repository',
-     name:'Iman Mansouri Jet AI Human Assistant 🚀 — Multimodal Floating Desktop HUD',
-     role:'Computer Vision & WebSocket Architect',
-     desc:'Frameless always-on-top desktop HUD over Gemini Live bidirectional WebSocket API: captures screen with MSE/SSIM frame-diff deduplication to save tokens, with 16kHz PCM audio streaming and 24kHz synthesized voice response.',
-     tags:['Python','PyQt6','Gemini Live WebSocket','OpenCV SSIM/MSE','WASAPI Audio','AsyncIO'],
-     arch:['Intelligent SSIM/MSE Frame Diffing: 1fps screen sampling transmitting frames only upon substantive changes',
-           'Bidirectional Streaming: Full support for native barge-in voice interruption and sub-second feedback']},
+    {id:'copilot',cat:'multimodal',badge:'oss',badgeText:'⭐ GitHub Repository',
+     name:'Iman Mansouri Jet AI Human Assistant 🚀 — Level-5 Autonomous OS Fly-by-Wire Assistant',
+     role:'Autonomous Systems, Computer Vision & Real-Time WebSocket Architect',
+     desc:'Level-5 Autonomous Fly-by-Wire Windows OS Assistant: 1440p crystal vision grounding, Bézier laser mouse navigation & window auto-focus, atomic Win32 clipboard injection for stutter-free typing, continuous multi-step auto-flight, full-duplex Gemini Live WebSocket, and acoustic echo suppression with native conversational barge-in.',
+     tags:['Python 3.13','PyQt6 Glassmorphism','Level-5 Autonomous Fly-by-Wire','1440p Vision Grounding','Win32 Atomic Injection','Gemini Multimodal Live API','Continuous Auto-Flight','Acoustic Echo Suppression'],
+     link:'copilot',
+     arch:['Level-5 Autonomous Fly-by-Wire: Bézier curve mouse trajectory smoothing, mathematical snapping to Win32/UIA element bounding boxes, and intelligent window auto-focusing',
+           'Atomic Win32 Keystroke & Clipboard Injection: Instant Win32 clipboard paste injection eliminating dropped keystrokes in lengthy code blocks and multilingual text',
+           '1440p Crystal Vision & Adaptive Echo Shield: High-definition 1440x810 frame capture with SSIM/MSE diffing (>75% token reduction) and pre-amp gain switching for echo cancellation']},
     {id:'lango',cat:'multimodal',badge:'live',badgeText:'🚀 Live Production Platform',
      name:'NitroLearnAI (NitroLango) — Adaptive Language Learning Platform',
      role:'Full-Stack Engineer & Learning Systems Designer',
@@ -923,28 +929,29 @@ multimodal:{
     },
     {
       id:'copilot',
-      title:'Iman Mansouri Jet AI Human Assistant 🚀 — Desktop Multimodal Live Assistant',
-      role:'Computer Vision & Real-Time WebSocket Architect',
-      desc:'Frameless always-on-top desktop HUD over Gemini Multimodal Live bidirectional WebSocket API: captures screen with MSE/SSIM frame diffing to minimize token consumption, with 16kHz audio input, 24kHz synthesized voice response, and native barge-in.',
+      title:'Iman Mansouri Jet AI Human Assistant 🚀 — Level-5 Autonomous OS Fly-by-Wire Assistant',
+      role:'Autonomous Systems, Computer Vision & Real-Time WebSocket Architect',
+      desc:'Level-5 Autonomous Fly-by-Wire Windows OS Assistant: frameless always-on-top PyQt6 HUD over full-duplex Gemini Live WebSocket API, featuring 1440p crystal vision grounding, Bézier laser mouse trajectory navigation, atomic Win32 clipboard injection, continuous multi-step auto-flight, and acoustic echo suppression.',
       badges:[
-        {text:'Full-Duplex Live WebSocket', type:'perf'},
-        {text:'SSIM/MSE Frame Delta Diffing', type:'gpu'},
-        {text:'Native Barge-In (VAD)', type:'perf'},
-        {text:'16k In / 24k Out Audio', type:''}
+        {text:'Level-5 Autonomous Fly-by-Wire', type:'perf'},
+        {text:'1440p Crystal Vision & Telemetry', type:'gpu'},
+        {text:'Atomic Typing & Laser Snapping', type:'perf'},
+        {text:'Acoustic Echo Shield (AEC)', type:''}
       ],
       steps:[
-        {title:'Screen Acquisition (1 FPS)', desc:'Continuous low-overhead desktop screen capture running in background threads without degrading host performance.'},
-        {title:'OpenCV SSIM & MSE Frame Diffing', desc:'Mean Squared Error & Structural Similarity Indexing comparing adjacent frames; static frames are discarded, saving >75% token bandwidth.'},
-        {title:'Full-Duplex Audio Streaming (16kHz & 24kHz)', desc:'Simultaneous capture of microphone & loopback audio in raw 16kHz PCM, paired with 24kHz high-fidelity speech synthesis.'},
-        {title:'Native Conversational Barge-In (VAD)', desc:'Voice Activity Detection immediately cuts off assistant audio playback the millisecond user speech is detected.'},
-        {title:'PyQt6 Frameless Desktop HUD', desc:'Always-on-top frameless floating overlay with alpha transparency and non-intrusive desktop placement.'}
+        {title:'1440p Crystal Vision & Desktop Telemetry', desc:'Continuous 1440x810 screen capture at JPEG quality 78 combined with real-time extraction of active window titles and desktop dialog hierarchies.'},
+        {title:'OpenCV SSIM & MSE Frame Diffing', desc:'Structural Similarity Indexing and Mean Squared Error delta analysis; unchanged frames are dropped, saving >75% token bandwidth.'},
+        {title:'Bézier Laser Mouse Navigation & Snapping', desc:'Smooth cubic Bézier mouse movement with automatic mathematical alignment to UI element centers and target window auto-focusing.'},
+        {title:'Atomic Win32 Keystroke & Clipboard Injection', desc:'Instant Win32 clipboard paste injection for multi-line code and Persian text, guaranteeing 100% typing reliability with zero character dropping.'},
+        {title:'Continuous Multi-Step Auto-Flight', desc:'Automated sequential execution of complex multi-stage tasks across browsers, editors, and terminal windows without mid-workflow stalling.'},
+        {title:'Full-Duplex Audio Streaming & Echo Shield', desc:'16kHz PCM audio input with dynamic pre-amp gain switching and 24kHz voice synthesis with instantaneous conversational Barge-In.'}
       ],
       arch:[
-        'Decoupled 4-thread architecture: Vision Ingestion, Audio Ingestion, WebSocket Engine, and PyQt6 UI Main Thread',
-        'Resilient connection watchdog: Automatic session reconnection with preserved conversational context',
-        'Strict zero-leak memory management for continuous visual frame streams'
+        'Decoupled 4-tier concurrency architecture: 1440p Vision Ingestion, Audio Ingestion with Echo Suppression, Full-Duplex WebSocket Engine, and PyQt6 Main UI Thread',
+        'Persistent WebSocket lifecycle management wrapped in resilient reception loops, eliminating turn-boundary drops and protected by asynchronous send locks',
+        'Safety Cage envelope with sub-5ms Esc human override and transit-only mouse jerk abort detection'
       ],
-      tags:['Python','PyQt6','Gemini Multimodal Live API','OpenCV SSIM/MSE','WASAPI Audio Ingest','AsyncIO WebSocket'],
+      tags:['Python 3.13','PyQt6 Glassmorphism','Level-5 Autonomous Fly-by-Wire','1440p Vision Grounding','Win32 Atomic Injection','Gemini Multimodal Live API','Continuous Auto-Flight','Acoustic Echo Suppression'],
       vsec:null
     },
     {
@@ -1002,7 +1009,7 @@ multimodal:{
     headers:['System','Target Latency','Audio / Vision Ingest','Inference Engine & Hardware','Concurrency Architecture','Resilience & Watchdogs'],
     rows:[
       ['RapScribe-AI (OmniScribe HUD)','< 250ms','WASAPI Loopback (stereo mix)','CUDA GPU FP16 (faster-whisper large-v3-turbo)','4 non-blocking concurrent OS worker threads','Buffer flush watchdog on load spikes + 429 translation cascade'],
-      ['Iman Mansouri Jet AI Human Assistant 🚀','< 500ms','Screen capture (1fps) + 16kHz mic','OpenCV SSIM/MSE diffing + Gemini Live WebSocket','4 decoupled ingestion / network / UI layers','Native Barge-In VAD cancellation + delta-only frame dispatch'],
+      ['Iman Mansouri Jet AI Human Assistant 🚀 (Level-5 Fly-by-Wire)','< 500ms','1440p crystal vision + echo-suppressed mic','Bézier laser OS navigation + Gemini Live WebSocket','4 decoupled Ingestion / Auto-Flight / WebSocket / UI layers','Continuous multi-step auto-flight + atomic Win32 injection + VAD barge-in'],
       ['NitroLearnAI (NitroLango)','Real-time client','Browser Web Speech API','Pure SM-2 math engine + Menschen corpus','Browser event loop & Web Workers','15-second speech watchdog timer + Silent Error Boundaries'],
       ['German-Neural-Immersion','Batch processing','MP3 archives & textbook PDFs','ElevenLabs Neural Audio + PyPDF parser','AsyncIO background workers','Auto-retry on audio synthesis rate limits + JSON validation']
     ]
