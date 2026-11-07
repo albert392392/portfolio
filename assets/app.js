@@ -688,6 +688,310 @@
     return p;
   }
 
+  /* ---------- MONOGRAPHS TAB (56 ELITE TECHNICAL ESSAYS) ---------- */
+  var monoActiveCat = 'all';
+  var monoSearchQuery = '';
+  var monoCurrentIdx = 0;
+  var monoFilteredList = [];
+
+  function closeMonoModal(){
+    var m = document.getElementById('monoModal');
+    if(m){ m.style.display='none'; document.body.style.overflow=''; }
+  }
+
+  function getCatLabel(c, l){
+    if(l === 'fa' || !c) return c;
+    var map = {
+      'هوش مصنوعی و مدل‌های زبانی': {
+        en: 'AI & Language Models',
+        de: 'KI & Sprachmodelle',
+        es: 'IA y Modelos de Lenguaje'
+      },
+      'معماری سیستم و زیرساخت': {
+        en: 'Systems Architecture & Infra',
+        de: 'Systemarchitektur & Infrastruktur',
+        es: 'Arquitectura de Sistemas e Infra'
+      },
+      'فلسفه هوش، نبوغ و علوم': {
+        en: 'Philosophy of Intelligence',
+        de: 'Philosophie der Intelligenz',
+        es: 'Filosofía de la Inteligencia'
+      },
+      'آینده شغلی و بازار کار مدرن': {
+        en: 'Career & High Agency',
+        de: 'Karriere & High Agency',
+        es: 'Carrera y Alta Agencia'
+      },
+      'نرم‌افزار، کدنویسی و ابزارها': {
+        en: 'Software, Code & Tools',
+        de: 'Software, Code & Tools',
+        es: 'Software, Código y Herramientas'
+      },
+      'سخت‌افزار، بازی‌سازی و گرافیک': {
+        en: 'Hardware, Edge & Graphics',
+        de: 'Hardware, Edge & Grafik',
+        es: 'Hardware, Borde y Gráficos'
+      }
+    };
+    return (map[c] && map[c][l]) || c;
+  }
+
+  function stepMonoModal(delta){
+    if(!monoFilteredList || monoFilteredList.length===0) return;
+    monoCurrentIdx = (monoCurrentIdx + delta + monoFilteredList.length) % monoFilteredList.length;
+    renderMonoModalContent(monoFilteredList[monoCurrentIdx]);
+  }
+
+  function renderMonoModalContent(item){
+    var m = document.getElementById('monoModal');
+    if(!m || !item) return;
+    var body = m.querySelector('.mono-modal-body');
+    if(!body) return;
+    var t = T[lang].monographs;
+
+    var minRead = Math.max(1, Math.ceil((item.word_count||50) / 130));
+    var html = '';
+
+    html += '<div class="mono-modal-hdr">';
+    html += '<div class="mono-badges">';
+    html += '<span class="mono-badge cat">' + (item.category || '') + '</span>';
+    html += '<span class="mono-badge id">Post #' + num(item.id) + '</span>';
+    html += '<span class="mono-badge time">⏱ ' + num(minRead) + ' ' + t.minRead + '</span>';
+    html += '<span class="mono-badge words">' + num(item.word_count || 0) + ' ' + t.words + '</span>';
+    html += '</div>';
+    html += '<h2 class="mono-modal-title">' + item.title + '</h2>';
+    html += '</div>';
+
+    if(item.photos && item.photos.length > 0){
+      var photo = item.photos[0];
+      html += '<div class="mono-modal-diagram">';
+      html += '<figure class="mono-diagram-fig" data-photo="' + photo + '">';
+      html += '<img src="' + photo + '" alt="' + item.title.replace(/"/g, '&quot;') + '" loading="lazy">';
+      html += '<figcaption>📐 ' + t.attachedDiagram + ' &middot; <span class="mono-zoom-hint">' + t.clickToEnlarge + ' ↗</span></figcaption>';
+      html += '</figure>';
+      html += '</div>';
+    }
+
+    html += '<div class="mono-modal-text">';
+    var paragraphs = (item.full_text || '').split('\n').filter(function(p){ return p.trim().length > 0; });
+    paragraphs.forEach(function(p){
+      var safe = p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      if(safe.startsWith('•') || safe.startsWith('-') || safe.startsWith('*')){
+        html += '<p class="mono-bullet">' + safe + '</p>';
+      } else if(safe.length < 80 && (safe.endsWith(':') || safe.endsWith('؛'))){
+        html += '<h4 class="mono-subhdr">' + safe + '</h4>';
+      } else {
+        html += '<p>' + safe + '</p>';
+      }
+    });
+    html += '</div>';
+
+    if(item.tags && item.tags.length > 0){
+      html += '<div class="mono-modal-tags"><span class="mono-tags-label">' + t.tagsLabel + ':</span>';
+      item.tags.forEach(function(tg){
+        html += '<span class="mono-tag">#' + tg + '</span>';
+      });
+      html += '</div>';
+    }
+
+    html += '<div class="mono-modal-nav">';
+    html += '<button class="btn mono-prev-btn">‹ ' + t.prev + '</button>';
+    html += '<span class="mono-modal-counter">' + num(monoCurrentIdx + 1) + ' / ' + num(monoFilteredList.length) + '</span>';
+    html += '<button class="btn mono-next-btn">' + t.next + ' ›</button>';
+    html += '</div>';
+
+    body.innerHTML = html;
+
+    var fig = body.querySelector('.mono-diagram-fig');
+    if(fig){
+      fig.addEventListener('click', function(){
+        var p = fig.getAttribute('data-photo');
+        var caps = {};
+        caps[p] = item.title;
+        openLB([p], p, caps);
+      });
+    }
+
+    var prevBtn = body.querySelector('.mono-prev-btn');
+    if(prevBtn) prevBtn.addEventListener('click', function(){ stepMonoModal(-1); });
+
+    var nextBtn = body.querySelector('.mono-next-btn');
+    if(nextBtn) nextBtn.addEventListener('click', function(){ stepMonoModal(1); });
+  }
+
+  function openMonoModal(idx, list){
+    monoFilteredList = list || [];
+    monoCurrentIdx = idx;
+    var m = document.getElementById('monoModal');
+    if(!m) return;
+    renderMonoModalContent(monoFilteredList[monoCurrentIdx]);
+    m.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function pageMonographs(t){
+    var p = el('div', 'page-monographs');
+    var tm = t.monographs;
+
+    p.appendChild(el('h2', 'sec', tm.title + ' <em>' + tm.sub + '</em>'));
+    p.appendChild(chips(tm.chips));
+
+    var bar = el('div', 'mono-toolbar');
+    
+    var searchWrap = el('div', 'mono-search-wrap');
+    var searchIcon = el('span', 'mono-search-icon', '🔍');
+    var searchInput = el('input', 'mono-search-input');
+    searchInput.type = 'text';
+    searchInput.placeholder = tm.searchPlaceholder;
+    searchInput.value = monoSearchQuery;
+    var clearBtn = el('button', 'mono-search-clear', '×');
+    clearBtn.style.display = monoSearchQuery ? 'block' : 'none';
+
+    searchWrap.appendChild(searchIcon);
+    searchWrap.appendChild(searchInput);
+    searchWrap.appendChild(clearBtn);
+    bar.appendChild(searchWrap);
+
+    var pills = el('div', 'mono-pills');
+    var catDefs = [
+      { k: 'all', l: tm.filterAll },
+      { k: 'ai', l: tm.filterAI },
+      { k: 'sys', l: tm.filterSys },
+      { k: 'sci', l: tm.filterSci },
+      { k: 'career', l: tm.filterCareer },
+      { k: 'code', l: tm.filterCode },
+      { k: 'hw', l: tm.filterHw }
+    ];
+
+    catDefs.forEach(function(cd){
+      var btn = el('button', 'mono-pill' + (cd.k === monoActiveCat ? ' on' : ''), cd.l);
+      btn.addEventListener('click', function(){
+        monoActiveCat = cd.k;
+        Array.prototype.forEach.call(pills.querySelectorAll('.mono-pill'), function(b){ b.classList.remove('on'); });
+        btn.classList.add('on');
+        applyFilterAndRender();
+      });
+      pills.appendChild(btn);
+    });
+    bar.appendChild(pills);
+    p.appendChild(bar);
+
+    var counterInfo = el('div', 'mono-counter-info');
+    p.appendChild(counterInfo);
+
+    var grid = el('div', 'mono-grid');
+    p.appendChild(grid);
+
+    var rawData = window.MONOGRAPHS_DATA || [];
+
+    function matchesCategory(item, catKey){
+      if(catKey === 'all') return true;
+      var c = item.category || '';
+      if(catKey === 'ai') return c.indexOf('هوش مصنوعی') >= 0;
+      if(catKey === 'sys') return c.indexOf('معماری سیستم') >= 0;
+      if(catKey === 'sci') return c.indexOf('فلسفه هوش') >= 0;
+      if(catKey === 'career') return c.indexOf('آینده شغلی') >= 0;
+      if(catKey === 'code') return c.indexOf('نرم‌افزار') >= 0;
+      if(catKey === 'hw') return c.indexOf('سخت‌افزار') >= 0;
+      return true;
+    }
+
+    function applyFilterAndRender(){
+      var q = (monoSearchQuery || '').trim().toLowerCase();
+      var filtered = rawData.filter(function(item){
+        if(!matchesCategory(item, monoActiveCat)) return false;
+        if(!q) return true;
+        var idStr = String(item.id);
+        var catTrans = getCatLabel(item.category, lang).toLowerCase();
+        var textMatch = (item.title || '').toLowerCase().indexOf(q) >= 0 ||
+                        (item.full_text || '').toLowerCase().indexOf(q) >= 0 ||
+                        (item.category || '').toLowerCase().indexOf(q) >= 0 ||
+                        catTrans.indexOf(q) >= 0 ||
+                        idStr.indexOf(q) >= 0 ||
+                        ('#' + idStr).indexOf(q) >= 0 ||
+                        (item.tags || []).join(' ').toLowerCase().indexOf(q) >= 0;
+        return textMatch;
+      });
+
+      monoFilteredList = filtered;
+      counterInfo.innerHTML = fmt(tm.showingCount, '<b>' + num(filtered.length) + '</b>', '<b>' + num(rawData.length) + '</b>');
+
+      grid.innerHTML = '';
+      if(filtered.length === 0){
+        grid.appendChild(el('div', 'mono-empty', tm.noResults));
+        return;
+      }
+
+      filtered.forEach(function(item, idx){
+        var card = el('article', 'mono-card');
+        var minRead = Math.max(1, Math.ceil((item.word_count || 50) / 130));
+
+        var top = el('div', 'mono-card-top');
+        top.innerHTML = '<span class="mono-badge cat">' + (item.category || '') + '</span>' +
+                        '<span class="mono-card-meta">Post #' + num(item.id) + ' &middot; ⏱ ' + num(minRead) + ' ' + tm.minRead + '</span>';
+        card.appendChild(top);
+
+        var h3 = el('h3', 'mono-card-title', item.title);
+        card.appendChild(h3);
+
+        if(item.photos && item.photos.length > 0){
+          var photo = item.photos[0];
+          var thumb = el('div', 'mono-card-thumb');
+          var img = el('img');
+          img.src = photo;
+          img.alt = item.title;
+          img.loading = 'lazy';
+          var badge = el('span', 'mono-thumb-badge', '📐 ' + tm.attachedDiagram);
+          thumb.appendChild(img);
+          thumb.appendChild(badge);
+          thumb.addEventListener('click', function(ev){
+            ev.stopPropagation();
+            var caps = {};
+            caps[photo] = item.title;
+            openLB([photo], photo, caps);
+          });
+          card.appendChild(thumb);
+        }
+
+        var snippetText = (item.full_text || '').replace(/\s+/g, ' ').slice(0, 190) + '...';
+        card.appendChild(el('p', 'mono-card-snippet', snippetText));
+
+        if(item.tags && item.tags.length > 0){
+          var tagWrap = el('div', 'mono-card-tags');
+          item.tags.slice(0, 3).forEach(function(tg){
+            tagWrap.appendChild(el('span', 'mono-tag', '#' + tg));
+          });
+          card.appendChild(tagWrap);
+        }
+
+        var btn = el('button', 'btn primary mono-read-btn', tm.readMore + ' →');
+        btn.addEventListener('click', function(){
+          openMonoModal(idx, filtered);
+        });
+        card.appendChild(btn);
+
+        grid.appendChild(card);
+      });
+    }
+
+    searchInput.addEventListener('input', function(){
+      monoSearchQuery = searchInput.value;
+      clearBtn.style.display = monoSearchQuery ? 'block' : 'none';
+      applyFilterAndRender();
+    });
+
+    clearBtn.addEventListener('click', function(){
+      monoSearchQuery = '';
+      searchInput.value = '';
+      clearBtn.style.display = 'none';
+      searchInput.focus();
+      applyFilterAndRender();
+    });
+
+    applyFilterAndRender();
+    return p;
+  }
+
   /* ---------- lightbox ---------- */
   var lbIds=[], lbIdx=0, lbCaps={};
   function openLB(ids,id,caps){
@@ -709,6 +1013,7 @@
   var PAGES = {
     home: pageHome,
     proj: pageProj,
+    monographs: pageMonographs,
     sys: pageSys,
     multimodal: pageMultimodal,
     gate: pageGate,
@@ -720,6 +1025,7 @@
   var ICONS = {
     home: '◆',
     proj: '▤',
+    monographs: '📚',
     sys: '⚙',
     multimodal: '⚡',
     gate: '🛡',
@@ -740,7 +1046,7 @@
     var t=T[lang];
     document.documentElement.lang=lang;
     document.documentElement.dir=t.dir;
-    document.title = (lang === 'fa' ? 'ایمان منصوری — معمار سیستم و مهندس هوش مصنوعی چندحالته' : (lang === 'de' ? 'Iman Mansouri — Systemarchitekt & Ingenieur für multimodale KI' : 'Iman Mansouri — Architect & Multimodal AI Engineer'));
+    document.title = (lang === 'fa' ? 'ایمان منصوری — معمار سیستم و مهندس هوش مصنوعی چندحالته' : (lang === 'de' ? 'Iman Mansouri — Systemarchitekt & Ingenieur für multimodale KI' : (lang === 'es' ? 'Iman Mansouri — Arquitecto de Sistemas e Ingeniero de IA Multimodal' : 'Iman Mansouri — Architect & Multimodal AI Engineer')));
 
     var brandSpan = document.querySelector('.brand span');
     if (brandSpan) {
@@ -804,6 +1110,21 @@
   document.addEventListener('DOMContentLoaded',function(){
     Array.prototype.forEach.call(document.querySelectorAll('.langs button'),function(b){
       b.addEventListener('click',function(){ setLang(b.getAttribute('data-l')); });
+    });
+    var monoM = document.getElementById('monoModal');
+    if(monoM){
+      var mx = monoM.querySelector('.mono-modal-x');
+      var mb = monoM.querySelector('.mono-modal-backdrop');
+      if(mx) mx.addEventListener('click', closeMonoModal);
+      if(mb) mb.addEventListener('click', closeMonoModal);
+    }
+    document.addEventListener('keydown',function(e){
+      var mm = document.getElementById('monoModal');
+      if(mm && mm.style.display !== 'none'){
+        if(e.key === 'Escape') closeMonoModal();
+        if(e.key === 'ArrowRight') stepMonoModal(lang === 'fa' ? -1 : 1);
+        if(e.key === 'ArrowLeft') stepMonoModal(lang === 'fa' ? 1 : -1);
+      }
     });
     $('#lb .x').addEventListener('click',closeLB);
     $('#lb .prev').addEventListener('click',function(){stepLB(-1);});

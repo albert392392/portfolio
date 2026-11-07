@@ -43,6 +43,7 @@ dir:'rtl', label:'فارسی',
 nav:{
   home:'خانه',
   proj:'پروژه‌ها (۱۸)',
+  monographs:'مونوگراف‌ها و دانش مهندسی (۵۶)',
   sys:'سیستم‌سازی و کارخانه AI',
   multimodal:'هوش چندحالته',
   gate:'منشور مهندسی',
@@ -619,12 +620,48 @@ videos:{
 footer:'ایمان منصوری (Iman Mansouri) — معمار سیستم و مهندس هوش مصنوعی چندحالته'
 };
 
+
+T.fa.monographs = {
+  title: 'مونوگراف‌های تخصصی و دانش مهندسی',
+  sub: '۵۶ رساله تحلیلی-معماری در سیستم‌های توزیع‌شده، سواِرم‌های هوش مصنوعی، و مهندسی پرفورمنس',
+  chips: [
+    '۵۶ مونوگراف فنی و مهندسی',
+    'پرفورمنس فوق‌سریع Zero-GC در C# .NET 10',
+    'سواِرم‌های خودمختار هوش مصنوعی (Multi-Agent)',
+    'خطوط لوله بلادرنگ صوت، تصویر و رباتیک',
+    'پالایش ۱۰۰٪ خالص مهندسی (بدون محتوای متفرقه)'
+  ],
+  searchPlaceholder: 'جستجوی زنده در مونوگراف‌ها، معماری‌ها، مفاهیم و برچسب‌ها...',
+  clearSearch: 'پاک کردن',
+  filterAll: 'همه (۵۶)',
+  filterAI: 'هوش مصنوعی و LLMها',
+  filterSys: 'معماری سیستم و زیرساخت',
+  filterSci: 'فلسفه هوش و نبوغ',
+  filterCareer: 'آینده شغلی و بازار کار',
+  filterCode: 'مهندسی نرم‌افزار و کد',
+  filterHw: 'سخت‌افزار، گرافیک و لبه',
+  cardBadge: 'مونوگراف مهندسی',
+  minRead: 'دقیقه مطالعه',
+  words: 'کلمه',
+  readMore: 'مطالعه کامل رساله مهندسی',
+  close: 'بستن (Esc)',
+  prev: 'مونوگراف قبلی',
+  next: 'مونوگراف بعدی',
+  attachedDiagram: 'دیاگرام فنی پیوست',
+  clickToEnlarge: 'برای مشاهده در لایت‌باکس بزرگ کلیک کنید',
+  tagsLabel: 'برچسب‌های تخصصی',
+  noResults: 'هیچ مونوگرافی مطابق با جستجوی شما یافت نشد.',
+  allCount: 'مجموع ۵۶ رساله مهندسی',
+  showingCount: 'نمایش %1 از %2 مونوگراف'
+};
+
 /* ============ EN (ENGLISH) ============ */
 T.en = {
 dir:'ltr', label:'English',
 nav:{
   home:'Home',
   proj:'Projects (18)',
+  monographs:'Engineering Monographs (56)',
   sys:'AI Software Factory & Systems',
   multimodal:'Multimodal AI',
   gate:'Verification Gate',
@@ -1201,6 +1238,41 @@ videos:{
 footer:'Iman Mansouri — Architect & Multimodal AI Engineer'
 };
 
+
+T.en.monographs = {
+  title: 'Engineering Monographs & Deep Tech Knowledge',
+  sub: '56 rigorous architectural treatises on distributed systems, autonomous AI swarms, sub-second multimodal pipelines, and zero-allocation high-performance computing',
+  chips: [
+    '56 Deep Technical Monographs',
+    'Zero-GC C# .NET 10 & High-Throughput Systems',
+    'Autonomous Multi-Agent Swarms & Orchestration',
+    'Sub-Second Multimodal Audio, Vision & Robotics',
+    '100% Pure Engineering (Zero Unrelated Noise)'
+  ],
+  searchPlaceholder: 'Live search across 56 engineering monographs, architectures, algorithms & tags...',
+  clearSearch: 'Clear',
+  filterAll: 'All (56)',
+  filterAI: 'AI & LLMs',
+  filterSys: 'Systems & Infrastructure',
+  filterSci: 'Philosophy of Intelligence',
+  filterCareer: 'Career & High Agency',
+  filterCode: 'Software Engineering & Code',
+  filterHw: 'Hardware, Edge AI & Graphics',
+  cardBadge: 'Technical Monograph',
+  minRead: 'min read',
+  words: 'words',
+  readMore: 'Read Full Technical Monograph',
+  close: 'Close (Esc)',
+  prev: 'Previous Monograph',
+  next: 'Next Monograph',
+  attachedDiagram: 'Attached Architectural Diagram',
+  clickToEnlarge: 'Click to enlarge in full-screen lightbox',
+  tagsLabel: 'Specialized Tags',
+  noResults: 'No monographs matched your search query.',
+  allCount: 'Total 56 Engineering Monographs',
+  showingCount: 'Showing %1 of %2 monographs'
+};
+
 /* ============ DE (GERMAN) ============ */
 T.de = JSON.parse(JSON.stringify(T.en));
 T.de.label = 'Deutsch';
@@ -1217,3 +1289,117 @@ T.de.nav = {
 };
 T.de.hero.role = 'Systemarchitekt & Ingenieur für multimodale KI (Architect & Multimodal AI Engineer)';
 T.de.footer = 'Iman Mansouri — Architect & Multimodal AI Engineer';
+T.de.nav.monographs = 'Engineering-Monographien (56)';
+T.de.monographs = {
+  title: 'Engineering-Monographien & Deep-Tech-Wissen',
+  sub: '56 tiefgehende technische Abhandlungen über verteilte Systeme, autonome KI-Schwärme, Sub-Sekunden-KI-Pipelines und High-Performance-Engineering',
+  chips: [
+    '56 Deep-Tech-Monographien',
+    'Zero-GC C# .NET 10 & Hochdurchsatz-Systeme',
+    'Autonome Multi-Agent-Schwärme & Orchestrierung',
+    'Sub-Sekunden Multimodale Audio-, Bild- & Robotik-Pipelines',
+    '100% Reines Engineering (Keine irrelevanten Inhalte)'
+  ],
+  searchPlaceholder: 'Echtzeitsuche in 56 Monographien, Architekturen, Algorithmen & Tags...',
+  clearSearch: 'Löschen',
+  filterAll: 'Alle (56)',
+  filterAI: 'KI & Sprachmodelle',
+  filterSys: 'Systemarchitektur & Infrastruktur',
+  filterSci: 'Philosophie der Intelligenz',
+  filterCareer: 'Karriere & High Agency',
+  filterCode: 'Software-Engineering & Code',
+  filterHw: 'Hardware, Edge-KI & Grafik',
+  cardBadge: 'Technische Monographie',
+  minRead: 'Min. Lesezeit',
+  words: 'Wörter',
+  readMore: 'Vollständige Monographie lesen',
+  close: 'Schließen (Esc)',
+  prev: 'Vorherige Monographie',
+  next: 'Nächste Monographie',
+  attachedDiagram: 'Angehängtes Architekturdiagramm',
+  clickToEnlarge: 'Klicken für Vollbildansicht',
+  tagsLabel: 'Fachbegriffe & Tags',
+  noResults: 'Keine Monographien gefunden.',
+  allCount: 'Insgesamt 56 Monographien',
+  showingCount: 'Zeige %1 von %2 Monographien'
+};
+
+/* ============ ES (SPANISH) ============ */
+T.es = JSON.parse(JSON.stringify(T.en));
+T.es.label = 'Español';
+T.es.dir = 'ltr';
+T.es.nav = {
+  home: 'Inicio',
+  proj: 'Proyectos (18)',
+  monographs: 'Monografías de Ingeniería (56)',
+  sys: 'Fábrica de IA y Automatización',
+  multimodal: 'IA Multimodal',
+  gate: 'Puerta de Verificación',
+  neon: 'Neon Run',
+  honors: 'Honores y Pruebas',
+  resume: 'Currículum Oficial (PDF)',
+  videos: 'Vídeos'
+};
+T.es.hero = {
+  name: 'Iman Mansouri',
+  role: 'Arquitecto de Sistemas e Ingeniero de IA Multimodal (Architect & Multimodal AI Engineer)',
+  tag: 'Arquitectura de enjambres autónomos de agentes de IA, automatización integral de software, canalizaciones multimodales de subsegundo y sistemas distribuidos empresariales.',
+  chips: ['Mashhad, Irán', '🏆 Ganador de Premio Nacional y Máximo Rango', 'Elegible para Visa de Talento Global y Élite Científica', 'Cartilla de Exención Militar (Médica Definitiva)', '100% Disponible para Empleo Global y Remoto'],
+  cta1: 'Ver y Descargar Currículum',
+  cta2: 'Explorar los 18 Proyectos',
+  cta3: 'Contactar y Conversar'
+};
+T.es.stats = [
+  ['14 Repositorios', 'Bases de código auditadas (758K archivos, ~61GB activos/código)'],
+  ['17 / 17', 'Microservicios en Contenedores Activos en UniversalSystem'],
+  ['+307,000', 'Líneas de Código en el Ecosistema (238K C# + 69K Python)'],
+  ['671 RPS', 'Rendimiento de Carga Medido en Producción Real'],
+  ['Premio Nacional', 'Primer Lugar en Concurso Nacional de Aceleración Internacional Negative Five'],
+  ['100%', 'Adhesión a Arquitectura Defensiva Zero-Hallucination']
+];
+T.es.about = {
+  title: 'De un Vistazo',
+  sub: 'Ingeniería de IA Multimodal, Automatización Integral y Sistemas en Tiempo Real',
+  p1: 'Soy arquitecto de sistemas de software e ingeniero de IA multimodal enfocado en enjambres autónomos de agentes, arquitecturas distribuidas de baja latencia y canalizaciones de audio/visión en tiempo real.',
+  p2: 'Mi trabajo integra bases de código sólidas y limpias (.NET 10, C#, Python, Docker) con una estricta verificación empírica y arquitecturas defensivas de cero alucinación.',
+  cards: [
+    { t: 'Fábrica Autónoma de Software', d: 'Bucles de autorreparación, desarrollo autónomo con agentes coordinados y pipelines CI/CD resilientes.' },
+    { t: 'IA Multimodal en Tiempo Real', d: 'Procesamiento de visión y audio en subsegundo (<800ms) con arquitecturas de enjambre y WebSockets de baja latencia.' },
+    { t: 'Microservicios Distribuidos', d: '17 microservicios contenerizados de nivel empresarial con Redis, RabbitMQ, Qdrant y SQL Server.' },
+    { t: 'Zero-GC & Rendimiento Extremo', d: 'Optimización de memoria en C#, cero asignaciones en bucles críticos (Zero-GC) y vectorización SIMD.' }
+  ]
+};
+T.es.monographs = {
+  title: 'Monografías de Ingeniería y Conocimiento Deep Tech',
+  sub: '56 tratados técnicos exhaustivos sobre sistemas distribuidos, enjambres autónomos de IA, canalizaciones multimodales de subsegundo e ingeniería de alto rendimiento',
+  chips: [
+    '56 Monografías Técnicas Rigurosas',
+    'Sistemas de Alto Rendimiento Zero-GC en C# .NET 10',
+    'Enjambres Autónomos Multi-Agente y Orquestación',
+    'Canalizaciones Multimodales de Subsegundo (Audio/Visión) y Robótica',
+    '100% Ingeniería Pura (Cero Contenido Irrelevante)'
+  ],
+  searchPlaceholder: 'Búsqueda en tiempo real en 56 monografías, arquitecturas, algoritmos y etiquetas...',
+  clearSearch: 'Borrar',
+  filterAll: 'Todas (56)',
+  filterAI: 'IA y Modelos de Lenguaje',
+  filterSys: 'Arquitectura de Sistemas e Infraestructura',
+  filterSci: 'Filosofía de la Inteligencia y Ciencia',
+  filterCareer: 'Carrera y Alta Agencia',
+  filterCode: 'Ingeniería de Software y Código',
+  filterHw: 'Hardware, IA en el Borde y Gráficos',
+  cardBadge: 'Monografía Técnica',
+  minRead: 'min de lectura',
+  words: 'palabras',
+  readMore: 'Leer Monografía Completa',
+  close: 'Cerrar (Esc)',
+  prev: 'Monografía Anterior',
+  next: 'Monografía Siguiente',
+  attachedDiagram: 'Diagrama Técnico Adjunto',
+  clickToEnlarge: 'Clic para ampliar en pantalla completa',
+  tagsLabel: 'Etiquetas Especializadas',
+  noResults: 'No se encontraron monografías que coincidan con la búsqueda.',
+  allCount: 'Total 56 Monografías de Ingeniería',
+  showingCount: 'Mostrando %1 de %2 monografías'
+};
+T.es.footer = 'Iman Mansouri — Arquitecto de Sistemas e Ingeniero de IA Multimodal';
