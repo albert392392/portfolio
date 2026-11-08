@@ -47,7 +47,7 @@
   function pageHome(t){
     var p = el('div');
     var hero = el('section','hero');
-    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="'+(lang==='fa'?'ایمان منصوری (Iman Mansouri)':'Iman Mansouri')+'">');
+    var ph = el('div','ph','<img src="assets/img/me.jpg" alt="'+(lang==='fa'?'ایمان منصوری':'Iman Mansouri')+'">');
     var box = el('div');
     box.appendChild(el('h1',null,t.hero.name));
     box.appendChild(el('div','role',t.hero.role));
@@ -124,7 +124,8 @@
         /* architecture highlights */
         if(it.arch && it.arch.length){
           var abox = el('div','pcard-arch');
-          abox.appendChild(el('b',null,lang==='fa'?'نکات کلیدی معماری و پیاده‌سازی:':'Key Architectural Highlights:'));
+          var archHdr = lang==='fa' ? 'نکات کلیدی معماری و پیاده‌سازی:' : (lang==='de' ? 'Wichtige Architektur-Highlights:' : (lang==='es' ? 'Puntos Clave de Arquitectura:' : 'Key Architectural Highlights:'));
+          abox.appendChild(el('b',null,archHdr));
           var ul = el('ul');
           it.arch.forEach(function(a){ ul.appendChild(el('li',null,a)); });
           abox.appendChild(ul);
@@ -742,6 +743,28 @@
     renderMonoModalContent(monoFilteredList[monoCurrentIdx]);
   }
 
+
+  function getMonoField(field, l){
+    if(!field) return '';
+    if(typeof field === 'string') return field;
+    return field[l] || field['fa'] || field['en'] || '';
+  }
+
+  function getMonoTags(field, l){
+    if(!field) return [];
+    if(Array.isArray(field)) return field;
+    return field[l] || field['fa'] || field['en'] || [];
+  }
+
+  function getMonoPhoto(field, l){
+    if(!field) return null;
+    if(Array.isArray(field)) return field[0] || null;
+    if(typeof field === 'object'){
+      return field[l] || field['fa'] || field['en'] || null;
+    }
+    return null;
+  }
+
   function renderMonoModalContent(item){
     var m = document.getElementById('monoModal');
     if(!m || !item) return;
@@ -749,31 +772,36 @@
     if(!body) return;
     var t = T[lang].monographs;
 
+    var curTitle = getMonoField(item.title, lang);
+    var curCategory = getMonoField(item.category, lang);
+    var curFullText = getMonoField(item.full_text, lang);
+    var curTags = getMonoTags(item.tags, lang);
+    var curPhoto = getMonoPhoto(item.photos, lang);
+
     var minRead = Math.max(1, Math.ceil((item.word_count||50) / 130));
     var html = '';
 
     html += '<div class="mono-modal-hdr">';
     html += '<div class="mono-badges">';
-    html += '<span class="mono-badge cat">' + (item.category || '') + '</span>';
+    html += '<span class="mono-badge cat">' + (curCategory || '') + '</span>';
     html += '<span class="mono-badge id">Post #' + num(item.id) + '</span>';
     html += '<span class="mono-badge time">⏱ ' + num(minRead) + ' ' + t.minRead + '</span>';
     html += '<span class="mono-badge words">' + num(item.word_count || 0) + ' ' + t.words + '</span>';
     html += '</div>';
-    html += '<h2 class="mono-modal-title">' + item.title + '</h2>';
+    html += '<h2 class="mono-modal-title">' + curTitle + '</h2>';
     html += '</div>';
 
-    if(item.photos && item.photos.length > 0){
-      var photo = item.photos[0];
+    if(curPhoto){
       html += '<div class="mono-modal-diagram">';
-      html += '<figure class="mono-diagram-fig" data-photo="' + photo + '">';
-      html += '<img src="' + photo + '" alt="' + item.title.replace(/"/g, '&quot;') + '" loading="lazy">';
+      html += '<figure class="mono-diagram-fig" data-photo="' + curPhoto + '">';
+      html += '<img src="' + curPhoto + '" alt="' + curTitle.replace(/"/g, '&quot;') + '" loading="lazy">';
       html += '<figcaption>📐 ' + t.attachedDiagram + ' &middot; <span class="mono-zoom-hint">' + t.clickToEnlarge + ' ↗</span></figcaption>';
       html += '</figure>';
       html += '</div>';
     }
 
     html += '<div class="mono-modal-text">';
-    var paragraphs = (item.full_text || '').split('\n').filter(function(p){ return p.trim().length > 0; });
+    var paragraphs = (curFullText || '').split('\n').filter(function(p){ return p.trim().length > 0; });
     paragraphs.forEach(function(p){
       var safe = p.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
       if(safe.startsWith('•') || safe.startsWith('-') || safe.startsWith('*')){
@@ -786,9 +814,9 @@
     });
     html += '</div>';
 
-    if(item.tags && item.tags.length > 0){
+    if(curTags && curTags.length > 0){
       html += '<div class="mono-modal-tags"><span class="mono-tags-label">' + t.tagsLabel + ':</span>';
-      item.tags.forEach(function(tg){
+      curTags.forEach(function(tg){
         html += '<span class="mono-tag">#' + tg + '</span>';
       });
       html += '</div>';
@@ -807,7 +835,7 @@
       fig.addEventListener('click', function(){
         var p = fig.getAttribute('data-photo');
         var caps = {};
-        caps[p] = item.title;
+        caps[p] = curTitle;
         openLB([p], p, caps);
       });
     }
@@ -886,13 +914,13 @@
 
     function matchesCategory(item, catKey){
       if(catKey === 'all') return true;
-      var c = item.category || '';
-      if(catKey === 'ai') return c.indexOf('هوش مصنوعی') >= 0;
-      if(catKey === 'sys') return c.indexOf('معماری سیستم') >= 0;
-      if(catKey === 'sci') return c.indexOf('فلسفه هوش') >= 0;
-      if(catKey === 'career') return c.indexOf('آینده شغلی') >= 0;
-      if(catKey === 'code') return c.indexOf('نرم‌افزار') >= 0;
-      if(catKey === 'hw') return c.indexOf('سخت‌افزار') >= 0;
+      var c = (getMonoField(item.category, 'fa') + ' ' + getMonoField(item.category, 'en')).toLowerCase();
+      if(catKey === 'ai') return c.indexOf('هوش مصنوعی') >= 0 || c.indexOf('ai') >= 0 || c.indexOf('intelligence') >= 0;
+      if(catKey === 'sys') return c.indexOf('معماری سیستم') >= 0 || c.indexOf('system') >= 0 || c.indexOf('infrastructure') >= 0;
+      if(catKey === 'sci') return c.indexOf('فلسفه هوش') >= 0 || c.indexOf('philosophy') >= 0 || c.indexOf('science') >= 0;
+      if(catKey === 'career') return c.indexOf('آینده شغلی') >= 0 || c.indexOf('career') >= 0 || c.indexOf('agency') >= 0;
+      if(catKey === 'code') return c.indexOf('نرم‌افزار') >= 0 || c.indexOf('software') >= 0 || c.indexOf('tooling') >= 0;
+      if(catKey === 'hw') return c.indexOf('سخت‌افزار') >= 0 || c.indexOf('hardware') >= 0 || c.indexOf('graphic') >= 0;
       return true;
     }
 
@@ -902,15 +930,17 @@
         if(!matchesCategory(item, monoActiveCat)) return false;
         if(!q) return true;
         var idStr = String(item.id);
-        var catTrans = getCatLabel(item.category, lang).toLowerCase();
-        var textMatch = (item.title || '').toLowerCase().indexOf(q) >= 0 ||
-                        (item.full_text || '').toLowerCase().indexOf(q) >= 0 ||
-                        (item.category || '').toLowerCase().indexOf(q) >= 0 ||
-                        catTrans.indexOf(q) >= 0 ||
-                        idStr.indexOf(q) >= 0 ||
-                        ('#' + idStr).indexOf(q) >= 0 ||
-                        (item.tags || []).join(' ').toLowerCase().indexOf(q) >= 0;
-        return textMatch;
+        var curTitle = getMonoField(item.title, lang).toLowerCase();
+        var curText = getMonoField(item.full_text, lang).toLowerCase();
+        var curCat = getMonoField(item.category, lang).toLowerCase();
+        var curTags = getMonoTags(item.tags, lang).join(' ').toLowerCase();
+
+        return curTitle.indexOf(q) >= 0 ||
+               curText.indexOf(q) >= 0 ||
+               curCat.indexOf(q) >= 0 ||
+               curTags.indexOf(q) >= 0 ||
+               idStr.indexOf(q) >= 0 ||
+               ('#' + idStr).indexOf(q) >= 0;
       });
 
       monoFilteredList = filtered;
@@ -926,20 +956,25 @@
         var card = el('article', 'mono-card');
         var minRead = Math.max(1, Math.ceil((item.word_count || 50) / 130));
 
+        var curTitle = getMonoField(item.title, lang);
+        var curCategory = getMonoField(item.category, lang);
+        var curFullText = getMonoField(item.full_text, lang);
+        var curTags = getMonoTags(item.tags, lang);
+        var curPhoto = getMonoPhoto(item.photos, lang);
+
         var top = el('div', 'mono-card-top');
-        top.innerHTML = '<span class="mono-badge cat">' + (item.category || '') + '</span>' +
+        top.innerHTML = '<span class="mono-badge cat">' + (curCategory || '') + '</span>' +
                         '<span class="mono-card-meta">Post #' + num(item.id) + ' &middot; ⏱ ' + num(minRead) + ' ' + tm.minRead + '</span>';
         card.appendChild(top);
 
-        var h3 = el('h3', 'mono-card-title', item.title);
+        var h3 = el('h3', 'mono-card-title', curTitle);
         card.appendChild(h3);
 
-        if(item.photos && item.photos.length > 0){
-          var photo = item.photos[0];
+        if(curPhoto){
           var thumb = el('div', 'mono-card-thumb');
           var img = el('img');
-          img.src = photo;
-          img.alt = item.title;
+          img.src = curPhoto;
+          img.alt = curTitle;
           img.loading = 'lazy';
           var badge = el('span', 'mono-thumb-badge', '📐 ' + tm.attachedDiagram);
           thumb.appendChild(img);
@@ -947,18 +982,18 @@
           thumb.addEventListener('click', function(ev){
             ev.stopPropagation();
             var caps = {};
-            caps[photo] = item.title;
-            openLB([photo], photo, caps);
+            caps[curPhoto] = curTitle;
+            openLB([curPhoto], curPhoto, caps);
           });
           card.appendChild(thumb);
         }
 
-        var snippetText = (item.full_text || '').replace(/\s+/g, ' ').slice(0, 190) + '...';
+        var snippetText = (curFullText || '').replace(/\s+/g, ' ').slice(0, 190) + '...';
         card.appendChild(el('p', 'mono-card-snippet', snippetText));
 
-        if(item.tags && item.tags.length > 0){
+        if(curTags && curTags.length > 0){
           var tagWrap = el('div', 'mono-card-tags');
-          item.tags.slice(0, 3).forEach(function(tg){
+          curTags.slice(0, 3).forEach(function(tg){
             tagWrap.appendChild(el('span', 'mono-tag', '#' + tg));
           });
           card.appendChild(tagWrap);
@@ -1050,11 +1085,11 @@
 
     var brandSpan = document.querySelector('.brand span');
     if (brandSpan) {
-      brandSpan.textContent = (lang === 'fa' ? 'ایمان منصوری (Iman Mansouri)' : 'Iman Mansouri');
+      brandSpan.textContent = (lang === 'fa' ? 'ایمان منصوری' : 'Iman Mansouri');
     }
     var brandImg = document.querySelector('.brand img');
     if (brandImg) {
-      brandImg.alt = (lang === 'fa' ? 'ایمان منصوری (Iman Mansouri)' : 'Iman Mansouri');
+      brandImg.alt = (lang === 'fa' ? 'ایمان منصوری' : 'Iman Mansouri');
     }
 
     var row=$('#tabrow'); row.innerHTML='';
@@ -1079,7 +1114,7 @@
         '<a class="fs-btn" href="'+LINKS.github+'" target="_blank" rel="noopener">🐙 GitHub (albert392392)</a>' +
         '<a class="fs-btn" href="'+LINKS.antigravity+'" target="_blank" rel="noopener">⭐ antigravity-scroll-unpin</a>' +
       '</div>' +
-      '<div>&copy; '+new Date().getFullYear()+' '+(lang==='fa'?'ایمان منصوری (Iman Mansouri)':'Iman Mansouri')+' &middot; '+t.footer+'</div>';
+      '<div>&copy; '+new Date().getFullYear()+' '+(lang==='fa'?'ایمان منصوری':'Iman Mansouri')+' &middot; '+t.footer+'</div>';
 
     Array.prototype.forEach.call(document.querySelectorAll('.langs button'),function(b){
       b.classList.toggle('on', b.getAttribute('data-l')===lang);
