@@ -735,6 +735,10 @@ footer a{color:var(--tx2)}
   gap: 20px;
 }
 
+.mono-modal-body > * {
+  flex-shrink: 0;
+}
+
 .mono-modal-hdr {
   display: flex;
   flex-direction: column;

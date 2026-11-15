@@ -126,7 +126,7 @@ const T = {
   "nav": {
     "home": "خانه",
     "proj": "پروژه‌ها (۱۸)",
-    "monographs": "مونوگراف‌ها و دانش مهندسی (۵۸)",
+    "monographs": "مونوگراف‌ها و دانش مهندسی (۶۱)",
     "sys": "سیستم‌سازی و کارخانه AI",
     "multimodal": "هوش چندحالته",
     "gate": "منشور مهندسی",
@@ -1469,17 +1469,17 @@ const T = {
   "footer": "ایمان منصوری — معمار سیستم و مهندس هوش مصنوعی چندحالته",
   "monographs": {
     "title": "مونوگراف‌های تخصصی و دانش مهندسی",
-    "sub": "۵۶ رساله تحلیلی-معماری در سیستم‌های توزیع‌شده، سواِرم‌های هوش مصنوعی، و مهندسی پرفورمنس",
+    "sub": "۶۱ رساله تحلیلی-معماری در سیستم‌های توزیع‌شده، سواِرم‌های هوش مصنوعی، و مهندسی پرفورمنس",
     "chips": [
-      "۵۸ مونوگراف عمیق مهندسی سیستم",
+      "۶۱ مونوگراف عمیق مهندسی سیستم",
       "معماری Zero-GC در C# .NET 10 و سیستم‌های بلادرنگ",
       "سواِرم‌های خودمختار هوش مصنوعی و ارکستراسیون ایجنت‌ها",
       "خط لوله‌های چندحالته صوت، تصویر و روباتیک با تاخیر زیر ثانیه",
       "۱۰۰٪ مهندسی محض (پالایش کامل و حذف محتوای غیرمرتبط)"
     ],
-    "searchPlaceholder": "جستجوی بلادرنگ در ۵۸ مونوگراف، دیاگرام‌ها، معماری‌ها و برچسب‌ها...",
+    "searchPlaceholder": "جستجوی بلادرنگ در ۶۱ مونوگراف، دیاگرام‌ها، معماری‌ها و برچسب‌ها...",
     "clearSearch": "پاک کردن",
-    "filterAll": "همه (۵۶)",
+    "filterAll": "همه (۶۱)",
     "filterAI": "هوش مصنوعی و LLMها",
     "filterSys": "معماری سیستم و زیرساخت",
     "filterSci": "فلسفه هوش و نبوغ",
@@ -1497,7 +1497,7 @@ const T = {
     "clickToEnlarge": "برای مشاهده در لایت‌باکس بزرگ کلیک کنید",
     "tagsLabel": "برچسب‌های تخصصی",
     "noResults": "هیچ مونوگرافی مطابق با جستجوی شما یافت نشد.",
-    "allCount": "مجموعاً ۵۸ مونوگراف تخصصی",
+    "allCount": "مجموعاً ۶۱ مونوگراف تخصصی",
     "showingCount": "نمایش %1 از %2 مونوگراف"
   }
 },
@@ -1507,7 +1507,7 @@ const T = {
   "nav": {
     "home": "Home",
     "proj": "Projects (18)",
-    "monographs": "Engineering Monographs (58)",
+    "monographs": "Engineering Monographs (61)",
     "sys": "AI Software Factory & Systems",
     "multimodal": "Multimodal AI",
     "gate": "Verification Gate",
@@ -2850,17 +2850,17 @@ const T = {
   "footer": "Iman Mansouri — Architect & Multimodal AI Engineer",
   "monographs": {
     "title": "Engineering Monographs & Deep Tech Knowledge",
-    "sub": "56 rigorous architectural treatises on distributed systems, autonomous AI swarms, sub-second multimodal pipelines, and zero-allocation high-performance computing",
+    "sub": "61 rigorous architectural treatises on distributed systems, autonomous AI swarms, sub-second multimodal pipelines, and zero-allocation high-performance computing",
     "chips": [
-      "58 Deep-Tech Systems Monographs",
+      "61 Deep-Tech Systems Monographs",
       "Zero-GC C# .NET 10 & High-Throughput Engines",
       "Autonomous Multi-Agent Swarms & Orchestration",
       "Sub-Second Multimodal Audio, Vision & Robotics Pipelines",
       "100% Pure Engineering (Zero Non-Technical Noise)"
     ],
-    "searchPlaceholder": "Real-time search across 58 monographs, architectures, algorithms & tags...",
+    "searchPlaceholder": "Real-time search across 61 monographs, architectures, algorithms & tags...",
     "clearSearch": "Clear",
-    "filterAll": "All (56)",
+    "filterAll": "All (61)",
     "filterAI": "AI & LLMs",
     "filterSys": "Systems & Infrastructure",
     "filterSci": "Philosophy of Intelligence",
@@ -2878,7 +2878,7 @@ const T = {
     "clickToEnlarge": "Click to enlarge in full-screen lightbox",
     "tagsLabel": "Specialized Tags",
     "noResults": "No monographs matched your search query.",
-    "allCount": "Total 58 Engineering Monographs",
+    "allCount": "Total 62 Engineering Monographs",
     "showingCount": "Showing %1 of %2 monographs"
   }
 },
@@ -2895,7 +2895,7 @@ const T = {
     "honors": "Anerkennung",
     "resume": "Lebenslauf (PDF)",
     "videos": "Videos",
-    "monographs": "Engineering-Monographien (58)"
+    "monographs": "Engineering-Monographien (61)"
   },
   "hero": {
     "name": "Iman Mansouri",
@@ -4231,17 +4231,17 @@ const T = {
   "footer": "Iman Mansouri — Systemarchitekt & Ingenieur für multimodale KI",
   "monographs": {
     "title": "Engineering-Monographien & Deep-Tech-Wissen",
-    "sub": "56 tiefgehende technische Abhandlungen über verteilte Systeme, autonome KI-Schwärme, Sub-Sekunden-KI-Pipelines und High-Performance-Engineering",
+    "sub": "61 tiefgehende technische Abhandlungen über verteilte Systeme, autonome KI-Schwärme, Sub-Sekunden-KI-Pipelines und High-Performance-Engineering",
     "chips": [
-      "58 Deep-Tech-Monographien",
+      "61 Deep-Tech-Monographien",
       "Zero-GC C# .NET 10 & Hochdurchsatz-Systeme",
       "Autonome Multi-Agent-Schwärme & Orchestrierung",
       "Sub-Sekunden Multimodale Audio-, Bild- & Robotik-Pipelines",
       "100% Reines Engineering (Keine irrelevanten Inhalte)"
     ],
-    "searchPlaceholder": "Echtzeitsuche in 58 Monographien, Architekturen, Algorithmen & Tags...",
+    "searchPlaceholder": "Echtzeitsuche in 61 Monographien, Architekturen, Algorithmen & Tags...",
     "clearSearch": "Löschen",
-    "filterAll": "Alle (56)",
+    "filterAll": "Alle (61)",
     "filterAI": "KI & Sprachmodelle",
     "filterSys": "Systemarchitektur & Infrastruktur",
     "filterSci": "Philosophie der Intelligenz",
@@ -4259,7 +4259,7 @@ const T = {
     "clickToEnlarge": "Klicken für Vollbildansicht",
     "tagsLabel": "Fachbegriffe & Tags",
     "noResults": "Keine Monographien gefunden.",
-    "allCount": "Insgesamt 58 Monographien",
+    "allCount": "Insgesamt 61 Monographien",
     "showingCount": "Zeige %1 von %2 Monographien"
   }
 },
@@ -4269,7 +4269,7 @@ const T = {
   "nav": {
     "home": "Inicio",
     "proj": "Proyectos (18)",
-    "monographs": "Monografías de Ingeniería (58)",
+    "monographs": "Monografías de Ingeniería (61)",
     "sys": "Fábrica de IA y Automatización",
     "multimodal": "IA Multimodal",
     "gate": "Puerta de Verificación",
@@ -5612,17 +5612,17 @@ const T = {
   "footer": "Iman Mansouri — Arquitecto de Sistemas e Ingeniero de IA Multimodal",
   "monographs": {
     "title": "Monografías de Ingeniería y Conocimiento Deep Tech",
-    "sub": "56 tratados técnicos exhaustivos sobre sistemas distribuidos, enjambres autónomos de IA, canalizaciones multimodales de subsegundo e ingeniería de alto rendimiento",
+    "sub": "61 tratados técnicos exhaustivos sobre sistemas distribuidos, enjambres autónomos de IA, canalizaciones multimodales de subsegundo e ingeniería de alto rendimiento",
     "chips": [
-      "58 Monografías de Deep-Tech",
+      "61 Monografías de Deep-Tech",
       "C# .NET 10 Zero-GC y Sistemas de Alto Rendimiento",
       "Enjambres Autónomos de Multi-Agentes y Orquestación",
       "Canales Multimodales de Audio, Visión y Robótica por Debajo del Segundo",
       "100% Pura Ingeniería (Cero Ruido No Técnico)"
     ],
-    "searchPlaceholder": "Búsqueda en tiempo real en 58 monografías, arquitecturas, algoritmos y etiquetas...",
+    "searchPlaceholder": "Búsqueda en tiempo real en 62 monografías, arquitecturas, algoritmos y etiquetas...",
     "clearSearch": "Borrar",
-    "filterAll": "Todas (56)",
+    "filterAll": "Todas (61)",
     "filterAI": "IA y Modelos de Lenguaje",
     "filterSys": "Arquitectura de Sistemas e Infraestructura",
     "filterSci": "Filosofía de la Inteligencia y Ciencia",
@@ -5640,7 +5640,7 @@ const T = {
     "clickToEnlarge": "Clic para ampliar en pantalla completa",
     "tagsLabel": "Etiquetas Especializadas",
     "noResults": "No se encontraron monografías que coincidan con la búsqueda.",
-    "allCount": "Total 58 Monografías de Ingeniería",
+    "allCount": "Total 61 Monografías de Ingeniería",
     "showingCount": "Mostrando %1 de %2 monografías"
   }
 }
