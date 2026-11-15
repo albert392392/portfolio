@@ -140,7 +140,6 @@ const T = {
     "role": "معمار سیستم و مهندس هوش مصنوعی چندحالته",
     "tag": "معماری سواِرم‌های خودمختار هوش مصنوعی، سیستم‌سازی و اتوماسیون جامع نرم‌افزار، خطوط لوله چندحالته بلادرنگ و سیستم‌های توزیع‌شده سازمانی.",
     "chips": [
-      "مشهد، ایران",
       "🏆 دارنده رتبه و مقام برتر کشوری",
       "واجد صلاحیت ویزای Global Talent و بنیاد نخبگان",
       "کارت پایان خدمت (معافیت دائم پزشکی)",
@@ -1521,7 +1520,6 @@ const T = {
     "role": "Architect & Multimodal AI Engineer",
     "tag": "Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.",
     "chips": [
-      "Mashhad, Iran",
       "🏆 National Award Winner & Top Rank",
       "Global Talent & Elite Distinction Eligible",
       "Military Exemption Card",
@@ -2902,7 +2900,6 @@ const T = {
     "role": "Systemarchitekt & Ingenieur für multimodale KI",
     "tag": "Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.",
     "chips": [
-      "Mashhad, Iran",
       "🏆 National Award Winner & Top Rank",
       "Global Talent & Elite Distinction Eligible",
       "Military Exemption Card",
@@ -4283,7 +4280,6 @@ const T = {
     "role": "Arquitecto de Sistemas e Ingeniero de IA Multimodal",
     "tag": "Arquitectura de enjambres autónomos de agentes de IA, automatización integral de software, canalizaciones multimodales de subsegundo y sistemas distribuidos empresariales.",
     "chips": [
-      "Mashhad, Irán",
       "🏆 Ganador de Premio Nacional y Máximo Rango",
       "Elegible para Visa de Talento Global y Élite Científica",
       "Cartilla de Exención Militar (Médica Definitiva)",
