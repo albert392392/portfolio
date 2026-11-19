@@ -805,6 +805,44 @@ const VD = [
     },
     "src": "media/v15.mp4",
     "bytes": 5523804
+   },
+   {
+    "id": "v20",
+    "dur": "1:51",
+    "poster": "media/v20.jpg",
+    "ar": "16/9",
+    "title": {
+     "fa": "Design Villa — بازسازی عمارت و پازل جورچین (Match-3)",
+     "en": "Design Villa — Interior Renovation & Match-3 Puzzle Core",
+     "de": "Design Villa — Innenrenovierung & Match-3-Puzzle"
+    },
+    "desc": {
+     "fa": "گیم‌پلی پروژه تجاری Design Villa: سیستم پازل جورچین سه‌تایی (Match-3) با تطبیق کاشی‌ها، ایجاد بوسترهای انفجاری ترکیبی، چرخه‌های جمع‌آوری سکه و الماس، و فاز طراحی دکوراسیون و بازسازی فضاهای سه‌بعدی عمارت. برنامه‌نویسی هسته محاسباتی تخته بازی، انیمیشن‌های فیزیک و خط اتصال آیتم‌ها تماماً با معماری بهینه یونیتی C# پیاده‌سازی شده است.",
+     "en": "Gameplay from the commercial Design Villa title: match-3 puzzle mechanics with tile cascades, combo explosive boosters, coin and gem collection economy, and 3D mansion room decoration and renovation phases. Core board logic, smooth physics cascades, and connection lines built with optimized Unity C# architecture.",
+     "de": "Gameplay des kommerziellen Titels Design Villa: 3-Gewinnt-Puzzlemechanik mit Kachelkaskaden, explosiven Combo-Boostern, Münz- und Edelsteinökonomie sowie 3D-Villarenovierung. Kernspiellogik und flüssige Physik-Kaskaden mit optimierter Unity-C#-Architektur implementiert."
+    },
+    "tags": {
+     "fa": [
+      "Unity C#",
+      "پازل Match-3",
+      "دکوراسیون عمارت",
+      "اقتصاد بازی"
+     ],
+     "en": [
+      "Unity C#",
+      "Match-3 Puzzle",
+      "Interior Design",
+      "Game Economy"
+     ],
+     "de": [
+      "Unity C#",
+      "Match-3-Puzzle",
+      "Innendesign",
+      "Spielökonomie"
+     ]
+    },
+    "bytes": 2428618,
+    "src": "media/v20.mp4"
    }
   ]
  },

@@ -145,15 +145,17 @@
           la.href = LINKS[it.link]; la.target='_blank'; la.rel='noopener';
           act.appendChild(la);
         }
-        if(it.vsec){
-          var va = videoLink(t, it.vsec);
+        var vsec = it.vsec || (it.id==='neon'?'neonrun':((it.id==='archer'||it.id==='bus'||it.id==='villa')?'commercial':((it.id==='lango'||it.id==='german')?'nitrolango':null)));
+        if(vsec){
+          var va = videoLink(t, vsec);
           act.appendChild(va);
         }
         if(act.children.length) c.appendChild(act);
 
         /* gallery if present */
-        if(it.images && it.images.length){
-          c.appendChild(gallery(it.images, t.honors.caps, it.images.length>2?'g3':'g2'));
+        var pimgs = it.images || (typeof IMG !== 'undefined' && IMG[it.id]);
+        if(pimgs && pimgs.length){
+          c.appendChild(gallery(pimgs, t.honors.caps, pimgs.length>2?'g3':'g2'));
         }
 
         listHost.appendChild(c);
