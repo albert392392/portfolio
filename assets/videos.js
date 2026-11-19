@@ -672,15 +672,53 @@ const VD = [
     },
     "src": "media/v15.mp4",
     "bytes": 5523804
+   },
+   {
+    "id": "v20",
+    "dur": "1:51",
+    "poster": "media/v20.jpg",
+    "ar": "16/9",
+    "title": {
+     "fa": "Design Villa — بازسازی عمارت و پازل جورچین (Match-3)",
+     "en": "Design Villa — Interior Renovation & Match-3 Puzzle Core",
+     "de": "Design Villa — Innenrenovierung & Match-3-Puzzle"
+    },
+    "desc": {
+     "fa": "گیم‌پلی پروژه تجاری Design Villa: سیستم پازل جورچین سه‌تایی (Match-3) با تطبیق کاشی‌ها، ایجاد بوسترهای انفجاری ترکیبی، چرخه‌های جمع‌آوری سکه و الماس، و فاز طراحی دکوراسیون و بازسازی فضاهای سه‌بعدی عمارت. برنامه‌نویسی هسته محاسباتی تخته بازی، انیمیشن‌های فیزیک و خط اتصال آیتم‌ها تماماً با معماری بهینه یونیتی C# پیاده‌سازی شده است.",
+     "en": "Gameplay from the commercial Design Villa title: match-3 puzzle mechanics with tile cascades, combo explosive boosters, coin and gem collection economy, and 3D mansion room decoration and renovation phases. Core board logic, smooth physics cascades, and connection lines built with optimized Unity C# architecture.",
+     "de": "Gameplay des kommerziellen Titels Design Villa: 3-Gewinnt-Puzzlemechanik mit Kachelkaskaden, explosiven Combo-Boostern, Münz- und Edelsteinökonomie sowie 3D-Villarenovierung. Kernspiellogik und flüssige Physik-Kaskaden mit optimierter Unity-C#-Architektur implementiert."
+    },
+    "tags": {
+     "fa": [
+      "Unity C#",
+      "پازل Match-3",
+      "دکوراسیون عمارت",
+      "اقتصاد بازی"
+     ],
+     "en": [
+      "Unity C#",
+      "Match-3 Puzzle",
+      "Interior Design",
+      "Game Economy"
+     ],
+     "de": [
+      "Unity C#",
+      "Match-3-Puzzle",
+      "Innendesign",
+      "Spielökonomie"
+     ]
+    },
+    "bytes": 2428618,
+    "src": "media/v20.mp4"
    }
   ]
  },
  {
   "id": "nitrolango",
   "title": {
-   "fa": "NitroLango — پلتفرم آموزش زبان",
-   "en": "NitroLango — Language Learning Platform",
-   "de": "NitroLango — Sprachlernplattform"
+   "fa": "NitroLango (NitroLearnAI) — پلتفرم تعاملی آموزش زبان",
+   "en": "NitroLango (NitroLearnAI) — Adaptive Language Learning Platform",
+   "de": "NitroLango (NitroLearnAI) — Adaptive Sprachlernplattform"
   },
   "kicker": {
    "fa": "وب‌اپلیکیشن هوشمند · نسخه زنده",
@@ -742,9 +780,9 @@ const VD = [
     "poster": "media/v10.jpg",
     "ar": "16/9",
     "title": {
-     "fa": "آخرین به‌روزرسانی NitroLango",
-     "en": "NitroLango — Latest Update",
-     "de": "NitroLango — neueste Aktualisierung"
+     "fa": "آخرین به‌روزرسانی NitroLango — تمرین‌های تطبیقی هوشمند و ورودی صوتی",
+     "en": "NitroLango Latest Update — Adaptive AI Drills & Voice Ingestion",
+     "de": "NitroLango Neuestes Update — Adaptive KI-Übungen & Spracheingabe"
     },
     "desc": {
      "fa": "نسخه به‌روزشده پلتفرم با بخش‌های تازه: «Neural Game Arena Master» به‌عنوان مرکز تمرین‌های بازی‌گونه، «Syntax Overclock» برای تمرین ساختار جمله، «Speed Match Arena» برای مسابقه سرعت، و «Acceleration Portal» با تمرین‌های آلمانی–فارسی. داشبورد حافظه و پیشرفت کاربر هم در همین ویدیو دیده می‌شود.",
