@@ -191,11 +191,12 @@
     s.kpis.forEach(function(x){ k.appendChild(el('div','kpi','<b>'+num(x[0])+'</b><span>'+x[1]+'</span>')); });
     p.appendChild(k);
 
-    /* Real verification console screenshot */
+    /* Real verification console screenshot (localized per language) */
+    var dashKey = 'us-dash-' + (['fa','en','de','es'].indexOf(lang)>=0 ? lang : 'en');
     var f = el('figure','shot free');
-    var im = el('img'); im.src='assets/img/dashboard.jpg'; im.alt=s.dashCap; im.loading='lazy';
+    var im = el('img'); im.src='assets/img/'+dashKey+'.jpg'; im.alt=s.dashCap; im.loading='lazy';
     f.appendChild(im); f.appendChild(el('figcaption',null,s.dashCap));
-    f.addEventListener('click',function(){openLB(['dashboard'],'dashboard',{dashboard:s.dashCap});});
+    f.addEventListener('click',function(){ var caps={}; caps[dashKey]=s.dashCap; openLB([dashKey],dashKey,caps); });
     p.appendChild(f);
 
     /* 4 Microservice Clusters */

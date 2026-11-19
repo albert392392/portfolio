@@ -805,44 +805,6 @@ const VD = [
     },
     "src": "media/v15.mp4",
     "bytes": 5523804
-   },
-   {
-    "id": "v20",
-    "dur": "1:51",
-    "poster": "media/v20.jpg",
-    "ar": "16/9",
-    "title": {
-     "fa": "Design Villa — بازسازی عمارت و پازل جورچین (Match-3)",
-     "en": "Design Villa — Interior Renovation & Match-3 Puzzle Core",
-     "de": "Design Villa — Innenrenovierung & Match-3-Puzzle"
-    },
-    "desc": {
-     "fa": "گیم‌پلی پروژه تجاری Design Villa: سیستم پازل جورچین سه‌تایی (Match-3) با تطبیق کاشی‌ها، ایجاد بوسترهای انفجاری ترکیبی، چرخه‌های جمع‌آوری سکه و الماس، و فاز طراحی دکوراسیون و بازسازی فضاهای سه‌بعدی عمارت. برنامه‌نویسی هسته محاسباتی تخته بازی، انیمیشن‌های فیزیک و خط اتصال آیتم‌ها تماماً با معماری بهینه یونیتی C# پیاده‌سازی شده است.",
-     "en": "Gameplay from the commercial Design Villa title: match-3 puzzle mechanics with tile cascades, combo explosive boosters, coin and gem collection economy, and 3D mansion room decoration and renovation phases. Core board logic, smooth physics cascades, and connection lines built with optimized Unity C# architecture.",
-     "de": "Gameplay des kommerziellen Titels Design Villa: 3-Gewinnt-Puzzlemechanik mit Kachelkaskaden, explosiven Combo-Boostern, Münz- und Edelsteinökonomie sowie 3D-Villarenovierung. Kernspiellogik und flüssige Physik-Kaskaden mit optimierter Unity-C#-Architektur implementiert."
-    },
-    "tags": {
-     "fa": [
-      "Unity C#",
-      "پازل Match-3",
-      "دکوراسیون عمارت",
-      "اقتصاد بازی"
-     ],
-     "en": [
-      "Unity C#",
-      "Match-3 Puzzle",
-      "Interior Design",
-      "Game Economy"
-     ],
-     "de": [
-      "Unity C#",
-      "Match-3-Puzzle",
-      "Innendesign",
-      "Spielökonomie"
-     ]
-    },
-    "bytes": 2428618,
-    "src": "media/v20.mp4"
    }
   ]
  },
@@ -875,20 +837,20 @@ const VD = [
   "videos": [
    {
     "id": "v16",
-    "dur": "0:43",
+    "dur": "0:29",
     "poster": "media/v16.jpg",
     "ar": "16/9",
     "title": {
-     "fa": "تور زنده پلتفرم NitroLango (نسخه جدید Command Deck)",
-     "en": "Live NitroLango Platform Tour (Updated Command Deck)",
-     "de": "Live-Rundgang durch NitroLango (Aktualisiertes Command Deck)",
-     "es": "Recorrido en vivo de NitroLango (Command Deck actualizado)"
+     "fa": "تور تعاملی NitroLango — آرنای ۷۴ موتوره و شبیه‌ساز گوته",
+     "en": "NitroLango Interactive Tour — 74-Engine Arena & Goethe Simulator",
+     "de": "NitroLango Interaktiver Rundgang — 74-Engine-Arena & Goethe-Simulator",
+     "es": "Recorrido Interactivo NitroLango — Arena de 74 Motores y Simulador Goethe"
     },
     "desc": {
-     "fa": "کامل‌ترین ویدیوی این محصول: از ثبت‌نام و ورود کاربر تا هر بخش پلتفرم. «Custom AI Learning Path Generator» که مسیر یادگیری اختصاصی می‌سازد، شبکه واژگان کاربر، تمرین‌های بازی‌گونه با امتیاز و زمان، تمرین شنیداری، و داشبورد پیشرفت با نمودار. تمام این پلتفرم — از رابط کاربری تا پایگاه داده ابری و دستیار هوشمند داخل محصول — از پایه ساخته شده است.",
-     "en": "The most complete video of this product: from sign-up and login through every part of the platform. The Custom AI Learning Path Generator that builds a personalised study route, the user's vocabulary grid, gamified drills with score and timer, listening practice, and the progress dashboard with charts. The whole platform — UI, cloud database and the in-product AI assistant — was built from scratch.",
-     "de": "Das vollständigste Video zu diesem Produkt: von Registrierung und Anmeldung durch jeden Teil der Plattform. Der Custom AI Learning Path Generator, der einen persönlichen Lernweg erstellt, das Vokabelraster der Nutzerin oder des Nutzers, spielerische Übungen mit Punktzahl und Zeitnahme, Hörverstehen und das Fortschritts-Dashboard mit Diagrammen. Die gesamte Plattform — Oberfläche, Cloud-Datenbank und KI-Assistent im Produkt — wurde von Grund auf gebaut.",
-     "es": "Recorrido en vivo por la interfaz actual de NitroLango: Command Deck, arenas de batalla (Meteor Strike, Shadow Match, Rhythm Typer), repaso espaciado SM-2 y simulador oficial Goethe."
+     "fa": "گشت کامل در داشبورد Command Deck، ورود به آرنای نبرد ۷۴ موتوره (Meteor Strike)، شبیه‌ساز رسمی آزمون گوته A1-B2 و مرور هوشمند SM-2.",
+     "en": "Full interactive tour across Command Deck, 74-engine Neural Arena (Meteor Strike), Official Goethe A1-B2 Exam Simulator, and Smart Daily SM-2 Review.",
+     "de": "Interaktiver Rundgang durch Command Deck, 74-Engine-Arena (Meteor Strike), offiziellen Goethe-Prüfungssimulator A1-B2 und Smart Daily SM-2 Review.",
+     "es": "Recorrido completo por Command Deck, arena neuronal de 74 motores (Meteor Strike), simulador oficial Goethe A1-B2 y repaso diario SM-2."
     },
     "tags": {
      "fa": [
@@ -917,7 +879,7 @@ const VD = [
      ]
     },
     "src": "media/v16.mp4",
-    "bytes": 826232
+    "bytes": 1139756
    },
    {
     "id": "v10",
@@ -992,7 +954,7 @@ const VD = [
   "videos": [
    {
     "id": "v20",
-    "dur": "0:28",
+    "dur": "0:15",
     "poster": "media/v20.jpg",
     "ar": "16/9",
     "title": {
@@ -1002,10 +964,10 @@ const VD = [
      "es": "Recorrido por Microsoft AI Architect Hub"
     },
     "desc": {
-     "fa": "مرور نقشه راه ۸ سطحی، شبیه‌ساز الگوهای چندایجنتی، بانک کد C#/.NET 10 و بخش آمادگی مصاحبه معماری.",
-     "en": "Walkthrough of the 8-level roadmap, multi-agent pattern simulator, C#/.NET 10 code bank, and architecture interview mastery.",
-     "de": "Durchgang durch die 8-stufige Roadmap, den Multi-Agenten-Simulator, die C#/.NET-10-Codebank und die Interview-Vorbereitung.",
-     "es": "Recorrido por la hoja de ruta de 8 niveles, simulador multiagente, banco de código C#/.NET 10 y preparación de entrevistas."
+     "fa": "گشت تعاملی در نقشه راه ۸ سطحی، اجرای زنده شبیه‌ساز چندایجنتی (Sequential / GroupChat / Swarm)، کدبانک C# .NET 10 و بخش آمادگی مصاحبه معماری.",
+     "en": "Interactive walkthrough across the 8-level roadmap, live Multi-Agent Swarm Simulator steps, C#/.NET 10 Code Bank, and STAR Architecture Interview Mastery.",
+     "de": "Interaktiver Rundgang durch die 8-stufige Roadmap, den Live-Multi-Agenten-Simulator, die C#/.NET-10-Codebank und STAR-Architektur-Interviews.",
+     "es": "Recorrido interactivo por la hoja de ruta de 8 niveles, simulador Multiagente en vivo, banco de código C#/.NET 10 y entrevistas STAR."
     },
     "tags": {
      "fa": [
@@ -1034,7 +996,7 @@ const VD = [
      ]
     },
     "src": "media/v20.mp4",
-    "bytes": 2988995
+    "bytes": 1324108
    }
   ]
  },
@@ -1067,20 +1029,20 @@ const VD = [
   "videos": [
    {
     "id": "v21",
-    "dur": "0:22",
+    "dur": "0:35",
     "poster": "media/v21.jpg",
     "ar": "16/9",
     "title": {
-     "fa": "داشبورد اجرایی AuroSocialEngine",
-     "en": "AuroSocialEngine Executive HUD Demo",
-     "de": "AuroSocialEngine Executive HUD Demo",
-     "es": "Demo del HUD Ejecutivo de AuroSocialEngine"
+     "fa": "تور کامل داخل داشبورد اجرایی AuroSocialEngine",
+     "en": "AuroSocialEngine — Full Command Center & Cyber-Mesh Walkthrough",
+     "de": "AuroSocialEngine — Kompletter Rundgang durch Command Center & Cyber-Mesh",
+     "es": "AuroSocialEngine — Recorrido Completo por el Centro de Mando y Cyber-Mesh"
     },
     "desc": {
-     "fa": "نمایش رابط کاربری داشبورد اجرایی Auro روی پورت ۵۰۵۵، انتخاب نقش‌های سازمانی و مدیریت کمپین‌ها.",
-     "en": "Live showcase of the Auro Executive Web HUD on port 5055, multi-company RBAC quick sign-in, and campaign management.",
-     "de": "Live-Demonstration des Auro Executive Web HUD auf Port 5055, Multi-Company-RBAC und Kampagnenverwaltung.",
-     "es": "Demostración en vivo del HUD Web Ejecutivo de Auro en el puerto 5055, RBAC multiempresa y gestión de campañas."
+     "fa": "ورود به مرکز فرماندهی Auro روی پورت ۵۰۵۶ و کار با بخش‌های داشبورد طلا و شاخص‌ها، استودیوی تولید محتوای چندوجهی، صف قرنطینه، شبکه ایجنت‌های Cyber-Mesh و کمپین‌های ۲۴/۷.",
+     "en": "Authenticated walkthrough inside Auro Command Center: Bullion Live Feed & KPIs, Multimodal Content Studio, Quarantine Queue, Interactive Multi-Agent Cyber-Mesh, and 24/7 Campaigns.",
+     "de": "Authentifizierter Rundgang im Auro Command Center: Live-Goldpreis-Feed & KPIs, Multimodales Studio, Quarantäne-Queue, interaktives Multi-Agenten-Cyber-Mesh und 24/7-Kampagnen.",
+     "es": "Recorrido autenticado dentro del Centro de Mando Auro: cotizaciones en vivo, Estudio Multimodal, Cola de Cuarentena, Red Cyber-Mesh Multiagente y Campañas 24/7."
     },
     "tags": {
      "fa": [
@@ -1109,7 +1071,7 @@ const VD = [
      ]
     },
     "src": "media/v21.mp4",
-    "bytes": 604795
+    "bytes": 3378054
    }
   ]
  },
@@ -1142,20 +1104,20 @@ const VD = [
   "videos": [
    {
     "id": "v22",
-    "dur": "0:29",
+    "dur": "0:20",
     "poster": "media/v22.jpg",
     "ar": "16/9",
     "title": {
-     "fa": "تور زنده سامانه حسابداری Mana Books (Zoho Clone)",
-     "en": "Mana Books (Zoho Clone) Live Walkthrough",
-     "de": "Mana Books (Zoho Clone) Live-Rundgang",
-     "es": "Recorrido en vivo de Mana Books (Zoho Clone)"
+     "fa": "گزارش جامع ماژول‌های Zoho Books Clone (Mana Enterprise Suite)",
+     "en": "Mana Enterprise Suite (Zoho Books Clone) — 5-Module Live Showcase",
+     "de": "Mana Enterprise Suite (Zoho Books Clone) — 5-Module-Live-Showcase",
+     "es": "Mana Enterprise Suite (Zoho Books Clone) — Demo en Vivo de 5 Módulos"
     },
     "desc": {
-     "fa": "نمایش ورود سریع نقش‌ها (Owner/Admin/Accountant)، ثبت سازمان، داشبورد مدیریتی و ماژول فروش و فاکتورها.",
-     "en": "Live walkthrough of 1-click role authentication, organization registration, enterprise dashboard, and sales/invoicing modules.",
-     "de": "Live-Durchgang durch Rollen-Login, Organisationsregistrierung, Enterprise-Dashboard sowie Verkaufs- und Rechnungsmodule.",
-     "es": "Recorrido en vivo por autenticación por roles, registro de organización, panel empresarial y módulos de ventas y facturación."
+     "fa": "نمایش ماژول‌های زنده مجموعه یکپارچه Mana: مرکز اپلیکیشن‌ها (۱۴ ماژول)، داشبورد MRR/ARR بیلینگ، ظرفیت و تیم‌های پروژه، خزانه‌داری و چک صیاد و سلف‌سرویس منابع انسانی.",
+     "en": "Walkthrough of live Mana Enterprise Suite modules: Suite Apps Hub (14 apps), Subscription Billing MRR/ARR Dashboard, Projects & Team Capacity, Banking & Sayad Treasury, and People HRMS.",
+     "de": "Durchgang durch die Live-Module der Mana Suite: Suite Apps Hub (14 Apps), Billing MRR/ARR-Dashboard, Projektkapazität, Banking & Sayad-Schecks sowie People HRMS.",
+     "es": "Recorrido por los módulos de Mana Suite: Centro de 14 Aplicaciones, Panel de Facturación MRR/ARR, Proyectos y Capacidad, Tesorería Bancaria y HRMS."
     },
     "tags": {
      "fa": [
@@ -1184,7 +1146,7 @@ const VD = [
      ]
     },
     "src": "media/v22.mp4",
-    "bytes": 384850
+    "bytes": 1327065
    }
   ]
  },
@@ -1217,7 +1179,7 @@ const VD = [
   "videos": [
    {
     "id": "v23",
-    "dur": "0:05",
+    "dur": "0:17",
     "poster": "media/v23.jpg",
     "ar": "4/3",
     "title": {
@@ -1227,10 +1189,10 @@ const VD = [
      "es": "Cabina de Escritorio German-Neural-Immersion"
     },
     "desc": {
-     "fa": "نمایش زنده تب‌های Live Neural Capture، Spaced Drill Mastery و Ecosystem Analytics در محیط دسکتاپ.",
-     "en": "Live desktop capture switching across Live Neural Capture, Spaced Drill Mastery, and Ecosystem Analytics tabs.",
-     "de": "Live-Desktop-Aufnahme über die Tabs Live Neural Capture, Spaced Drill Mastery und Ecosystem Analytics.",
-     "es": "Captura de escritorio en vivo por las pestañas Live Neural Capture, Spaced Drill Mastery y Ecosystem Analytics."
+     "fa": "اجرای واقعی تجزیه مورفولوژیک جمله B2 آلمانی با ساخت کارت تصویر و اتصال Anki/Obsidian، سپس حل تمرین تعاملی Satzbau در تب Spaced Drill Mastery و بررسی آمار در Ecosystem Analytics.",
+     "en": "Live German B2 cognitive sentence deconstruction with visual flashcard & Anki/Obsidian sync, interactive Satzbau unscrambler drill arena, and Ecosystem Analytics telemetry.",
+     "de": "Live-Kognitionsanalyse eines deutschen B2-Satzes mit Flashcard & Anki/Obsidian-Sync, interaktiver Satzbau-Arena und Ecosystem Analytics.",
+     "es": "Análisis cognitivo en vivo de oración alemana B2 con tarjeta visual y sincronización Anki/Obsidian, arena Satzbau y analítica del ecosistema."
     },
     "tags": {
      "fa": [
@@ -1259,7 +1221,7 @@ const VD = [
      ]
     },
     "src": "media/v23.mp4",
-    "bytes": 209214
+    "bytes": 581139
    }
   ]
  },
@@ -1292,7 +1254,7 @@ const VD = [
   "videos": [
    {
     "id": "v24",
-    "dur": "0:06",
+    "dur": "0:18",
     "poster": "media/v24.jpg",
     "ar": "4/5",
     "title": {
@@ -1302,10 +1264,10 @@ const VD = [
      "es": "Telemetría en vivo y ejecución de misiones en Jet AI HUD"
     },
     "desc": {
-     "fa": "نمایش زنده پنل PyQt6، وضعیت میکروفون WASAPI، مکالمه بلادرنگ، و اجرای اکشن خودران Bézier Snap.",
-     "en": "Live PyQt6 HUD render showing WASAPI mic telemetry, streaming multimodal response, and Level-5 Bézier Snap OS action execution.",
-     "de": "Live-PyQt6-HUD mit WASAPI-Mikrofontelemetrie, Streaming-Antwort und Level-5-Bézier-Snap-Ausführung.",
-     "es": "Renderizado en vivo del HUD PyQt6 con telemetría WASAPI, respuesta multimodal y ejecución autónoma Bézier Snap."
+     "fa": "نمایش انیمیشن زنده اکولایزر صوتی WASAPI، مکالمه دوزبانه، فشرده‌سازی تصویر 1440p SSIM با ۷۸٪ صرفه‌جویی توکن و اجرای اکشن خودران Bézier Mouse Snap روی ویندوز.",
+     "en": "Animated WASAPI voice equalizer bars, bilingual EN/FA streaming dialogue, 1440p SSIM vision diffing (78% token savings), and autonomous Level-5 Bézier Mouse Snap execution.",
+     "de": "Animierter WASAPI-Audio-Equalizer, zweisprachiger Streaming-Dialog, 1440p-SSIM-Vision-Diffing und Level-5-Bézier-Mouse-Snap-Ausführung.",
+     "es": "Barras animadas WASAPI, diálogo bilingüe en vivo, visión 1440p SSIM (78% ahorro de tokens) y ejecución autónoma Nivel 5 Bézier Mouse Snap."
     },
     "tags": {
      "fa": [
@@ -1334,7 +1296,7 @@ const VD = [
      ]
     },
     "src": "media/v24.mp4",
-    "bytes": 57071
+    "bytes": 149463
    }
   ]
  },
@@ -1367,7 +1329,7 @@ const VD = [
   "videos": [
    {
     "id": "v25",
-    "dur": "0:05",
+    "dur": "0:16",
     "poster": "media/v25.jpg",
     "ar": "16/9",
     "title": {
@@ -1377,10 +1339,10 @@ const VD = [
      "es": "HUD Bilingüe de RapScribe-AI OmniScribe"
     },
     "desc": {
-     "fa": "نمایش کنترل پنل شناور با انتخابگر WASAPI Loopback، مدل faster-whisper large-v3-turbo و ترجمه خودکار EN/DE به فارسی.",
-     "en": "Live floating HUD showing WASAPI Loopback source selector, faster-whisper large-v3-turbo engine, and AUTO (EN/DE -> FA) translation pipeline.",
-     "de": "Live-HUD mit WASAPI-Loopback-Auswahl, faster-whisper large-v3-turbo und automatischer EN/DE->FA-Übersetzung.",
-     "es": "HUD en vivo con selector WASAPI Loopback, motor faster-whisper large-v3-turbo y traducción automática EN/DE a persa."
+     "fa": "دموی جریان زنده استخراج گفتار و رپ انگلیسی و آلمانی روی CUDA (faster-whisper large-v3-turbo)، نمایش نوار صوتی بلادرنگ، ترجمه آنی فارسی و کارت‌های اصطلاحات خیابانی.",
+     "en": "Live streaming English & German rap/speech cards on CUDA (faster-whisper large-v3-turbo), animated WASAPI audio meter, instant Persian translation, and street-slang cards.",
+     "de": "Live-Streaming englischer & deutscher Rap-/Sprachkarten auf CUDA (faster-whisper large-v3-turbo), animiertes WASAPI-Pegelmeter, Übersetzung und Slang-Karten.",
+     "es": "Tarjetas en vivo de transcripción EN/DE sobre CUDA (faster-whisper large-v3-turbo), medidor de audio animado, traducción instantánea y notas de jerga."
     },
     "tags": {
      "fa": [
@@ -1409,7 +1371,82 @@ const VD = [
      ]
     },
     "src": "media/v25.mp4",
-    "bytes": 19829
+    "bytes": 92259
+   }
+  ]
+ },
+ {
+  "id": "zardigit",
+  "title": {
+   "fa": "ZarDigit — سامانه حسابداری ابری و مدیریت پرداخت‌ها",
+   "en": "ZarDigit — Enterprise Cloud Accounting & AP Suite",
+   "de": "ZarDigit — Cloud-Buchhaltung & Verbindlichkeiten-Suite",
+   "es": "ZarDigit — Contabilidad Cloud Empresarial y Cuentas por Pagar"
+  },
+  "kicker": {
+   "fa": "Next.js App Router + Material UI v6 RTL + ۲۰ زبان",
+   "en": "Next.js App Router + Material UI v6 + 20-Language Parity",
+   "de": "Next.js App Router + Material UI v6 + 20 Sprachen",
+   "es": "Next.js App Router + Material UI v6 + 20 Idiomas"
+  },
+  "intro": {
+   "fa": "تور زنده پلتفرم مالی زردیجیت: ورود با نقش‌های سازمانی، داشبورد شاخص‌های نقدینگی، فاکتورهای خرید، تامین‌کنندگان و گزارش‌های مالی.",
+   "en": "Live walkthrough of ZarDigit Financial Suite: RBAC quick sign-in, liquidity KPIs & outflow charts, purchase bills, vendors, and financial reports.",
+   "de": "Live-Rundgang durch die ZarDigit-Finanzsuite: RBAC-Anmeldung, Liquiditäts-KPIs, Eingangsrechnungen, Lieferanten und Finanzberichte.",
+   "es": "Recorrido en vivo por ZarDigit: inicio de sesión RBAC, KPIs de liquidez, facturas de compra, proveedores e informes financieros."
+  },
+  "nav": {
+   "fa": "ZarDigit",
+   "en": "ZarDigit",
+   "de": "ZarDigit",
+   "es": "ZarDigit"
+  },
+  "videos": [
+   {
+    "id": "v26",
+    "dur": "0:46",
+    "poster": "media/v26.jpg",
+    "ar": "16/9",
+    "title": {
+     "fa": "تور کامل زنده پلتفرم حسابداری زردیجیت",
+     "en": "ZarDigit Live Platform Walkthrough (Dashboard, Bills, Vendors, Reports)",
+     "de": "ZarDigit Live-Rundgang (Dashboard, Rechnungen, Lieferanten, Berichte)",
+     "es": "Recorrido en Vivo de ZarDigit (Panel, Facturas, Proveedores, Informes)"
+    },
+    "desc": {
+     "fa": "نمایش محیط واقعی زردیجیت روی دامنه زنده شامل داشبورد مدیریتی، جدول فاکتورهای خرید با تاریخ شمسی، لیست تامین‌کنندگان و گزارشات.",
+     "en": "Live capture on ZarDigit production deployment walking through Executive Dashboard, Purchase Bills, Vendors & Suppliers, and Financial Reports.",
+     "de": "Live-Aufnahme der ZarDigit-Plattform über Executive Dashboard, Eingangsrechnungen, Lieferanten und Finanzberichte.",
+     "es": "Captura en vivo de ZarDigit recorriendo Panel Ejecutivo, Facturas de Compra, Proveedores e Informes Financieros."
+    },
+    "tags": {
+     "fa": [
+      "Next.js",
+      "MUI v6 RTL",
+      "۲۰ زبان",
+      "حسابداری ابری"
+     ],
+     "en": [
+      "Next.js",
+      "MUI v6",
+      "20 Languages",
+      "Cloud Accounting"
+     ],
+     "de": [
+      "Next.js",
+      "MUI v6",
+      "20 Sprachen",
+      "Cloud-Buchhaltung"
+     ],
+     "es": [
+      "Next.js",
+      "MUI v6",
+      "20 Idiomas",
+      "Contabilidad Cloud"
+     ]
+    },
+    "src": "media/v26.mp4",
+    "bytes": 1394845
    }
   ]
  }

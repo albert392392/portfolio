@@ -1,19 +1,27 @@
 /* ============ shared, language-independent structure ============ */
 const IMG = {
   "universalsystem": [
-    "us-arch",
-    "dashboard",
-    "us-flow"
+    "us-arch-en",
+    "us-dash-en",
+    "us-flow-en"
   ],
   "docfactory": [],
   "msai": [
     "msai-1",
-    "msai-2"
+    "msai-2",
+    "msai-3",
+    "msai-4"
   ],
   "rapscribe": [
-    "rapscribe-1"
+    "rapscribe-1",
+    "rapscribe-2",
+    "rapscribe-3"
   ],
-  "copilot": [],
+  "copilot": [
+    "copilot-1",
+    "copilot-2",
+    "copilot-3"
+  ],
   "lango": [
     "lango-1",
     "lango-2",
@@ -22,20 +30,26 @@ const IMG = {
   ],
   "german": [
     "german-1",
-    "german-2"
+    "german-2",
+    "german-3"
   ],
   "zardigit": [
-    "zardigit-1",
-    "zardigit-2"
+    "zardigit-1-en",
+    "zardigit-2-en"
   ],
   "zoho": [
     "zoho-1",
     "zoho-2",
-    "zoho-3"
+    "zoho-3",
+    "zoho-4",
+    "zoho-5"
   ],
   "auro": [
     "auro-1",
-    "auro-2"
+    "auro-2",
+    "auro-3",
+    "auro-4",
+    "auro-5"
   ],
   "unpin": [
     "unpin-1"
@@ -119,36 +133,6 @@ const IMG = {
     "root-08",
     "root-09",
     "root-10"
-  ],
-  "msai": [
-    "msai-1",
-    "msai-2",
-    "msai-3",
-    "msai-4"
-  ],
-  "auro": [
-    "auro-1",
-    "auro-2",
-    "auro-3"
-  ],
-  "zoho": [
-    "zoho-1",
-    "zoho-2",
-    "zoho-3",
-    "zoho-4"
-  ],
-  "german": [
-    "german-1",
-    "german-2",
-    "german-3"
-  ],
-  "copilot": [
-    "copilot-1",
-    "copilot-2"
-  ],
-  "rapscribe": [
-    "rapscribe-1",
-    "rapscribe-2"
   ]
 };
 
@@ -308,6 +292,11 @@ const T = {
             "دفترکل امنیتی HMAC: ثبت زنجیره‌ای و غیرقابل دستکاری کلیه تصمیمات ایجنت‌ها با امکان راستی‌آزمایی در روت /enterprise/audit/verify",
             "پل آبشاری Host Bridge: سوئیچ خودکار ترافیک در صورت بروز خطای سهمیه به ابزارهای محلی کلاد، کدکس و آنتی‌گرویتی روی پورت ۸۷۶۵",
             "پالایش داده‌های حساس PII: ماسک خودکار کارت‌های اعتباری، شماره ملی و شبا به‌همراه دیواره ضد نفوذ SSRF"
+          ],
+          "images": [
+            "us-arch-fa",
+            "us-dash-fa",
+            "us-flow-fa"
           ]
         },
         {
@@ -385,7 +374,8 @@ const T = {
           ],
           "images": [
             "rapscribe-1",
-            "rapscribe-2"
+            "rapscribe-2",
+            "rapscribe-3"
           ],
           "vsec": "rapscribe"
         },
@@ -415,7 +405,8 @@ const T = {
           ],
           "images": [
             "copilot-1",
-            "copilot-2"
+            "copilot-2",
+            "copilot-3"
           ],
           "vsec": "copilot"
         },
@@ -495,7 +486,12 @@ const T = {
           "arch": [
             "معماری دفترکل دوطرفه: تضمین توازن بدهکار و بستانکار در کلیه تراکنش‌های ثبت‌شده",
             "موتور صدور صورت‌های مالی استاندارد (ترازنامه، سود و زیان، جریان وجوه نقد) با تایپوگرافی سازمانی RTL"
-          ]
+          ],
+          "images": [
+            "zardigit-1-fa",
+            "zardigit-2-fa"
+          ],
+          "vsec": "zardigit"
         },
         {
           "id": "zoho",
@@ -525,7 +521,8 @@ const T = {
             "zoho-1",
             "zoho-2",
             "zoho-3",
-            "zoho-4"
+            "zoho-4",
+            "zoho-5"
           ],
           "vsec": "zoho"
         },
@@ -552,7 +549,9 @@ const T = {
           "images": [
             "auro-1",
             "auro-2",
-            "auro-3"
+            "auro-3",
+            "auro-4",
+            "auro-5"
           ],
           "vsec": "auro"
         },
@@ -1532,8 +1531,8 @@ const T = {
         "minoo-profile": "minoo.gameland — استریمر دوم رویداد",
         "manager": "مدیر مجموعه بازی‌ساز باش در حال تجربه بازی",
         "streamer": "معرفی بازی توسط تولیدکنندگان محتوا در رویداد",
-        "parsa-1": "پارسا — محیط اتاق نشیمن، اشیاء تعاملی و مینی‌گیم‌های چندگانه",
-        "parsa-2": "پارسا — محیط اتاق خواب، سیستم شخصی‌سازی لباس و مدیریت دارایی‌ها",
+        "parsa-1": "پارسا و سیمرغ — گرافیک محیطی سه‌بعدی و ماجراجویی شاهنامه",
+        "parsa-2": "پارسا و سیمرغ — نورپردازی سینمایی و فضاسازی اساطیری",
         "dojo-desk": "میز ثبت‌نام همایش تخصصی Game Dojo",
         "dojo-hall": "سالن اصلی همایش نوآوری",
         "dojo-talk": "سخنرانی تخصصی و تبادل نظر فنی",
@@ -1555,24 +1554,63 @@ const T = {
         "root-08": "کارنامه ممتاز زبان انگلیسی شکوه — نمره ۹۵",
         "root-09": "لوح تقدیر و افتخار دوره تحصیلی",
         "root-10": "لوح سپاس و قدردانی تلاش علمی",
-        "msai-1": "آکادمی معمار هوش مصنوعی مایکروسافت — نمای اصلی نقشه راه ۸ سطحی",
-        "msai-2": "آکادمی مایکروسافت — شبیه‌ساز الگوهای چندایجنتی و Swarm",
-        "msai-3": "آکادمی مایکروسافت — بانک کد C# و .NET 10",
-        "msai-4": "آکادمی مایکروسافت — بخش آمادگی مصاحبه معماری (STAR)",
-        "auro-1": "AuroSocialEngine — صفحه ورود و انتخاب نقش سازمانی (Port 5055)",
-        "auro-2": "AuroSocialEngine — داشبورد اجرایی مدیریت کمپین‌ها",
-        "auro-3": "AuroSocialEngine — صف قرنطینه و کنترل محتوای بدون توهم",
-        "zoho-1": "Mana Books (Zoho Books Clone) — ورود یک‌کلیکی نقش‌های سازمانی",
-        "zoho-2": "Mana Books (Zoho Books Clone) — ثبت سازمان و چندمستاجری",
-        "zoho-3": "Mana Books (Zoho Books Clone) — داشبورد جامع حسابداری دوبل",
-        "zoho-4": "Mana Books (Zoho Books Clone) — ماژول فروش و صدور فاکتور",
-        "german-1": "German-Neural-Immersion — تب Live Neural Capture و اتصال Anki/Obsidian",
-        "german-2": "German-Neural-Immersion — تب Spaced Drill Mastery",
-        "german-3": "German-Neural-Immersion — تب Ecosystem Analytics و آمار حافظه",
-        "copilot-1": "Jet AI Human Assistant — رابط شیشه‌ای PyQt6 و اتصال Gemini Live",
-        "copilot-2": "Jet AI Human Assistant — اجرای اکشن سطح ۵ ویندوز و تله‌متری زنده",
-        "rapscribe-1": "RapScribe-AI (OmniScribe HUD) — پنل شناور WASAPI + faster-whisper CUDA",
-        "rapscribe-2": "RapScribe-AI (OmniScribe HUD) — ترجمه خودکار EN/DE به فارسی"
+        "msai-1": "آکادمی مایکروسافت — نقشه راه ۸ سطحی یادگیری و معماری",
+        "msai-2": "آکادمی مایکروسافت — شبیه‌ساز تعاملی گام‌به‌گام چندایجنتی (Swarm/Sequential)",
+        "msai-3": "آکادمی مایکروسافت — کدبانک جامع C# / .NET 10",
+        "msai-4": "آکادمی مایکروسافت — آمادگی مصاحبه معماری سازمانی (متد STAR)",
+        "auro-1": "AuroSocialEngine — داشبورد فرماندهی اجرایی و فید زنده طلا (پورت ۵۰۵۶)",
+        "auro-2": "AuroSocialEngine — استودیوی تولید محتوای چندوجهی و پژوهش کلان",
+        "auro-3": "AuroSocialEngine — ویترین زنده و صف قرنطینه بدون توهم",
+        "zoho-1": "Mana Enterprise Suite — مرکز یکپارچه ۱۴ اپلیکیشن سازمانی",
+        "zoho-2": "Zoho Billing — داشبورد مدیریت درآمد مکرر (MRR/ARR) و اشتراک‌ها",
+        "zoho-3": "Zoho Projects — مدیریت تیم‌ها، ظرفیت کاری و بهره‌وری پروژه‌ها",
+        "zoho-4": "Mana Books — ماژول خزانه‌داری، حساب‌های بانکی و چک صیاد",
+        "german-1": "German-Neural-Immersion — تجزیه مورفولوژیک B2، کارت تصویر و همگام‌سازی Anki/Obsidian",
+        "german-2": "German-Neural-Immersion — آرنای تمرینی Satzbau و گرامر",
+        "german-3": "German-Neural-Immersion — آمار زنده اکوسیستم و شاخص‌های دقت",
+        "copilot-1": "Jet AI CoPilot — رابط شیشه‌ای PyQt6 و استریم گفتگوی دوزبانه",
+        "copilot-2": "Jet AI CoPilot — اسکن 1440p SSIM و حرکت لیزری Bézier روی ویندوز",
+        "rapscribe-1": "RapScribe-AI — استریم کارت دوزبانه انگلیسی/آلمانی به فارسی با نوار صوتی",
+        "rapscribe-2": "RapScribe-AI — رونویسی چندزبانه با شتاب‌دهنده CUDA و نکات اصطلاحی",
+        "us-arch": "UniversalSystem — معماری جامع ۱۷ مایکروسرویس و ارکستراسیون ایجنت‌ها",
+        "dashboard": "UniversalSystem — داشبورد عملیات و نظارت بر سلامت مایکروسرویس‌ها",
+        "us-flow": "UniversalSystem — دیاگرام جریان داده و دفترکل امنیتی HMAC",
+        "docfactory-1": "Universal Doc Factory — ساختار اسناد فنی و رندرر چندموتوره",
+        "docfactory-2": "Universal Doc Factory — خروجی استانداردهای مهندسی PDF و مستندسازی",
+        "lango-1": "NitroLango — داشبورد Command Deck و مسیر یادگیری روزانه",
+        "lango-2": "NitroLango — شبیه‌ساز رسمی آزمون‌های گوته (A1 تا B2)",
+        "lango-3": "NitroLango — آرنای نبرد ۷۴ موتوره (Meteor Strike)",
+        "lango-4": "NitroLango — سیستم مرور هوشمند فاصله‌دار (SM-2)",
+        "zardigit-1": "ZarDigit — معماری بانکی و هسته دفترکل دوبل سازمانی",
+        "zardigit-2": "ZarDigit — ماژول‌های حسابداری، کنترل دسترسی و اتصال به گیت‌وی",
+        "unpin-1": "Antigravity Scroll Unpin — مهندسی معکوس کلاینت و تزریق اتمیک استایل",
+        "mcpbridge-1": "UniversalSystem MCP Bridge — پل پروتکل متنی مدل و ابزارهای ثبت‌شده",
+        "traveltown-1": "Travel Town — شبیه‌سازی گرید ۷در۹ پازل مرج و ژنراتور آیتم‌ها",
+        "villa-1": "Design Villa — گیم‌پلی جورچین ۳تایی (Match-3) و افکت‌های فیزیک",
+        "villa-2": "Design Villa — هسته رنوسازی عمارت، طراحی اتاق‌ها و موتور اقتصادی",
+        "parsa-3": "پارسا و سیمرغ — سیستم نبرد، انیمیشن و فیزیک کاراکتر",
+        "parsa-4": "پارسا و سیمرغ — منوی اصلی و ساختار مراحل بازی",
+        "archer-play": "آرش کمانگیر — پرتاب تیر با شبیه‌سازی مسیر سهمی‌گون و فیزیک",
+        "archer-menu": "آرش کمانگیر — منوی انتخاب مراحل، ارتقای تیر و کمان و فروشگاه",
+        "archer-complete": "آرش کمانگیر — پیروزی در نبرد موجی و ثبت امتیاز مرحله",
+        "bus-1": "Bus Scape — الگوریتم مسیریابی هوشمند و تفکیک رنگی مسافران",
+        "bus-2": "Bus Scape — حل پازل‌های ترافیکی و بهینه‌سازی جریان ایستگاه",
+        "neon-menu": "Neon Run — منوی اصلی بازی، انتخاب حالت و فروشگاه ارتقا",
+        "neon-tps": "Neon Run — گیم‌پلی سوم‌شخص با قابلیت ویژه فعال و نوار انرژی",
+        "neon-fps": "Neon Run — نمای اول‌شخص با سرعت بالا و هیجان عبور از موانع",
+        "neon-modes": "Neon Run — صفحه انتخاب حالت: شش حالت متنوع بازی",
+        "neon-duo": "Neon Run — حالت دونفره هم‌زمان با صفحه تقسیم‌شده (Split-Screen)",
+        "neon-duo2": "Neon Run — رقابت شدید دو بازیکن روی یک سیستم",
+        "us-arch-fa": "UniversalSystem — توپولوژی ۱۷ مایکروسرویس و ارکستراسیون ایجنت‌ها (فارسی)",
+        "us-dash-fa": "UniversalSystem — راستی‌آزمایی زنده ۱۱/۱۱ سرویس عملیاتی (فارسی)",
+        "us-flow-fa": "UniversalSystem — خط لوله جریان داده، صف‌های Celery و دفترکل HMAC (فارسی)",
+        "zardigit-1-fa": "زردیجیت (ZarDigit) — داشبورد اجرایی مدیریت نقدینگی و بدهی‌ها (فارسی)",
+        "zardigit-2-fa": "زردیجیت (ZarDigit) — لیست فاکتورهای خرید با تاریخ جلالی و وضعیت پرداخت (فارسی)",
+        "auro-4": "AuroSocialEngine — شبکه گرافیکی هوشمند ایجنت‌ها (Cyber-Mesh Network)",
+        "auro-5": "AuroSocialEngine — برنامه‌ریز کمپین‌های خودران ۲۴/۷",
+        "zoho-5": "Zoho People — پورتال سلف‌سرویس پرسنل و حضور و غیاب",
+        "copilot-3": "Jet AI CoPilot — تکمیل خودران ماموریت با کد خروج ۰",
+        "rapscribe-3": "RapScribe-AI — خروجی تکمیل‌شده با موتور Gemini 3.8 Flash"
       }
     },
     "resume": {
@@ -1587,8 +1625,8 @@ const T = {
     },
     "videos": {
       "title": "آرشیو ویدیوهای محصولات",
-      "sub": "۲۵ ویدیو با توضیح کامل · ۵۶ دقیقه مستندات بدون نیاز به نصب",
-      "intro": "برای تک‌تک پروژه‌ها، بازی‌ها و رویدادهای مستندشده در این پورتفولیو، ویدیوی ضبط‌شده با کیفیت بالا در دسترس است. همه ۲۵ ویدیو بدون نیاز به نصب، مستقیماً در همین صفحه با پلیر اختصاصی پخش می‌شوند.",
+      "sub": "۲۶ ویدیو با توضیح کامل · ۵۶ دقیقه مستندات بدون نیاز به نصب",
+      "intro": "برای تک‌تک پروژه‌ها، بازی‌ها و رویدادهای مستندشده در این پورتفولیو، ویدیوی ضبط‌شده با کیفیت بالا در دسترس است. همه ۲۶ ویدیو بدون نیاز به نصب، مستقیماً در همین صفحه با پلیر اختصاصی پخش می‌شوند.",
       "jump": "پرش سریع به ویدیوهای بخش:",
       "loading": "در حال بارگذاری ویدیو…"
     },
@@ -1744,6 +1782,11 @@ const T = {
             "HMAC Audit Ledger: Cryptographically chained immutable hash record of all agent execution steps verified via /enterprise/audit/verify",
             "Host Bridge Failover: Gracefully redirects 429/503 cloud API rate limits to local developer CLI sessions (Claude Code, Codex, Antigravity)",
             "PII Redaction & SSRF Guardrails: Automated regex-based scrubbing of sensitive card/ID numbers with outbound webhook firewalls"
+          ],
+          "images": [
+            "us-arch-en",
+            "us-dash-en",
+            "us-flow-en"
           ]
         },
         {
@@ -1821,7 +1864,8 @@ const T = {
           ],
           "images": [
             "rapscribe-1",
-            "rapscribe-2"
+            "rapscribe-2",
+            "rapscribe-3"
           ],
           "vsec": "rapscribe"
         },
@@ -1851,7 +1895,8 @@ const T = {
           ],
           "images": [
             "copilot-1",
-            "copilot-2"
+            "copilot-2",
+            "copilot-3"
           ],
           "vsec": "copilot"
         },
@@ -1931,7 +1976,12 @@ const T = {
           "arch": [
             "Double-Entry General Ledger: Mathematical balancing across debit and credit entries with transaction audit trails",
             "Standard Financial Statement Engine: Automated Balance Sheet, Profit & Loss, and Cash Flow generation with RTL typography"
-          ]
+          ],
+          "images": [
+            "zardigit-1-en",
+            "zardigit-2-en"
+          ],
+          "vsec": "zardigit"
         },
         {
           "id": "zoho",
@@ -1961,7 +2011,8 @@ const T = {
             "zoho-1",
             "zoho-2",
             "zoho-3",
-            "zoho-4"
+            "zoho-4",
+            "zoho-5"
           ],
           "vsec": "zoho"
         },
@@ -1988,7 +2039,9 @@ const T = {
           "images": [
             "auro-1",
             "auro-2",
-            "auro-3"
+            "auro-3",
+            "auro-4",
+            "auro-5"
           ],
           "vsec": "auro"
         },
@@ -2968,8 +3021,8 @@ const T = {
         "minoo-profile": "minoo.gameland — event streamer",
         "manager": "Bazisazbash studio director testing the game",
         "streamer": "Content creators covering the game at the event",
-        "parsa-1": "Parsa — Living room environment, interactive objects, and mini-games",
-        "parsa-2": "Parsa — Bedroom environment, wardrobe customization, and character state",
+        "parsa-1": "Parsa & Simurgh — 3D Environment Graphics & Persian Mythological Adventure",
+        "parsa-2": "Parsa & Simurgh — Cinematic Lighting & Atmospheric Story Worlds",
         "dojo-desk": "Registration desk at Game Dojo convention",
         "dojo-hall": "Main convention hall",
         "dojo-talk": "Technical keynotes and architecture discussions",
@@ -2991,24 +3044,63 @@ const T = {
         "root-08": "Shokouh Advanced English Honors Certificate — Score 95",
         "root-09": "Academic Achievement Diploma",
         "root-10": "Certificate of Educational Distinction",
-        "msai-1": "Microsoft AI Architect Hub — 8-Level Curriculum Overview",
-        "msai-2": "Microsoft AI Architect Hub — Multi-Agent Swarm Simulator",
+        "msai-1": "Microsoft AI Architect Hub — 8-Level Systems Curriculum Roadmap",
+        "msai-2": "Microsoft AI Architect Hub — Interactive Multi-Agent Swarm Simulator",
         "msai-3": "Microsoft AI Architect Hub — Production C# / .NET 10 Code Bank",
         "msai-4": "Microsoft AI Architect Hub — Architecture Interview Mastery (STAR)",
-        "auro-1": "AuroSocialEngine — Executive SSO & Multi-Company RBAC (Port 5055)",
-        "auro-2": "AuroSocialEngine — Sovereign Campaign Management Dashboard",
-        "auro-3": "AuroSocialEngine — Zero-Hallucination Quarantine Queue",
-        "zoho-1": "Mana Books (Zoho Books Clone) — 1-Click Role Demo Authentication",
-        "zoho-2": "Mana Books (Zoho Books Clone) — Multi-Tenant Organization Registration",
-        "zoho-3": "Mana Books (Zoho Books Clone) — Double-Entry Accounting Shell",
-        "zoho-4": "Mana Books (Zoho Books Clone) — Sales & Invoicing Module",
-        "german-1": "German-Neural-Immersion — Live Neural Capture & Anki/Obsidian Bridge",
-        "german-2": "German-Neural-Immersion — Spaced Drill Mastery Tab",
-        "german-3": "German-Neural-Immersion — Ecosystem Analytics & Memory Metrics",
-        "copilot-1": "Jet AI Human Assistant — PyQt6 Glassmorphism HUD & Gemini Live",
-        "copilot-2": "Jet AI Human Assistant — Level-5 Win32 Fly-by-Wire Execution",
-        "rapscribe-1": "RapScribe-AI (OmniScribe HUD) — WASAPI Loopback + faster-whisper CUDA",
-        "rapscribe-2": "RapScribe-AI (OmniScribe HUD) — Real-Time Bilingual EN/DE -> FA Pipeline"
+        "auro-1": "AuroSocialEngine — Executive Command Center & Live Bullion Ticker",
+        "auro-2": "AuroSocialEngine — Deep Macro Research & Multimodal AI Studio",
+        "auro-3": "AuroSocialEngine — Live Visual Showcase & Quarantine Queue",
+        "zoho-1": "Mana Enterprise Suite — 14 Integrated Enterprise Applications Hub",
+        "zoho-2": "Zoho Billing — Subscription Revenue (MRR/ARR) & Dunning Dashboard",
+        "zoho-3": "Zoho Projects — Teams, Capacity & Utilization Portfolio",
+        "zoho-4": "Mana Books — Banking, Treasury & Sayad Check Management",
+        "german-1": "German-Neural-Immersion — B2 Morphological Deconstruction & Visual Flashcard",
+        "german-2": "German-Neural-Immersion — Interactive Satzbau Drill Arena",
+        "german-3": "German-Neural-Immersion — Live Ecosystem & Memory Analytics",
+        "copilot-1": "Jet AI CoPilot — PyQt6 Glassmorphism HUD & Bilingual Dialogue",
+        "copilot-2": "Jet AI CoPilot — 1440p SSIM Vision Diff & Level-5 Bézier Snap",
+        "rapscribe-1": "RapScribe-AI — Live Streaming EN/DE -> FA Cards & Audio Equalizer",
+        "rapscribe-2": "RapScribe-AI — CUDA faster-whisper large-v3-turbo Bilingual Slang Cards",
+        "us-arch": "UniversalSystem — 17 Microservices Topology & Distributed Agent Orchestration",
+        "dashboard": "UniversalSystem — Real-Time Operations & Microservices Health Dashboard",
+        "us-flow": "UniversalSystem — Data Flow Pipeline & HMAC Immutable Security Ledger",
+        "docfactory-1": "Universal Doc Factory — Multi-Engine Technical Document Architecture",
+        "docfactory-2": "Universal Doc Factory — Automated Pixel-Perfect PDF & Enterprise Deliverables",
+        "lango-1": "NitroLango — Command Deck & Personalized Daily Journey",
+        "lango-2": "NitroLango — Official Goethe-Zertifikat Simulator (A1–B2)",
+        "lango-3": "NitroLango — 74-Engine Neural Battle Arena (Meteor Strike)",
+        "lango-4": "NitroLango — Smart Daily Spaced Repetition Review (SM-2)",
+        "zardigit-1": "ZarDigit — Core Banking Schema & Enterprise Double-Entry Ledger",
+        "zardigit-2": "ZarDigit — Financial Modules, RBAC Security & Payment Gateway Bridge",
+        "unpin-1": "Antigravity Scroll Unpin — Reverse-Engineered Client Patcher & Atomic Injection",
+        "mcpbridge-1": "UniversalSystem MCP Bridge — Model Context Protocol Gateway & Tool Registry",
+        "traveltown-1": "Travel Town — 7x9 Hexagonal Merge Grid Engine & Item Generator Tree",
+        "villa-1": "Design Villa — Match-3 Puzzle Cascade Gameplay & Physics Boosters",
+        "villa-2": "Design Villa — 3D Mansion Renovation Engine & Interior Decoration Economy",
+        "parsa-3": "Parsa & Simurgh — Character Combat, Animation & Dynamic Physics",
+        "parsa-4": "Parsa & Simurgh — Main Menu & Level Progression Architecture",
+        "archer-play": "Arash Kamangir — Parabolic Trajectory Bow Shooting & Physics Simulation",
+        "archer-menu": "Arash Kamangir — Level Selection, Equipment Upgrades & Armory Shop",
+        "archer-complete": "Arash Kamangir — Wave Defense Victory & Dynamic Score Calculation",
+        "bus-1": "Bus Scape — Intelligent Pathfinding Algorithm & Multi-Color Passenger Sorting",
+        "bus-2": "Bus Scape — Grid Jam Resolution & Station Flow Optimization",
+        "neon-menu": "Neon Run — Main Menu, Mode Selector & Upgrade Shop",
+        "neon-tps": "Neon Run — Third-Person Gameplay with Active Shield & Energy Bar",
+        "neon-fps": "Neon Run — High-Speed Immersive First-Person Perspective",
+        "neon-modes": "Neon Run — Mode Selection: Six Distinct Game Modes",
+        "neon-duo": "Neon Run — Competitive Two-Player Split-Screen Mode",
+        "neon-duo2": "Neon Run — Head-to-Head Multiplayer on Single Device",
+        "us-arch-en": "UniversalSystem — 17-Microservice & Multi-Agent Swarm Topology (English)",
+        "us-dash-en": "UniversalSystem — Live Production Verification (11/11 Probes 200 OK)",
+        "us-flow-en": "UniversalSystem — Data Flow Pipeline, Celery Queues & HMAC Ledger (English)",
+        "zardigit-1-en": "ZarDigit — Executive AP, Cash & Liquidity Dashboard (English UI)",
+        "zardigit-2-en": "ZarDigit — Purchase Bills Ledger, Status & Excel Export (English UI)",
+        "auro-4": "AuroSocialEngine — Interactive Multi-Agent Cyber-Mesh Network",
+        "auro-5": "AuroSocialEngine — 24/7 Autonomous Campaign & Cadence Planner",
+        "zoho-5": "Zoho People — HRMS & Employee Self-Service Portal",
+        "copilot-3": "Jet AI CoPilot — Autonomous Mission Verified (Exit Code 0)",
+        "rapscribe-3": "RapScribe-AI — Completed Multi-Bar Stream with Gemini 3.8 Flash"
       }
     },
     "resume": {
@@ -3023,8 +3115,8 @@ const T = {
     },
     "videos": {
       "title": "Product Video Archive",
-      "sub": "25 videos · 56 minutes of recorded footage · no install required",
-      "intro": "High-resolution recorded footage exists for every major system, game, and event documented in this portfolio. All 25 clips play smoothly right here in any browser without installing anything.",
+      "sub": "26 videos · 56 minutes of recorded footage · no install required",
+      "intro": "High-resolution recorded footage exists for every major system, game, and event documented in this portfolio. All 26 clips play smoothly right here in any browser without installing anything.",
       "jump": "Quick Jump to Section:",
       "loading": "Loading video stream…"
     },
@@ -3180,6 +3272,11 @@ const T = {
             "HMAC-Audit-Ledger: Kryptografisch verkettete, unveränderliche Hash-Datensätze aller Agenten-Ausführungsschritte, verifiziert über /enterprise/audit/verify",
             "Host-Bridge-Failover: Leitet 429/503 Cloud-API-Ratenbegrenzungen sauber an lokale Entwickler-CLI-Sitzungen (Claude Code, Codex, Antigravity) weiter",
             "PII-Schwärzung & SSRF-Schutz: Automatisierte, regex-basierte Bereinigung sensibler Karten-/ID-Nummern mit Firewalls für ausgehende Webhooks"
+          ],
+          "images": [
+            "us-arch-de",
+            "us-dash-de",
+            "us-flow-de"
           ]
         },
         {
@@ -3257,7 +3354,8 @@ const T = {
           ],
           "images": [
             "rapscribe-1",
-            "rapscribe-2"
+            "rapscribe-2",
+            "rapscribe-3"
           ],
           "vsec": "rapscribe"
         },
@@ -3287,7 +3385,8 @@ const T = {
           ],
           "images": [
             "copilot-1",
-            "copilot-2"
+            "copilot-2",
+            "copilot-3"
           ],
           "vsec": "copilot"
         },
@@ -3367,7 +3466,12 @@ const T = {
           "arch": [
             "Hauptbuch für doppelte Buchführung: Mathematischer Ausgleich über Soll- und Haben-Einträge hinweg mit Transaktions-Audit-Trails",
             "Standard-Finanzbericht-Engine: Automatisierte Erstellung von Bilanz, Gewinn- und Verlustrechnung (GuV) sowie Kapitalflussrechnung mit RTL-Typografie"
-          ]
+          ],
+          "images": [
+            "zardigit-1-de",
+            "zardigit-2-de"
+          ],
+          "vsec": "zardigit"
         },
         {
           "id": "zoho",
@@ -3397,7 +3501,8 @@ const T = {
             "zoho-1",
             "zoho-2",
             "zoho-3",
-            "zoho-4"
+            "zoho-4",
+            "zoho-5"
           ],
           "vsec": "zoho"
         },
@@ -3424,7 +3529,9 @@ const T = {
           "images": [
             "auro-1",
             "auro-2",
-            "auro-3"
+            "auro-3",
+            "auro-4",
+            "auro-5"
           ],
           "vsec": "auro"
         },
@@ -4404,8 +4511,8 @@ const T = {
         "minoo-profile": "minoo.gameland — event streamer",
         "manager": "Bazisazbash studio director testing the game",
         "streamer": "Content creators covering the game at the event",
-        "parsa-1": "Parsa — Living room environment, interactive objects, and mini-games",
-        "parsa-2": "Parsa — Bedroom environment, wardrobe customization, and character state",
+        "parsa-1": "Parsa & Simurgh — 3D-Umgebungsgrafik & persisches mythologisches Abenteuer",
+        "parsa-2": "Parsa & Simurgh — Filmische Beleuchtung & atmosphärische Welten",
         "dojo-desk": "Registration desk at Game Dojo convention",
         "dojo-hall": "Main convention hall",
         "dojo-talk": "Technical keynotes and architecture discussions",
@@ -4428,23 +4535,62 @@ const T = {
         "root-09": "Academic Achievement Diploma",
         "root-10": "Certificate of Educational Distinction",
         "msai-1": "Microsoft AI Architect Hub — 8-stufiger Lehrplan",
-        "msai-2": "Microsoft AI Architect Hub — Multi-Agenten-Swarm-Simulator",
+        "msai-2": "Microsoft AI Architect Hub — Interaktiver Multi-Agenten-Simulator",
         "msai-3": "Microsoft AI Architect Hub — C# / .NET 10 Codebank",
         "msai-4": "Microsoft AI Architect Hub — Architektur-Interview-Vorbereitung",
-        "auro-1": "AuroSocialEngine — Executive SSO & Multi-Company-RBAC (Port 5055)",
-        "auro-2": "AuroSocialEngine — Kampagnen-Dashboard",
-        "auro-3": "AuroSocialEngine — Quarantäne-Warteschlange ohne Halluzinationen",
-        "zoho-1": "Mana Books (Zoho Books Clone) — Rollen-Login",
-        "zoho-2": "Mana Books (Zoho Books Clone) — Organisationsregistrierung",
-        "zoho-3": "Mana Books (Zoho Books Clone) — Buchhaltungs-Dashboard",
-        "zoho-4": "Mana Books (Zoho Books Clone) — Verkaufs- und Rechnungsmodul",
-        "german-1": "German-Neural-Immersion — Live Neural Capture & Anki/Obsidian",
-        "german-2": "German-Neural-Immersion — Spaced Drill Mastery",
+        "auro-1": "AuroSocialEngine — Executive Command Center & Live-Goldpreis-Ticker",
+        "auro-2": "AuroSocialEngine — Makro-Forschung & Multimodales KI-Studio",
+        "auro-3": "AuroSocialEngine — Live-Showcase & Quarantäne-Warteschlange",
+        "zoho-1": "Mana Enterprise Suite — Hub für 14 Unternehmensanwendungen",
+        "zoho-2": "Zoho Billing — Abo-Umsatz-Dashboard (MRR/ARR)",
+        "zoho-3": "Zoho Projects — Teams, Kapazität & Auslastungsportfolio",
+        "zoho-4": "Mana Books — Treasury, Bankkonten & Scheckverwaltung",
+        "german-1": "German-Neural-Immersion — B2 Morphologische Analyse & Flashcard",
+        "german-2": "German-Neural-Immersion — Interaktive Satzbau-Arena",
         "german-3": "German-Neural-Immersion — Ecosystem Analytics",
-        "copilot-1": "Jet AI Human Assistant — PyQt6 Glassmorphism HUD",
-        "copilot-2": "Jet AI Human Assistant — Level-5 Win32 Fly-by-Wire",
-        "rapscribe-1": "RapScribe-AI (OmniScribe HUD) — WASAPI + faster-whisper CUDA",
-        "rapscribe-2": "RapScribe-AI (OmniScribe HUD) — Zweisprachige Echtzeit-Übersetzung"
+        "copilot-1": "Jet AI CoPilot — PyQt6 Glassmorphism HUD",
+        "copilot-2": "Jet AI CoPilot — 1440p SSIM Vision & Bézier Snap",
+        "rapscribe-1": "RapScribe-AI — Live-Streaming EN/DE -> FA Karten & Audio-Pegel",
+        "rapscribe-2": "RapScribe-AI — CUDA faster-whisper & Slang-Notizen",
+        "us-arch": "UniversalSystem — 17-Mikroservice-Topologie & verteilte Agenten-Orchestrierung",
+        "dashboard": "UniversalSystem — Echtzeit-Betriebs- & Systemgesundheits-Dashboard",
+        "us-flow": "UniversalSystem — Datenfluss-Pipeline & manipulationssicheres HMAC-Sicherheitsbuch",
+        "docfactory-1": "Universal Doc Factory — Multi-Engine-Architektur für technische Dokumente",
+        "docfactory-2": "Universal Doc Factory — Automatisierte pixelgenaue PDF- & Unternehmensberichte",
+        "lango-1": "NitroLango — Command Deck & Tagesplan",
+        "lango-2": "NitroLango — Offizieller Goethe-Zertifikat-Simulator (A1–B2)",
+        "lango-3": "NitroLango — 74-Engine-Kampfarena (Meteor Strike)",
+        "lango-4": "NitroLango — SM-2 Spaced-Repetition-Wiederholung",
+        "zardigit-1": "ZarDigit — Kernbanken-Schema & doppelte Unternehmensbuchführung",
+        "zardigit-2": "ZarDigit — Finanzmodule, RBAC-Sicherheit & Zahlungs-Gateway-Integration",
+        "unpin-1": "Antigravity Scroll Unpin — Reverse-Engineering-Patcher & atomare Injektion",
+        "mcpbridge-1": "UniversalSystem MCP Bridge — Model Context Protocol Gateway & Werkzeug-Register",
+        "traveltown-1": "Travel Town — 7x9 Merge-Grid-Engine & Item-Generatorbaum",
+        "villa-1": "Design Villa — 3-Gewinnt-Kaskaden-Gameplay & Physik-Booster",
+        "villa-2": "Design Villa — 3D-Villarenovierungs-Engine & Raumausstattungs-Ökonomie",
+        "parsa-3": "Parsa & Simurgh — Charakterkampf, Animation & dynamische Physik",
+        "parsa-4": "Parsa & Simurgh — Hauptmenü & Level-Progressions-Architektur",
+        "archer-play": "Arash Kamangir — Parabolische Bogenschieß-Simulation & Physik",
+        "archer-menu": "Arash Kamangir — Levelauswahl, Ausrüstungs-Upgrades & Shop",
+        "archer-complete": "Arash Kamangir — Wellenverteidigungssieg & dynamische Punkteberechnung",
+        "bus-1": "Bus Scape — Intelligenter Wegfindungs-Algorithmus & Passagier-Sortierung",
+        "bus-2": "Bus Scape — Stauauflösung & Bahnhofs-Flussoptimierung",
+        "neon-menu": "Neon Run — Hauptmenü, Modusauswahl & Upgrade-Shop",
+        "neon-tps": "Neon Run — Third-Person-Gameplay mit aktivem Schild & Energieleiste",
+        "neon-fps": "Neon Run — Immersive Egoperspektive mit Hochgeschwindigkeits-Action",
+        "neon-modes": "Neon Run — Modusauswahl: Sechs verschiedene Spielmodi",
+        "neon-duo": "Neon Run — Kompetitiver Zwei-Spieler-Split-Screen-Modus",
+        "neon-duo2": "Neon Run — Direkter Mehrspieler-Wettkampf auf einem Gerät",
+        "us-arch-de": "UniversalSystem — 17-Mikroservice- & Multi-Agenten-Topologie (Deutsch)",
+        "us-dash-de": "UniversalSystem — Live-Verifikation aller Systemdienste (11/11 HTTP 200)",
+        "us-flow-de": "UniversalSystem — Datenfluss-Pipeline, Celery-Queues & HMAC-Ledger (Deutsch)",
+        "zardigit-1-de": "ZarDigit — Chef-Dashboard für Verbindlichkeiten & Liquidität (Deutsch)",
+        "zardigit-2-de": "ZarDigit — Eingangsrechnungen & Excel-Export (Deutsch)",
+        "auro-4": "AuroSocialEngine — Interaktives Multi-Agenten-Cyber-Mesh",
+        "auro-5": "AuroSocialEngine — Autonomer 24/7-Kampagnenplaner",
+        "zoho-5": "Zoho People — HRMS & Mitarbeiter-Self-Service",
+        "copilot-3": "Jet AI CoPilot — Autonome Mission verifiziert",
+        "rapscribe-3": "RapScribe-AI — Mehrzeilige Echtzeit-Übersetzung"
       }
     },
     "resume": {
@@ -4459,8 +4605,8 @@ const T = {
     },
     "videos": {
       "title": "Product Video Archive",
-      "sub": "25 videos · 56 minutes of recorded footage · no install required",
-      "intro": "High-resolution recorded footage exists for every major system, game, and event documented in this portfolio. All 25 clips play smoothly right here in any browser without installing anything.",
+      "sub": "26 videos · 56 minutes of recorded footage · no install required",
+      "intro": "High-resolution recorded footage exists for every major system, game, and event documented in this portfolio. All 26 clips play smoothly right here in any browser without installing anything.",
       "jump": "Quick Jump to Section:",
       "loading": "Loading video stream…"
     },
@@ -4616,6 +4762,11 @@ const T = {
             "Libro mayor de auditoría HMAC: Registro de hash inmutable encadenado criptográficamente de todos los pasos de ejecución del agente verificado a través de /enterprise/audit/verify",
             "Conmutación por error de Host Bridge: Redirige de forma elegante los límites de velocidad de la API en la nube 429/503 a sesiones de CLI de desarrolladores locales (Claude Code, Codex, Antigravity)",
             "Redacción de PII y protección SSRF: Depuración automatizada basada en expresiones regulares de números sensibles de tarjetas/identificación con cortafuegos para webhooks salientes"
+          ],
+          "images": [
+            "us-arch-es",
+            "us-dash-es",
+            "us-flow-es"
           ]
         },
         {
@@ -4693,7 +4844,8 @@ const T = {
           ],
           "images": [
             "rapscribe-1",
-            "rapscribe-2"
+            "rapscribe-2",
+            "rapscribe-3"
           ],
           "vsec": "rapscribe"
         },
@@ -4723,7 +4875,8 @@ const T = {
           ],
           "images": [
             "copilot-1",
-            "copilot-2"
+            "copilot-2",
+            "copilot-3"
           ],
           "vsec": "copilot"
         },
@@ -4803,7 +4956,12 @@ const T = {
           "arch": [
             "Libro Mayor de Partida Doble: Balance matemático entre asientos de debe y haber con pistas de auditoría de transacciones",
             "Motor de Estados Financieros Estándar: Generación automatizada de Balance General, Pérdidas y Ganancias, y Flujo de Efectivo con tipografía RTL"
-          ]
+          ],
+          "images": [
+            "zardigit-1-es",
+            "zardigit-2-es"
+          ],
+          "vsec": "zardigit"
         },
         {
           "id": "zoho",
@@ -4833,7 +4991,8 @@ const T = {
             "zoho-1",
             "zoho-2",
             "zoho-3",
-            "zoho-4"
+            "zoho-4",
+            "zoho-5"
           ],
           "vsec": "zoho"
         },
@@ -4860,7 +5019,9 @@ const T = {
           "images": [
             "auro-1",
             "auro-2",
-            "auro-3"
+            "auro-3",
+            "auro-4",
+            "auro-5"
           ],
           "vsec": "auro"
         },
@@ -5840,8 +6001,8 @@ const T = {
         "minoo-profile": "minoo.gameland — event streamer",
         "manager": "Bazisazbash studio director testing the game",
         "streamer": "Content creators covering the game at the event",
-        "parsa-1": "Parsa — Living room environment, interactive objects, and mini-games",
-        "parsa-2": "Parsa — Bedroom environment, wardrobe customization, and character state",
+        "parsa-1": "Parsa & Simurgh — Gráficos de Entorno 3D y Aventura Mitológica Persa",
+        "parsa-2": "Parsa & Simurgh — Iluminación Cinemática y Mundos Atmosféricos",
         "dojo-desk": "Registration desk at Game Dojo convention",
         "dojo-hall": "Main convention hall",
         "dojo-talk": "Technical keynotes and architecture discussions",
@@ -5863,24 +6024,63 @@ const T = {
         "root-08": "Shokouh Advanced English Honors Certificate — Score 95",
         "root-09": "Academic Achievement Diploma",
         "root-10": "Certificate of Educational Distinction",
-        "msai-1": "Microsoft AI Architect Hub — Currículo de 8 Niveles",
-        "msai-2": "Microsoft AI Architect Hub — Simulador Multiagente Swarm",
+        "msai-1": "Microsoft AI Architect Hub — Ruta Curricular de 8 Niveles",
+        "msai-2": "Microsoft AI Architect Hub — Simulador Multiagente Interactivo",
         "msai-3": "Microsoft AI Architect Hub — Banco de Código C# / .NET 10",
-        "msai-4": "Microsoft AI Architect Hub — Preparación de Entrevistas",
-        "auro-1": "AuroSocialEngine — SSO Ejecutivo y RBAC Multiempresa (Puerto 5055)",
-        "auro-2": "AuroSocialEngine — Panel de Campañas",
-        "auro-3": "AuroSocialEngine — Cola de Cuarentena sin Alucinaciones",
-        "zoho-1": "Mana Books (Zoho Books Clone) — Acceso por Roles",
-        "zoho-2": "Mana Books (Zoho Books Clone) — Registro Multiempresa",
-        "zoho-3": "Mana Books (Zoho Books Clone) — Panel Contable",
-        "zoho-4": "Mana Books (Zoho Books Clone) — Módulo de Ventas y Facturas",
-        "german-1": "German-Neural-Immersion — Captura Neuronal y Puente Anki/Obsidian",
-        "german-2": "German-Neural-Immersion — Práctica Espaciada",
+        "msai-4": "Microsoft AI Architect Hub — Maestría en Entrevistas (STAR)",
+        "auro-1": "AuroSocialEngine — Centro de Mando Ejecutivo y Cotizaciones en Vivo",
+        "auro-2": "AuroSocialEngine — Investigación Macro y Estudio Multimodal IA",
+        "auro-3": "AuroSocialEngine — Escaparate en Vivo y Cola de Cuarentena",
+        "zoho-1": "Mana Enterprise Suite — Centro de 14 Aplicaciones Empresariales",
+        "zoho-2": "Zoho Billing — Panel de Ingresos Recurrentes (MRR/ARR)",
+        "zoho-3": "Zoho Projects — Equipos, Capacidad y Productividad",
+        "zoho-4": "Mana Books — Gestión de Tesorería, Bancos y Cheques",
+        "german-1": "German-Neural-Immersion — Descomposición Morfológica B2 y Tarjeta Visual",
+        "german-2": "German-Neural-Immersion — Arena Interactiva Satzbau",
         "german-3": "German-Neural-Immersion — Analítica del Ecosistema",
-        "copilot-1": "Jet AI Human Assistant — HUD PyQt6 y Gemini Live",
-        "copilot-2": "Jet AI Human Assistant — Ejecución Autónoma Nivel 5 Win32",
-        "rapscribe-1": "RapScribe-AI (OmniScribe HUD) — WASAPI + faster-whisper CUDA",
-        "rapscribe-2": "RapScribe-AI (OmniScribe HUD) — Traducción Bilingüe en Vivo"
+        "copilot-1": "Jet AI CoPilot — HUD PyQt6 y Diálogo Bilingüe",
+        "copilot-2": "Jet AI CoPilot — Visión 1440p SSIM y Bézier Snap Nivel 5",
+        "rapscribe-1": "RapScribe-AI — Tarjetas EN/DE -> FA en Vivo y Ecualizador",
+        "rapscribe-2": "RapScribe-AI — CUDA faster-whisper y Notas de Jerga",
+        "us-arch": "UniversalSystem — Topología de 17 Microservicios y Orquestación Distribuida",
+        "dashboard": "UniversalSystem — Panel de Operaciones en Tiempo Real y Métricas",
+        "us-flow": "UniversalSystem — Flujo de Datos y Libro Mayor Inmutable de Seguridad HMAC",
+        "docfactory-1": "Universal Doc Factory — Arquitectura de Documentos Técnicos Multi-Motor",
+        "docfactory-2": "Universal Doc Factory — Informes Corporativos Automatizados en PDF de Precisión",
+        "lango-1": "NitroLango — Command Deck y Jornada Diaria",
+        "lango-2": "NitroLango — Simulador Oficial Goethe-Zertifikat (A1–B2)",
+        "lango-3": "NitroLango — Arena Neuronal de 74 Motores (Meteor Strike)",
+        "lango-4": "NitroLango — Repaso Diario Espaciado (SM-2)",
+        "zardigit-1": "ZarDigit — Esquema Bancario Central y Libro Mayor de Doble Entrada",
+        "zardigit-2": "ZarDigit — Módulos Financieros, Seguridad RBAC y Pasarela de Pagos",
+        "unpin-1": "Antigravity Scroll Unpin — Parcheador de Ingeniería Inversa e Inyección Atómica",
+        "mcpbridge-1": "UniversalSystem MCP Bridge — Pasarela Model Context Protocol y Herramientas",
+        "traveltown-1": "Travel Town — Motor de Rejilla de Fusión 7x9 y Árbol Generador",
+        "villa-1": "Design Villa — Jugabilidad Match-3 en Cascada y Potenciadores Físicos",
+        "villa-2": "Design Villa — Motor de Renovación de Mansión 3D y Economía de Decoración",
+        "parsa-3": "Parsa & Simurgh — Combate de Personajes, Animación y Física Dinámica",
+        "parsa-4": "Parsa & Simurgh — Menú Principal y Arquitectura de Niveles",
+        "archer-play": "Arash Kamangir — Simulación de Trayectoria Parabólica de Tiro con Arco",
+        "archer-menu": "Arash Kamangir — Selección de Niveles, Mejoras de Armas y Tienda",
+        "archer-complete": "Arash Kamangir — Victoria de Defensa por Oleadas y Puntuación",
+        "bus-1": "Bus Scape — Algoritmo de Búsqueda de Rutas y Clasificación de Pasajeros",
+        "bus-2": "Bus Scape — Resolución de Atascos de Cuadrícula y Optimización de Estación",
+        "neon-menu": "Neon Run — Menú Principal, Selector de Modos y Tienda de Mejoras",
+        "neon-tps": "Neon Run — Jugabilidad en Tercera Persona con Escudo Activo",
+        "neon-fps": "Neon Run — Perspectiva en Primera Persona de Alta Velocidad",
+        "neon-modes": "Neon Run — Selección de Seis Modos de Juego Diversos",
+        "neon-duo": "Neon Run — Modo Multijugador Dividido para Dos Jugadores",
+        "neon-duo2": "Neon Run — Duelo Competitivo en un Solo Dispositivo",
+        "us-arch-es": "UniversalSystem — Topología de 17 Microservicios y Multiagente (Español)",
+        "us-dash-es": "UniversalSystem — Verificación en Vivo (11/11 Sondas HTTP 200)",
+        "us-flow-es": "UniversalSystem — Pipeline de Flujo de Datos y Cadena HMAC (Español)",
+        "zardigit-1-es": "ZarDigit — Panel Ejecutivo de Liquidez y Cuentas por Pagar (Español)",
+        "zardigit-2-es": "ZarDigit — Facturas de Compra y Exportación Excel (Español)",
+        "auro-4": "AuroSocialEngine — Red Interactiva Multiagente Cyber-Mesh",
+        "auro-5": "AuroSocialEngine — Planificador Autónomo de Campañas 24/7",
+        "zoho-5": "Zoho People — HRMS y Portal de Autoservicio",
+        "copilot-3": "Jet AI CoPilot — Misión Autónoma Verificada",
+        "rapscribe-3": "RapScribe-AI — Transcripción Multilínea con Gemini 3.8 Flash"
       }
     },
     "resume": {
@@ -5895,8 +6095,8 @@ const T = {
     },
     "videos": {
       "title": "Product Video Archive",
-      "sub": "25 videos · 56 minutes of recorded footage · no install required",
-      "intro": "High-resolution recorded footage exists for every major system, game, and event documented in this portfolio. All 25 clips play smoothly right here in any browser without installing anything.",
+      "sub": "26 videos · 56 minutes of recorded footage · no install required",
+      "intro": "High-resolution recorded footage exists for every major system, game, and event documented in this portfolio. All 26 clips play smoothly right here in any browser without installing anything.",
       "jump": "Quick Jump to Section:",
       "loading": "Loading video stream…"
     },
@@ -5936,196 +6136,3 @@ const T = {
     }
   }
 };
-
-/* ============ EXTENDED PROJECT IMAGE CAPTIONS (FA, EN, DE, ES) ============ */
-if (typeof T !== 'undefined') {
-  if (T.fa && T.fa.honors && T.fa.honors.caps) {
-    Object.assign(T.fa.honors.caps, {
-      'us-arch': 'UniversalSystem — معماری جامع ۱۷ مایکروسرویس و ارکستراسیون ایجنت‌ها',
-      'dashboard': 'UniversalSystem — داشبورد عملیات و نظارت بر سلامت مایکروسرویس‌ها',
-      'us-flow': 'UniversalSystem — دیاگرام جریان داده و دفترکل امنیتی HMAC',
-      'docfactory-1': 'Universal Doc Factory — ساختار اسناد فنی و رندرر چندموتوره',
-      'docfactory-2': 'Universal Doc Factory — خروجی استانداردهای مهندسی PDF و مستندسازی',
-      'msai-1': 'Microsoft AI Architect Hub — پلتفرم تعاملی معماری کلاود و هوش مصنوعی مایکروسافت',
-      'msai-2': 'Microsoft AI Architect Hub — ماژول‌های تسلط، گراف دانش و الگوهای سیستمی',
-      'rapscribe-1': 'RapScribe-AI — هاد شناور CUDA، رونویسی بلادرنگ و فیلتر صوتی دیجیتال',
-      'copilot-1': 'GeminiLiveCoPilot — دستیار هوشمند دسکتاپ و بینایی ماشین در محیط کدنویسی',
-      'copilot-2': 'GeminiLiveCoPilot — استنتاج هم‌زمان دو مانیتور و اجرای خودمختار دستورات',
-      'lango-1': 'NitroLango — پلتفرم آموزش زبان، ثبت‌نام و ساختار ابری',
-      'lango-2': 'NitroLango — موتور تولید مسیر یادگیری هوشمند متناسب با کاربر',
-      'lango-3': 'NitroLango — آرنای تمرینات سرعتی و مسابقه تایپ لغات',
-      'lango-4': 'NitroLango — داشبورد پیشرفت و شبکه واژگان تعاملی',
-      'german-1': 'German Neural Immersion — ماتریس صوتی و سیستم غوطه‌وری زبانی',
-      'german-2': 'German Neural Immersion — گاوصندوق ابسیدین و بیش از ۴۰۰۰ فلش‌کارت چندوجهی',
-      'zardigit-1': 'ZarDigit — معماری بانکی و هسته دفترکل دوبل سازمانی',
-      'zardigit-2': 'ZarDigit — ماژول‌های حسابداری، کنترل دسترسی و اتصال به گیت‌وی',
-      'zoho-1': 'Zoho Books Platform — سوئیت مالی یکپارچه ابری و هاب برنامه‌ها',
-      'zoho-2': 'Zoho Books Platform — مدل داده چندشرکتی، دفترکل و تراز مالیاتی',
-      'zoho-3': 'Zoho Books Platform — گیت‌وی تسویه حساب و تقویم رزرواسیون تجاری',
-      'auro-1': 'AuroSocialEngine — استودیوی چندوجهی، پردازش صوت و تولید محتوای هوشمند',
-      'auro-2': 'AuroSocialEngine — داشبورد اجرایی، برد کانبان و ارکستراسیون شبکه مش',
-      'unpin-1': 'Antigravity Scroll Unpin — مهندسی معکوس کلاینت و تزریق اتمیک استایل',
-      'mcpbridge-1': 'UniversalSystem MCP Bridge — پل پروتکل متنی مدل و ابزارهای ثبت‌شده',
-      'traveltown-1': 'Travel Town — شبیه‌سازی گرید ۷در۹ پازل مرج و ژنراتور آیتم‌ها',
-      'villa-1': 'Design Villa — گیم‌پلی جورچین ۳تایی (Match-3) و افکت‌های فیزیک',
-      'villa-2': 'Design Villa — هسته رنوسازی عمارت، طراحی اتاق‌ها و موتور اقتصادی',
-      'parsa-1': 'پارسا و سیمرغ — گرافیک محیطی سه‌بعدی و ماجراجویی شاهنامه',
-      'parsa-2': 'پارسا و سیمرغ — نورپردازی سینمایی و فضاسازی اساطیری',
-      'parsa-3': 'پارسا و سیمرغ — سیستم نبرد، انیمیشن و فیزیک کاراکتر',
-      'parsa-4': 'پارسا و سیمرغ — منوی اصلی و ساختار مراحل بازی',
-      'archer-play': 'آرش کمانگیر — پرتاب تیر با شبیه‌سازی مسیر سهمی‌گون و فیزیک',
-      'archer-menu': 'آرش کمانگیر — منوی انتخاب مراحل، ارتقای تیر و کمان و فروشگاه',
-      'archer-complete': 'آرش کمانگیر — پیروزی در نبرد موجی و ثبت امتیاز مرحله',
-      'bus-1': 'Bus Scape — الگوریتم مسیریابی هوشمند و تفکیک رنگی مسافران',
-      'bus-2': 'Bus Scape — حل پازل‌های ترافیکی و بهینه‌سازی جریان ایستگاه',
-      'neon-menu': 'Neon Run — منوی اصلی بازی، انتخاب حالت و فروشگاه ارتقا',
-      'neon-tps': 'Neon Run — گیم‌پلی سوم‌شخص با قابلیت ویژه فعال و نوار انرژی',
-      'neon-fps': 'Neon Run — نمای اول‌شخص با سرعت بالا و هیجان عبور از موانع',
-      'neon-modes': 'Neon Run — صفحه انتخاب حالت: شش حالت متنوع بازی',
-      'neon-duo': 'Neon Run — حالت دونفره هم‌زمان با صفحه تقسیم‌شده (Split-Screen)',
-      'neon-duo2': 'Neon Run — رقابت شدید دو بازیکن روی یک سیستم'
-    });
-  }
-  if (T.en && T.en.honors && T.en.honors.caps) {
-    Object.assign(T.en.honors.caps, {
-      'us-arch': 'UniversalSystem — 17 Microservices Topology & Distributed Agent Orchestration',
-      'dashboard': 'UniversalSystem — Real-Time Operations & Microservices Health Dashboard',
-      'us-flow': 'UniversalSystem — Data Flow Pipeline & HMAC Immutable Security Ledger',
-      'docfactory-1': 'Universal Doc Factory — Multi-Engine Technical Document Architecture',
-      'docfactory-2': 'Universal Doc Factory — Automated Pixel-Perfect PDF & Enterprise Deliverables',
-      'msai-1': 'Microsoft AI Architect Hub — Interactive Cloud Architecture & AI Platform',
-      'msai-2': 'Microsoft AI Architect Hub — Mastery Knowledge Graph & Distributed Patterns',
-      'rapscribe-1': 'RapScribe-AI — Floating CUDA HUD, Sub-Second STT & Butterworth Digital Filter',
-      'copilot-1': 'GeminiLiveCoPilot — Desktop Fly-by-Wire Vision Assistant in Active Coding Session',
-      'copilot-2': 'GeminiLiveCoPilot — Dual-Monitor Real-Time Vision Loop & OS Execution',
-      'lango-1': 'NitroLango — Interactive Language Learning Arena & Cloud Architecture',
-      'lango-2': 'NitroLango — Custom AI Learning Path Generator & Adaptive Curriculum',
-      'lango-3': 'NitroLango — Gamified Speed Vocab Drills & Real-Time Typing Battle',
-      'lango-4': 'NitroLango — Visual Progress Analytics & Vocabulary Memory Retention Grid',
-      'german-1': 'German Neural Immersion — Acoustic Chaos Audio Matrix & Speech Immersion',
-      'german-2': 'German Neural Immersion — Obsidian Vault & 4,000+ Multimodal Visual Flashcards',
-      'zardigit-1': 'ZarDigit — Core Banking Schema & Enterprise Double-Entry Ledger',
-      'zardigit-2': 'ZarDigit — Financial Modules, RBAC Security & Payment Gateway Bridge',
-      'zoho-1': 'Zoho Books Platform — Unified Enterprise Suite Apps Hub & Multi-Currency System',
-      'zoho-2': 'Zoho Books Platform — Multi-Entity Data Architecture & Fiscal Balance Engine',
-      'zoho-3': 'Zoho Books Platform — Checkout Gateway & Real-Time Corporate Booking Calendar',
-      'auro-1': 'AuroSocialEngine — Multimodal Studio, Audio Waveform Visualizer & AI WBS Planner',
-      'auro-2': 'AuroSocialEngine — Executive Dashboard, Tasks Kanban & Cyber Mesh Network',
-      'unpin-1': 'Antigravity Scroll Unpin — Reverse-Engineered Client Patcher & Atomic Injection',
-      'mcpbridge-1': 'UniversalSystem MCP Bridge — Model Context Protocol Gateway & Tool Registry',
-      'traveltown-1': 'Travel Town — 7x9 Hexagonal Merge Grid Engine & Item Generator Tree',
-      'villa-1': 'Design Villa — Match-3 Puzzle Cascade Gameplay & Physics Boosters',
-      'villa-2': 'Design Villa — 3D Mansion Renovation Engine & Interior Decoration Economy',
-      'parsa-1': 'Parsa & Simurgh — 3D Environment Graphics & Persian Mythological Adventure',
-      'parsa-2': 'Parsa & Simurgh — Cinematic Lighting & Atmospheric Story Worlds',
-      'parsa-3': 'Parsa & Simurgh — Character Combat, Animation & Dynamic Physics',
-      'parsa-4': 'Parsa & Simurgh — Main Menu & Level Progression Architecture',
-      'archer-play': 'Arash Kamangir — Parabolic Trajectory Bow Shooting & Physics Simulation',
-      'archer-menu': 'Arash Kamangir — Level Selection, Equipment Upgrades & Armory Shop',
-      'archer-complete': 'Arash Kamangir — Wave Defense Victory & Dynamic Score Calculation',
-      'bus-1': 'Bus Scape — Intelligent Pathfinding Algorithm & Multi-Color Passenger Sorting',
-      'bus-2': 'Bus Scape — Grid Jam Resolution & Station Flow Optimization',
-      'neon-menu': 'Neon Run — Main Menu, Mode Selector & Upgrade Shop',
-      'neon-tps': 'Neon Run — Third-Person Gameplay with Active Shield & Energy Bar',
-      'neon-fps': 'Neon Run — High-Speed Immersive First-Person Perspective',
-      'neon-modes': 'Neon Run — Mode Selection: Six Distinct Game Modes',
-      'neon-duo': 'Neon Run — Competitive Two-Player Split-Screen Mode',
-      'neon-duo2': 'Neon Run — Head-to-Head Multiplayer on Single Device'
-    });
-  }
-  if (T.de && T.de.honors && T.de.honors.caps) {
-    Object.assign(T.de.honors.caps, {
-      'us-arch': 'UniversalSystem — 17-Mikroservice-Topologie & verteilte Agenten-Orchestrierung',
-      'dashboard': 'UniversalSystem — Echtzeit-Betriebs- & Systemgesundheits-Dashboard',
-      'us-flow': 'UniversalSystem — Datenfluss-Pipeline & manipulationssicheres HMAC-Sicherheitsbuch',
-      'docfactory-1': 'Universal Doc Factory — Multi-Engine-Architektur für technische Dokumente',
-      'docfactory-2': 'Universal Doc Factory — Automatisierte pixelgenaue PDF- & Unternehmensberichte',
-      'msai-1': 'Microsoft AI Architect Hub — Interaktive Cloud-Architektur- & KI-Plattform',
-      'msai-2': 'Microsoft AI Architect Hub — Wissensgraph & verteilte Entwurfsmuster',
-      'rapscribe-1': 'RapScribe-AI — Schwebendes CUDA-HUD, Subsekunden-STT & Butterworth-Filter',
-      'copilot-1': 'GeminiLiveCoPilot — Desktop-Fly-by-Wire-Vision-Assistent im Live-Coding',
-      'copilot-2': 'GeminiLiveCoPilot — Echtzeit-Dual-Monitor-Vision-Loop & OS-Ausführung',
-      'lango-1': 'NitroLango — Interaktive Sprachlern-Arena & Cloud-Architektur',
-      'lango-2': 'NitroLango — Benutzerdefinierter KI-Lernpfad-Generator & adaptive Inhalte',
-      'lango-3': 'NitroLango — Spielerische Vokabel-Speedruns & Tipp-Wettbewerbe',
-      'lango-4': 'NitroLango — Fortschrittsanalyse & visuelles Vokabel-Gedächtnisgitter',
-      'german-1': 'German Neural Immersion — Akustische Matrix & neuronales Sprachbad',
-      'german-2': 'German Neural Immersion — Obsidian-Vault & über 4.000 multimodale Lernkarten',
-      'zardigit-1': 'ZarDigit — Kernbanken-Schema & doppelte Unternehmensbuchführung',
-      'zardigit-2': 'ZarDigit — Finanzmodule, RBAC-Sicherheit & Zahlungs-Gateway-Integration',
-      'zoho-1': 'Zoho Books Platform — Integrierte Enterprise-Suite & Multiwährungs-System',
-      'zoho-2': 'Zoho Books Platform — Mehrmandanten-Datenarchitektur & Steuerbilanz-Engine',
-      'zoho-3': 'Zoho Books Platform — Kassen-Gateway & geschäftlicher Echtzeit-Buchungskalender',
-      'auro-1': 'AuroSocialEngine — Multimodales Studio, Audiowellen-Visualisierung & KI-Planer',
-      'auro-2': 'AuroSocialEngine — Führungs-Dashboard, Kanban-Board & Cyber-Mesh-Netzwerk',
-      'unpin-1': 'Antigravity Scroll Unpin — Reverse-Engineering-Patcher & atomare Injektion',
-      'mcpbridge-1': 'UniversalSystem MCP Bridge — Model Context Protocol Gateway & Werkzeug-Register',
-      'traveltown-1': 'Travel Town — 7x9 Merge-Grid-Engine & Item-Generatorbaum',
-      'villa-1': 'Design Villa — 3-Gewinnt-Kaskaden-Gameplay & Physik-Booster',
-      'villa-2': 'Design Villa — 3D-Villarenovierungs-Engine & Raumausstattungs-Ökonomie',
-      'parsa-1': 'Parsa & Simurgh — 3D-Umgebungsgrafik & persisches mythologisches Abenteuer',
-      'parsa-2': 'Parsa & Simurgh — Filmische Beleuchtung & atmosphärische Welten',
-      'parsa-3': 'Parsa & Simurgh — Charakterkampf, Animation & dynamische Physik',
-      'parsa-4': 'Parsa & Simurgh — Hauptmenü & Level-Progressions-Architektur',
-      'archer-play': 'Arash Kamangir — Parabolische Bogenschieß-Simulation & Physik',
-      'archer-menu': 'Arash Kamangir — Levelauswahl, Ausrüstungs-Upgrades & Shop',
-      'archer-complete': 'Arash Kamangir — Wellenverteidigungssieg & dynamische Punkteberechnung',
-      'bus-1': 'Bus Scape — Intelligenter Wegfindungs-Algorithmus & Passagier-Sortierung',
-      'bus-2': 'Bus Scape — Stauauflösung & Bahnhofs-Flussoptimierung',
-      'neon-menu': 'Neon Run — Hauptmenü, Modusauswahl & Upgrade-Shop',
-      'neon-tps': 'Neon Run — Third-Person-Gameplay mit aktivem Schild & Energieleiste',
-      'neon-fps': 'Neon Run — Immersive Egoperspektive mit Hochgeschwindigkeits-Action',
-      'neon-modes': 'Neon Run — Modusauswahl: Sechs verschiedene Spielmodi',
-      'neon-duo': 'Neon Run — Kompetitiver Zwei-Spieler-Split-Screen-Modus',
-      'neon-duo2': 'Neon Run — Direkter Mehrspieler-Wettkampf auf einem Gerät'
-    });
-  }
-  if (T.es && T.es.honors && T.es.honors.caps) {
-    Object.assign(T.es.honors.caps, {
-      'us-arch': 'UniversalSystem — Topología de 17 Microservicios y Orquestación Distribuida',
-      'dashboard': 'UniversalSystem — Panel de Operaciones en Tiempo Real y Métricas',
-      'us-flow': 'UniversalSystem — Flujo de Datos y Libro Mayor Inmutable de Seguridad HMAC',
-      'docfactory-1': 'Universal Doc Factory — Arquitectura de Documentos Técnicos Multi-Motor',
-      'docfactory-2': 'Universal Doc Factory — Informes Corporativos Automatizados en PDF de Precisión',
-      'msai-1': 'Microsoft AI Architect Hub — Plataforma Interactiva de Arquitectura Cloud e IA',
-      'msai-2': 'Microsoft AI Architect Hub — Grafo de Conocimiento y Patrones Distribuidos',
-      'rapscribe-1': 'RapScribe-AI — HUD Flotante CUDA, STT Sub-Segundo y Filtro Digital',
-      'copilot-1': 'GeminiLiveCoPilot — Asistente de Visión Fly-by-Wire en Sesión de Código',
-      'copilot-2': 'GeminiLiveCoPilot — Bucle de Visión en Tiempo Real de Doble Monitor',
-      'lango-1': 'NitroLango — Arena Interactiva de Aprendizaje de Idiomas y Nube',
-      'lango-2': 'NitroLango — Generador de Rutas de Estudio por IA Adaptativa',
-      'lango-3': 'NitroLango — Prácticas Gamificadas de Velocidad y Batallas de Mecanografía',
-      'lango-4': 'NitroLango — Analítica Visual y Rejilla de Retención Nemotécnica',
-      'german-1': 'German Neural Immersion — Matriz de Audio de Caos Acústico e Inmersión',
-      'german-2': 'German Neural Immersion — Bóveda Obsidian y más de 4.000 Flashcards',
-      'zardigit-1': 'ZarDigit — Esquema Bancario Central y Libro Mayor de Doble Entrada',
-      'zardigit-2': 'ZarDigit — Módulos Financieros, Seguridad RBAC y Pasarela de Pagos',
-      'zoho-1': 'Zoho Books Platform — Suite Empresarial Unificada y Sistema Multidivisa',
-      'zoho-2': 'Zoho Books Platform — Arquitectura Multientidad y Motor de Balance Fiscal',
-      'zoho-3': 'Zoho Books Platform — Pasarela de Pago y Calendario de Reservas Corporativo',
-      'auro-1': 'AuroSocialEngine — Estudio Multimodal, Onda de Audio y Planificador WBS',
-      'auro-2': 'AuroSocialEngine — Panel Ejecutivo, Tablero Kanban y Red Cyber Mesh',
-      'unpin-1': 'Antigravity Scroll Unpin — Parcheador de Ingeniería Inversa e Inyección Atómica',
-      'mcpbridge-1': 'UniversalSystem MCP Bridge — Pasarela Model Context Protocol y Herramientas',
-      'traveltown-1': 'Travel Town — Motor de Rejilla de Fusión 7x9 y Árbol Generador',
-      'villa-1': 'Design Villa — Jugabilidad Match-3 en Cascada y Potenciadores Físicos',
-      'villa-2': 'Design Villa — Motor de Renovación de Mansión 3D y Economía de Decoración',
-      'parsa-1': 'Parsa & Simurgh — Gráficos de Entorno 3D y Aventura Mitológica Persa',
-      'parsa-2': 'Parsa & Simurgh — Iluminación Cinemática y Mundos Atmosféricos',
-      'parsa-3': 'Parsa & Simurgh — Combate de Personajes, Animación y Física Dinámica',
-      'parsa-4': 'Parsa & Simurgh — Menú Principal y Arquitectura de Niveles',
-      'archer-play': 'Arash Kamangir — Simulación de Trayectoria Parabólica de Tiro con Arco',
-      'archer-menu': 'Arash Kamangir — Selección de Niveles, Mejoras de Armas y Tienda',
-      'archer-complete': 'Arash Kamangir — Victoria de Defensa por Oleadas y Puntuación',
-      'bus-1': 'Bus Scape — Algoritmo de Búsqueda de Rutas y Clasificación de Pasajeros',
-      'bus-2': 'Bus Scape — Resolución de Atascos de Cuadrícula y Optimización de Estación',
-      'neon-menu': 'Neon Run — Menú Principal, Selector de Modos y Tienda de Mejoras',
-      'neon-tps': 'Neon Run — Jugabilidad en Tercera Persona con Escudo Activo',
-      'neon-fps': 'Neon Run — Perspectiva en Primera Persona de Alta Velocidad',
-      'neon-modes': 'Neon Run — Selección de Seis Modos de Juego Diversos',
-      'neon-duo': 'Neon Run — Modo Multijugador Dividido para Dos Jugadores',
-      'neon-duo2': 'Neon Run — Duelo Competitivo en un Solo Dispositivo'
-    });
-  }
-}
-
