@@ -5,10 +5,7 @@ const IMG = {
     "dashboard",
     "us-flow"
   ],
-  "docfactory": [
-    "docfactory-1",
-    "docfactory-2"
-  ],
+  "docfactory": [],
   "msai": [
     "msai-1",
     "msai-2"
@@ -16,10 +13,7 @@ const IMG = {
   "rapscribe": [
     "rapscribe-1"
   ],
-  "copilot": [
-    "copilot-1",
-    "copilot-2"
-  ],
+  "copilot": [],
   "lango": [
     "lango-1",
     "lango-2",
