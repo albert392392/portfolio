@@ -11,13 +11,13 @@ const VD = [
    "fa": "بازی سه‌بعدی چندپلتفرمه · پروژه اصلی",
    "en": "Cross-platform 3D game · flagship project",
    "de": "Plattformübergreifendes 3D-Spiel",
-   "es": "Cross-platform 3D game · flagship project"
+   "es": "Juego 3D multiplataforma · proyecto insignia"
   },
   "intro": {
    "fa": "بازی دونده در جهانی سایبرپانک: سال ۲۱۸۹، شهری که شرکت‌های بزرگ اداره‌اش می‌کنند و دختری به نام Echo که باید از سامانه امنیتی فرار کند. شش حالت بازی — تک‌نفره، دونفره و گروهی، هرکدام در دو نمای اول‌شخص و سوم‌شخص — و اجرای یکسان روی موبایل، کامپیوتر و هدست واقعیت مجازی. ساخت فنی بازی (کد، دوربین، رابط کاربری و حالت‌های چندنفره) کار من بوده است.",
    "en": "A runner set in a cyberpunk world: the year 2189, a corporate-run city, and a girl named Echo who has to escape the security grid. Six game modes — solo, duo and squad, each in first-person and third-person — running identically on mobile, PC and VR headset. The technical build of the game (code, camera, UI and the multiplayer modes) is my work.",
    "de": "Ein Runner in einer Cyberpunk-Welt: das Jahr 2189, eine von Konzernen regierte Stadt und ein Mädchen namens Echo, das dem Sicherheitsnetz entkommen muss. Sechs Spielmodi — Solo, Duo und Squad, jeweils in Ego- und Verfolgerperspektive — die auf Mobilgerät, PC und VR-Headset identisch laufen. Die technische Umsetzung (Code, Kamera, Oberfläche und Mehrspielermodi) stammt von mir; das Game Design kam von meinem Mitarbeiter.",
-   "es": "A runner set in a cyberpunk world: the year 2189, a corporate-run city, and a girl named Echo who has to escape the security grid. Six game modes — solo, duo and squad, each in first-person and third-person — running identically on mobile, PC and VR headset. The technical build of the game (code, camera, UI and the multiplayer modes) is my work."
+   "es": "Un runner 3D ambientado en un mundo cyberpunk del año 2189: corporaciones controlan la ciudad y Echo debe escapar de la red de seguridad. Seis modos de juego (solo, dúo y escuadrón en primera y tercera persona) ejecutándose de forma idéntica en móvil, PC y visor VR. La arquitectura técnica, cámaras, UI y multijugador son obra mía."
   },
   "nav": {
    "fa": "Neon Run",
@@ -35,13 +35,13 @@ const VD = [
      "fa": "حالت تک‌نفره اول‌شخص",
      "en": "Solo First-Person Mode",
      "de": "Solo-Modus in der Egoperspektive",
-     "es": "Solo First-Person Mode"
+     "es": "Modo Solitario en Primera Persona"
     },
     "desc": {
      "fa": "یک اجرای کامل از منوی اصلی تا پایان بازی، در نمای اول‌شخص. در این ویدیو منوی اصلی (شروع بازی، انتخاب حالت، فروشگاه ارتقا)، تولید بی‌نهایتِ مسیر و مانع، قابلیت ویژه «سپر»، نوار انرژی، شمارش امتیاز و مسافت طی‌شده، و در انتها صفحه انتخاب حالت دیده می‌شود. امتیاز پایانی نزدیک ۲٬۰۰۰ و مسافت بیش از ۶ کیلومتر است.",
      "en": "A full run from the main menu to the end of the round, in first-person view. This clip shows the main menu (play, mode select, upgrade shop), the endless procedural generation of track and obstacles, the Shield ability, the energy bar, live score and distance counters, and the mode-select screen at the end. Final score is close to 2,000 over more than 6 km of distance.",
      "de": "Ein vollständiger Durchlauf vom Hauptmenü bis zum Rundenende in der Egoperspektive. Zu sehen sind das Hauptmenü (Spielstart, Modusauswahl, Upgrade-Shop), die endlose prozedurale Erzeugung von Strecke und Hindernissen, die Fähigkeit „Schild“, die Energieleiste, die laufenden Punkte- und Distanzzähler und am Ende der Modusauswahlbildschirm. Endpunktzahl knapp 2.000 bei über 6 km Distanz.",
-     "es": "A full run from the main menu to the end of the round, in first-person view. This clip shows the main menu (play, mode select, upgrade shop), the endless procedural generation of track and obstacles, the Shield ability, the energy bar, live score and distance counters, and the mode-select screen at the end. Final score is close to 2,000 over more than 6 km of distance."
+     "es": "Una carrera completa desde el menú principal hasta el final en vista primera persona. Muestra el menú (jugar, selección de modo, tienda de mejoras), generación procedural infinita de pista y obstáculos, habilidad de Escudo, barra de energía y contadores en vivo superando los 6 km."
     },
     "tags": {
      "fa": [
@@ -81,13 +81,13 @@ const VD = [
      "fa": "حالت تک‌نفره سوم‌شخص (ضبط‌شده در یونیتی)",
      "en": "Solo Third-Person Mode (recorded in Unity)",
      "de": "Solo-Modus in der Verfolgerperspektive (im Unity-Editor aufgezeichnet)",
-     "es": "Solo Third-Person Mode (recorded in Unity)"
+     "es": "Modo Solitario en Tercera Persona (grabado en Unity)"
     },
     "desc": {
      "fa": "همان بازی از نمای سوم‌شخص، مستقیماً داخل موتور Unity ضبط شده است. دوربین پشت‌سرِ شخصیت، برخورد با موانع، فعال شدن سپر، و صفحه پایان بازی «ECHO LOST» با امتیاز نهایی ۴۲٬۱۸۰ و مسافت ۳٫۴ کیلومتر. اینکه ضبط داخل خود موتور انجام شده یعنی آنچه می‌بینید نسخه در دست ساخت است، نه ویدیوی تبلیغاتی.",
      "en": "The same game from the third-person camera, recorded directly inside the Unity editor. You see the over-the-shoulder camera, obstacle collisions, the Shield ability triggering, and the ECHO LOST end screen with a final score of 42,180 over 3.4 km. Recording inside the engine means what you are watching is the working build, not a marketing cut.",
      "de": "Dasselbe Spiel aus der Verfolgerkamera, direkt im Unity-Editor aufgezeichnet. Zu sehen sind die Schulterkamera, Kollisionen mit Hindernissen, das Auslösen der Schild-Fähigkeit und der Endbildschirm ECHO LOST mit 42.180 Punkten auf 3,4 km. Die Aufnahme in der Engine bedeutet: Sie sehen die Arbeitsfassung, keinen Werbeschnitt.",
-     "es": "The same game from the third-person camera, recorded directly inside the Unity editor. You see the over-the-shoulder camera, obstacle collisions, the Shield ability triggering, and the ECHO LOST end screen with a final score of 42,180 over 3.4 km. Recording inside the engine means what you are watching is the working build, not a marketing cut."
+     "es": "El mismo juego desde cámara en tercera persona grabado dentro del editor de Unity: cámara sobre el hombro, colisiones, activación del Escudo y pantalla final ECHO LOST con 42.180 puntos en 3,4 km."
     },
     "tags": {
      "fa": [
@@ -127,13 +127,13 @@ const VD = [
      "fa": "حالت دونفره با صفحه تقسیم‌شده",
      "en": "Two-Player Split-Screen Mode",
      "de": "Zweispielermodus mit geteiltem Bildschirm",
-     "es": "Two-Player Split-Screen Mode"
+     "es": "Multijugador Local en Pantalla Dividida"
     },
     "desc": {
      "fa": "حالت رقابتی دونفره روی یک دستگاه، با صفحه تقسیم‌شده. هر بازیکن دوربین، امتیاز، نوار انرژی و شمارنده مسافت مستقل خودش را دارد و هر دو نمای اول‌شخص و سوم‌شخص در طول ویدیو دیده می‌شود. سخت‌ترین بخش فنی این بازی همین است: دو دوربین، دو مجموعه ورودی و دو رابط کاربری مستقل که باید هم‌زمان و روان اجرا شوند.",
      "en": "Competitive two-player mode on a single machine with a split screen. Each player has an independent camera, score, energy bar and distance counter, and both first-person and third-person views appear during the clip. This is the hardest technical piece in the game: two cameras, two input sets and two independent HUDs that have to run simultaneously and stay smooth.",
      "de": "Kompetitiver Zweispielermodus auf einem Gerät mit geteiltem Bildschirm. Jeder Spieler hat eigene Kamera, Punkte, Energieleiste und Distanzzähler; im Clip erscheinen sowohl Ego- als auch Verfolgerperspektive. Das ist das technisch schwierigste Stück im Spiel: zwei Kameras, zwei Eingabesätze und zwei unabhängige HUDs, die gleichzeitig und flüssig laufen müssen.",
-     "es": "Competitive two-player mode on a single machine with a split screen. Each player has an independent camera, score, energy bar and distance counter, and both first-person and third-person views appear during the clip. This is the hardest technical piece in the game: two cameras, two input sets and two independent HUDs that have to run simultaneously and stay smooth."
+     "es": "Modo competitivo para dos jugadores en un solo dispositivo con pantalla dividida: cámaras, puntuaciones, energía y controles independientes tanto en primera como en tercera persona."
     },
     "tags": {
      "fa": [
@@ -173,13 +173,13 @@ const VD = [
      "fa": "نشست کامل بازی — حالت‌ها، قابلیت‌ها، برد و باخت",
      "en": "Full Session — Modes, Abilities, Victory & Defeat",
      "de": "Vollständige Sitzung — Modi, Fähigkeiten, Sieg und Niederlage",
-     "es": "Full Session — Modes, Abilities, Victory & Defeat"
+     "es": "Sesión Completa — Modos, Habilidades, Victoria y Derrota"
     },
     "desc": {
      "fa": "بلندترین ویدیوی این مجموعه و کامل‌ترین نمای بازی. از صفحه «SELECT MODE» با هر شش حالت (SOLO / DUO / SQUAD، هرکدام در دو نمای TPS و FPS) شروع می‌شود، سپس چند اجرای پشت‌سرهم را نشان می‌دهد: فعال شدن «DASH» و «SHIELD»، عبور از موانع رنگی، و در پایان هر دو صفحه «DEFEAT» و «VICTORY». اگر فقط یک ویدیو را می‌خواهید ببینید، همین است.",
      "en": "The longest clip in this collection and the most complete view of the game. It opens on the SELECT MODE screen with all six modes (SOLO / DUO / SQUAD, each in TPS and FPS), then runs through several back-to-back rounds: DASH and SHIELD activating, weaving through coloured obstacles, and finally both the DEFEAT and VICTORY screens. If you only watch one video, watch this one.",
      "de": "Der längste Clip dieser Sammlung und der vollständigste Blick auf das Spiel. Er beginnt beim Bildschirm SELECT MODE mit allen sechs Modi (SOLO / DUO / SQUAD, je in TPS und FPS) und zeigt dann mehrere Runden hintereinander: DASH und SHIELD im Einsatz, das Ausweichen zwischen farbigen Hindernissen und am Ende sowohl den DEFEAT- als auch den VICTORY-Bildschirm. Wer nur ein Video ansieht, sollte dieses wählen.",
-     "es": "The longest clip in this collection and the most complete view of the game. It opens on the SELECT MODE screen with all six modes (SOLO / DUO / SQUAD, each in TPS and FPS), then runs through several back-to-back rounds: DASH and SHIELD activating, weaving through coloured obstacles, and finally both the DEFEAT and VICTORY screens. If you only watch one video, watch this one."
+     "es": "El video más completo de la colección: abre en la selección de los seis modos (SOLO / DÚO / ESCUADRÓN en TPS y FPS), recorre rondas con DASH y SHIELD activos y muestra pantallas de derrota y victoria."
     },
     "tags": {
      "fa": [
@@ -219,13 +219,13 @@ const VD = [
      "fa": "اجرای قابلیت‌های ویژه — سپر و شتاب",
      "en": "Ability Run — Shield & Dash",
      "de": "Fähigkeiten-Durchlauf — Schild und Dash",
-     "es": "Ability Run — Shield & Dash"
+     "es": "Carrera de Habilidades — Escudo e Impulso"
     },
     "desc": {
      "fa": "اجرایی با تمرکز روی قابلیت‌های ویژه بازیکن. «SHIELD ACTIVE» بارها در طول مسیر فعال می‌شود، سرعت و چگالی موانع بالا می‌رود و امتیاز تا ۳٬۴۹۰ می‌رسد. تغییرات نورپردازی و پالت رنگ بین بخش‌های مختلف شهر هم در همین ویدیو دیده می‌شود.",
      "en": "A run focused on the player abilities. SHIELD ACTIVE triggers repeatedly along the track, speed and obstacle density ramp up, and the score climbs to 3,490. The lighting and colour-palette shifts between different districts of the city are also visible in this clip.",
      "de": "Ein Durchlauf mit Fokus auf den Spielerfähigkeiten. SHIELD ACTIVE löst mehrfach aus, Tempo und Hindernisdichte steigen, die Punktzahl klettert auf 3.490. Auch die Licht- und Farbwechsel zwischen den Stadtvierteln sind hier gut zu sehen.",
-     "es": "A run focused on the player abilities. SHIELD ACTIVE triggers repeatedly along the track, speed and obstacle density ramp up, and the score climbs to 3,490. The lighting and colour-palette shifts between different districts of the city are also visible in this clip."
+     "es": "Recorrido centrado en las habilidades del jugador: activaciones repetidas de SHIELD ACTIVE, aumento progresivo de velocidad y cambios cromáticos entre distritos urbanos hasta alcanzar 3.490 puntos."
     },
     "tags": {
      "fa": [
@@ -265,13 +265,13 @@ const VD = [
      "fa": "اجرای بی‌پایان تا صفحه ECHO LOST",
      "en": "Endless Run to the ECHO LOST Screen",
      "de": "Endloslauf bis zum Bildschirm ECHO LOST",
-     "es": "Endless Run to the ECHO LOST Screen"
+     "es": "Carrera Infinita hasta Pantalla ECHO LOST"
     },
     "desc": {
      "fa": "یک اجرای پیوسته از انتخاب حالت تا باخت. تمرکز این ویدیو روی چرخه کامل بازی است: انتخاب حالت، اجرا، افزایش تدریجی سرعت، برخورد نهایی، و صفحه پایان با گزینه‌های «RUN AGAIN»، «UPGRADES» و «MAIN MENU» — یعنی حلقه بازگشت بازیکن به بازی.",
      "en": "One continuous run from mode select to failure. The focus here is the complete game loop: pick a mode, run, watch the speed ramp up, take the final hit, and land on the end screen with RUN AGAIN, UPGRADES and MAIN MENU — the loop that brings the player back in.",
      "de": "Ein durchgehender Lauf von der Modusauswahl bis zum Scheitern. Im Mittelpunkt steht die vollständige Spielschleife: Modus wählen, laufen, das Tempo steigen sehen, den letzten Treffer kassieren und auf dem Endbildschirm mit RUN AGAIN, UPGRADES und MAIN MENU landen — die Schleife, die Spieler zurückholt.",
-     "es": "One continuous run from mode select to failure. The focus here is the complete game loop: pick a mode, run, watch the speed ramp up, take the final hit, and land on the end screen with RUN AGAIN, UPGRADES and MAIN MENU — the loop that brings the player back in."
+     "es": "Partida continua desde selección de modo hasta la colisión final mostrando el bucle completo de reintento, tienda de mejoras y menú principal."
     },
     "tags": {
      "fa": [
@@ -312,13 +312,13 @@ const VD = [
    "fa": "کسب مقام برتر کشوری · غرفه اختصاصی · دوره سوم · ۲۰۲۶",
    "en": "National Award Winner · Dedicated booth · third cohort · 2026",
    "de": "Eigener Stand · dritter Zyklus · 2026",
-   "es": "National Award Winner · Dedicated booth · third cohort · 2026"
+   "es": "Premio Nacional · Stand exclusivo · 3.ª edición · 2026"
   },
   "intro": {
    "fa": "نسخه قابل بازی Neon Run در رقابت کشوری ورود به دوره سوم شتاب‌دهنده بین‌المللی Negative Five روی غرفه اختصاصی ارائه شد و موفق به کسب رتبه و مقام برتر کشوری گردید. ده‌ها بازدیدکننده، داور تخصصی و استریمرهای سرشناس بازی را با کنترلر تست کردند و گواهینامه معتبر رسمی روی استیج اهدا شد.",
    "en": "The playable build of Neon Run was presented on a dedicated booth at the third-cycle national entry competition of Negative Five Accelerator, winning top national ranking and honors. Dozens of visitors, expert judges, and prominent creators playtested the build, and the official national award was presented on stage.",
    "de": "Die spielbare Fassung von Neon Run wurde beim Event des Negative-Five-Accelerators an einem eigenen Stand gezeigt. Dutzende Besucher spielten sie, zwei Gaming-Content-Creator berichteten darüber, und der Leiter eines der ältesten Spielestudios Irans setzte sich an den Controller. Dieser Abschnitt ist das unbearbeitete Filmmaterial dieses Tages.",
-   "es": "The playable build of Neon Run was presented on a dedicated booth at the third-cycle national entry competition of Negative Five Accelerator, winning top national ranking and honors. Dozens of visitors, expert judges, and prominent creators playtested the build, and the official national award was presented on stage."
+   "es": "La versión jugable de Neon Run se presentó en un stand exclusivo durante la tercera competición nacional del Acelerador Negative Five, logrando el primer puesto nacional. Decenas de visitantes, jueces y creadores de contenido lo probaron con mando antes de la ceremonia oficial en el escenario."
   },
   "nav": {
    "fa": "رویداد و بازخورد",
@@ -336,13 +336,13 @@ const VD = [
      "fa": "مریم خواجوی (۳۱۵ هزار دنبال‌کننده) در حال بازی روی غرفه",
      "en": "Maryam Khajavi (315K followers) Playing at the Booth",
      "de": "Maryam Khajavi (315.000 Follower) spielt am Stand",
-     "es": "Maryam Khajavi (315K followers) Playing at the Booth"
+     "es": "Maryam Khajavi (+315K seguidores) jugando en el stand"
     },
     "desc": {
      "fa": "مریم خواجوی (iholymary)، تولیدکننده محتوای بازی با بیش از ۳۱۵ هزار دنبال‌کننده در اینستاگرام، پشت لپ‌تاپ غرفه نشسته و با دسته بازی می‌کند — چند دقیقه پشت‌سر هم و بدون توقف. او پس از بازی یادداشتی دست‌نویس و امضاشده درباره بازی نوشت: «تجربه‌اش برام خیلی لذت‌بخش بود… خیلی اعتیادآور بود!»",
      "en": "Maryam Khajavi (iholymary), a gaming content creator with over 315,000 Instagram followers, sitting at the booth laptop and playing with a controller — several minutes back to back without stopping. After playing she wrote and signed a handwritten note about the game: \"I really enjoyed the experience… it was very addictive!\"",
      "de": "Maryam Khajavi (iholymary), Gaming-Content-Creatorin mit über 315.000 Instagram-Followern, sitzt am Laptop des Standes und spielt mit dem Controller — mehrere Minuten am Stück. Nach dem Spielen schrieb und unterschrieb sie eine handschriftliche Notiz: „Ich habe das Erlebnis wirklich genossen … es war sehr süchtig machend!“",
-     "es": "Maryam Khajavi (iholymary), a gaming content creator with over 315,000 Instagram followers, sitting at the booth laptop and playing with a controller — several minutes back to back without stopping. After playing she wrote and signed a handwritten note about the game: \"I really enjoyed the experience… it was very addictive!\""
+     "es": "Maryam Khajavi (iholymary), creadora con más de 315.000 seguidores en Instagram, probando el juego con mando durante varios minutos seguidos y dejando su nota manuscrita: «¡Realmente disfruté la experiencia… muy adictivo!»."
     },
     "tags": {
      "fa": [
@@ -378,13 +378,13 @@ const VD = [
      "fa": "مدیر مجموعه «بازی‌ساز باش» پشت بازی",
      "en": "Head of bazisazbash Playing the Game",
      "de": "Der Leiter von bazisazbash spielt das Spiel",
-     "es": "Head of bazisazbash Playing the Game"
+     "es": "Director de Bazisazbash probando el juego"
     },
     "desc": {
      "fa": "مدیر یکی از قدیمی‌ترین و بزرگ‌ترین مجموعه‌های بازی‌سازی ایران (bazisazbash) پشت دستگاه نشسته، بازی را تجربه می‌کند و درباره‌اش صحبت می‌کند. کوتاه، اما یکی از مهم‌ترین لحظه‌های آن روز.",
      "en": "The head of one of Iran's oldest and largest game-development groups (bazisazbash) sitting at the machine, playing the build and talking about it. Short, but one of the most important moments of that day.",
      "de": "Der Leiter einer der ältesten und größten Spieleentwicklungsgruppen Irans (bazisazbash) sitzt am Gerät, spielt die Fassung und spricht darüber. Kurz, aber einer der wichtigsten Momente dieses Tages.",
-     "es": "The head of one of Iran's oldest and largest game-development groups (bazisazbash) sitting at the machine, playing the build and talking about it. Short, but one of the most important moments of that day."
+     "es": "El director de uno de los estudios veteranos de videojuegos (Bazisazbash) sentado en el puesto de pruebas evaluando el build en funcionamiento."
     },
     "tags": {
      "fa": [
@@ -416,13 +416,13 @@ const VD = [
      "fa": "بازدید مدیر «بازی‌ساز باش» از غرفه",
      "en": "bazisazbash Visit to the Booth",
      "de": "Besuch von bazisazbash am Stand",
-     "es": "bazisazbash Visit to the Booth"
+     "es": "Visita de Bazisazbash al stand"
     },
     "desc": {
      "fa": "لحظه بازدید از غرفه Neon Run: بنر بازی، لپ‌تاپ‌های آماده و گفت‌وگو کنار میز. مکمل ویدیوی قبلی است و فضای غرفه را در همان لحظه نشان می‌دهد.",
      "en": "The moment of the visit to the Neon Run booth: the game banner, the set-up laptops and the conversation beside the table. A companion to the previous clip, showing the booth environment at that same moment.",
      "de": "Der Moment des Besuchs am Neon-Run-Stand: das Spielbanner, die aufgebauten Laptops und das Gespräch neben dem Tisch. Eine Ergänzung zum vorigen Clip, die die Standumgebung im selben Moment zeigt.",
-     "es": "The moment of the visit to the Neon Run booth: the game banner, the set-up laptops and the conversation beside the table. A companion to the previous clip, showing the booth environment at that same moment."
+     "es": "Recorrido por el entorno del stand durante la visita: cartel oficial de Neon Run, equipos configurados y conversación técnica junto a la mesa."
     },
     "tags": {
      "fa": [
@@ -454,13 +454,13 @@ const VD = [
      "fa": "غرفه Neon Run و بازدیدکنندگان در حال بازی",
      "en": "The Neon Run Booth & Visitors Playing",
      "de": "Der Neon-Run-Stand und spielende Besucher",
-     "es": "The Neon Run Booth & Visitors Playing"
+     "es": "Stand de Neon Run y público jugando"
     },
     "desc": {
      "fa": "نمای نزدیک از غرفه: بنر اختصاصی «NEON RUN — ECHO’S ESCAPE»، تابلوی تیم GAME TOPIA، و بازدیدکنندگانی که پشت لپ‌تاپ‌ها نشسته‌اند و بازی می‌کنند. صفحه‌های بازی در همین ویدیو دیده می‌شود.",
      "en": "A close view of the booth: the dedicated NEON RUN — ECHO'S ESCAPE banner, the GAME TOPIA team card, and visitors seated at the laptops playing. The game screens themselves are visible in this clip.",
      "de": "Eine Nahaufnahme des Standes: das eigene Banner NEON RUN — ECHO’S ESCAPE, die Teamkarte von GAME TOPIA und Besucher, die an den Laptops sitzen und spielen. Die Spielbildschirme selbst sind in diesem Clip zu sehen.",
-     "es": "A close view of the booth: the dedicated NEON RUN — ECHO'S ESCAPE banner, the GAME TOPIA team card, and visitors seated at the laptops playing. The game screens themselves are visible in this clip."
+     "es": "Plano cercano del stand con el banner NEON RUN — ECHO'S ESCAPE, tarjeta GAME TOPIA y visitantes jugando directamente en los portátiles."
     },
     "tags": {
      "fa": [
@@ -496,13 +496,13 @@ const VD = [
      "fa": "نمای کامل غرفه در رویداد",
      "en": "Wide Shot of the Booth",
      "de": "Weite Aufnahme des Standes",
-     "es": "Wide Shot of the Booth"
+     "es": "Plano abierto del stand"
     },
     "desc": {
      "fa": "نمای بازتر از همان غرفه، این بار افقی: جایگاه بازی در کنار سایر غرفه‌ها، تیم رسانه‌ای رویداد، و بازدیدکنندگانی که در صف بازی ایستاده‌اند.",
      "en": "A wider, landscape shot of the same booth: where the game sat relative to the other stands, the event media team, and visitors queuing to play.",
      "de": "Eine weitere, querformatige Aufnahme desselben Standes: wo das Spiel im Verhältnis zu den anderen Ständen stand, das Medienteam des Events und die Besucherschlange zum Spielen.",
-     "es": "A wider, landscape shot of the same booth: where the game sat relative to the other stands, the event media team, and visitors queuing to play."
+     "es": "Vista panorámica del puesto de exhibición frente al resto de stands, equipo multimedia y visitantes haciendo fila para jugar."
     },
     "tags": {
      "fa": [
@@ -534,13 +534,13 @@ const VD = [
      "fa": "مراسم رسمی اهدای لوح و گواهی مقام برتر کشوری روی استیج",
      "en": "Official Stage Award Ceremony — National Ranking Winner",
      "de": "Urkundenverleihung auf der Bühne",
-     "es": "Official Stage Award Ceremony — National Ranking Winner"
+     "es": "Ceremonia Oficial de Premiación — Ganador Nacional"
     },
     "desc": {
      "fa": "مراسم اهدای گواهی‌نامه و تندیس مقام برتر کشوری رویداد در سالن اصلی. گواهی رسمی Negative Five / Xelerate VR با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR به نام سید ایمان منصوری صادر شده و دارای ارزش و اعتبار حقوقی نخبگی در استعدادیابی بنیاد ملی نخبگان و ویزای Global Talent است.",
      "en": "Official stage award ceremony for the national competition winner in the main auditorium. The official Negative Five / Xelerate VR certificate, signed by the accelerator CEO and the Xelerate VR representative, was awarded to Seyed Iman Mansouri as verified proof of national excellence with high evidentiary standing for Global Talent visa endorsement and elite distinction.",
      "de": "Die Urkundenverleihung des Events im Hauptsaal. Die offizielle Urkunde von Negative Five / Xelerate VR, unterschrieben vom Geschäftsführer des Accelerators und vom Vertreter von Xelerate VR, wurde auf den Namen Seyed Iman Mansouri ausgestellt.",
-     "es": "Official stage award ceremony for the national competition winner in the main auditorium. The official Negative Five / Xelerate VR certificate, signed by the accelerator CEO and the Xelerate VR representative, was awarded to Seyed Iman Mansouri as verified proof of national excellence with high evidentiary standing for Global Talent visa endorsement and elite distinction."
+     "es": "Entrega oficial del premio al primer puesto nacional en el auditorio principal: diploma Negative Five / Xelerate VR firmado por su CEO y representante sénior otorgado a Seyed Iman Mansouri."
     },
     "tags": {
      "fa": [
@@ -576,13 +576,13 @@ const VD = [
      "fa": "گردش کامل در فضای رویداد",
      "en": "Full Venue Walkthrough",
      "de": "Kompletter Rundgang durch den Veranstaltungsort",
-     "es": "Full Venue Walkthrough"
+     "es": "Recorrido completo por el recinto"
     },
     "desc": {
      "fa": "طولانی‌ترین ویدیوی این بخش: یک گردش پیوسته از ورودی ساختمان تا داخل سالن‌ها. غرفه‌ها، ایستگاه‌های بازی، تیم‌های حاضر و مقیاس واقعی رویداد در این ویدیو دیده می‌شود.",
      "en": "The longest clip in this section: one continuous walk from the building entrance through to the interior halls. Booths, play stations, the teams present and the real scale of the event are all visible here.",
      "de": "Der längste Clip dieses Abschnitts: ein durchgehender Gang vom Gebäudeeingang bis in die inneren Hallen. Stände, Spielstationen, die anwesenden Teams und die tatsächliche Größe des Events sind hier zu sehen.",
-     "es": "The longest clip in this section: one continuous walk from the building entrance through to the interior halls. Booths, play stations, the teams present and the real scale of the event are all visible here."
+     "es": "Caminata continua desde la entrada principal por los pabellones interiores mostrando stands, zonas de prueba y escala del evento."
     },
     "tags": {
      "fa": [
@@ -618,13 +618,13 @@ const VD = [
      "fa": "بازدیدکنندگان و غرفه‌داران",
      "en": "Crowd & Exhibitors",
      "de": "Publikum und Aussteller",
-     "es": "Crowd & Exhibitors"
+     "es": "Público y equipos expositores"
     },
     "desc": {
      "fa": "جمعیت داخل سالن، تیم‌های حاضر با کارت‌های شناسایی، و پوشش رسانه‌ای رویداد با دوربین‌های حرفه‌ای.",
      "en": "The crowd inside the hall, exhibiting teams wearing their badges, and the event's media coverage with professional cameras.",
      "de": "Das Publikum in der Halle, ausstellende Teams mit ihren Badges und die Medienbegleitung des Events mit professionellen Kameras.",
-     "es": "The crowd inside the hall, exhibiting teams wearing their badges, and the event's media coverage with professional cameras."
+     "es": "Ambiente general en la sala con equipos acreditados y cobertura audiovisual profesional del acelerador."
     },
     "tags": {
      "fa": [
@@ -656,13 +656,13 @@ const VD = [
      "fa": "سالن‌ها، کاسپلی و غرفه‌های دیگر",
      "en": "Halls, Cosplay & Other Stands",
      "de": "Hallen, Cosplay und weitere Stände",
-     "es": "Halls, Cosplay & Other Stands"
+     "es": "Salones, cosplay y otros stands"
     },
     "desc": {
      "fa": "بخش دیگری از رویداد: سالن‌های نمایش، غرفه‌های استودیوهای دیگر، و کاسپلی‌های حاضر. برای درک فضای کلی رویدادی که بازی در آن ارائه شد.",
      "en": "Another part of the event: the exhibition halls, other studios' stands, and the cosplayers present — useful context for the environment the game was presented in.",
      "de": "Ein weiterer Teil des Events: die Ausstellungshallen, die Stände anderer Studios und die anwesenden Cosplayer — nützlicher Kontext für das Umfeld, in dem das Spiel gezeigt wurde.",
-     "es": "Another part of the event: the exhibition halls, other studios' stands, and the cosplayers present — useful context for the environment the game was presented in."
+     "es": "Contexto completo de las áreas de exhibición, stands de otros estudios participantes y público asistente."
     },
     "tags": {
      "fa": [
@@ -703,13 +703,13 @@ const VD = [
    "fa": "کار حرفه‌ای در دو شرکت بازی‌سازی مشهد",
    "en": "Professional work at two Mashhad game studios",
    "de": "Berufliche Arbeit in zwei Spielestudios in Maschhad",
-   "es": "Professional work at two Mashhad game studios"
+   "es": "Trabajo profesional en dos estudios de videojuegos"
   },
   "intro": {
    "fa": "از سال ۱۴۰۲ در دو شرکت بازی‌سازی کار کرده‌ام و در انتشار دو بازی موبایل در کافه‌بازار و مایکت نقش داشته‌ام. آنچه اینجا می‌بینید، بخش‌هایی است که کدش را خودم نوشته‌ام.",
    "en": "Since 2023 I have worked at two game studios and contributed to shipping two mobile titles on Cafe Bazaar and Myket. What you see here are the parts I personally wrote the code for.",
    "de": "Seit 2023 habe ich in zwei Spielestudios gearbeitet und an der Veröffentlichung von zwei Mobiltiteln bei Cafe Bazaar und Myket mitgewirkt. Zu sehen sind hier die Teile, deren Code ich selbst geschrieben habe.",
-   "es": "Since 2023 I have worked at two game studios and contributed to shipping two mobile titles on Cafe Bazaar and Myket. What you see here are the parts I personally wrote the code for."
+   "es": "Desde 2023 trabajé en dos estudios participando en el lanzamiento de dos títulos móviles comerciales en Cafe Bazaar y Myket. Aquí se muestran los sistemas cuyo código programé personalmente."
   },
   "nav": {
    "fa": "بازی‌های تجاری",
@@ -727,13 +727,13 @@ const VD = [
      "fa": "آرش کمانگیر — بازی تجاری موبایل",
      "en": "Arash Kamangir (Archer) — Commercial Mobile Game",
      "de": "Arash Kamangir (Archer) — kommerzielles Mobilspiel",
-     "es": "Arash Kamangir (Archer) — Commercial Mobile Game"
+     "es": "Arash Kamangir (Archer) — Juego Móvil Comercial"
     },
     "desc": {
      "fa": "بازی تجاری موبایل، ساخته‌شده در واحد فناور گیم‌توپیا (پارک علم و فناوری دانشگاه فردوسی مشهد). نقش من: برنامه‌نویس گیم‌پلی و سازنده ابزار. در این ویدیو منوی بازی (حالت داستانی، حالت بی‌پایان و فروشگاه)، سیستم تیراندازی با کمان با محاسبه مسیر پرتاب و برخورد، نبرد موج‌به‌موج با دشمنان، و پایان مرحله و امتیازدهی دیده می‌شود. علاوه بر گیم‌پلی، ابزاری اختصاصی نوشتم تا تیم طراحی بتواند مراحل را بدون کدنویسی بچیند.",
      "en": "A commercial mobile title built at the Game Topia technology unit (Ferdowsi University of Mashhad Science & Technology Park). My role: gameplay programmer and tools developer. The clip shows the game menu (campaign, endless mode and shop), the archery system with trajectory and collision calculation, wave-based combat, and the end-of-level scoring. Beyond gameplay I wrote a dedicated editor tool so the design team could build levels without touching code.",
      "de": "Ein kommerzieller Mobiltitel, entstanden in der Technologieeinheit Game Topia (Wissenschafts- und Technologiepark der Ferdowsi-Universität Maschhad). Meine Rolle: Gameplay-Programmierung und Werkzeugentwicklung. Der Clip zeigt das Spielmenü (Kampagne, Endlosmodus und Shop), das Bogenschießsystem mit Flugbahn- und Kollisionsberechnung, wellenbasierte Kämpfe und die Punktewertung am Levelende. Neben dem Gameplay habe ich ein eigenes Editor-Werkzeug geschrieben, damit das Designteam Level ohne Code bauen kann.",
-     "es": "A commercial mobile title built at the Game Topia technology unit (Ferdowsi University of Mashhad Science & Technology Park). My role: gameplay programmer and tools developer. The clip shows the game menu (campaign, endless mode and shop), the archery system with trajectory and collision calculation, wave-based combat, and the end-of-level scoring. Beyond gameplay I wrote a dedicated editor tool so the design team could build levels without touching code."
+     "es": "Título móvil desarrollado en la unidad tecnológica Game Topia (Parque Científico de Mashhad) donde fui programador principal y de herramientas: menú, tienda, física parabólica de tiro con arco, oleadas y herramientas visuales en Editor para diseñadores."
     },
     "tags": {
      "fa": [
@@ -773,13 +773,13 @@ const VD = [
      "fa": "Bus Escape — پازل ترافیک، مراحل ۱ تا ۳",
      "en": "Bus Escape — Traffic Puzzle, Levels 1 to 3",
      "de": "Bus Escape — Verkehrspuzzle, Level 1 bis 3",
-     "es": "Bus Escape — Traffic Puzzle, Levels 1 to 3"
+     "es": "Bus Escape — Puzle de Tráfico (Niveles 1 al 3)"
     },
     "desc": {
      "fa": "پازل ترافیک برای موبایل؛ پروژه شخصی. نقش من: طراح الگوریتم و سازنده منطق بازی. هر خودرو باید بدون گیر افتادن از میان شبکه شطرنجی به صف رنگ خودش برسد. در این ویدیو سه مرحله با درجه سختی افزایشی، وضعیت انتظار برای رسیدن خودرو، و ابزارهای کمکی (Refresh / Clear / Sort) نشان داده می‌شود.",
      "en": "A mobile traffic puzzle; a personal project. My role: algorithm design and game logic. Each vehicle has to reach the queue of its own colour through a grid without deadlocking. The clip shows three levels of increasing difficulty, the waiting state for an incoming vehicle, and the assist tools (Refresh / Clear / Sort).",
      "de": "Ein mobiles Verkehrspuzzle; ein persönliches Projekt. Meine Rolle: Algorithmusentwurf und Spiellogik. Jedes Fahrzeug muss durch ein Raster die Warteschlange seiner eigenen Farbe erreichen, ohne dass eine Blockade entsteht. Der Clip zeigt drei Level steigender Schwierigkeit, den Wartezustand für ein ankommendes Fahrzeug und die Hilfswerkzeuge (Refresh / Clear / Sort).",
-     "es": "A mobile traffic puzzle; a personal project. My role: algorithm design and game logic. Each vehicle has to reach the queue of its own colour through a grid without deadlocking. The clip shows three levels of increasing difficulty, the waiting state for an incoming vehicle, and the assist tools (Refresh / Clear / Sort)."
+     "es": "Puzle lógico de tráfico móvil: cada vehículo debe llegar sin bloquearse a la cola de pasajeros de su color mediante algoritmos de ruta en cuadrícula y herramientas tácticas (Refresh / Clear / Sort)."
     },
     "tags": {
      "fa": [
@@ -820,13 +820,13 @@ const VD = [
    "fa": "وب‌اپلیکیشن هوشمند · نسخه زنده",
    "en": "AI-powered web application · live build",
    "de": "KI-gestützte Webanwendung · Live-Fassung",
-   "es": "AI-powered web application · live build"
+   "es": "Aplicación web con IA · versión en producción"
   },
   "intro": {
    "fa": "پلتفرم کامل یادگیری زبان که از پایه ساخته‌ام: ثبت‌نام کاربر، ذخیره‌سازی ابری، و تمرین‌هایی که به‌جای فهرست خشک لغت به‌شکل بازی طراحی شده‌اند — مسابقه سرعت، تمرین شنیداری، جمله‌سازی و بازی تایپ. یک دستیار هوش مصنوعی درون محصول، مسیر یادگیری را متناسب با سطح کاربر می‌سازد.",
    "en": "A complete language-learning platform built from scratch: user accounts, cloud storage, and drills designed as games rather than dry vocabulary lists — speed arenas, listening practice, sentence building and a typing game. An in-product AI assistant generates a learning path matched to the user's level.",
    "de": "Eine vollständige Sprachlernplattform von Grund auf: Benutzerkonten, Cloud-Speicher und Übungen, die als Spiele statt als trockene Vokabellisten angelegt sind — Tempo-Arenen, Hörverstehen, Satzbau und ein Tippspiel. Ein KI-Assistent im Produkt erstellt einen Lernpfad passend zum Niveau der Nutzerin oder des Nutzers.",
-   "es": "A complete language-learning platform built from scratch: user accounts, cloud storage, and drills designed as games rather than dry vocabulary lists — speed arenas, listening practice, sentence building and a typing game. An in-product AI assistant generates a learning path matched to the user's level."
+   "es": "Plataforma integral de aprendizaje de idiomas con cuentas de usuario, almacenamiento en la nube y arenas interactivas (velocidad, escucha, sintaxis y escritura) asistidas por IA."
   },
   "nav": {
    "fa": "NitroLango",
@@ -890,13 +890,13 @@ const VD = [
      "fa": "آخرین به‌روزرسانی NitroLango",
      "en": "NitroLango — Latest Update",
      "de": "NitroLango — neueste Aktualisierung",
-     "es": "NitroLango — Latest Update"
+     "es": "NitroLango — Última Actualización en Producción"
     },
     "desc": {
      "fa": "نسخه به‌روزشده پلتفرم با بخش‌های تازه: «Neural Game Arena Master» به‌عنوان مرکز تمرین‌های بازی‌گونه، «Syntax Overclock» برای تمرین ساختار جمله، «Speed Match Arena» برای مسابقه سرعت، و «Acceleration Portal» با تمرین‌های آلمانی–فارسی. داشبورد حافظه و پیشرفت کاربر هم در همین ویدیو دیده می‌شود.",
      "en": "The updated build with new sections: Neural Game Arena Master as the hub for the gamified drills, Syntax Overclock for sentence structure, Speed Match Arena for timed matching, and the Acceleration Portal with German–Persian exercises. The memory and progress dashboard is also shown in this clip.",
      "de": "Die aktualisierte Fassung mit neuen Bereichen: Neural Game Arena Master als Zentrale für die spielerischen Übungen, Syntax Overclock für den Satzbau, Speed Match Arena für Zuordnung auf Zeit und das Acceleration Portal mit deutsch-persischen Übungen. Auch das Gedächtnis- und Fortschritts-Dashboard wird in diesem Clip gezeigt.",
-     "es": "The updated build with new sections: Neural Game Arena Master as the hub for the gamified drills, Syntax Overclock for sentence structure, Speed Match Arena for timed matching, and the Acceleration Portal with German–Persian exercises. The memory and progress dashboard is also shown in this clip."
+     "es": "Versión actualizada con Neural Game Arena Master, Syntax Overclock para orden de frases, Speed Match Arena y el portal de aceleración alemán–persa con panel de memoria SM-2."
     },
     "tags": {
      "fa": [
@@ -1003,22 +1003,22 @@ const VD = [
  {
   "id": "auro",
   "title": {
-   "fa": "AuroSocialEngine — موتور حاکمیتی شبکه اجتماعی",
-   "en": "AuroSocialEngine — Sovereign Social Media Engine",
-   "de": "AuroSocialEngine — Souveräne Social-Media-Engine",
-   "es": "AuroSocialEngine — Motor Social Soberano"
+   "fa": "AuroSocialEngine (Auro Gold Corp) — مرکز فرماندهی تولید محتوای هوشمند",
+   "en": "AuroSocialEngine (Auro Gold Corp) — Autonomous Multi-Company Content Studio",
+   "de": "AuroSocialEngine (Auro Gold Corp) — Autonomes Content- & Kommandozentrum",
+   "es": "AuroSocialEngine (Auro Gold Corp) — Centro de Mando de Contenido Autónomo"
   },
   "kicker": {
    "fa": "داشبورد اجرایی وب · پورت ۵۰۵۵",
    "en": "Executive Web HUD · Port 5055",
-   "de": "Executive Web HUD · Port 5055",
+   "de": "Executive Web-Konsole · Port 5055",
    "es": "HUD Web Ejecutivo · Puerto 5055"
   },
   "intro": {
-   "fa": "موتور تولید محتوای خودران بدون توهم برای Project Auro با صف قرنطینه، چندحسابی RBAC و پشتیبانی چندزبانه.",
-   "en": "Autonomous zero-hallucination social content engine for Project Auro featuring quarantine queues, multi-company RBAC, and multilingual executive HUD.",
-   "de": "Autonome Social-Content-Engine ohne Halluzinationen für Project Auro mit Quarantäne-Warteschlangen, Multi-Company-RBAC und mehrsprachigem Executive HUD.",
-   "es": "Motor autónomo de contenido social sin alucinaciones para Project Auro con colas de cuarentena, RBAC multiempresa y HUD ejecutivo multilingüe."
+   "fa": "اتاق کنترل سازمانی برای مدیریت کمپین‌های ۲۴ ساعته محتوای چندرسانه‌ای با تیکر زنده بازار شمش، استودیوی صوتی/بصری، صف قرنطینه و شبکه ایجنت‌های Cyber-Mesh و دسترسی چندشرکتی RBAC.",
+   "en": "Enterprise command center for 24/7 AI-assisted multimedia campaigns featuring live bullion tickers, audio waveform studio, a human Quarantine Approval Gate, interactive Cyber-Mesh agent topology, and multi-company RBAC.",
+   "de": "Enterprise-Kommandozentrum für 24/7-KI-Kampagnen mit Live-Edelmetall-Ticker, Audio-Wellenform-Studio, strenger Quarantäne-Freigabe durch Menschen, interaktivem Cyber-Mesh-Netzwerk und Mandanten-RBAC.",
+   "es": "Centro de mando empresarial para campañas IA 24/7 con ticker de oro en vivo, estudio multimodal con visor de ondas de audio, cola humana de cuarentena, topología Cyber-Mesh y RBAC multiempresa."
   },
   "nav": {
    "fa": "Auro Engine",
@@ -1086,8 +1086,8 @@ const VD = [
   "kicker": {
    "fa": "Next.js 15 App Router + .NET 10 Clean Architecture",
    "en": "Next.js 15 App Router + .NET 10 Clean Architecture",
-   "de": "Next.js 15 App Router + .NET 10 Clean Architecture",
-   "es": "Next.js 15 App Router + .NET 10 Clean Architecture"
+   "de": "Next.js 15 App Router + .NET 10 Clean Architecture (Mandanten-ERP)",
+   "es": "Next.js 15 App Router + .NET 10 Clean Architecture (ERP Multiempresa)"
   },
   "intro": {
    "fa": "پلتفرم جامع حسابداری دوبل سازمانی، مدیریت فاکتورها، پروژه‌ها و چندمستاجری با BFF کوکی HttpOnly و تقویم جلالی.",
@@ -1311,8 +1311,8 @@ const VD = [
   "kicker": {
    "fa": "WASAPI Loopback + faster-whisper CUDA + CustomTkinter",
    "en": "WASAPI Loopback + faster-whisper CUDA + CustomTkinter",
-   "de": "WASAPI Loopback + faster-whisper CUDA + CustomTkinter",
-   "es": "WASAPI Loopback + faster-whisper CUDA + CustomTkinter"
+   "de": "Echtzeit-Audio: WASAPI Loopback + faster-whisper CUDA + CustomTkinter",
+   "es": "Audio en Tiempo Real: WASAPI Loopback + faster-whisper CUDA + CustomTkinter"
   },
   "intro": {
    "fa": "پنجره شناور بلادرنگ برای ضبط صدای سیستم (WASAPI Loopback)، فیلتر باترورث، رونویسی CUDA با large-v3-turbo و ترجمه دوزبانه.",
@@ -1335,7 +1335,7 @@ const VD = [
     "title": {
      "fa": "رابط کاربری شناور RapScribe-AI OmniScribe HUD",
      "en": "RapScribe-AI OmniScribe Bilingual HUD",
-     "de": "RapScribe-AI OmniScribe Bilingual HUD",
+     "de": "RapScribe-AI OmniScribe — Zweisprachiges Echtzeit-HUD",
      "es": "HUD Bilingüe de RapScribe-AI OmniScribe"
     },
     "desc": {
