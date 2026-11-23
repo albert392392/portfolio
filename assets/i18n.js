@@ -198,7 +198,6 @@ const T = {
       "role": "معمار سیستم‌های نرم‌افزاری و مهندس هوش مصنوعی چندحالته",
       "tag": "سیستم‌هایی می‌سازم که کارهای پیچیده نرم‌افزاری، حسابداری، صوت و تصویر و اتوماسیون هوشمند را از ایده تا اجرای زنده در دنیایی واقعی و بدون خطای توهم پیش می‌برند — با معماری مهندسی دقیق و قابل استناد.",
       "chips": [
-        "میامی، آمریکا و اسپانیا",
         "🏆 دارنده رتبه و مقام برتر کشوری",
         "واجد صلاحیت ویزای Global Talent و بنیاد نخبگان",
         "کارت پایان خدمت (معافیت دائم)",
@@ -1704,7 +1703,6 @@ const T = {
       "role": "Systems Architect & Multimodal AI Engineer",
       "tag": "I build reliable software systems that turn AI into real-world results—automating engineering workflows, real-time speech & vision assistants, enterprise accounting suites, and 60 FPS interactive products, all verified with live proof.",
       "chips": [
-        "Miami, USA & Spain",
         "🏆 National Award Winner & Top Rank",
         "Global Talent & Elite Distinction Eligible",
         "Military Service Exempt",
@@ -3210,7 +3208,6 @@ const T = {
       "role": "Systemarchitekt & Ingenieur für multimodale KI",
       "tag": "Ich entwickle zuverlässige Softwaresysteme, die künstliche Intelligenz in echte Produktivität verwandeln — von autonomen Entwickler-Workflows und Echtzeit-Sprachassistenten über Buchhaltungsplattformen bis hin zu 60-FPS-Spielen, alles mit Live-Nachweisen verifiziert.",
       "chips": [
-        "Miami, USA & Spanien",
         "🏆 Nationaler Preisträger & Bestplatzierung",
         "Qualifiziert für Global-Talent-Visum",
         "Vollständige Reisefreiheit & Standortflexibilität",
@@ -4715,7 +4712,6 @@ const T = {
       "role": "Arquitecto de Sistemas e Ingeniero de IA Multimodal",
       "tag": "Diseño software confiable que convierte la IA en resultados reales: automatización de ingeniería, asistentes de voz y visión en tiempo real, plataformas contables empresariales y videojuegos a 60 FPS, todo verificado con pruebas en vivo.",
       "chips": [
-        "Miami, EE. UU. y España",
         "🏆 Ganador de Premio Nacional",
         "Elegible para Visado Global Talent",
         "Situación militar resuelta (Exento)",
