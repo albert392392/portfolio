@@ -153,7 +153,9 @@ const LINKS = {
   "github": "https://github.com/albert392392",
   "antigravity": "https://github.com/albert392392/antigravity-scroll-unpin",
   "portfolio": "https://github.com/albert392392/portfolio",
-  "copilot": "https://github.com/albert392392/GeminiLiveCoPilot"
+  "copilot": "https://github.com/albert392392/GeminiLiveCoPilot",
+  "zoho": "https://hos.darookhune.com/",
+  "auro": "https://auro-social-engine.vercel.app/"
 };
 
 const SVCKEYS = [
@@ -509,8 +511,8 @@ const T = {
         {
           "id": "zoho",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 سوئیت ۱۴ برنامه‌ای سازمانی",
+          "badge": "live",
+          "badgeText": "🚀 نسخه زنده · سوئیت ۱۴ برنامه‌ای",
           "name": "Zoho Books & Mana Enterprise Suite — سوئیت جامع حسابداری دوبل، اشتراک، پروژه و HR",
           "role": "معمار سیستم و توسعه‌دهنده ارشد فول‌استک",
           "desc": "<b>کاربرد:</b> جایگزین بومی و کامل مجموعه معروف Zoho برای شرکت‌های ایرانی و بین‌المللی؛ جایی که حسابداری مالی، چک‌های صیادی، فروش اشتراکی، کنترل پروژه و منابع انسانی در یک پلتفرم واحد کار می‌کنند.<br><br><b>نحوه کارکرد:</b> کاربر از صفحه هاب ۱۴ ماژول متصل وارد بخش مالی (Mana Books)، فروش اشتراکی (Billing)، مدیریت ظرفیت پروژه‌ها (Projects) یا پرتال کارکنان (People) می‌شود؛ هر سند مالی پس از ثبت با قاعده حسابداری دوبل قفل می‌شود و تغییر زبان یا نقش کاربری در کسری از ثانیه کل محیط و تقویم شمسی/میلادی را منطبق می‌کند.<br><br><b>قابلیت‌های کلیدی:</b> ۱۱۸ صفحه کامپایل‌شده Next.js 15، پشتیبانی بدون نشت از ۲۰ زبان با ۴۳۶ کلید، مدیریت چک صیادی و خزانه، محاسبه خودکار MRR/ARR، مرکز تنظیمات ۶۹ صفحه‌ای، تفکیک مستأجرها (Multi-Tenancy) و تغییر لحظه‌ای ۵ نقش دسترسی RBAC.",
@@ -523,6 +525,14 @@ const T = {
             "20 Languages i18n",
             "Multi-Tenancy"
           ],
+          "link": "zoho",
+          "demo": {
+            "title": "🔑 اطلاعات ورود نسخه زنده (Mana Books / Zoho):",
+            "userLabel": "ایمیل ورود",
+            "user": "lorenasucilla559@gmail.com",
+            "passLabel": "رمز عبور",
+            "pass": "admin123"
+          },
           "arch": [
             "۱۱۸ صفحه استاتیک کامپایل‌شده در Next.js 15 App Router با دسترسی یکپارچه به ۱۴ اپلیکیشن مالی، پروژه و HR",
             "انزوای سخت‌گیرانه چندمستأجری (OrganizationId) همراه با هسته .NET 10 Clean Architecture و SQL Server",
@@ -541,8 +551,8 @@ const T = {
         {
           "id": "auro",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 اتاق فرماندهی محتوای سازمانی",
+          "badge": "live",
+          "badgeText": "🚀 نسخه زنده · اتاق فرماندهی هوش مصنوعی",
           "name": "AuroSocialEngine (Auro Gold Corp) — مرکز فرماندهی خودمختار تولید محتوا و کمپین چندشرکتی",
           "role": "معمار سیستم‌های هوشمند و رابط فرماندهی چندشرکتی",
           "desc": "<b>کاربرد:</b> اتاق فرماندهی یکپارچه برای هلدینگ‌ها و برندهای چندشرکتی (از جمله شرکت‌های فعال در حوزه طلا و شمش) تا تولید محتوای شبانه‌روزی خود را به تیمی از ایجنت‌های هوش مصنوعی بسپارند، بدون اینکه ریسک انتشار خطا وجود داشته باشد.<br><br><b>نحوه کارکرد:</b> داشبورد لحظه‌ای قیمت شمش و شاخص‌ها رصد می‌شود؛ استودیوی چندرسانه‌ای محتوای متنی، تصویری و صوتی می‌سازد و با برنامه‌ریز ۲۴/۷ و تابلوی Kanban زمان‌بندی می‌کند؛ اما هیچ پستی مستقیم منتشر نمی‌شود و ابتدا وارد «صف قرنطینه ضد توهم» می‌شود تا مدیر برند پس از بررسی، آن را تایید و ارسال کند.<br><br><b>قابلیت‌های کلیدی:</b> استودیوی چندوجهی همراه با نمایشگر موج صدا و WBS برنامه‌ریز، گراف تعاملی همکاری ایجنت‌ها (Cyber-Mesh)، صف قرنطینه و تایید انسانی، کمپین‌پلنر پیوسته ۲۴ ساعته، تیکر زنده قیمت شمش و تغییر سریع بین شرکت‌ها و نقش‌های مدیریتی (RBAC).",
@@ -555,6 +565,14 @@ const T = {
             "Cyber-Mesh AI",
             "Multi-Company RBAC"
           ],
+          "link": "auro",
+          "demo": {
+            "title": "🔑 اطلاعات ورود نسخه زنده (Auro Command Center):",
+            "userLabel": "نام کاربری",
+            "user": "dr",
+            "passLabel": "رمز عبور",
+            "pass": "Auro@2026!Gold"
+          },
           "arch": [
             "دروازه قرنطینه ضد توهم (Quarantine Queue): توقف اجباری تمام محتوای تولیدشده پیش از تایید نهایی مدیر برند",
             "استودیوی تولید چندرسانه‌ای مجهز به نمایشگر موج صدا (Audio Waveform)، تابلوی Kanban و زمان‌بند ۲۴/۷ کمپین",
@@ -2014,8 +2032,8 @@ const T = {
         {
           "id": "zoho",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 14-App Enterprise Suite",
+          "badge": "live",
+          "badgeText": "🚀 Live Production Suite (14 Apps)",
           "name": "Zoho Books & Mana Suite — Enterprise Double-Entry Accounting, Billing, Projects & HRMS",
           "role": "Systems Architect & Lead Full-Stack Engineer",
           "desc": "<b>What it does:</b> A comprehensive 14-application enterprise operating suite unifiying Zoho Books–grade accounting, Sayad check treasury, SaaS subscription billing, project capacity management, and HR self-service.<br><br><b>How it works:</b> Users switch effortlessly from the 14-app Hub into double-entry accounting (Mana Books), recurring MRR/ARR subscription tracking (Billing), team utilization portfolios (Projects), or employee records (People); every posted financial entry stays immutable with reversal/credit-note auditability and real-time language/role switching.<br><br><b>Key capabilities:</b> 118 compiled Next.js 15 pages, 20 zero-leakage languages across 436 keys, Jalali/Gregorian calendars, IRR/IRT switching, 69 settings pages, and instant RBAC switching backed by C# .NET 10 + SQL Server.",
@@ -2028,6 +2046,14 @@ const T = {
             "20 Languages i18n",
             "Multi-Tenancy"
           ],
+          "link": "zoho",
+          "demo": {
+            "title": "🔑 Live Demo Login (Mana Books / Zoho):",
+            "userLabel": "Email",
+            "user": "lorenasucilla559@gmail.com",
+            "passLabel": "Password",
+            "pass": "admin123"
+          },
           "arch": [
             "118 static Next.js 15 App Router pages unifying Accounting, Billing, Projects, Treasury, and People HRMS",
             "Clean Architecture .NET 10 backend with strict OrganizationId tenant isolation on every SQL Server query",
@@ -2046,8 +2072,8 @@ const T = {
         {
           "id": "auro",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 Enterprise AI Command Center",
+          "badge": "live",
+          "badgeText": "🚀 Live AI Command Center",
           "name": "AuroSocialEngine (Auro Gold Corp) — Autonomous Multi-Company Social Content Studio",
           "role": "AI Systems & Multi-Tenant UI Architect",
           "desc": "<b>What it does:</b> A unified command center allowing multi-company holdings (such as gold and bullion corporations) to produce and schedule 24/7 AI social campaigns while ensuring zero unapproved AI output ever goes public.<br><br><b>How it works:</b> Operators track live bullion market tickers and macro research, generate multimodal posts (text, images, audio with live waveform player, and AI WBS plans) inside the Studio, visualize collaborating agents in Cyber-Mesh, and route every draft into a Quarantine Approval Queue until an authorized manager signs off.<br><br><b>Key capabilities:</b> Human-gated Quarantine Queue, Multimodal Studio with audio waveforms, interactive Cyber-Mesh topology, 24/7 Autonomous Campaign Planner, Kanban task boards, and multi-company RBAC switching.",
@@ -2060,6 +2086,14 @@ const T = {
             "Cyber-Mesh AI",
             "Multi-Company RBAC"
           ],
+          "link": "auro",
+          "demo": {
+            "title": "🔑 Live Demo Login (Auro Command Center):",
+            "userLabel": "Username",
+            "user": "dr",
+            "passLabel": "Password",
+            "pass": "Auro@2026!Gold"
+          },
           "arch": [
             "Zero-Hallucination Quarantine Approval Queue blocking all AI-generated posts until automated checks and human sign-off pass",
             "Multimodal Content Studio featuring live audio waveform visualization, visual showcase cards, and AI WBS planning",
@@ -3519,8 +3553,8 @@ const T = {
         {
           "id": "zoho",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 14-App-Enterprise-Suite",
+          "badge": "live",
+          "badgeText": "🚀 Live-Produktionssuite (14 Apps)",
           "name": "Zoho Books & Mana Suite — Doppelte Buchführung, Billing, Projekte & HR",
           "role": "Systemarchitekt & Lead Full-Stack-Entwickler",
           "desc": "<b>Funktion:</b> Integrierte 14-App-Unternehmensplattform auf internationalem Zoho-Books-Niveau — vereint Hauptbuch, Scheckwesen, Abo-Abrechnung, Projektkapazitäten und HR-Self-Service.<br><br><b>Funktionsweise:</b> Über den App-Hub wechseln Teams nahtlos zwischen Buchhaltung, MRR/ARR-Abo-Billing, Ressourcenplanung und Personalakten; gebuchte Belege bleiben revisionssicher und Sprach- sowie Rollenwechsel greifen sofort.<br><br><b>Hauptfunktionen:</b> 118 kompilierte Next.js-15-Seiten, 20 lückenlose Sprachen (436 Keys), Jalali/Gregorian-Kalender, Währungsumschaltung, 69 Einstellungsseiten und Live-RBAC auf .NET 10 + SQL Server.",
@@ -3533,6 +3567,14 @@ const T = {
             "20 Sprachen i18n",
             "Mandantenfähigkeit"
           ],
+          "link": "zoho",
+          "demo": {
+            "title": "🔑 Live-Demo-Zugangsdaten (Mana Books / Zoho):",
+            "userLabel": "E-Mail",
+            "user": "lorenasucilla559@gmail.com",
+            "passLabel": "Passwort",
+            "pass": "admin123"
+          },
           "arch": [
             "118 statische Next.js-15-Seiten vereinen Buchhaltung, Billing, Projekte, Treasury und HR nahtlos",
             "Clean Architecture in .NET 10 mit strikter OrganizationId-Mandantentrennung auf jeder SQL-Abfrage",
@@ -3551,8 +3593,8 @@ const T = {
         {
           "id": "auro",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 Enterprise-KI-Kontrollzentrum",
+          "badge": "live",
+          "badgeText": "🚀 Live-KI-Kontrollzentrum",
           "name": "AuroSocialEngine (Auro Gold Corp) — Autonomes Multi-Company Content-Studio",
           "role": "Architekt für KI-Systeme & Mandanten-Oberflächen",
           "desc": "<b>Funktion:</b> Zentrales Kommandozentrum für Konzerngruppen (u. a. Edelmetall- und Goldhandel), um 24/7 KI-gestützte Kampagnen zu produzieren, ohne jemals ungeprüfte Inhalte zu veröffentlichen.<br><br><b>Funktionsweise:</b> Operatoren verfolgen Live-Goldkurse und Research, erstellen Text-, Bild- und Audiobeiträge samt Wellenform-Player und AI-WBS im Studio, beobachten Agenten im Cyber-Mesh-Netz und prüfen jeden Entwurf in der Quarantäne-Warteschlange vor Freigabe.<br><br><b>Hauptfunktionen:</b> Menschlich gesicherte Quarantäne-Freigabe, Multimodal-Studio mit Audio-Wellenform, interaktiver Cyber-Mesh-Graph, 24/7-Kampagnenplaner, Kanban-Board und Multi-Company-RBAC.",
@@ -3565,6 +3607,14 @@ const T = {
             "Cyber-Mesh KI",
             "Multi-Company RBAC"
           ],
+          "link": "auro",
+          "demo": {
+            "title": "🔑 Live-Demo-Zugangsdaten (Auro Command Center):",
+            "userLabel": "Benutzername",
+            "user": "dr",
+            "passLabel": "Passwort",
+            "pass": "Auro@2026!Gold"
+          },
           "arch": [
             "Zero-Hallucination-Quarantäne-Warteschlange stoppt jeden Entwurf bis Qualitätsprüfung und Manager-Freigabe",
             "Multimodales Studio mit Live-Audio-Wellenformen, visueller Vorschau und KI-WBS-Arbeitsplänen",
@@ -5023,8 +5073,8 @@ const T = {
         {
           "id": "zoho",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 Suite Empresarial de 14 Apps",
+          "badge": "live",
+          "badgeText": "🚀 Suite en Vivo (14 Aplicaciones)",
           "name": "Zoho Books y Mana Suite — Contabilidad Doble, Billing, Proyectos y RR. HH.",
           "role": "Arquitecto de Sistemas e Ingeniero Full-Stack Principal",
           "desc": "<b>Qué hace:</b> Suite empresarial unificada de 14 aplicaciones al estándar Zoho Books: integra contabilidad de partida doble, tesorería de cheques, suscripciones SaaS, capacidad de proyectos y portal de empleados.<br><br><b>Cómo funciona:</b> Desde el Hub de 14 módulos se navega al instante entre libros contables, ingresos recurrentes MRR/ARR, carteras de equipo y RR. HH.; cada asiento queda inmutable mediante notas de reversión y el cambio de idioma o rol aplica al vuelo.<br><br><b>Capacidades clave:</b> 118 páginas Next.js 15, 20 idiomas sin fugas (436 claves), calendarios Jalali/Gregoriano, cambio de divisa, 69 páginas de ajustes y RBAC en vivo con backend .NET 10 + SQL Server.",
@@ -5037,6 +5087,14 @@ const T = {
             "20 Idiomas i18n",
             "Multitenencia"
           ],
+          "link": "zoho",
+          "demo": {
+            "title": "🔑 Acceso Demo en Vivo (Mana Books / Zoho):",
+            "userLabel": "Correo",
+            "user": "lorenasucilla559@gmail.com",
+            "passLabel": "Contraseña",
+            "pass": "admin123"
+          },
           "arch": [
             "118 páginas estáticas en Next.js 15 App Router conectando Contabilidad, Billing, Proyectos y Personas",
             "Backend Clean Architecture .NET 10 con aislamiento estricto por OrganizationId en SQL Server",
@@ -5055,8 +5113,8 @@ const T = {
         {
           "id": "auro",
           "cat": "enterprise",
-          "badge": "priv",
-          "badgeText": "🔒 Centro de Mando IA Empresarial",
+          "badge": "live",
+          "badgeText": "🚀 Centro de Mando IA en Vivo",
           "name": "AuroSocialEngine (Auro Gold Corp) — Estudio Autónomo de Contenido Multiempresa",
           "role": "Arquitecto de Sistemas IA e Interfaces Multiempresa",
           "desc": "<b>Qué hace:</b> Centro de mando unificado para que holdings y marcas multiempresa (como grupos de oro y lingotes) creen campañas sociales 24/7 con IA garantizando que ningún contenido salga sin validación humana.<br><br><b>Cómo funciona:</b> Los operadores siguen cotizaciones de lingotes e investigación macro, generan publicaciones multimedia (texto, imagen y audio con visor de ondas más WBS) en el Estudio, coordinan agentes en Cyber-Mesh y aprueban cada borrador dentro de la Cola de Cuarentena.<br><br><b>Capacidades clave:</b> Puerta humana de Cuarentena, Estudio Multimodal con formas de onda, topología interactiva Cyber-Mesh, planificador continuo 24/7, tableros Kanban y RBAC multiempresa.",
@@ -5069,6 +5127,14 @@ const T = {
             "Cyber-Mesh IA",
             "RBAC Multiempresa"
           ],
+          "link": "auro",
+          "demo": {
+            "title": "🔑 Acceso Demo en Vivo (Auro Command Center):",
+            "userLabel": "Usuario",
+            "user": "dr",
+            "passLabel": "Contraseña",
+            "pass": "Auro@2026!Gold"
+          },
           "arch": [
             "Cola de Aprobación en Cuarentena retiene todo borrador IA hasta superar reglas y visto bueno humano",
             "Estudio Multimodal con visor en vivo de ondas de audio, galería visual y planificación IA WBS",

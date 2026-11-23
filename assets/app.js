@@ -152,6 +152,37 @@
         }
         if(act.children.length) c.appendChild(act);
 
+        /* live demo credentials box if present */
+        if(it.demo){
+          var dbox = el('div','pcard-demo');
+          dbox.appendChild(el('div','pcard-demo-title', it.demo.title));
+          var drow = el('div','pcard-demo-row');
+          var copyTxt = lang==='fa' ? 'کپی' : (lang==='de' ? 'Kopieren' : (lang==='es' ? 'Copiar' : 'Copy'));
+          var copiedTxt = lang==='fa' ? 'کپی شد ✓' : (lang==='de' ? 'Kopiert ✓' : (lang==='es' ? 'Copiado ✓' : 'Copied ✓'));
+          function makeCredPill(lbl, val){
+            var wrap = el('span','pcard-cred');
+            wrap.appendChild(el('span','pcard-cred-lbl', lbl+':'));
+            var code = el('code','pcard-cred-val', val);
+            code.dir = 'ltr';
+            wrap.appendChild(code);
+            var cb = el('button','pcard-cred-copy', copyTxt);
+            cb.type = 'button';
+            cb.addEventListener('click', function(){
+              if(navigator.clipboard && navigator.clipboard.writeText){
+                navigator.clipboard.writeText(val).catch(function(){});
+              }
+              cb.textContent = copiedTxt;
+              setTimeout(function(){ cb.textContent = copyTxt; }, 1600);
+            });
+            wrap.appendChild(cb);
+            return wrap;
+          }
+          drow.appendChild(makeCredPill(it.demo.userLabel, it.demo.user));
+          drow.appendChild(makeCredPill(it.demo.passLabel, it.demo.pass));
+          dbox.appendChild(drow);
+          c.appendChild(dbox);
+        }
+
         /* gallery if present */
         var pimgs = it.images || (typeof IMG !== 'undefined' && IMG[it.id]);
         if(pimgs && pimgs.length){

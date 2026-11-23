@@ -289,6 +289,14 @@ footer a{color:var(--tx2)}
 .pcard-arch li::before{content:'▹';position:absolute;inset-inline-start:0;color:var(--cy);font-size:14px}
 
 .pcard-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.pcard-demo{margin-top:14px;padding:12px 16px;border-radius:12px;background:rgba(34,211,238,.07);border:1px solid rgba(34,211,238,.28)}
+.pcard-demo-title{font-size:13px;font-weight:700;color:#67e8f9;margin-bottom:8px}
+.pcard-demo-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.pcard-cred{display:inline-flex;align-items:center;gap:6px;background:rgba(6,10,18,.75);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:5px 9px;font-size:12.5px}
+.pcard-cred-lbl{color:var(--tx2);font-weight:600}
+.pcard-cred-val{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#fff;font-weight:700;user-select:all}
+.pcard-cred-copy{background:rgba(34,211,238,.15);color:#67e8f9;border:1px solid rgba(34,211,238,.35);border-radius:6px;padding:2px 8px;font-size:11px;font-weight:700;cursor:pointer;transition:.2s}
+.pcard-cred-copy:hover{background:rgba(34,211,238,.3);color:#fff}
 
 /* ================= 5-POINT VERIFICATION GATE ================= */
 .gate-wrap{margin-top:20px}
