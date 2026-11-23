@@ -152,6 +152,37 @@
         }
         if(act.children.length) c.appendChild(act);
 
+        /* live demo credentials box if present */
+        if(it.demo){
+          var dbox = el('div','pcard-demo');
+          dbox.appendChild(el('div','pcard-demo-title', it.demo.title));
+          var drow = el('div','pcard-demo-row');
+          var copyTxt = lang==='fa' ? 'کپی' : (lang==='de' ? 'Kopieren' : (lang==='es' ? 'Copiar' : 'Copy'));
+          var copiedTxt = lang==='fa' ? 'کپی شد ✓' : (lang==='de' ? 'Kopiert ✓' : (lang==='es' ? 'Copiado ✓' : 'Copied ✓'));
+          function makeCredPill(lbl, val){
+            var wrap = el('span','pcard-cred');
+            wrap.appendChild(el('span','pcard-cred-lbl', lbl+':'));
+            var code = el('code','pcard-cred-val', val);
+            code.dir = 'ltr';
+            wrap.appendChild(code);
+            var cb = el('button','pcard-cred-copy', copyTxt);
+            cb.type = 'button';
+            cb.addEventListener('click', function(){
+              if(navigator.clipboard && navigator.clipboard.writeText){
+                navigator.clipboard.writeText(val).catch(function(){});
+              }
+              cb.textContent = copiedTxt;
+              setTimeout(function(){ cb.textContent = copyTxt; }, 1600);
+            });
+            wrap.appendChild(cb);
+            return wrap;
+          }
+          drow.appendChild(makeCredPill(it.demo.userLabel, it.demo.user));
+          drow.appendChild(makeCredPill(it.demo.passLabel, it.demo.pass));
+          dbox.appendChild(drow);
+          c.appendChild(dbox);
+        }
+
         /* gallery if present */
         var pimgs = it.images || (typeof IMG !== 'undefined' && IMG[it.id]);
         if(pimgs && pimgs.length){
@@ -191,11 +222,12 @@
     s.kpis.forEach(function(x){ k.appendChild(el('div','kpi','<b>'+num(x[0])+'</b><span>'+x[1]+'</span>')); });
     p.appendChild(k);
 
-    /* Real verification console screenshot */
+    /* Real verification console screenshot (localized per language) */
+    var dashKey = 'us-dash-' + (['fa','en','de','es'].indexOf(lang)>=0 ? lang : 'en');
     var f = el('figure','shot free');
-    var im = el('img'); im.src='assets/img/dashboard.jpg'; im.alt=s.dashCap; im.loading='lazy';
+    var im = el('img'); im.src='assets/img/'+dashKey+'.jpg'; im.alt=s.dashCap; im.loading='lazy';
     f.appendChild(im); f.appendChild(el('figcaption',null,s.dashCap));
-    f.addEventListener('click',function(){openLB(['dashboard'],'dashboard',{dashboard:s.dashCap});});
+    f.addEventListener('click',function(){ var caps={}; caps[dashKey]=s.dashCap; openLB([dashKey],dashKey,caps); });
     p.appendChild(f);
 
     /* 4 Microservice Clusters */
