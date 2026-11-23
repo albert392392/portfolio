@@ -154,8 +154,7 @@ const LINKS = {
   "antigravity": "https://github.com/albert392392/antigravity-scroll-unpin",
   "portfolio": "https://github.com/albert392392/portfolio",
   "copilot": "https://github.com/albert392392/GeminiLiveCoPilot",
-  "zoho": "https://hos.darookhune.com/",
-  "auro": "https://auro-social-engine.vercel.app/"
+    "auro": "https://auro-social-engine.vercel.app/"
 };
 
 const SVCKEYS = [
@@ -511,8 +510,8 @@ const T = {
         {
           "id": "zoho",
           "cat": "enterprise",
-          "badge": "live",
-          "badgeText": "🚀 نسخه زنده · سوئیت ۱۴ برنامه‌ای",
+          "badge": "priv",
+          "badgeText": "🔒 سوئیت سازمانی خصوصی (۱۴ برنامه)",
           "name": "Zoho Books & Mana Enterprise Suite — سوئیت جامع حسابداری دوبل، اشتراک، پروژه و HR",
           "role": "معمار سیستم و توسعه‌دهنده فول‌استک",
           "desc": "<b>کاربرد:</b> جایگزین بومی و کامل مجموعه معروف Zoho برای شرکت‌های ایرانی و بین‌المللی؛ جایی که حسابداری مالی، چک‌های صیادی، فروش اشتراکی، کنترل پروژه و منابع انسانی در یک پلتفرم واحد کار می‌کنند.<br><br><b>نحوه کارکرد:</b> کاربر از صفحه هاب ۱۴ ماژول متصل وارد بخش مالی (Mana Books)، فروش اشتراکی (Billing)، مدیریت ظرفیت پروژه‌ها (Projects) یا پرتال کارکنان (People) می‌شود؛ هر سند مالی پس از ثبت با قاعده حسابداری دوبل قفل می‌شود و تغییر زبان یا نقش کاربری در کسری از ثانیه کل محیط و تقویم شمسی/میلادی را منطبق می‌کند.<br><br><b>قابلیت‌های کلیدی:</b> ۱۱۸ صفحه کامپایل‌شده Next.js 15، پشتیبانی بدون نشت از ۲۰ زبان با ۴۳۶ کلید، مدیریت چک صیادی و خزانه، محاسبه خودکار MRR/ARR، مرکز تنظیمات ۶۹ صفحه‌ای، تفکیک مستأجرها (Multi-Tenancy) و تغییر لحظه‌ای ۵ نقش دسترسی RBAC.",
@@ -525,14 +524,7 @@ const T = {
             "20 Languages i18n",
             "Multi-Tenancy"
           ],
-          "link": "zoho",
-          "demo": {
-            "title": "🔑 اطلاعات ورود نسخه زنده (Mana Books / Zoho):",
-            "userLabel": "ایمیل ورود",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "رمز عبور",
-            "pass": "admin123"
-          },
+          
           "arch": [
             "۱۱۸ صفحه استاتیک کامپایل‌شده در Next.js 15 App Router با دسترسی یکپارچه به ۱۴ اپلیکیشن مالی، پروژه و HR",
             "انزوای سخت‌گیرانه چندمستأجری (OrganizationId) همراه با هسته .NET 10 Clean Architecture و SQL Server",
@@ -2046,14 +2038,7 @@ const T = {
             "20 Languages i18n",
             "Multi-Tenancy"
           ],
-          "link": "zoho",
-          "demo": {
-            "title": "🔑 Live Demo Login (Mana Books / Zoho):",
-            "userLabel": "Email",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "Password",
-            "pass": "admin123"
-          },
+          
           "arch": [
             "118 static Next.js 15 App Router pages unifying Accounting, Billing, Projects, Treasury, and People HRMS",
             "Clean Architecture .NET 10 backend with strict OrganizationId tenant isolation on every SQL Server query",
@@ -3567,14 +3552,7 @@ const T = {
             "20 Sprachen i18n",
             "Mandantenfähigkeit"
           ],
-          "link": "zoho",
-          "demo": {
-            "title": "🔑 Live-Demo-Zugangsdaten (Mana Books / Zoho):",
-            "userLabel": "E-Mail",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "Passwort",
-            "pass": "admin123"
-          },
+          
           "arch": [
             "118 statische Next.js-15-Seiten vereinen Buchhaltung, Billing, Projekte, Treasury und HR nahtlos",
             "Clean Architecture in .NET 10 mit strikter OrganizationId-Mandantentrennung auf jeder SQL-Abfrage",
@@ -5087,14 +5065,7 @@ const T = {
             "20 Idiomas i18n",
             "Multitenencia"
           ],
-          "link": "zoho",
-          "demo": {
-            "title": "🔑 Acceso Demo en Vivo (Mana Books / Zoho):",
-            "userLabel": "Correo",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "Contraseña",
-            "pass": "admin123"
-          },
+          
           "arch": [
             "118 páginas estáticas en Next.js 15 App Router conectando Contabilidad, Billing, Proyectos y Personas",
             "Backend Clean Architecture .NET 10 con aislamiento estricto por OrganizationId en SQL Server",
