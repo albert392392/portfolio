@@ -129,7 +129,7 @@ const LINKS = {
   "maryam": "https://www.instagram.com/iholymary/",
   "minoo": "https://www.instagram.com/minoo.gameland/",
   "bazi": "https://www.instagram.com/bazisazbash/",
-  "mail": "mailto:albert392392@gmail.com",
+  "mail": "mailto:iman392392@gmail.com",
   "tel": "tel:+989331655416",
   "telegram": "https://t.me/imanmansouri1/",
   "instagram": "https://instagram.com/albert.net01",
@@ -182,9 +182,9 @@ const T = {
     "role": "معمار سیستم و مهندس هوش مصنوعی چندحالته",
     "tag": "معماری سواِرم‌های خودمختار هوش مصنوعی، سیستم‌سازی و اتوماسیون جامع نرم‌افزار، خطوط لوله چندحالته بلادرنگ و سیستم‌های توزیع‌شده سازمانی.",
     "chips": [
-      "میامی، آمریکا و اسپانیا",
-      "🏆 دارنده رتبه و مقام برتر کشوری",
-      "واجد صلاحیت ویزای Global Talent و بنیاد نخبگان",
+      "مشهد، ایران · ۱۰۰٪ آماده همکاری دورکاری و بین‌المللی",
+      "ارائه‌دهنده منتخب شتاب‌دهنده Negative Five / Xelerate VR",
+      "۱۷ میکروسرویس زنده · .NET 10 + Python AI",
       "کارت پایان خدمت (معافیت دائم پزشکی)",
       "۱۰۰٪ آزاد برای استخدام بین‌المللی"
     ],
@@ -210,8 +210,8 @@ const T = {
       "توان پردازش بار اندازه‌گیری‌شده در پروداکشن"
     ],
     [
-      "مقام برتر کشوری",
-      "رتبه برتر رقابت ملی شتاب‌دهنده بین‌المللی Negative Five"
+      "رویداد Negative Five",
+      "غرفه اختصاصی زنده و گواهینامه رسمی Xelerate VR"
     ],
     [
       "۱۰۰٪",
@@ -428,7 +428,7 @@ const T = {
         "badge": "priv",
         "badgeText": "🔒 مخزن سازمانی خصوصی",
         "name": "ZarDigit (زردیجیت / دارا) — سوئیت مالی و حسابداری سازمانی",
-        "role": "معمار سیستم و مهندس ارشد فول‌استک",
+        "role": "معمار سیستم و توسعه‌دهنده فول‌استک",
         "desc": "نرم‌افزار جامع حسابداری و مدیریت مالی ابری با دفترکل دوطرفه (Double-Entry General Ledger)، ماژول استهلاک دارایی‌ها، صدور ترازنامه و سود و زیان با تایپوگرافی راست‌به‌چپ (RTL) و دقت اعشاری بالا.",
         "tags": [
           "Next.js 15",
@@ -539,7 +539,7 @@ const T = {
         "badge": "vid",
         "badgeText": "🎥 ویدیوی تست زنده در آرشیو (۶ ویدیو)",
         "name": "Neon Run: Echo’s Escape — بازی سه‌بعدی سایبرپانک چندپلتفرمه",
-        "role": "برنامه‌نویس ارشد گیم‌پلی، سیستم‌ها و رندرینگ",
+        "role": "برنامه‌نویس گیم‌پلی، سیستم‌ها و رندرینگ",
         "desc": "بازی رانر سه‌بعدی در دنیای سایبرپانک ۲۱۸۹ با پنج مرحله، شش حالت بازی، دو زاویه دوربین، حالت دونفره هم‌زمان روی یک دستگاه، پایبندی به قانون Zero-GC، و ارائه رسمی در غرفه شتاب‌دهنده Negative Five.",
         "tags": [
           "Unity 6.3",
@@ -570,7 +570,7 @@ const T = {
         "badge": "vid",
         "badgeText": "🎥 ویدیوی گیم‌پلی در آرشیو",
         "name": "آرش کمانگیر — بازی تجاری موبایل",
-        "role": "برنامه‌نویس ارشد گیم‌پلی و سازنده ابزارهای ادیتور · پارک علم و فناوری دانشگاه فردوسی مشهد",
+        "role": "برنامه‌نویس گیم‌پلی و سازنده ابزارهای ادیتور · پارک علم و فناوری دانشگاه فردوسی مشهد (۱۴۰۳–۱۴۰۴)",
         "desc": "بازی مبارزه با کمان بر پایه فیزیک بالستیک پرتاب تیر، مفاصل رگ‌دال Box2D، ابزار اختصاصی ادیتور برای چیدمان بصری مراحل توسط تیم طراحی، و بهینه‌سازی دقیق چرخه پردازش فیزیک روی گوشی‌های ضعیف.",
         "tags": [
           "Unity 2D",
@@ -1301,11 +1301,11 @@ const T = {
   "honors": {
     "title": "افتخارات ملی، اسناد نخبگی و مدارک رسمی",
     "sub": "هر ادعا، سندِ تجربی، مدرک رسمی و مستندِ حقوقی خودش را دارد",
-    "n5badge": "کسب مقام برتر کشوری · National Award Winner",
-    "n5t": "شتاب‌دهنده بین‌المللی Negative Five — مسابقه کشوری دوره سوم و کسب مقام برتر · ۲۰۲۶",
-    "n5": "<b>کسب رتبه و مقام برتر کشوری</b> در مسابقه ورودی دوره سوم شتاب‌دهنده بین‌المللی Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این افتخار با اهدای لوح، تندیس و گواهینامه رسمی روی استیج با امضای مستقیم مدیرعامل شتاب‌دهنده و نماینده ارشد Xelerate VR ثبت گردید. در تمام ساعات این رویداد کشوری، یک غرفه اختصاصی آزمون زنده را میزبانی کردیم که توسط ده‌ها مهندس ارشد، داور تخصصی، مدیران استودیوهای برتر و استریمرهای مطرح با کنترلر مورد تست و ستایش قرار گرفت.",
-    "talentBoxTitle": "ارزش نخبگی، صلاحیت سنجی بنیاد ملی نخبگان و ویزای Global Talent",
-    "talentBoxDesc": "این مقام کشوری و گواهینامه معتبر رسمی، به عنوان سند قطعی «دستاورد برجسته ملی و صنعتی» (Evidence of Recognized National Achievement) شناخته می‌شود. این مدرک دارای بالاترین ضریب وزنی در فرآیندهای <b>استعدادیابی و تسهیلات نخبگان برتر (بنیاد ملی نخبگان)</b> بوده و یکی از معتبرترین اسناد پشتیبان رسمی (Peer-Reviewed Industry Distinction) جهت اخذ <b>ویزای استعداد درخشان جهانی (Global Talent Visa / UK Tech Nation / US O-1A & EB-1A / Exceptional Talent Criteria)</b> و جاب‌آفرهای بین‌المللی به شمار می‌رود.",
+    "n5badge": "ارائه‌دهنده منتخب · Official Exhibitor & Certificate",
+    "n5t": "شتاب‌دهنده بین‌المللی Negative Five — رقابت ورودی دوره سوم (Xelerate VR) · ۲۰۲۶",
+    "n5": "<b>حضور منتخب و ارائه زنده پروژه شاخص Neon Run: Echo’s Escape</b> در رقابت ورودی دوره سوم شتاب‌دهنده بین‌المللی Negative Five (Xelerate VR) با اهدای گواهینامه رسمی تقدیر روی استیج با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR. در طول رویداد، یک غرفه اختصاصی آزمون زنده میزبانی شد و ده‌ها مهندس، داور تخصصی، مدیران استودیوها و تولیدکنندگان محتوای گیم نسخه قابل بازی را روی کنترلر آزمایش کردند.",
+    "talentBoxTitle": "ارزیابی میدانی، اعتبار فنی و گواهی رسمی رویداد",
+    "talentBoxDesc": "ارائه زنده نسخه قابل اجرا در غرفه اختصاصی، ثبت بازخورد دست‌نویس و ویدیویی از بازدیدکنندگان و داوران فنی، و دریافت گواهینامه رسمی شتاب‌دهنده Negative Five / Xelerate VR، بخشی از مستندات قابل راستی‌آزمایی این پورتفولیو برای ارزیابی فنی توسط کارفرمایان داخلی و بین‌المللی است.",
     "socialT": "چه کسانی بازی را تجربه کردند",
     "quote": "«… تجربه‌اش برام خیلی لذت‌بخش بود … <b>خیلی اعتیادآور بود!</b>»",
     "quoteWho": "— یادداشت دست‌نویس و امضاشده مریم خواجوی (iholymary)، تولیدکننده محتوای بازی، پس از بازی کردن Neon Run روی غرفه",
@@ -1563,9 +1563,9 @@ const T = {
     "role": "Architect & Multimodal AI Engineer",
     "tag": "Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.",
     "chips": [
-      "Miami, USA & Spain",
-      "🏆 National Award Winner & Top Rank",
-      "Global Talent & Elite Distinction Eligible",
+      "Remote · Open to Germany / EU Relocation",
+      "Selected Exhibitor — Negative Five / Xelerate VR",
+      "17 Live Microservices · .NET 10 + Python AI",
       "Military Exemption Card",
       "Open to Global & Remote Roles"
     ],
@@ -1591,8 +1591,8 @@ const T = {
       "Peak Measured Production Throughput"
     ],
     [
-      "National Winner",
-      "Top Rank at Negative Five National Accelerator Competition"
+      "Negative Five Expo",
+      "Dedicated Live Booth & Official Xelerate VR Certificate"
     ],
     [
       "100%",
@@ -1668,7 +1668,7 @@ const T = {
         "badge": "priv",
         "badgeText": "🔒 Private Enterprise Repository",
         "name": "Universal Doc Factory — Autonomous Research & Multi-Format Publishing Engine",
-        "role": "System Architect & Lead Typography Systems Engineer",
+        "role": "System Architect & Typography Systems Engineer",
         "desc": "Production-grade 69,044 LOC Python automated document generation pipeline with zero Office interop dependencies. Features live web research, character-by-character citation fact-checking against web sources, and enterprise document rendering (PDF/DOCX/PPTX) across 9 domain packs with native RTL Persian typography.",
         "tags": [
           "Python 3.12",
@@ -1809,7 +1809,7 @@ const T = {
         "badge": "priv",
         "badgeText": "🔒 Private Enterprise Platform",
         "name": "ZarDigit — Enterprise Financial & Accounting Suite",
-        "role": "Systems Architect & Lead Full-Stack Engineer",
+        "role": "Systems Architect & Full-Stack Engineer",
         "desc": "Cloud financial operations suite featuring a multi-currency double-entry general ledger, asset depreciation modules, automated trial balances, and financial statement generation with native RTL typesetting support.",
         "tags": [
           "Next.js 15",
@@ -1920,7 +1920,7 @@ const T = {
         "badge": "vid",
         "badgeText": "🎥 Live Footage in Archive (6 Videos)",
         "name": "Neon Run: Echo’s Escape — 3D Cyberpunk Endless Runner",
-        "role": "Lead Gameplay, Systems & Rendering Programmer",
+        "role": "Gameplay, Systems & Rendering Programmer",
         "desc": "Cross-platform 3D runner set in cyberpunk 2189 with five narrative levels, six game modes, dual-camera rendering, single-device split-screen multiplayer, strict Zero-GC hot loops, and dedicated booth showcase at Negative Five accelerator.",
         "tags": [
           "Unity 6.3",
@@ -1951,7 +1951,7 @@ const T = {
         "badge": "vid",
         "badgeText": "🎥 Gameplay Video in Archive",
         "name": "Arash Kamangir — Commercial Mobile Game",
-        "role": "Lead Gameplay & Editor Tools Programmer · Ferdowsi University of Mashhad Science & Technology Park",
+        "role": "Gameplay & Editor Tools Programmer · Ferdowsi University of Mashhad Science & Technology Park (2024–2025)",
         "desc": "Mobile archery combat game featuring parabolic arrow trajectory calculations, multi-joint Box2D stickman ragdolls, custom Unity Editor wave tools, and deep memory optimization for budget Android devices.",
         "tags": [
           "Unity 2D",
@@ -2052,7 +2052,7 @@ const T = {
         "badge": "live",
         "badgeText": "🚀 Official Commercial Release on Cafe Bazaar & Myket",
         "name": "Parsa — Published Commercial Action Title (Cafe Bazaar & Myket)",
-        "role": "Lead Technical & Systems Programmer · Bomb Game Studio",
+        "role": "Technical & Systems Programmer · Bomb Game Studio",
         "desc": "Commercial action mobile game officially published on Cafe Bazaar and Myket with thousands of active downloads. Responsible for end-to-end technical implementation: gameplay architecture, UI data-binding, resilient player state persistence, Android multi-version compatibility fixes, final release builds, and store integration.",
         "tags": [
           "Unity",
@@ -2682,11 +2682,11 @@ const T = {
   "honors": {
     "title": "National Honors, Elite Credentials & Formal Certifications",
     "sub": "Every claim backed by empirical evidence, official records, and legal proof",
-    "n5badge": "🏆 National Award Winner · Top Ranking",
+    "n5badge": "Official Exhibitor · Xelerate VR Certificate",
     "n5t": "Negative Five International Accelerator — Third Cycle National Competition & Award Winner · 2026",
-    "n5": "<b>Won top national ranking and official award</b> at the third-cycle national entry competition of the Negative Five International Accelerator, showcasing flagship title Neon Run: Echo’s Escape. Formally awarded on stage with an official certificate and honor signed directly by the Accelerator CEO and the senior Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.",
-    "talentBoxTitle": "Elite Talent Recognition, National Elites Foundation & Global Talent Visa Eligibility",
-    "talentBoxDesc": "This official national award and verified credential serve as decisive, legally recognized evidence of <b>Recognized National Achievement & Industry Distinction</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.",
+    "n5": "<b>Selected to showcase a live playable build of Neon Run: Echo’s Escape</b> at the Third Cycle Grand Entry Competition of the Negative Five Accelerator (Xelerate VR), receiving an official Certificate of Appreciation on stage signed by the Accelerator CEO and Xelerate VR representative. Hosted a dedicated live playtest booth throughout the event where engineers, judges, studio leads, and gaming creators tested the game live.",
+    "talentBoxTitle": "Live Playtest Validation & Verified Event Credentials",
+    "talentBoxDesc": "The live playable booth demonstration, recorded playtest videos, handwritten creator feedback, and official Negative Five / Xelerate VR Certificate of Appreciation serve as verifiable field evidence of end-to-end product execution for technical hiring teams.",
     "socialT": "Notable Playtesters & Streamers",
     "quote": "“… I really enjoyed the experience … <b>it was seriously addictive!</b>”",
     "quoteWho": "— Handwritten and signed note from Maryam Khajavi (iholymary), gaming content creator with 315K+ followers, after playtesting at the booth",
@@ -2944,9 +2944,9 @@ const T = {
     "role": "Systemarchitekt & Ingenieur für multimodale KI",
     "tag": "Architecting autonomous agent swarms, comprehensive software automation, sub-second multimodal pipelines, and enterprise distributed systems.",
     "chips": [
-      "Miami, USA & Spanien",
-      "🏆 National Award Winner & Top Rank",
-      "Global Talent & Elite Distinction Eligible",
+      "Remote · Bereit für Deutschland / EU",
+      "Selected Exhibitor — Negative Five / Xelerate VR",
+      "17 Live Microservices · .NET 10 + Python AI",
       "Military Exemption Card",
       "Open to Global & Remote Roles"
     ],
@@ -2972,8 +2972,8 @@ const T = {
       "Peak Measured Production Throughput"
     ],
     [
-      "National Winner",
-      "Top Rank at Negative Five National Accelerator Competition"
+      "Negative Five Expo",
+      "Dedicated Live Booth & Official Xelerate VR Certificate"
     ],
     [
       "100%",
@@ -3049,7 +3049,7 @@ const T = {
         "badge": "priv",
         "badgeText": "🔒 Privates Unternehmens-Repository",
         "name": "Universal Doc Factory — Autonome Forschungs- und Multi-Format-Publishing-Engine",
-        "role": "Systemarchitekt & Lead Typography Systems Engineer",
+        "role": "Systemarchitekt & Typography Systems Engineer",
         "desc": "Produktionsreife automatisierte Python-Dokumentenerstellungs-Pipeline mit 69.044 Zeilen Code (LOC) und ohne Abhängigkeiten von Office-Interop. Bietet Live-Webrecherchen, zeichengenaue Zitations-Faktenchecks anhand von Webquellen sowie Enterprise-Dokumenten-Rendering (PDF/DOCX/PPTX) in 9 Domänen-Paketen mit nativer persischer RTL-Typografie.",
         "tags": [
           "Python 3.12",
@@ -3190,7 +3190,7 @@ const T = {
         "badge": "priv",
         "badgeText": "🔒 Private Unternehmensplattform",
         "name": "ZarDigit — Enterprise Financial & Accounting Suite",
-        "role": "Systemarchitekt & Lead Full-Stack Engineer",
+        "role": "Systemarchitekt & Full-Stack Engineer",
         "desc": "Cloud-Finanzbetriebssuite mit einem mandantenfähigen Hauptbuch für doppelte Buchführung in mehreren Währungen, Abschreibungsmodulen für Anlagen, automatisierten Summen- und Saldenlisten sowie der Generierung von Finanzberichten mit nativer RTL-Satzunterstützung.",
         "tags": [
           "Next.js 15",
@@ -3301,7 +3301,7 @@ const T = {
         "badge": "vid",
         "badgeText": "🎥 Live-Material im Archiv (6 Videos)",
         "name": "Neon Run: Echo’s Escape — 3D-Cyberpunk-Endlos-Runner",
-        "role": "Lead Gameplay-, System- und Rendering-Programmierer",
+        "role": "Gameplay-, System- und Rendering-Programmierer",
         "desc": "Plattformübergreifender 3D-Runner im Cyberpunk-Setting des Jahres 2189 mit fünf narrativen Levels, sechs Spielmodi, Dual-Kamera-Rendering, Split-Screen-Multiplayer auf einem Gerät, strengen Zero-GC-Hot-Loops und eigenem Messestand beim Accelerator Negative Five.",
         "tags": [
           "Unity 6.3",
@@ -3433,7 +3433,7 @@ const T = {
         "badge": "live",
         "badgeText": "🚀 Offizielle kommerzielle Veröffentlichung auf Cafe Bazaar & Myket",
         "name": "Parsa — Veröffentlichter kommerzieller Action-Titel (Cafe Bazaar & Myket)",
-        "role": "Lead Technical & Systems Programmer · Bomb Game Studio",
+        "role": "Technical & Systems Programmer · Bomb Game Studio",
         "desc": "Kommerzielles Action-Handyspiel, offiziell veröffentlicht auf Cafe Bazaar und Myket mit Tausenden von aktiven Downloads. Verantwortlich für die durchgängige technische Umsetzung: Gameplay-Architektur, UI-Data-Binding, ausfallsichere Spielerzustands persistenz, Android-Multi-Versions-Kompatibilitätsfixes, finale Release-Builds und Store-Integration.",
         "tags": [
           "Unity",
@@ -4063,11 +4063,11 @@ const T = {
   "honors": {
     "title": "National Honors, Elite Credentials & Formal Certifications",
     "sub": "Every claim backed by empirical evidence, official records, and legal proof",
-    "n5badge": "🏆 National Award Winner · Top Ranking",
+    "n5badge": "Official Exhibitor · Xelerate VR Certificate",
     "n5t": "Negative Five International Accelerator — Third Cycle National Competition & Award Winner · 2026",
-    "n5": "<b>Won top national ranking and official award</b> at the third-cycle national entry competition of the Negative Five International Accelerator, showcasing flagship title Neon Run: Echo’s Escape. Formally awarded on stage with an official certificate and honor signed directly by the Accelerator CEO and the senior Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.",
-    "talentBoxTitle": "Elite Talent Recognition, National Elites Foundation & Global Talent Visa Eligibility",
-    "talentBoxDesc": "This official national award and verified credential serve as decisive, legally recognized evidence of <b>Recognized National Achievement & Industry Distinction</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.",
+    "n5": "<b>Selected to showcase a live playable build of Neon Run: Echo’s Escape</b> at the Third Cycle Grand Entry Competition of the Negative Five Accelerator (Xelerate VR), receiving an official Certificate of Appreciation on stage signed by the Accelerator CEO and Xelerate VR representative. Hosted a dedicated live playtest booth throughout the event where engineers, judges, studio leads, and gaming creators tested the game live.",
+    "talentBoxTitle": "Live Playtest Validation & Verified Event Credentials",
+    "talentBoxDesc": "The live playable booth demonstration, recorded playtest videos, handwritten creator feedback, and official Negative Five / Xelerate VR Certificate of Appreciation serve as verifiable field evidence of end-to-end product execution for technical hiring teams.",
     "socialT": "Notable Playtesters & Streamers",
     "quote": "“… I really enjoyed the experience … <b>it was seriously addictive!</b>”",
     "quoteWho": "— Handwritten and signed note from Maryam Khajavi (iholymary), gaming content creator with 315K+ followers, after playtesting at the booth",
@@ -4325,9 +4325,9 @@ const T = {
     "role": "Arquitecto de Sistemas e Ingeniero de IA Multimodal",
     "tag": "Arquitectura de enjambres autónomos de agentes de IA, automatización integral de software, canalizaciones multimodales de subsegundo y sistemas distribuidos empresariales.",
     "chips": [
-      "Miami, EE. UU. y España",
-      "🏆 Ganador de Premio Nacional y Máximo Rango",
-      "Elegible para Visa de Talento Global y Élite Científica",
+      "Remoto · Disponible para Europa / Alemania",
+      "Expositor Seleccionado — Negative Five / Xelerate VR",
+      "17 Microservicios Activos · .NET 10 + Python IA",
       "Cartilla de Exención Militar (Médica Definitiva)",
       "100% Disponible para Empleo Global y Remoto"
     ],
@@ -4353,8 +4353,8 @@ const T = {
       "Rendimiento de Carga Medido en Producción Real"
     ],
     [
-      "Premio Nacional",
-      "Primer Lugar en Concurso Nacional de Aceleración Internacional Negative Five"
+      "Negative Five Expo",
+      "Stand Dedicado en Vivo y Certificado Oficial Xelerate VR"
     ],
     [
       "100%",
@@ -4814,7 +4814,7 @@ const T = {
         "badge": "live",
         "badgeText": "🚀 Lanzamiento Comercial Oficial en Cafe Bazaar & Myket",
         "name": "Parsa — Título de Acción Comercial Publicado (Cafe Bazaar & Myket)",
-        "role": "Lead Technical & Systems Programmer · Bomb Game Studio",
+        "role": "Technical & Systems Programmer · Bomb Game Studio",
         "desc": "Juego móvil de acción comercial publicado oficialmente en Cafe Bazaar y Myket con miles de descargas activas. Responsable de la implementación técnica de extremo a extremo: arquitectura de jugabilidad, enlace de datos de UI, persistencia resiliente del estado del jugador, correcciones de compatibilidad multi-versión de Android, compilaciones de lanzamiento final e integración con la tienda.",
         "tags": [
           "Unity",
@@ -5444,11 +5444,11 @@ const T = {
   "honors": {
     "title": "National Honors, Elite Credentials & Formal Certifications",
     "sub": "Every claim backed by empirical evidence, official records, and legal proof",
-    "n5badge": "🏆 National Award Winner · Top Ranking",
+    "n5badge": "Official Exhibitor · Xelerate VR Certificate",
     "n5t": "Negative Five International Accelerator — Third Cycle National Competition & Award Winner · 2026",
-    "n5": "<b>Won top national ranking and official award</b> at the third-cycle national entry competition of the Negative Five International Accelerator, showcasing flagship title Neon Run: Echo’s Escape. Formally awarded on stage with an official certificate and honor signed directly by the Accelerator CEO and the senior Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.",
-    "talentBoxTitle": "Elite Talent Recognition, National Elites Foundation & Global Talent Visa Eligibility",
-    "talentBoxDesc": "This official national award and verified credential serve as decisive, legally recognized evidence of <b>Recognized National Achievement & Industry Distinction</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.",
+    "n5": "<b>Selected to showcase a live playable build of Neon Run: Echo’s Escape</b> at the Third Cycle Grand Entry Competition of the Negative Five Accelerator (Xelerate VR), receiving an official Certificate of Appreciation on stage signed by the Accelerator CEO and Xelerate VR representative. Hosted a dedicated live playtest booth throughout the event where engineers, judges, studio leads, and gaming creators tested the game live.",
+    "talentBoxTitle": "Live Playtest Validation & Verified Event Credentials",
+    "talentBoxDesc": "The live playable booth demonstration, recorded playtest videos, handwritten creator feedback, and official Negative Five / Xelerate VR Certificate of Appreciation serve as verifiable field evidence of end-to-end product execution for technical hiring teams.",
     "socialT": "Notable Playtesters & Streamers",
     "quote": "“… I really enjoyed the experience … <b>it was seriously addictive!</b>”",
     "quoteWho": "— Handwritten and signed note from Maryam Khajavi (iholymary), gaming content creator with 315K+ followers, after playtesting at the booth",
