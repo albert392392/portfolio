@@ -200,7 +200,7 @@ const T = {
       "role": "معمار سیستم‌های نرم‌افزاری و مهندس هوش مصنوعی چندحالته",
       "tag": "سیستم‌هایی می‌سازم که کارهای پیچیده نرم‌افزاری، حسابداری، صوت و تصویر و اتوماسیون هوشمند را از ایده تا اجرای زنده در دنیایی واقعی و بدون خطای توهم پیش می‌برند — با معماری مهندسی دقیق و قابل استناد.",
       "chips": [
-        "🏆 دارنده رتبه و مقام برتر کشوری",
+        "ارائه‌دهنده منتخب شتاب‌دهنده Negative Five / Xelerate VR",
         "واجد صلاحیت ویزای Global Talent و بنیاد نخبگان",
         "کارت پایان خدمت (معافیت دائم)",
         "آماده همکاری و استخدام بین‌المللی"
@@ -227,7 +227,7 @@ const T = {
         "توان پردازش ۶۷۱ درخواست در ثانیه اندازه‌گیری‌شده تحت بار"
       ],
       [
-        "مقام برتر کشوری",
+        "رویداد Negative Five",
         "رتبه برتر رقابت ملی شتاب‌دهنده بین‌المللی Negative Five · ۲۰۲۶"
       ],
       [
@@ -486,7 +486,7 @@ const T = {
           "badge": "priv",
           "badgeText": "🔒 سامانه مالی سازمانی",
           "name": "ZarDigit (زردیجیت) — سامانه ابری حسابداری، مدیریت بدهکاران/بستانکاران و خزانه",
-          "role": "معمار سیستم و مهندس ارشد فرانت‌اند",
+          "role": "معمار سیستم و مهندس فرانت‌اند",
           "desc": "<b>کاربرد:</b> یک نرم‌افزار مالی و حسابداری تحت وب برای مدیران مالی و شرکت‌ها جهت کنترل لحظه‌ای نقدینگی، صورت‌حساب‌های خرید، مانده تأمین‌کنندگان و خزانه‌داری.<br><br><b>نحوه کارکرد:</b> مدیر مالی وارد داشبورد شده و بدون پیچیدگی نرم‌افزارهای قدیمی، وضعیت نقدینگی، فاکتورهای معوق، شماره رهگیری رسیدهای بانکی و ترازها را می‌بیند، فاکتور ثبت می‌کند و گزارش آماده اکسل می‌گیرد — بدون اینکه هنگام تایپ ورودی‌ها بپرند یا شماره رسید تصادفی جای شماره کاربر بنشیند.<br><br><b>قابلیت‌های کلیدی:</b> طراحی ۱۰۰٪ راست‌به‌چپ فارسی (RTL) با پشتیبانی از زبان‌های دیگر، جدول‌های پویا همراه با خروجی استاندارد اکسل، معماری مقاوم فرم‌ها و پشتیبانی از نصب سریع روی دسکتاپ/موبایل به شکل PWA روی ۳۴ مسیر فعال.",
           "tags": [
             "Next.js",
@@ -514,7 +514,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 نسخه زنده · سوئیت ۱۴ برنامه‌ای",
           "name": "Zoho Books & Mana Enterprise Suite — سوئیت جامع حسابداری دوبل، اشتراک، پروژه و HR",
-          "role": "معمار سیستم و توسعه‌دهنده ارشد فول‌استک",
+          "role": "معمار سیستم و توسعه‌دهنده فول‌استک",
           "desc": "<b>کاربرد:</b> جایگزین بومی و کامل مجموعه معروف Zoho برای شرکت‌های ایرانی و بین‌المللی؛ جایی که حسابداری مالی، چک‌های صیادی، فروش اشتراکی، کنترل پروژه و منابع انسانی در یک پلتفرم واحد کار می‌کنند.<br><br><b>نحوه کارکرد:</b> کاربر از صفحه هاب ۱۴ ماژول متصل وارد بخش مالی (Mana Books)، فروش اشتراکی (Billing)، مدیریت ظرفیت پروژه‌ها (Projects) یا پرتال کارکنان (People) می‌شود؛ هر سند مالی پس از ثبت با قاعده حسابداری دوبل قفل می‌شود و تغییر زبان یا نقش کاربری در کسری از ثانیه کل محیط و تقویم شمسی/میلادی را منطبق می‌کند.<br><br><b>قابلیت‌های کلیدی:</b> ۱۱۸ صفحه کامپایل‌شده Next.js 15، پشتیبانی بدون نشت از ۲۰ زبان با ۴۳۶ کلید، مدیریت چک صیادی و خزانه، محاسبه خودکار MRR/ARR، مرکز تنظیمات ۶۹ صفحه‌ای، تفکیک مستأجرها (Multi-Tenancy) و تغییر لحظه‌ای ۵ نقش دسترسی RBAC.",
           "tags": [
             "Next.js 15",
@@ -639,9 +639,9 @@ const T = {
           "cat": "games",
           "badge": "vid",
           "badgeText": "🎥 ۶ ویدیوی واقعی + جایزه ملی",
-          "name": "Neon Run: Echo’s Escape — بازی سه‌بعدی سایبرپانک (مقام برتر کشوری)",
+          "name": "Neon Run: Echo’s Escape — بازی سه‌بعدی سایبرپانک (ارائه برگزیده شتاب‌دهنده)",
           "role": "برنامه‌نویس اصلی گیم‌پلی، سیستم‌ها و بهینه‌سازی رندر",
-          "desc": "<b>کاربرد و داستان:</b> یک بازی دونده سریع و هیجان‌انگیز در سال ۲۱۸۹ میلادی؛ بازیکن در نقش اِکو از شهر سایبرپانک و شبکه امنیتی شرکت‌ها فرار می‌کند، موانع را جاخالی می‌دهد و با سپر و شتاب (Dash) رکورد می‌زند.<br><br><b>نحوه کارکرد و قابلیت‌ها:</b> بازی دارای ۵ مرحله داستانی، ۶ حالت بازی مجزا (تک‌نفره، دونفره و تیمی؛ هرکدام در دو دوربین کاملاً متفاوت اول‌شخص و سوم‌شخص)، فروشگاه ارتقا و ارز درون‌بازی است. یک نسخه ویژه دونفره هم دارد که صفحه را به دو نیم تقسیم می‌کند تا دو نفر هم‌زمان با دو کنترلر روی یک دستگاه رقابت کنند — به‌همراه پورت واقعیت مجازی OpenXR. در شتاب‌دهنده Negative Five مقام برتر کشوری گرفت و ده‌ها نفر با دسته بازی آن را تست کردند.",
+          "desc": "<b>کاربرد و داستان:</b> یک بازی دونده سریع و هیجان‌انگیز در سال ۲۱۸۹ میلادی؛ بازیکن در نقش اِکو از شهر سایبرپانک و شبکه امنیتی شرکت‌ها فرار می‌کند، موانع را جاخالی می‌دهد و با سپر و شتاب (Dash) رکورد می‌زند.<br><br><b>نحوه کارکرد و قابلیت‌ها:</b> بازی دارای ۵ مرحله داستانی، ۶ حالت بازی مجزا (تک‌نفره، دونفره و تیمی؛ هرکدام در دو دوربین کاملاً متفاوت اول‌شخص و سوم‌شخص)، فروشگاه ارتقا و ارز درون‌بازی است. یک نسخه ویژه دونفره هم دارد که صفحه را به دو نیم تقسیم می‌کند تا دو نفر هم‌زمان با دو کنترلر روی یک دستگاه رقابت کنند — به‌همراه پورت واقعیت مجازی OpenXR. در رویداد Negative Five غرفه اختصاصی آزمون زنده داشت و ده‌ها نفر با دسته بازی آن را تست کردند.",
           "tags": [
             "Unity 6.3",
             "URP",
@@ -777,7 +777,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 منتشرشده در کافه‌بازار و مایکت",
           "name": "Parsa — بازی اکشن و ماجراجویی تجاری (انتشار رسمی روی کافه‌بازار و مایکت)",
-          "role": "برنامه‌نویس ارشد فنی و سیستم‌ها · استودیو Bomb Game",
+          "role": "برنامه‌نویس فنی و سیستم‌ها · استودیو Bomb Game",
           "desc": "<b>کاربرد و خروجی واقعی:</b> یک بازی تجاری و کامل اندرویدی با تم اسطوره‌ای و اکشن که به‌طور رسمی روی فروشگاه‌های کافه‌بازار و مایکت منتشر شده و توسط هزاران کاربر واقعی دانلود و بازی شده است.<br><br><b>نحوه کارکرد و مسئولیت فنی:</b> بازیکن در دنیاهای اتمسفریک و سه‌بعدی با نورپردازی سینمایی حرکت کرده، مبارزه می‌کند و مراحل را پیش می‌برد. از پیاده‌سازی لوپ اصلی گیم‌پلی و کنترلر انیمیشن کاراکترها تا ساخت سیستم ذخیره امن سوابق کاربر، رفع کرش‌های چیپست‌های مختلف اندروید، امضای نهایی Keystore و اتصال SDK پرداخت کافه‌بازار و مایکت با موفقیت انجام شده است.",
           "tags": [
             "Unity",
@@ -1400,9 +1400,9 @@ const T = {
     "honors": {
       "title": "افتخارات ملی، اسناد نخبگی و مدارک رسمی",
       "sub": "هر ادعا، سندِ تجربی، مدرک رسمی و مستندِ حقوقی خودش را دارد",
-      "n5badge": "کسب مقام برتر کشوری · National Award Winner",
+      "n5badge": "حضور برگزیده و تقدیر رسمی · Xelerate VR Certificate",
       "n5t": "شتاب‌دهنده بین‌المللی Negative Five — مسابقه کشوری دوره سوم و کسب مقام برتر · ۲۰۲۶",
-      "n5": "<b>کسب رتبه و مقام برتر کشوری</b> در مسابقه ورودی دوره سوم شتاب‌دهنده بین‌المللی Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این افتخار با اهدای لوح، تندیس و گواهینامه رسمی روی استیج با امضای مستقیم مدیرعامل شتاب‌دهنده و نماینده ارشد Xelerate VR ثبت گردید. در تمام ساعات این رویداد کشوری، یک غرفه اختصاصی آزمون زنده را میزبانی کردیم که توسط ده‌ها مهندس ارشد، داور تخصصی، مدیران استودیوهای برتر و استریمرهای مطرح با کنترلر مورد تست و ستایش قرار گرفت.",
+      "n5": "<b>حضور برگزیده و تقدیر رسمی روی استیج</b> در دوره سوم مسابقه ورودی شتاب‌دهنده Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این عنوان همراه با اهدای لوح و گواهینامه رسمی با امضای مستقیم مدیرعامل شتاب‌دهنده و نماینده ارشد Xelerate VR ثبت شد. در تمام ساعات این رویداد کشوری، یک غرفه اختصاصی آزمون زنده را میزبانی کردیم که توسط ده‌ها مهندس ارشد، داور تخصصی، مدیران استودیوهای برتر و استریمرهای مطرح با کنترلر مورد تست و ستایش قرار گرفت.",
       "talentBoxTitle": "ارزش نخبگی، صلاحیت سنجی بنیاد ملی نخبگان و ویزای Global Talent",
       "talentBoxDesc": "این مقام کشوری و گواهینامه معتبر رسمی، به عنوان سند قطعی «دستاورد برجسته ملی و صنعتی» (Evidence of Recognized National Achievement) شناخته می‌شود. این مدرک دارای بالاترین ضریب وزنی در فرآیندهای <b>استعدادیابی و تسهیلات نخبگان برتر (بنیاد ملی نخبگان)</b> بوده و یکی از معتبرترین اسناد پشتیبان رسمی (Peer-Reviewed Industry Distinction) جهت اخذ <b>ویزای استعداد درخشان جهانی (Global Talent Visa / UK Tech Nation / US O-1A & EB-1A / Exceptional Talent Criteria)</b> و جاب‌آفرهای بین‌المللی به شمار می‌رود.",
       "socialT": "چه کسانی بازی را تجربه کردند",
@@ -1547,7 +1547,7 @@ const T = {
       "kidT": "ریشه‌ها — مدارک دوران تحصیل",
       "kid": "مدارک معتبر و دوره‌های تخصصی از سال ۱۳۸۹ تاکنون، کارنامه‌های ممتاز زبان انگلیسی، و تقدیرنامه‌ها.",
       "caps": {
-        "n5-cert": "گواهی رسمی Negative Five / Xelerate VR — به نام سید ایمان منصوری",
+        "n5-cert": "گواهی رسمی Negative Five / Xelerate VR — به نام ایمان منصوری",
         "n5-me-banner": "کنار بنر اختصاصی Neon Run روی غرفه رویداد",
         "n5-me-booth": "پشت غرفه، کنار سیستم‌هایی که بازی رویشان اجرا می‌شد",
         "n5-team-venue": "همراه با اعضای تیم در سالن اصلی رویداد",
@@ -1721,7 +1721,7 @@ const T = {
       "role": "Systems Architect & Multimodal AI Engineer",
       "tag": "I build reliable software systems that turn AI into real-world results—automating engineering workflows, real-time speech & vision assistants, enterprise accounting suites, and 60 FPS interactive products, all verified with live proof.",
       "chips": [
-        "🏆 National Award Winner & Top Rank",
+        "Selected Exhibitor — Negative Five / Xelerate VR",
         "Global Talent & Elite Distinction Eligible",
         "Military Service Exempt",
         "Open to Global & Remote Roles"
@@ -2007,7 +2007,7 @@ const T = {
           "badge": "priv",
           "badgeText": "🔒 Private Enterprise Platform",
           "name": "ZarDigit — Cloud Accounting, Accounts Payable & Liquidity Management Suite",
-          "role": "Systems Architect & Lead Frontend Engineer",
+          "role": "Systems Architect & Frontend Engineer",
           "desc": "<b>What it does:</b> A cloud accounting web application built for finance teams and business owners to monitor cash balances, vendor invoices, bank payment receipts, and financial summaries clearly.<br><br><b>How it works:</b> Users open the executive treasury dashboard to track live liquidity and accounts payable, log real bank tracking numbers and supplier invoices without buggy input resets or fake auto-prefilled receipts, and export formatted Excel ledgers cleanly.<br><br><b>Key capabilities:</b> Full Persian right-to-left (RTL) and multilingual interface, AP vendor balance tables with one-click Excel export, resilient anti-locking financial forms, and 34 compiled PWA routes.",
           "tags": [
             "Next.js",
@@ -2035,7 +2035,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 Live Production Suite (14 Apps)",
           "name": "Zoho Books & Mana Suite — Enterprise Double-Entry Accounting, Billing, Projects & HRMS",
-          "role": "Systems Architect & Lead Full-Stack Engineer",
+          "role": "Systems Architect & Full-Stack Engineer",
           "desc": "<b>What it does:</b> A comprehensive 14-application enterprise operating suite unifiying Zoho Books–grade accounting, Sayad check treasury, SaaS subscription billing, project capacity management, and HR self-service.<br><br><b>How it works:</b> Users switch effortlessly from the 14-app Hub into double-entry accounting (Mana Books), recurring MRR/ARR subscription tracking (Billing), team utilization portfolios (Projects), or employee records (People); every posted financial entry stays immutable with reversal/credit-note auditability and real-time language/role switching.<br><br><b>Key capabilities:</b> 118 compiled Next.js 15 pages, 20 zero-leakage languages across 436 keys, Jalali/Gregorian calendars, IRR/IRT switching, 69 settings pages, and instant RBAC switching backed by C# .NET 10 + SQL Server.",
           "tags": [
             "Next.js 15",
@@ -2161,8 +2161,8 @@ const T = {
           "badge": "vid",
           "badgeText": "🎥 6 Live Gameplay Videos · Award Winner",
           "name": "Neon Run: Echo’s Escape — Award-Winning Cross-Platform 3D Cyberpunk Runner",
-          "role": "Lead Gameplay, Systems & Rendering Programmer",
-          "desc": "<b>What it does:</b> A high-speed 3D runner set in cyberpunk year 2189 where Echo escapes a corporate grid by dodging lanes, sliding, activating neon energy shields, and blasting ahead with dash boosts.<br><br><b>How it works & capabilities:</b> Built with 5 narrative levels, 6 game modes (Solo, Duo, Squad—each playable in both third-person and first-person cameras), an upgrade shop, and single-device split-screen multiplayer where two players compete head-to-head with independent HUDs and cameras across Android, Windows PC, and OpenXR VR. Won Top National Ranking at Negative Five Accelerator.",
+          "role": "Gameplay, Systems & Rendering Programmer",
+          "desc": "<b>What it does:</b> A high-speed 3D runner set in cyberpunk year 2189 where Echo escapes a corporate grid by dodging lanes, sliding, activating neon energy shields, and blasting ahead with dash boosts.<br><br><b>How it works & capabilities:</b> Built with 5 narrative levels, 6 game modes (Solo, Duo, Squad—each playable in both third-person and first-person cameras), an upgrade shop, and single-device split-screen multiplayer where two players compete head-to-head with independent HUDs and cameras across Android, Windows PC, and OpenXR VR. Selected for live exhibition booth at Negative Five Accelerator.",
           "tags": [
             "Unity 6.3",
             "URP",
@@ -2194,7 +2194,7 @@ const T = {
           "badge": "vid",
           "badgeText": "🎥 Gameplay Video in Archive",
           "name": "Arash Kamangir — Commercial Physics Archery & Wave Combat Game",
-          "role": "Lead Gameplay & Editor Tools Programmer · Mashhad Science & Technology Park",
+          "role": "Gameplay & Editor Tools Programmer · Mashhad Science & Technology Park",
           "desc": "<b>What it does:</b> A commercial mobile archery game inspired by Persian hero Arash where players gauge bow tension and gravity arcs to defeat incoming enemy waves and upgrade gear.<br><br><b>How it works:</b> Drawing the bow calculates exact launch velocity and parabolic arrow flight under gravity; arrows stick with Box2D physics and launch enemies with realistic jointed stickman ragdolls. Includes Campaign, Endless Mode, Armory Shop, and visual level editors built for designers.<br><br><b>Key capabilities:</b> Responsive parabolic ballistics, multi-joint Box2D ragdolls, custom Unity Editor wave tools (no-code level authoring), and tight draw-call optimization for 60 FPS on entry-level Android phones.",
           "tags": [
             "Unity 2D",
@@ -2298,7 +2298,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 Live Commercial Release (Cafe Bazaar & Myket)",
           "name": "Parsa — Published Commercial 3D Action-Adventure Game",
-          "role": "Lead Technical & Systems Programmer · Bomb Game Studio",
+          "role": "Technical & Systems Programmer · Bomb Game Studio",
           "desc": "<b>What it does:</b> A commercially shipped mobile action-adventure title inspired by Persian mythology, officially released on Cafe Bazaar and Myket with thousands of active player downloads.<br><br><b>How it works & engineering delivery:</b> Players explore atmospheric 3D environments with cinematic lighting, fight enemies, and unlock progression chapters. I led the full technical production from combat loops and animation controllers to resilient saves, multi-chipset crash fixes, keystore signing, and live store SDK releases.<br><br><b>Key capabilities:</b> Smooth third-person action combat, persistent player inventory/score storage, multi-device Android stability, and integrated store SDKs.",
           "tags": [
             "Unity",
@@ -2921,9 +2921,9 @@ const T = {
     "honors": {
       "title": "National Honors, Elite Credentials & Formal Certifications",
       "sub": "Every claim backed by empirical evidence, official records, and legal proof",
-      "n5badge": "🏆 National Award Winner · Top Ranking",
+      "n5badge": "Official Exhibitor · Xelerate VR Certificate",
       "n5t": "Negative Five International Accelerator — Third Cycle National Competition & Award Winner · 2026",
-      "n5": "<b>Won top national ranking and official award</b> at the third-cycle national entry competition of the Negative Five International Accelerator, showcasing flagship title Neon Run: Echo’s Escape. Formally awarded on stage with an official certificate and honor signed directly by the Accelerator CEO and the senior Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.",
+      "n5": "<b>Selected to showcase a live playable build of Neon Run: Echo’s Escape</b> at the third-cycle national entry competition of the Negative Five Accelerator, receiving an official Certificate of Appreciation on stage signed by the Accelerator CEO and Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.",
       "talentBoxTitle": "Elite Talent Recognition, National Elites Foundation & Global Talent Visa Eligibility",
       "talentBoxDesc": "This official national award and verified credential serve as decisive, legally recognized evidence of <b>Recognized National Achievement & Industry Distinction</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.",
       "socialT": "Notable Playtesters & Streamers",
@@ -3068,7 +3068,7 @@ const T = {
       "kidT": "Roots — Educational History & Certifications",
       "kid": "Earliest computer science certificate dating to 2010, alongside advanced English language honors and academic achievement diplomas.",
       "caps": {
-        "n5-cert": "Official Negative Five / Xelerate VR Certificate — awarded to Seyed Iman Mansouri",
+        "n5-cert": "Official Negative Five / Xelerate VR Certificate — awarded to Iman Mansouri",
         "n5-me-banner": "Beside the dedicated Neon Run event booth banner",
         "n5-me-booth": "Behind the booth beside the active playtesting systems",
         "n5-team-venue": "With team members inside the main conference venue",
@@ -3242,7 +3242,7 @@ const T = {
       "role": "Systemarchitekt & Ingenieur für multimodale KI",
       "tag": "Ich entwickle zuverlässige Softwaresysteme, die künstliche Intelligenz in echte Produktivität verwandeln — von autonomen Entwickler-Workflows und Echtzeit-Sprachassistenten über Buchhaltungsplattformen bis hin zu 60-FPS-Spielen, alles mit Live-Nachweisen verifiziert.",
       "chips": [
-        "🏆 Nationaler Preisträger & Bestplatzierung",
+        "Ausgewählter Aussteller — Negative Five / Xelerate VR",
         "Qualifiziert für Global-Talent-Visum",
         "Vollständige Reisefreiheit & Standortflexibilität",
         "Offen für internationale & Remote-Rollen"
@@ -3270,7 +3270,7 @@ const T = {
       ],
       [
         "1. Preis",
-        "Bestplatzierung beim nationalen Negative-Five-Accelerator · 2026"
+        "Eigener Playtest-Stand & Offizielle Xelerate-VR-Urkunde · 2026"
       ],
       [
         "100%",
@@ -3528,7 +3528,7 @@ const T = {
           "badge": "priv",
           "badgeText": "🔒 Private Finanzplattform",
           "name": "ZarDigit — Cloud-Plattform für Buchhaltung, Kreditoren & Liquidität",
-          "role": "Systemarchitekt & Lead Frontend Engineer",
+          "role": "Systemarchitekt & Frontend Engineer",
           "desc": "<b>Funktion:</b> Cloud-Buchhaltung für Finanzteams und Geschäftsleitungen zur klaren Steuerung von Barbestand, Lieferantenrechnungen, Zahlungsbelegen und Finanzberichten.<br><br><b>Funktionsweise:</b> Finanzverantwortliche prüfen Liquidität und offene Verbindlichkeiten im Executive-Dashboard, erfassen reale Bankreferenzen ohne springende Formularfehler und exportieren formatierte Excel-Listen per Klick.<br><br><b>Hauptfunktionen:</b> Natives persisches RTL- und mehrsprachiges Design, Kreditorentabellen mit Excel-Export, eingabegeschützte Formulare und 34 kompilierte PWA-Routen.",
           "tags": [
             "Next.js",
@@ -3556,7 +3556,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 Live-Produktionssuite (14 Apps)",
           "name": "Zoho Books & Mana Suite — Doppelte Buchführung, Billing, Projekte & HR",
-          "role": "Systemarchitekt & Lead Full-Stack-Entwickler",
+          "role": "Systemarchitekt & Full-Stack-Entwickler",
           "desc": "<b>Funktion:</b> Integrierte 14-App-Unternehmensplattform auf internationalem Zoho-Books-Niveau — vereint Hauptbuch, Scheckwesen, Abo-Abrechnung, Projektkapazitäten und HR-Self-Service.<br><br><b>Funktionsweise:</b> Über den App-Hub wechseln Teams nahtlos zwischen Buchhaltung, MRR/ARR-Abo-Billing, Ressourcenplanung und Personalakten; gebuchte Belege bleiben revisionssicher und Sprach- sowie Rollenwechsel greifen sofort.<br><br><b>Hauptfunktionen:</b> 118 kompilierte Next.js-15-Seiten, 20 lückenlose Sprachen (436 Keys), Jalali/Gregorian-Kalender, Währungsumschaltung, 69 Einstellungsseiten und Live-RBAC auf .NET 10 + SQL Server.",
           "tags": [
             "Next.js 15",
@@ -3682,7 +3682,7 @@ const T = {
           "badge": "vid",
           "badgeText": "🎥 6 Gameplay-Videos · Nationaler Sieger",
           "name": "Neon Run: Echo’s Escape — Preisgekrönter 3D-Cyberpunk-Runner",
-          "role": "Lead Gameplay-, Systems- & Rendering-Programmierer",
+          "role": "Gameplay-, Systems- & Rendering-Programmierer",
           "desc": "<b>Funktion & Story:</b> Ein rasanter 3D-Läufer im Cyberpunk-Jahr 2189: Echo flieht über 3 Spuren mit Sprüngen, Slides, Energieschild und Dash-Boosts durch ein Konzernnetz.<br><br><b>Ablauf & Features:</b> Fünf Story-Level, sechs Modi (Solo, Duo, Squad — jeweils in Ego- und Verfolgerkamera), Upgrade-Shop sowie lokales Split-Screen-Duell auf einem Gerät mit zwei eigenen Kameras und Controller-Steuerung auf Android, Windows und OpenXR VR.",
           "tags": [
             "Unity 6.3",
@@ -3715,7 +3715,7 @@ const T = {
           "badge": "vid",
           "badgeText": "🎥 Gameplay-Video im Archiv",
           "name": "Arash Kamangir — Kommerzielles Physik-Bogenschieß- & Wellenspiel",
-          "role": "Lead Gameplay- & Editor-Programmierer · Wissenschaftspark Mashhad",
+          "role": "Gameplay- & Editor-Programmierer · Wissenschaftspark Mashhad",
           "desc": "<b>Funktion:</b> Kommerzielles Mobile-Bogenschießspiel rund um die persische Figur Arash, bei dem Spieler Bogenspannung und Schwerkraft für gegnerische Wellen kalkulieren.<br><br><b>Ablauf & Features:</b> Das Ziehen des Bogens berechnet exakt Starttempo und Wurfparabel; Pfeile lösen realistische Box2D-Stickman-Ragdolls aus. Bietet Kampagne, Endlos-Modus, Waffen-Shop sowie visuelle Unity-Editor-Tools für Leveldesigner ohne Programmieraufwand.",
           "tags": [
             "Unity 2D",
@@ -3819,7 +3819,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 Offiziell im Handel (Cafe Bazaar & Myket)",
           "name": "Parsa — Kommerziell veröffentlichtes 3D-Action-Abenteuer",
-          "role": "Lead Technical & Systems Programmer · Bomb Game Studio",
+          "role": "Technical & Systems Programmer · Bomb Game Studio",
           "desc": "<b>Funktion & Ergebnis:</b> Kommerzieller Mobile-Action-Titel mit persischem Mythen-Setting, offiziell auf Cafe Bazaar und Myket mit tausenden Downloads veröffentlicht.<br><br><b>Technische Verantwortung:</b> Atmosphärische 3D-Welten, Kämpfe und Kapitel-Progression; eigenverantwortlich für Kampfloops, Animationssteuerung, ausfallsichere Spielstände, Chipsatz-Bugfixes, Keystore-Signierung und Store-SDK-Auslieferung.",
           "tags": [
             "Unity",
@@ -4441,9 +4441,9 @@ const T = {
     "honors": {
       "title": "Nationale Auszeichnungen, Qualifikationen & Offizielle Zertifikate",
       "sub": "Jede Aussage wird durch Belege, offizielle Urkunden und Live-Aufnahmen gestützt",
-      "n5badge": "🏆 Nationaler Preisträger · Bestplatzierung",
+      "n5badge": "Offizieller Aussteller · Xelerate VR Urkunde",
       "n5t": "Negative Five International Accelerator — 3. Nationaler Wettbewerb & Sieger · 2026",
-      "n5": "<b>Gewinner der nationalen Bestplatzierung</b> im dritten Auswahlwettbewerb des Negative Five International Accelerator mit dem Vorzeigeprojekt Neon Run: Echo’s Escape. Auf der Hauptbühne feierlich geehrt mit offizieller Urkunde, direkt unterzeichnet vom CEO des Accelerators und dem leitenden Vertreter von Xelerate VR. An unserem eigenen Ausstellungsstand testeten Dutzende Ingenieure, Juroren, erfahrene Studioleiter und große Streamer das Spiel live am Controller.",
+      "n5": "<b>Ausgewählt zur Live-Präsentation von Neon Run: Echo’s Escape</b> im dritten Auswahlwettbewerb des Negative Five Accelerator, auf der Bühne mit offizieller Anerkennungsurkunde von CEO und Xelerate-VR-Vertreter geehrt. An unserem eigenen Ausstellungsstand testeten Dutzende Ingenieure, Juroren, erfahrene Studioleiter und große Streamer das Spiel live am Controller.",
       "talentBoxTitle": "Relevanz für Global-Talent-Visum & Elite-Förderung",
       "talentBoxDesc": "Diese offizielle nationale Auszeichnung dient als anerkannter Nachweis für <b>herausragende nationale Branchenleistung (Recognized National Achievement)</b>. Sie erfüllt zentrale Kriterien internationaler Spitzenkräfte-Programme wie dem <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability sowie EU-Talentpfade)</b> und belegt begutachtete Exzellenz im Software-Engineering.",
       "socialT": "Stimmen bekannter Tester & Streamer",
@@ -4588,7 +4588,7 @@ const T = {
       "kidT": "Frühe Wurzeln — Bildungsweg & Erste Zeugnisse",
       "kid": "Erstes Informatik-Zertifikat bereits aus dem Jahr 2010 neben fortlaufenden Englisch-Auszeichnungen und schulischen Diplomen.",
       "caps": {
-        "n5-cert": "Offizielle Auszeichnung Negative Five / Xelerate VR — verliehen an Seyed Iman Mansouri",
+        "n5-cert": "Offizielle Auszeichnung Negative Five / Xelerate VR — verliehen an Iman Mansouri",
         "n5-me-banner": "Am offiziellen Ausstellungsbanner von Neon Run",
         "n5-me-booth": "Am Messestand neben den aktiven Spieltest-Stationen",
         "n5-team-venue": "Mit Teammitgliedern in der Haupthalle der Konferenz",
@@ -4762,7 +4762,7 @@ const T = {
       "role": "Arquitecto de Sistemas e Ingeniero de IA Multimodal",
       "tag": "Diseño software confiable que convierte la IA en resultados reales: automatización de ingeniería, asistentes de voz y visión en tiempo real, plataformas contables empresariales y videojuegos a 60 FPS, todo verificado con pruebas en vivo.",
       "chips": [
-        "🏆 Ganador de Premio Nacional",
+        "Expositor Seleccionado — Negative Five / Xelerate VR",
         "Elegible para Visado Global Talent",
         "Situación militar resuelta (Exento)",
         "Disponible para roles globales y remotos"
@@ -4789,7 +4789,7 @@ const T = {
         "Rendimiento pico medido (peticiones por segundo)"
       ],
       [
-        "Premio Nacional",
+        "Negative Five Expo",
         "Primer puesto en el acelerador nacional Negative Five · 2026"
       ],
       [
@@ -5200,7 +5200,7 @@ const T = {
           "id": "neon",
           "cat": "games",
           "badge": "vid",
-          "badgeText": "🎥 6 Videos Reales · Premio Nacional",
+          "badgeText": "🎥 6 Videos Reales · Exhibición en Vivo",
           "name": "Neon Run: Echo’s Escape — Runner 3D Cyberpunk Multiplataforma Premiado",
           "role": "Programador Principal de Jugabilidad, Sistemas y Renderizado",
           "desc": "<b>Qué hace e historia:</b> Un veloz runner 3D en el año 2189 donde Echo huye de una red corporativa cambiando entre 3 carriles, saltando, deslizándose y usando escudo de energía y propulsión Dash.<br><br><b>Cómo funciona y funciones:</b> Ofrece 5 niveles narrativos, 6 modos de juego (Solo, Dúo y Escuadrón en primera y tercera persona), tienda de mejoras y multijugador competitivo en pantalla dividida en un solo dispositivo con dos cámaras y controles separados en Android, PC y OpenXR VR.",
@@ -5961,9 +5961,9 @@ const T = {
     "honors": {
       "title": "Premios Nacionales, Credenciales de Élite y Certificados Oficiales",
       "sub": "Cada logro respaldado por evidencia empírica, actas oficiales y prueba documental",
-      "n5badge": "🏆 Premio Nacional · Primer Puesto",
+      "n5badge": "Expositor Oficial · Certificado Xelerate VR",
       "n5t": "Acelerador Internacional Negative Five — 3.ª Competición Nacional y Premio · 2026",
-      "n5": "<b>Primer puesto nacional y premio oficial</b> en la tercera competición del Acelerador Internacional Negative Five presentando nuestro título insignia Neon Run: Echo’s Escape. Galardonado sobre el escenario con diploma firmado directamente por el CEO del acelerador y el representante sénior de Xelerate VR. Mantuvimos un stand exclusivo donde decenas de ingenieros, jueces, directores de estudio y streamers probaron el juego en vivo con mando.",
+      "n5": "<b>Seleccionado para presentar una demo jugable en vivo de Neon Run: Echo’s Escape</b> en la tercera competición del Acelerador Negative Five, recibiendo un certificado oficial en el escenario firmado por el CEO y el representante de Xelerate VR. Mantuvimos un stand exclusivo donde decenas de ingenieros, jueces, directores de estudio y streamers probaron el juego en vivo con mando.",
       "talentBoxTitle": "Elegibilidad para Visado Global Talent y Reconocimiento de Élite",
       "talentBoxDesc": "Este galardón nacional constituye prueba formal de <b>Logro Nacional Reconocido y Distinción Industrial</b>. Aporta el máximo valor probatorio para evaluaciones de excelencia y cumple requisitos clave en programas internacionales de talento como <b>Global Talent Visa (UK Tech Nation, EE. UU. O-1A / EB-1A y vías de talento de la UE)</b>.",
       "socialT": "Creadores y Directores que Probaron el Juego",
@@ -6108,7 +6108,7 @@ const T = {
       "kidT": "Raíces — Trayectoria Temprana y Primeros Certificados",
       "kid": "Primer certificado en ciencias de la computación desde 2010 junto a diplomas de honor en inglés y distinciones escolares.",
       "caps": {
-        "n5-cert": "Certificado Oficial Negative Five / Xelerate VR — otorgado a Seyed Iman Mansouri",
+        "n5-cert": "Certificado Oficial Negative Five / Xelerate VR — otorgado a Iman Mansouri",
         "n5-me-banner": "Junto al cartel oficial de Neon Run en el evento",
         "n5-me-booth": "Detrás del stand junto a los equipos de prueba activos",
         "n5-team-venue": "Con integrantes del equipo dentro del recinto principal",
