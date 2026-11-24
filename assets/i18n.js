@@ -526,13 +526,6 @@ const T = {
             "Multi-Tenancy"
           ],
           "link": "zoho",
-          "demo": {
-            "title": "🔑 اطلاعات ورود نسخه کامل سازمانی (Mana Books / Zoho):",
-            "userLabel": "ایمیل ورود",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "رمز عبور",
-            "pass": "admin123"
-          },
           "arch": [
             "۱۱۸ صفحه استاتیک کامپایل‌شده در Next.js 15 App Router با دسترسی یکپارچه به ۱۴ اپلیکیشن مالی، پروژه و HR",
             "انزوای سخت‌گیرانه چندمستأجری (OrganizationId) همراه با هسته .NET 10 Clean Architecture و SQL Server",
@@ -2047,13 +2040,6 @@ const T = {
             "Multi-Tenancy"
           ],
           "link": "zoho",
-          "demo": {
-            "title": "🔑 Live Login Credentials (Full Enterprise Suite):",
-            "userLabel": "Email",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "Password",
-            "pass": "admin123"
-          },
           "arch": [
             "118 static Next.js 15 App Router pages unifying Accounting, Billing, Projects, Treasury, and People HRMS",
             "Clean Architecture .NET 10 backend with strict OrganizationId tenant isolation on every SQL Server query",
@@ -3568,13 +3554,6 @@ const T = {
             "Mandantenfähigkeit"
           ],
           "link": "zoho",
-          "demo": {
-            "title": "🔑 Live-Zugangsdaten (Vollständige Enterprise-Suite):",
-            "userLabel": "E-Mail",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "Passwort",
-            "pass": "admin123"
-          },
           "arch": [
             "118 statische Next.js-15-Seiten vereinen Buchhaltung, Billing, Projekte, Treasury und HR nahtlos",
             "Clean Architecture in .NET 10 mit strikter OrganizationId-Mandantentrennung auf jeder SQL-Abfrage",
@@ -5088,13 +5067,6 @@ const T = {
             "Multitenencia"
           ],
           "link": "zoho",
-          "demo": {
-            "title": "🔑 Credenciales de Acceso (Suite Completa):",
-            "userLabel": "Correo",
-            "user": "lorenasucilla559@gmail.com",
-            "passLabel": "Contraseña",
-            "pass": "admin123"
-          },
           "arch": [
             "118 páginas estáticas en Next.js 15 App Router conectando Contabilidad, Billing, Proyectos y Personas",
             "Backend Clean Architecture .NET 10 con aislamiento estricto por OrganizationId en SQL Server",
