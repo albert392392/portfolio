@@ -153,7 +153,7 @@ const LINKS = {
   "github": "https://github.com/albert392392",
   "antigravity": "https://github.com/albert392392/antigravity-scroll-unpin",
   "portfolio": "https://github.com/albert392392/portfolio",
-  "copilot": "https://github.com/albert392392/GeminiLiveCoPilot",
+  "copilot": "https://albert392392.github.io/portfolio/#multimodal",
     "zoho": "https://albert392392.github.io/portfolio/mana-demo/",
   "auro": "https://auro-social-engine.vercel.app/"
 };
