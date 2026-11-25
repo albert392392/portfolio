@@ -392,8 +392,8 @@ const T = {
         {
           "id": "copilot",
           "cat": "multimodal",
-          "badge": "oss",
-          "badgeText": "⭐ سورس باز در گیت‌هاب",
+          "badge": "priv",
+          "badgeText": "🔒 مخزن اختصاصی · دمو در آرشیو ویدیوها",
           "name": "Iman Mansouri Jet AI Human Assistant 🚀 — دستیار خودمختار کنترل کامل ویندوز با صدا و بینایی",
           "role": "معمار سیستم‌های خودمختار، بینایی ماشین و وب‌سوکت بلادرنگ",
           "desc": "<b>کاربرد:</b> دستیاری هوشمند روی دسکتاپ ویندوز که فقط متنی جواب نمی‌دهد، بلکه صفحه نمایش را می‌بیند، صدای شما را به‌صورت طبیعی می‌شنود و می‌تواند جای شما در برنامه‌ها کلیک کند، تایپ کند و کارهای چندمرحله‌ای را تمام کند.<br><br><b>نحوه کارکرد:</b> کاربر با صدا (فارسی یا انگلیسی) دستور می‌دهد؛ دستیار با وضوح 1440p محیط صفحه را تحلیل می‌کند، با مقایسه هوشمند فریم‌ها قسمت‌های ثابت را کنار می‌گذارد تا ۷۵٪ مصرف پهنای باند کمتر شود، سپس با حرکت نرم ماوس روی مسیر بِزیه دکمه‌ها را می‌زند و متن‌ها را بدون جاماندن حرف می‌نویسد.<br><br><b>قابلیت‌های کلیدی:</b> قابلیت قطع کردن حرف دستیار در لحظه (Barge-In) بدون برگشت اکو، اجرای پیوسته تسک‌های چندگانه (Auto-Flight)، تزریق بدون خطای متون کد و فارسی از طریق کلیپ‌بورد ویندوز، و توقف اضطراری آنی با کلید Esc یا تکان دادن ماوس.",
@@ -406,7 +406,7 @@ const T = {
             "Gemini Live WebSocket",
             "AEC Audio"
           ],
-          "link": "copilot",
+          
           "arch": [
             "هدایت دقیق پرواز با سیم (Fly-by-Wire): حرکت ماوس روی منحنی بِزیه با قفل دقیق روی مختصات المان‌های UIA/Win32",
             "تزریق اتمیک Win32 Clipboard برای نوشتن بی‌نقص کدهای طولانی و کاراکترهای فارسی بدون افت حروف",
@@ -1393,11 +1393,11 @@ const T = {
     "honors": {
       "title": "افتخارات ملی، اسناد نخبگی و مدارک رسمی",
       "sub": "هر ادعا، سندِ تجربی، مدرک رسمی و مستندِ حقوقی خودش را دارد",
-      "n5badge": "حضور برگزیده و تقدیر رسمی · Xelerate VR Certificate",
-      "n5t": "شتاب‌دهنده بین‌المللی Negative Five — مسابقه کشوری دوره سوم و کسب مقام برتر · ۲۰۲۶",
-      "n5": "<b>حضور برگزیده و تقدیر رسمی روی استیج</b> در دوره سوم مسابقه ورودی شتاب‌دهنده Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این عنوان همراه با اهدای لوح و گواهینامه رسمی با امضای مستقیم مدیرعامل شتاب‌دهنده و نماینده ارشد Xelerate VR ثبت شد. در تمام ساعات این رویداد کشوری، یک غرفه اختصاصی آزمون زنده را میزبانی کردیم که توسط ده‌ها مهندس ارشد، داور تخصصی، مدیران استودیوهای برتر و استریمرهای مطرح با کنترلر مورد تست و ستایش قرار گرفت.",
-      "talentBoxTitle": "ارزش نخبگی، صلاحیت سنجی بنیاد ملی نخبگان و ویزای Global Talent",
-      "talentBoxDesc": "این مقام کشوری و گواهینامه معتبر رسمی، به عنوان سند قطعی «دستاورد برجسته ملی و صنعتی» (Evidence of Recognized National Achievement) شناخته می‌شود. این مدرک دارای بالاترین ضریب وزنی در فرآیندهای <b>استعدادیابی و تسهیلات نخبگان برتر (بنیاد ملی نخبگان)</b> بوده و یکی از معتبرترین اسناد پشتیبان رسمی (Peer-Reviewed Industry Distinction) جهت اخذ <b>ویزای استعداد درخشان جهانی (Global Talent Visa / UK Tech Nation / US O-1A & EB-1A / Exceptional Talent Criteria)</b> و جاب‌آفرهای بین‌المللی به شمار می‌رود.",
+      "n5badge": "حضور منتخب با غرفه زنده و تقدیر رسمی · Xelerate VR Certificate",
+      "n5t": "شتاب‌دهنده بین‌المللی Negative Five — حضور منتخب و گواهینامه رسمی دوره سوم · ۲۰۲۶",
+      "n5": "<b>حضور منتخب با غرفه اختصاصی تست زنده و دریافت گواهینامه تقدیر رسمی روی استیج</b> در دوره سوم رقابت ورودی شتاب‌دهنده Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این گواهینامه رسمی با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR صادر شد و در طول رویداد ده‌ها بازدیدکننده، داور تخصصی، مدیران استودیوها و تولیدکنندگان محتوای بازی نسخه قابل بازی را با کنترلر تجربه و تحسین کردند.",
+      "talentBoxTitle": "ارزش حرفه‌ای و مستندات رسمی ارزیابی بین‌المللی",
+      "talentBoxDesc": "این گواهینامه رسمی رویداد و سوابق مستند مهندسی، به عنوان سند معتبر «ارائه منتخب صنعتی و داوری‌شده» (Evidence of Recognized National Achievement) شناخته می‌شود. این مدرک دارای بالاترین ضریب وزنی در فرآیندهای <b>استعدادیابی و تسهیلات نخبگان برتر (بنیاد ملی نخبگان)</b> بوده و یکی از معتبرترین اسناد پشتیبان رسمی (Peer-Reviewed Industry Distinction) جهت اخذ <b>ویزای استعداد درخشان جهانی (Global Talent Visa / UK Tech Nation / US O-1A & EB-1A / Exceptional Talent Criteria)</b> و جاب‌آفرهای بین‌المللی به شمار می‌رود.",
       "socialT": "چه کسانی بازی را تجربه کردند",
       "quote": "«… تجربه‌اش برام خیلی لذت‌بخش بود … <b>خیلی اعتیادآور بود!</b>»",
       "quoteWho": "— یادداشت دست‌نویس و امضاشده مریم خواجوی (iholymary)، تولیدکننده محتوای بازی، پس از بازی کردن Neon Run روی غرفه",
@@ -1644,13 +1644,13 @@ const T = {
     },
     "resume": {
       "title": "رزومه رسمی مهندسی (فارسی و انگلیسی)",
-      "sub": "فایل PDF رسمی آماده پرینت + پیش‌نمایش تمام ۸ صفحه با کیفیت بالا",
-      "intro": "نسخه کامل و به‌روزشده رزومه مهندسی به دو زبان فارسی و انگلیسی در قالب استاندارد چاپی A4 آماده شده است. می‌توانید فایل PDF را مستقیماً دانلود کنید یا تمام ۸ صفحه را همین‌جا ورق بزنید و بررسی کنید.",
+      "sub": "فایل PDF اجرایی ۲ صفحه‌ای آماده پرینت + پیش‌نمایش هر ۲ صفحه با کیفیت بالا",
+      "intro": "نسخه اجرایی، فشرده و به‌روزشده رزومه به دو زبان فارسی و انگلیسی در قالب استاندارد ۲ صفحه‌ای A4 آماده شده است. می‌توانید فایل PDF را مستقیماً دانلود کنید یا هر دو صفحه را با وضوح بالا همین‌جا بررسی کنید.",
       "fa": "نسخه فارسی (PDF)",
       "en": "نسخه انگلیسی (PDF)",
       "open": "باز کردن فایل کامل PDF",
       "dl": "دانلود فایل PDF",
-      "hint": "پیش‌نمایش تمام ۸ صفحه با وضوح بالا (روی هر صفحه کلیک کنید تا بزرگ شود):"
+      "hint": "پیش‌نمایش ۲ صفحه نسخه اجرایی با وضوح بالا (روی هر صفحه کلیک کنید تا بزرگ شود):"
     },
     "videos": {
       "title": "آرشیو ویدیوهای واقعی محصولات و دموها",
@@ -1711,7 +1711,7 @@ const T = {
     },
     "hero": {
       "name": "Iman Mansouri",
-      "role": "Systems Architect & Multimodal AI Engineer",
+      "role": "Architect & Multimodal AI Engineer",
       "tag": "I build reliable software systems that turn AI into real-world results—automating engineering workflows, real-time speech & vision assistants, enterprise accounting suites, and 60 FPS interactive products, all verified with live proof.",
       "chips": [
         "Selected Exhibitor — Negative Five / Xelerate VR",
@@ -1741,8 +1741,8 @@ const T = {
         "Measured peak production throughput (requests per second)"
       ],
       [
-        "National Winner",
-        "Top rank at Negative Five International Accelerator · 2026"
+        "Selected Exhibitor",
+        "Official Playtest Booth & Xelerate VR Certificate · 2026"
       ],
       [
         "100%",
@@ -1906,8 +1906,8 @@ const T = {
         {
           "id": "copilot",
           "cat": "multimodal",
-          "badge": "oss",
-          "badgeText": "⭐ Open Source on GitHub",
+          "badge": "priv",
+          "badgeText": "🔒 Private Core · Live Video Demos",
           "name": "Iman Mansouri Jet AI Human Assistant 🚀 — Autonomous Voice & Vision Desktop Copilot",
           "role": "Autonomous Systems, Vision & WebSocket Architect",
           "desc": "<b>What it does:</b> An always-on-top Windows AI co-pilot that doesn't just chat in a box—it actually sees your 1440p screen, talks with you in real time, and moves the mouse and types to finish multi-step desktop tasks automatically.<br><br><b>How it works:</b> Give a voice instruction in English or Persian; the copilot captures crisp 1440p frames, filters out static screen regions using OpenCV math so >75% fewer tokens are sent, aligns smoothly onto buttons via Bézier curves, and injects code or RTL text reliably without dropping characters.<br><br><b>Key capabilities:</b> Natural voice interruption (Barge-In) backed by Acoustic Echo Cancellation, continuous multi-step Auto-Flight across browsers and IDEs, glassmorphic PyQt6 HUD telemetry, and instant Esc emergency abort.",
@@ -1920,7 +1920,7 @@ const T = {
             "Gemini Live WebSocket",
             "AEC Audio"
           ],
-          "link": "copilot",
+          
           "arch": [
             "Level-5 Fly-by-Wire navigation: cubic Bézier cursor trajectories snapping cleanly onto Win32/UIA element bounding boxes",
             "Atomic Win32 clipboard paste eliminating character drops in long code blocks and right-to-left Persian scripts",
@@ -2907,11 +2907,11 @@ const T = {
     "honors": {
       "title": "National Honors, Elite Credentials & Formal Certifications",
       "sub": "Every claim backed by empirical evidence, official records, and legal proof",
-      "n5badge": "Official Exhibitor · Xelerate VR Certificate",
-      "n5t": "Negative Five International Accelerator — Third Cycle National Competition & Award Winner · 2026",
-      "n5": "<b>Selected to showcase a live playable build of Neon Run: Echo’s Escape</b> at the third-cycle national entry competition of the Negative Five Accelerator, receiving an official Certificate of Appreciation on stage signed by the Accelerator CEO and Xelerate VR representative. We hosted an exclusive live exhibition booth throughout the national event, where dozens of engineers, judges, veteran studio directors, and top-tier streamers playtested the game live on controller.",
-      "talentBoxTitle": "Elite Talent Recognition, National Elites Foundation & Global Talent Visa Eligibility",
-      "talentBoxDesc": "This official national award and verified credential serve as decisive, legally recognized evidence of <b>Recognized National Achievement & Industry Distinction</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.",
+      "n5badge": "Selected Live Exhibitor · Xelerate VR Certificate",
+      "n5t": "Negative Five International Accelerator — Selected Live Showcase & Official Certificate · 2026",
+      "n5": "<b>Selected to showcase a live playable build of Neon Run: Echo’s Escape</b> on a dedicated playtest booth at the third-cycle entry competition of the Negative Five Accelerator, receiving an official Certificate of Appreciation on stage signed by the Accelerator CEO and Xelerate VR representative while visitors, technical reviewers, studio directors, and creators playtested the game live.",
+      "talentBoxTitle": "Verified Accelerator Recognition & International Track Evidence",
+      "talentBoxDesc": "This official accelerator certificate and live playtest validation serve as verified evidence of <b>peer-reviewed technical delivery and public product demonstration</b>. It holds the highest evidentiary weight for <b>National Elites Foundation evaluation</b> and fulfills key requirements for international exceptional talent immigration programs including the <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability, and EU Talent pathways)</b>, proving recognized peer distinction and elite software engineering capability.",
       "socialT": "Notable Playtesters & Streamers",
       "quote": "“… I really enjoyed the experience … <b>it was seriously addictive!</b>”",
       "quoteWho": "— Handwritten and signed note from Maryam Khajavi (iholymary), gaming content creator with 315K+ followers, after playtesting at the booth",
@@ -3159,12 +3159,12 @@ const T = {
     "resume": {
       "title": "Official Engineering Résumé",
       "sub": "Print-ready A4 PDF editions and high-resolution page previews",
-      "intro": "My complete engineering résumé is published in both English and Persian editions in standard A4 print format. Download either PDF directly or inspect all 8 pages in high resolution below.",
+      "intro": "My streamlined executive engineering résumé is published in both English and Persian in crisp 2-page A4 format. Download either PDF directly or inspect both pages in high resolution below.",
       "fa": "Persian Edition (RTL PDF)",
       "en": "English Edition (PDF)",
       "open": "Open Fullscreen PDF",
       "dl": "Download PDF File",
-      "hint": "High-resolution online preview of all 8 pages (click any page to zoom):"
+      "hint": "High-resolution preview of both executive A4 pages (click either page to zoom):"
     },
     "videos": {
       "title": "Product Video Archive — Real Working Demos",
@@ -3173,7 +3173,7 @@ const T = {
       "jump": "Quick Jump to Section:",
       "loading": "Loading video stream…"
     },
-    "footer": "Iman Mansouri — Systems Architect & Multimodal AI Engineer",
+    "footer": "Iman Mansouri — Architect & Multimodal AI Engineer",
     "monographs": {
       "title": "Engineering Monographs & Deep Tech Knowledge",
       "sub": "61 rigorous architectural treatises on distributed systems, autonomous AI swarms, sub-second multimodal pipelines, and zero-allocation high-performance computing",
@@ -3255,7 +3255,7 @@ const T = {
         "Gemessener Spitzendurchsatz (Anfragen pro Sekunde)"
       ],
       [
-        "1. Preis",
+        "Ausgewählter Aussteller",
         "Eigener Playtest-Stand & Offizielle Xelerate-VR-Urkunde · 2026"
       ],
       [
@@ -3434,7 +3434,7 @@ const T = {
             "Gemini Live WebSocket",
             "AEC Audio"
           ],
-          "link": "copilot",
+          
           "arch": [
             "Level-5 Fly-by-Wire-Steuerung mit kubischen Bézier-Bahnen und präzisem Einrasten auf UIA/Win32-Elemente",
             "Atomares Win32-Clipboard-Paste ohne Zeichenverlust bei langem Code oder persischer RTL-Schrift",
@@ -4421,7 +4421,7 @@ const T = {
       "title": "Nationale Auszeichnungen, Qualifikationen & Offizielle Zertifikate",
       "sub": "Jede Aussage wird durch Belege, offizielle Urkunden und Live-Aufnahmen gestützt",
       "n5badge": "Offizieller Aussteller · Xelerate VR Urkunde",
-      "n5t": "Negative Five International Accelerator — 3. Nationaler Wettbewerb & Sieger · 2026",
+      "n5t": "Negative Five International Accelerator — Offizielle Live-Ausstellung & Urkunde · 2026",
       "n5": "<b>Ausgewählt zur Live-Präsentation von Neon Run: Echo’s Escape</b> im dritten Auswahlwettbewerb des Negative Five Accelerator, auf der Bühne mit offizieller Anerkennungsurkunde von CEO und Xelerate-VR-Vertreter geehrt. An unserem eigenen Ausstellungsstand testeten Dutzende Ingenieure, Juroren, erfahrene Studioleiter und große Streamer das Spiel live am Controller.",
       "talentBoxTitle": "Relevanz für Global-Talent-Visum & Elite-Förderung",
       "talentBoxDesc": "Diese offizielle nationale Auszeichnung dient als anerkannter Nachweis für <b>herausragende nationale Branchenleistung (Recognized National Achievement)</b>. Sie erfüllt zentrale Kriterien internationaler Spitzenkräfte-Programme wie dem <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability sowie EU-Talentpfade)</b> und belegt begutachtete Exzellenz im Software-Engineering.",
@@ -4672,12 +4672,12 @@ const T = {
     "resume": {
       "title": "Offizieller Ingenieur-Lebenslauf",
       "sub": "Druckfertige A4-PDF-Ausgaben und hochauflösende Seitenvorschau",
-      "intro": "Mein vollständiger Lebenslauf liegt im A4-Format sowohl auf Englisch als auch auf Persisch vor. Laden Sie die PDF-Datei direkt herunter oder betrachten Sie alle 8 Seiten hochauflösend in der Vorschau.",
+      "intro": "Mein kompakter Executive-Lebenslauf (2 A4-Seiten) liegt auf Englisch und Persisch vor. Laden Sie die PDF-Datei direkt herunter oder betrachten Sie beide Seiten hochauflösend in der Vorschau.",
       "fa": "Persische Ausgabe (RTL PDF)",
       "en": "Englische Ausgabe (PDF)",
       "open": "PDF im Vollbild öffnen",
       "dl": "PDF-Datei herunterladen",
-      "hint": "Hochauflösende Vorschau aller 8 Seiten (zum Vergrößern anklicken):"
+      "hint": "Hochauflösende Vorschau beider A4-Seiten (zum Vergrößern anklicken):"
     },
     "videos": {
       "title": "Produkt-Videoarchiv — Echte Live-Demos",
@@ -4768,8 +4768,8 @@ const T = {
         "Rendimiento pico medido (peticiones por segundo)"
       ],
       [
-        "Negative Five Expo",
-        "Primer puesto en el acelerador nacional Negative Five · 2026"
+        "Expositor Oficial",
+        "Stand en vivo y Certificado Oficial Xelerate VR · 2026"
       ],
       [
         "100%",
@@ -4947,7 +4947,7 @@ const T = {
             "Gemini Live WebSocket",
             "Cancelación AEC"
           ],
-          "link": "copilot",
+          
           "arch": [
             "Navegación Fly-by-Wire nivel 5 mediante curvas cúbicas de Bézier y ajuste exacto a controles UIA/Win32",
             "Pegado atómico Win32 evitando pérdidas de teclas en bloques largos de código o escritura RTL persa",
@@ -5174,7 +5174,7 @@ const T = {
           "badge": "vid",
           "badgeText": "🎥 6 Videos Reales · Exhibición en Vivo",
           "name": "Neon Run: Echo’s Escape — Runner 3D Cyberpunk Multiplataforma Premiado",
-          "role": "Programador Principal de Jugabilidad, Sistemas y Renderizado",
+          "role": "Programador de Jugabilidad, Sistemas y Renderizado",
           "desc": "<b>Qué hace e historia:</b> Un veloz runner 3D en el año 2189 donde Echo huye de una red corporativa cambiando entre 3 carriles, saltando, deslizándose y usando escudo de energía y propulsión Dash.<br><br><b>Cómo funciona y funciones:</b> Ofrece 5 niveles narrativos, 6 modos de juego (Solo, Dúo y Escuadrón en primera y tercera persona), tienda de mejoras y multijugador competitivo en pantalla dividida en un solo dispositivo con dos cámaras y controles separados en Android, PC y OpenXR VR.",
           "tags": [
             "Unity 6.3",
@@ -5207,7 +5207,7 @@ const T = {
           "badge": "vid",
           "badgeText": "🎥 Video de Jugabilidad en Archivo",
           "name": "Arash Kamangir — Juego Comercial de Tiro con Arco y Oleadas",
-          "role": "Programador Principal y Herramientas de Editor · Parque Científico de Mashhad",
+          "role": "Programador Técnico y Herramientas de Editor · Parque Científico de Mashhad",
           "desc": "<b>Qué hace:</b> Título móvil comercial inspirado en el héroe persa Arash donde el jugador mide la tensión del arco y la caída por gravedad para frenar oleadas enemigas y mejorar equipo.<br><br><b>Cómo funciona y funciones:</b> Tensar el arco calcula velocidad inicial y trayectoria parabólica; los impactos activan ragdolls articulares en Box2D. Incluye Campaña, Modo Infinito, Tienda de Armería y herramientas visuales en Unity Editor para diseñadores sin programar.",
           "tags": [
             "Unity 2D",
@@ -5311,7 +5311,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 Lanzamiento Comercial (Cafe Bazaar y Myket)",
           "name": "Parsa — Videojuego Comercial 3D de Acción y Aventura Publicado",
-          "role": "Programador Técnico Principal y Sistemas · Bomb Game Studio",
+          "role": "Programador Técnico y Sistemas · Bomb Game Studio",
           "desc": "<b>Qué hace y entrega real:</b> Título móvil comercial de acción inspirado en mitología persa, publicado oficialmente en Cafe Bazaar y Myket con miles de descargas activas.<br><br><b>Cómo funciona y alcance técnico:</b> Los jugadores recorren mundos 3D atmosféricos con iluminación cinematográfica, combaten y desbloquean capítulos; lideré producción técnica desde combate y guardado persistente hasta corrección de cierres por chipset y firma SDK en tiendas.",
           "tags": [
             "Unity",
@@ -5934,7 +5934,7 @@ const T = {
       "title": "Premios Nacionales, Credenciales de Élite y Certificados Oficiales",
       "sub": "Cada logro respaldado por evidencia empírica, actas oficiales y prueba documental",
       "n5badge": "Expositor Oficial · Certificado Xelerate VR",
-      "n5t": "Acelerador Internacional Negative Five — 3.ª Competición Nacional y Premio · 2026",
+      "n5t": "Acelerador Internacional Negative Five — Expositor Seleccionado y Certificado Oficial · 2026",
       "n5": "<b>Seleccionado para presentar una demo jugable en vivo de Neon Run: Echo’s Escape</b> en la tercera competición del Acelerador Negative Five, recibiendo un certificado oficial en el escenario firmado por el CEO y el representante de Xelerate VR. Mantuvimos un stand exclusivo donde decenas de ingenieros, jueces, directores de estudio y streamers probaron el juego en vivo con mando.",
       "talentBoxTitle": "Elegibilidad para Visado Global Talent y Reconocimiento de Élite",
       "talentBoxDesc": "Este galardón nacional constituye prueba formal de <b>Logro Nacional Reconocido y Distinción Industrial</b>. Aporta el máximo valor probatorio para evaluaciones de excelencia y cumple requisitos clave en programas internacionales de talento como <b>Global Talent Visa (UK Tech Nation, EE. UU. O-1A / EB-1A y vías de talento de la UE)</b>.",
@@ -6185,12 +6185,12 @@ const T = {
     "resume": {
       "title": "Currículum Oficial de Ingeniería",
       "sub": "Ediciones PDF en formato A4 listas para imprimir y vista previa HD",
-      "intro": "Mi currículum completo de ingeniería está compilado en inglés y persa en formato estándar A4. Descarga el PDF directamente o inspecciona las 8 páginas en alta resolución aquí mismo.",
+      "intro": "Mi currículum ejecutivo de ingeniería (2 páginas A4) está disponible en inglés y persa. Descarga el PDF directamente o inspecciona ambas páginas en alta resolución aquí mismo.",
       "fa": "Edición Persa (PDF RTL)",
       "en": "Edición Inglesa (PDF)",
       "open": "Abrir PDF en pantalla completa",
       "dl": "Descargar archivo PDF",
-      "hint": "Vista previa de alta resolución de las 8 páginas (haz clic para ampliar):"
+      "hint": "Vista previa de alta resolución de ambas páginas A4 (haz clic para ampliar):"
     },
     "videos": {
       "title": "Archivo de Videos — Demostraciones Reales",
