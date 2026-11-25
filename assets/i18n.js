@@ -201,7 +201,7 @@ const T = {
       "tag": "سیستم‌هایی می‌سازم که کارهای پیچیده نرم‌افزاری، حسابداری، صوت و تصویر و اتوماسیون هوشمند را از ایده تا اجرای زنده در دنیایی واقعی و بدون خطای توهم پیش می‌برند — با معماری مهندسی دقیق و قابل استناد.",
       "chips": [
         "ارائه‌دهنده منتخب شتاب‌دهنده Negative Five / Xelerate VR",
-        "واجد صلاحیت ویزای Global Talent و بنیاد نخبگان",
+        "ارائه منتخب زنده و گواهی تقدیر رسمی Negative Five · Xelerate VR",
         "کارت پایان خدمت (معافیت دائم)",
         "آماده همکاری و استخدام بین‌المللی"
       ],
@@ -228,7 +228,7 @@ const T = {
       ],
       [
         "رویداد Negative Five",
-        "رتبه برتر رقابت ملی شتاب‌دهنده بین‌المللی Negative Five · ۲۰۲۶"
+        "ارائه منتخب زنده و گواهی تقدیر رسمی شتاب‌دهنده Negative Five · ۲۰۲۶"
       ],
       [
         "۱۰۰٪",
@@ -1396,8 +1396,8 @@ const T = {
       "n5badge": "حضور منتخب با غرفه زنده و تقدیر رسمی · Xelerate VR Certificate",
       "n5t": "شتاب‌دهنده بین‌المللی Negative Five — حضور منتخب و گواهینامه رسمی دوره سوم · ۲۰۲۶",
       "n5": "<b>حضور منتخب با غرفه اختصاصی تست زنده و دریافت گواهینامه تقدیر رسمی روی استیج</b> در دوره سوم رقابت ورودی شتاب‌دهنده Negative Five با ارائه پروژه شاخص Neon Run: Echo’s Escape. این گواهینامه رسمی با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR صادر شد و در طول رویداد ده‌ها بازدیدکننده، داور تخصصی، مدیران استودیوها و تولیدکنندگان محتوای بازی نسخه قابل بازی را با کنترلر تجربه و تحسین کردند.",
-      "talentBoxTitle": "ارزش حرفه‌ای و مستندات رسمی ارزیابی بین‌المللی",
-      "talentBoxDesc": "این گواهینامه رسمی رویداد و سوابق مستند مهندسی، به عنوان سند معتبر «ارائه منتخب صنعتی و داوری‌شده» (Evidence of Recognized National Achievement) شناخته می‌شود. این مدرک دارای بالاترین ضریب وزنی در فرآیندهای <b>استعدادیابی و تسهیلات نخبگان برتر (بنیاد ملی نخبگان)</b> بوده و یکی از معتبرترین اسناد پشتیبان رسمی (Peer-Reviewed Industry Distinction) جهت اخذ <b>ویزای استعداد درخشان جهانی (Global Talent Visa / UK Tech Nation / US O-1A & EB-1A / Exceptional Talent Criteria)</b> و جاب‌آفرهای بین‌المللی به شمار می‌رود.",
+      "talentBoxTitle": "ارزش حرفه‌ای و مستندات ارزیابی بین‌المللی",
+      "talentBoxDesc": "این گواهینامه رسمی رویداد و مستندات مهندسی زنده، به عنوان سند معتبر «ارائه فنی منتخب و داوری‌شده در رویداد صنعتی» (Peer-Reviewed Showcase & Official Certificate) شناخته می‌شود و به عنوان مدرک پشتیبان واقعی در ارزیابی پرونده‌های استعدادهای مهندسی نرم‌افزار (از جمله مسیرهای ارزیابی فنی Global Talent Visa / UK Tech Nation / US O-1A) قابل ارائه است.",
       "socialT": "چه کسانی بازی را تجربه کردند",
       "quote": "«… تجربه‌اش برام خیلی لذت‌بخش بود … <b>خیلی اعتیادآور بود!</b>»",
       "quoteWho": "— یادداشت دست‌نویس و امضاشده مریم خواجوی (iholymary)، تولیدکننده محتوای بازی، پس از بازی کردن Neon Run روی غرفه",
@@ -4418,13 +4418,13 @@ const T = {
       }
     },
     "honors": {
-      "title": "Nationale Auszeichnungen, Qualifikationen & Offizielle Zertifikate",
+      "title": "Offizielle Aussteller-Urkunden, Nachweise & Meilensteine",
       "sub": "Jede Aussage wird durch Belege, offizielle Urkunden und Live-Aufnahmen gestützt",
       "n5badge": "Offizieller Aussteller · Xelerate VR Urkunde",
       "n5t": "Negative Five International Accelerator — Offizielle Live-Ausstellung & Urkunde · 2026",
       "n5": "<b>Ausgewählt zur Live-Präsentation von Neon Run: Echo’s Escape</b> im dritten Auswahlwettbewerb des Negative Five Accelerator, auf der Bühne mit offizieller Anerkennungsurkunde von CEO und Xelerate-VR-Vertreter geehrt. An unserem eigenen Ausstellungsstand testeten Dutzende Ingenieure, Juroren, erfahrene Studioleiter und große Streamer das Spiel live am Controller.",
-      "talentBoxTitle": "Relevanz für Global-Talent-Visum & Elite-Förderung",
-      "talentBoxDesc": "Diese offizielle nationale Auszeichnung dient als anerkannter Nachweis für <b>herausragende nationale Branchenleistung (Recognized National Achievement)</b>. Sie erfüllt zentrale Kriterien internationaler Spitzenkräfte-Programme wie dem <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A Extraordinary Ability sowie EU-Talentpfade)</b> und belegt begutachtete Exzellenz im Software-Engineering.",
+      "talentBoxTitle": "Relevanz für Global-Talent-Visum & Technische Bewertung",
+      "talentBoxDesc": "Diese offizielle Aussteller-Urkunde und die dokumentierte Live-Bewertung liefern beglaubigte Nachweise für <b>begutachtete technische Umsetzung und Branchenanerkennung (Peer-Reviewed Technical Showcase)</b> bei internationalen Fachkräfte- und Talentverfahren wie dem <b>Global Talent Visa (UK Tech Nation, US O-1A / EB-1A sowie EU-Talentpfade)</b>.",
       "socialT": "Stimmen bekannter Tester & Streamer",
       "quote": "„… Ich hatte unglaublich viel Spaß beim Spielen … <b>es machte richtig süchtig!</b>“",
       "quoteWho": "— Handschriftliche, signierte Notiz von Maryam Khajavi (iholymary), Gaming-Creatorin mit über 315.000 Followern, direkt nach dem Test am Messestand",
@@ -5027,7 +5027,7 @@ const T = {
           "badge": "priv",
           "badgeText": "🔒 Plataforma Financiera Empresarial",
           "name": "ZarDigit — Suite Contable en la Nube, Cuentas por Pagar y Tesorería",
-          "role": "Arquitecto de Sistemas e Ingeniero Frontend Principal",
+          "role": "Arquitecto de Sistemas e Ingeniero Frontend",
           "desc": "<b>Qué hace:</b> Aplicación web contable para que equipos financieros y directivos controlen saldos de caja, facturas de proveedores, recibos bancarios y balances sin complicaciones.<br><br><b>Cómo funciona:</b> Los usuarios consultan liquidez y cuentas por pagar en el panel ejecutivo, registran comprobantes bancarios reales en formularios resistentes a bloqueos y exportan libros formateados a Excel con un clic.<br><br><b>Capacidades clave:</b> Interfaz nativa RTL en persa y multilingüe, tablas dinámicas con exportación limpia a Excel, formularios antifallo y 34 rutas PWA compiladas.",
           "tags": [
             "Next.js",
@@ -5055,7 +5055,7 @@ const T = {
           "badge": "live",
           "badgeText": "🚀 Suite Empresarial Completa (14 Apps)",
           "name": "Zoho Books y Mana Suite — Contabilidad Doble, Billing, Proyectos y RR. HH.",
-          "role": "Arquitecto de Sistemas e Ingeniero Full-Stack Principal",
+          "role": "Arquitecto de Sistemas e Ingeniero Full-Stack",
           "desc": "<b>Qué hace:</b> Suite empresarial unificada de 14 aplicaciones al estándar Zoho Books: integra contabilidad de partida doble, tesorería de cheques, suscripciones SaaS, capacidad de proyectos y portal de empleados.<br><br><b>Cómo funciona:</b> Desde el Hub de 14 módulos se navega al instante entre libros contables, ingresos recurrentes MRR/ARR, carteras de equipo y RR. HH.; cada asiento queda inmutable mediante notas de reversión y el cambio de idioma o rol aplica al vuelo.<br><br><b>Capacidades clave:</b> 118 páginas Next.js 15, 20 idiomas sin fugas (436 claves), calendarios Jalali/Gregoriano, cambio de divisa, 69 páginas de ajustes y RBAC en vivo con backend .NET 10 + SQL Server.",
           "tags": [
             "Next.js 15",
@@ -5931,13 +5931,13 @@ const T = {
       }
     },
     "honors": {
-      "title": "Premios Nacionales, Credenciales de Élite y Certificados Oficiales",
+      "title": "Certificados Oficiales de Exhibición, Credenciales e Hitos Técnicos",
       "sub": "Cada logro respaldado por evidencia empírica, actas oficiales y prueba documental",
       "n5badge": "Expositor Oficial · Certificado Xelerate VR",
       "n5t": "Acelerador Internacional Negative Five — Expositor Seleccionado y Certificado Oficial · 2026",
       "n5": "<b>Seleccionado para presentar una demo jugable en vivo de Neon Run: Echo’s Escape</b> en la tercera competición del Acelerador Negative Five, recibiendo un certificado oficial en el escenario firmado por el CEO y el representante de Xelerate VR. Mantuvimos un stand exclusivo donde decenas de ingenieros, jueces, directores de estudio y streamers probaron el juego en vivo con mando.",
-      "talentBoxTitle": "Elegibilidad para Visado Global Talent y Reconocimiento de Élite",
-      "talentBoxDesc": "Este galardón nacional constituye prueba formal de <b>Logro Nacional Reconocido y Distinción Industrial</b>. Aporta el máximo valor probatorio para evaluaciones de excelencia y cumple requisitos clave en programas internacionales de talento como <b>Global Talent Visa (UK Tech Nation, EE. UU. O-1A / EB-1A y vías de talento de la UE)</b>.",
+      "talentBoxTitle": "Documentación para Visado Global Talent y Evaluación Técnica",
+      "talentBoxDesc": "Este certificado oficial del acelerador y la validación en vivo aportan evidencia formal de <b>entrega técnica evaluada y distinción industrial en exhibición</b> para evaluaciones internacionales de talento como <b>Global Talent Visa (UK Tech Nation, EE. UU. O-1A / EB-1A y vías de talento de la UE)</b>.",
       "socialT": "Creadores y Directores que Probaron el Juego",
       "quote": "“… Disfruté muchísimo la experiencia … <b>¡es realmente adictivo!</b>”",
       "quoteWho": "— Nota manuscrita y firmada de Maryam Khajavi (iholymary), creadora gaming con +315K seguidores, tras jugar en nuestro stand",
