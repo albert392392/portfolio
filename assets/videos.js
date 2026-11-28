@@ -303,22 +303,22 @@ const VD = [
  {
   "id": "event",
   "title": {
-   "fa": "رویداد کشوری Negative Five — کسب مقام برتر و بازخورد واقعی بازار",
-   "en": "Negative Five National Accelerator Event — National Award Winner & Real Market Feedback",
+   "fa": "رویداد کشوری Negative Five — حضور منتخب با غرفه زنده و بازخورد واقعی بازار",
+   "en": "Negative Five National Accelerator Event — Selected Live Booth & Real Market Feedback",
    "de": "Negative Five — Aufnahmen vom Event",
-   "es": "Negative Five National Accelerator Event — National Award Winner & Real Market Feedback"
+   "es": "Evento Acelerador Negative Five — Stand en Vivo Seleccionado y Feedback Real"
   },
   "kicker": {
-   "fa": "کسب مقام برتر کشوری · غرفه اختصاصی · دوره سوم · ۲۰۲۶",
-   "en": "National Award Winner · Dedicated booth · third cohort · 2026",
+   "fa": "حضور منتخب با غرفه زنده · دوره سوم · ۲۰۲۶",
+   "en": "Selected Exhibitor · Dedicated booth · third cohort · 2026",
    "de": "Eigener Stand · dritter Zyklus · 2026",
-   "es": "Premio Nacional · Stand exclusivo · 3.ª edición · 2026"
+   "es": "Expositor Oficial · Stand exclusivo · 3.ª edición · 2026"
   },
   "intro": {
-   "fa": "نسخه قابل بازی Neon Run در رقابت کشوری ورود به دوره سوم شتاب‌دهنده بین‌المللی Negative Five روی غرفه اختصاصی ارائه شد و موفق به کسب رتبه و مقام برتر کشوری گردید. ده‌ها بازدیدکننده، داور تخصصی و استریمرهای سرشناس بازی را با کنترلر تست کردند و گواهینامه معتبر رسمی روی استیج اهدا شد.",
-   "en": "The playable build of Neon Run was presented on a dedicated booth at the third-cycle national entry competition of Negative Five Accelerator, winning top national ranking and honors. Dozens of visitors, expert judges, and prominent creators playtested the build, and the official national award was presented on stage.",
+   "fa": "نسخه قابل بازی Neon Run در رقابت ورودی دوره سوم شتاب‌دهنده بین‌المللی Negative Five با حضور منتخب روی غرفه اختصاصی ارائه شد. ده‌ها بازدیدکننده، داور تخصصی و استریمرهای سرشناس بازی را با کنترلر تست کردند و گواهینامه رسمی تقدیر روی استیج اهدا شد.",
+   "en": "A playable build of Neon Run was selected for showcase on a dedicated booth at the third-cycle entry competition of Negative Five Accelerator. Dozens of visitors, technical reviewers, and content creators playtested the build, and an official Certificate of Appreciation was presented on stage.",
    "de": "Die spielbare Fassung von Neon Run wurde beim Event des Negative-Five-Accelerators an einem eigenen Stand gezeigt. Dutzende Besucher spielten sie, zwei Gaming-Content-Creator berichteten darüber, und der Leiter eines der ältesten Spielestudios Irans setzte sich an den Controller. Dieser Abschnitt ist das unbearbeitete Filmmaterial dieses Tages.",
-   "es": "La versión jugable de Neon Run se presentó en un stand exclusivo durante la tercera competición nacional del Acelerador Negative Five, logrando el primer puesto nacional. Decenas de visitantes, jueces y creadores de contenido lo probaron con mando antes de la ceremonia oficial en el escenario."
+   "es": "La versión jugable de Neon Run se presentó en un stand exclusivo durante la tercera edición del Acelerador Negative Five. Decenas de visitantes, evaluadores técnicos y creadores de contenido lo probaron con mando antes de la entrega del certificado oficial en el escenario."
   },
   "nav": {
    "fa": "رویداد و بازخورد",
@@ -531,16 +531,16 @@ const VD = [
     "poster": "media/v17.jpg",
     "ar": "16/9",
     "title": {
-     "fa": "مراسم رسمی اهدای لوح و گواهی مقام برتر کشوری روی استیج",
-     "en": "Official Stage Award Ceremony — National Ranking Winner",
+     "fa": "مراسم رسمی اهدای گواهینامه تقدیر روی استیج",
+     "en": "Official Stage Certificate Presentation",
      "de": "Urkundenverleihung auf der Bühne",
-     "es": "Ceremonia Oficial de Premiación — Ganador Nacional"
+     "es": "Entrega Oficial de Certificado en el Escenario"
     },
     "desc": {
-     "fa": "مراسم اهدای گواهی‌نامه و تندیس مقام برتر کشوری رویداد در سالن اصلی. گواهی رسمی Negative Five / Xelerate VR با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR به نام سید ایمان منصوری صادر شده و دارای ارزش و اعتبار حقوقی نخبگی در استعدادیابی بنیاد ملی نخبگان و ویزای Global Talent است.",
-     "en": "Official stage award ceremony for the national competition winner in the main auditorium. The official Negative Five / Xelerate VR certificate, signed by the accelerator CEO and the Xelerate VR representative, was awarded to Seyed Iman Mansouri as verified proof of national excellence with high evidentiary standing for Global Talent visa endorsement and elite distinction.",
-     "de": "Die Urkundenverleihung des Events im Hauptsaal. Die offizielle Urkunde von Negative Five / Xelerate VR, unterschrieben vom Geschäftsführer des Accelerators und vom Vertreter von Xelerate VR, wurde auf den Namen Seyed Iman Mansouri ausgestellt.",
-     "es": "Entrega oficial del premio al primer puesto nacional en el auditorio principal: diploma Negative Five / Xelerate VR firmado por su CEO y representante sénior otorgado a Seyed Iman Mansouri."
+     "fa": "مراسم اهدای گواهینامه تقدیر رویداد در سالن اصلی. گواهی رسمی Negative Five / Xelerate VR با امضای مدیرعامل شتاب‌دهنده و نماینده Xelerate VR به نام ایمان منصوری صادر شده و سند رسمی ارائه منتخب در این رقابت تخصصی است.",
+     "en": "Official stage certificate presentation in the main auditorium. The Negative Five / Xelerate VR Certificate of Appreciation, signed by the accelerator CEO and the Xelerate VR representative, was issued to Iman Mansouri as formal proof of selected showcase and live testing.",
+     "de": "Die Urkundenverleihung des Events im Hauptsaal. Die offizielle Anerkennungsurkunde von Negative Five / Xelerate VR, unterschrieben vom Geschäftsführer des Accelerators und vom Vertreter von Xelerate VR, wurde auf den Namen Iman Mansouri ausgestellt.",
+     "es": "Entrega oficial del certificado en el auditorio principal: Certificado de Apreciación Negative Five / Xelerate VR firmado por su CEO y representante otorgado a Iman Mansouri."
     },
     "tags": {
      "fa": [
@@ -733,7 +733,7 @@ const VD = [
      "fa": "بازی تجاری موبایل، ساخته‌شده در واحد فناور گیم‌توپیا (پارک علم و فناوری دانشگاه فردوسی مشهد). نقش من: برنامه‌نویس گیم‌پلی و سازنده ابزار. در این ویدیو منوی بازی (حالت داستانی، حالت بی‌پایان و فروشگاه)، سیستم تیراندازی با کمان با محاسبه مسیر پرتاب و برخورد، نبرد موج‌به‌موج با دشمنان، و پایان مرحله و امتیازدهی دیده می‌شود. علاوه بر گیم‌پلی، ابزاری اختصاصی نوشتم تا تیم طراحی بتواند مراحل را بدون کدنویسی بچیند.",
      "en": "A commercial mobile title built at the Game Topia technology unit (Ferdowsi University of Mashhad Science & Technology Park). My role: gameplay programmer and tools developer. The clip shows the game menu (campaign, endless mode and shop), the archery system with trajectory and collision calculation, wave-based combat, and the end-of-level scoring. Beyond gameplay I wrote a dedicated editor tool so the design team could build levels without touching code.",
      "de": "Ein kommerzieller Mobiltitel, entstanden in der Technologieeinheit Game Topia (Wissenschafts- und Technologiepark der Ferdowsi-Universität Maschhad). Meine Rolle: Gameplay-Programmierung und Werkzeugentwicklung. Der Clip zeigt das Spielmenü (Kampagne, Endlosmodus und Shop), das Bogenschießsystem mit Flugbahn- und Kollisionsberechnung, wellenbasierte Kämpfe und die Punktewertung am Levelende. Neben dem Gameplay habe ich ein eigenes Editor-Werkzeug geschrieben, damit das Designteam Level ohne Code bauen kann.",
-     "es": "Título móvil desarrollado en la unidad tecnológica Game Topia (Parque Científico de Mashhad) donde fui programador principal y de herramientas: menú, tienda, física parabólica de tiro con arco, oleadas y herramientas visuales en Editor para diseñadores."
+     "es": "Título móvil desarrollado en la unidad tecnológica Game Topia (Parque Científico de Mashhad) donde fui programador técnico y de herramientas: menú, tienda, física parabólica de tiro con arco, oleadas y herramientas visuales en Editor para diseñadores."
     },
     "tags": {
      "fa": [

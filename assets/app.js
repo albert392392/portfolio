@@ -542,7 +542,7 @@
     return p;
   }
 
-  /* ---------- RÉSUMÉ WITH 8 HIGH-RES PAGES ---------- */
+  /* ---------- RÉSUMÉ WITH 2 HIGH-RES EXECUTIVE PAGES ---------- */
   var rdoc='fa';
   function pageResume(t){
     var r = t.resume, p = el('div');
@@ -570,12 +570,12 @@
 
     var name = (rdoc==='fa'?r.fa:r.en);
     var ids=[], caps={};
-    for(var i=1;i<=8;i++){
-      var src='assets/resume/'+rdoc+'-'+i+'.jpg';
+    for(var i=1;i<=2;i++){
+      var src='assets/resume/exec-'+rdoc+'-'+i+'.jpg';
       ids.push(src);
-      caps[src]=name+' — '+num(i)+'/'+num(8);
+      caps[src]=name+' — '+num(i)+'/'+num(2);
     }
-    p.appendChild(gallery(ids, caps, 'g3'));
+    p.appendChild(gallery(ids, caps, 'g2'));
     return p;
   }
 
